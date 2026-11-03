@@ -21,3 +21,7 @@
 A已提交：`5b5a4dfae4df179d564eea4dd6f82f9416b9d5c9`。269文件当前回溯快照；Python结果以实际日志为准。原4份stage已保全；全局autocrlf=input使A中21份CSV行尾被Git规范化，工作树原文件未改；B将用.gitattributes的* -text按原始字节恢复入库，不amend A。历史11534文件/1513822062字节已只读索引，build/results原位保留。
 
 B准备：两个验证工具改读纳管v1_source_paths.json，不读ignored历史build；原历史SHA不改。新增冻结小ROM、只读审计与168条核心来源SHA。待干净worktree恢复性验证后创建logic标签。
+
+B与字节补充已提交：a964292e0408da6d8595eaf3c54f07c72608301c、c20501bef7666f2666d75838efb578dec7398cdf。原全局行尾导致21CSV转换，现HEAD字节与原位文件逐一相同，未重写旧commit。干净逻辑worktree路径见recovery_paths.json，正在实际重建/测试，无旧V1 build依赖。
+
+逻辑worktree恢复全部PASS：113 Python、14文件再生、477/33/543、603参照、50521非法/恢复及87/57331事件、memory与物理示例、新轨迹79见证；源树干净且旧V1 build不存在。已建立annotated逻辑tag指向c20501bef7666f2666d75838efb578dec7398cdf。C将封存分析索引后再次从最终物理tag目标恢复验证。

@@ -1,5 +1,7 @@
 # M20 当前源码与生成物清单
 
+V2.2封存版本还覆盖物理分析文档和小型CSV/JSON汇总；这些哈希只证明文档字节，不把估算升级为实物通过。
+
 机器清单为[M20_SOURCE_MANIFEST.json](M20_SOURCE_MANIFEST.json)。列出的均为可恢复的源码、必要配置/机器码和验证工具，不依赖ignored build；SHA256对原始字节计算。清单不包含自身，也不包含本文或未来提交SHA，避免自引用。
 
 冻结ISA JSON、ISA实现、Pong/Snake汇编及小型未填充参考ROM均有SHA；ROM来自原汇编只读组装，必须与早已冻结的binary SHA一致，不修改旧日志/ROM来适配新结果。正式V2-603和V2.1-543生成SV/连接JSON可逐字节重生成。
