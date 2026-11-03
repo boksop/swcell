@@ -23,6 +23,8 @@ sim/scripts/run_all_regressions.sh
 
 ## M20 游戏CPU
 
+V2.3已按用户限定的模式A数字仿真正式定版，见[正式阶段报告](docs/reports/m20_phaseV2.3_20261103.md)；本地提交aecf570及标签m20-v2.3-two-phase-sim-verified。V2.4自主时钟与同源存储服务独立开发，不纳入V23验收。
+
 2026-11-03：新增[V2.3双相锁存器与同步FPGA存储联合验证](docs/m20/M20_300_V2_3_TEST_REPORT.md)，保留477组合MUX，状态切换为66个真实反馈MUX；原ISA和游戏码不变。架构、完整回归与[两相/存储时序契约](docs/m20/M20_300_V2_3_FPGA_MEMORY_TIMING.md)独立交付；只属数字模型验证，未作实物时序签核。
 
 当前入口：[V2.1正式543结构与本轮验证](docs/m20/M20_300_V2_1_TEST_REPORT.md)、[真实157物理规格](docs/m20/M20_PHYSICAL_FEASIBILITY.md)。2026-11-02：接受500+核心规模，已补全部非法编码实际TRAP/恢复验证；物理时序/时钟/电源/接口仍按VERIFIED、ESTIMATED、TBD分别记录，未进行PCB或实物测试。
