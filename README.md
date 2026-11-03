@@ -122,3 +122,7 @@ Master SPI物理M[2:0]应为001，x4由bitstream选择。下降沿采样不等�
 详细说明：[架构与扩展](docs/architecture.md)、[M11 测试计划](docs/m11_test_plan.md)、[UART 协议](docs/uart_protocol.md)、[实际验证记录](docs/verification.md)。
 
 75/100/125MHz 独立相位扫描、全部候选窗口、1e6→1e8 门控及中断恢复见 [M11 Phase 2B 操作说明](docs/phase2b.md)。新增回归命令为 `sim/scripts/run_phase2b.sh`，保留原有 `run_all_regressions.sh`。
+
+## 本地版本封存
+
+2026-11-03完成本地Git基线与M20逻辑/物理分析标签，真实硬件时序仍未验收。[本地工作流](docs/GIT_LOCAL_WORKFLOW.md)、[版本历史](docs/m20/M20_RELEASE_HISTORY.md)、[恢复验证报告](docs/m20/M20_LOCAL_GIT_REPORT.md)。无remote或自动上传；历史原始数据继续原位保留并有独立SHA索引。

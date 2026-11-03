@@ -43,3 +43,5 @@ python3 -B tools/git/index_historical_evidence.py --output docs/evidence/NEW_DAT
 干净本地detached worktree用于恢复检查，不创建remote；所有新缓存写在临时worktree中，旧build不复制作为成功前提。审计器使用版本化来源清单，从跟踪文件生成MUX网表、比对SHA和独立477/33/543计数，另检查ISA/ROM和脏状态。报告写新build目录或临时目录，不修改源码/索引/提交。
 
 最终命令与提交/tag索引见[M20本地Git报告](m20/M20_LOCAL_GIT_REPORT.md)。本轮结束即停止，不进行PCB/逻辑优化或硬件测试。
+
+本轮完成：两个annotated tags及后续恢复记录已建立，最终实际状态见M20_LOCAL_GIT_REPORT.md。只读审计命令为`python3 -B tools/git/local_release_audit.py --output build/NEW_RELEASE_AUDIT`；报告目录需全新，旧索引/证据不覆盖。

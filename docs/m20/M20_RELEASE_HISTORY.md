@@ -22,3 +22,5 @@
 Tags均为本地annotated对象。`m20-v2.1-logic-verified`只表示数字功能/恢复验证；`m20-v2.2-physical-analysis`只表示分析交付。两者均不表示真实DFF建立保持、最高主频、PCB或上板验收。
 
 关键源码和ROM清单见[M20_SOURCE_MANIFEST.md](M20_SOURCE_MANIFEST.md)；原始仪器/历史build证据另有[独立索引](../evidence/historical_20261103.csv)，保留原位，不借Git提交记录冒充测试证据。
+
+最终验证记录提交保存两轮干净恢复结果，主分支HEAD可在物理tag之后；没有移动tag，核心/物理封存文件不变。所有具体SHA和测试口径见M20_LOCAL_GIT_REPORT.md，最后记录提交自身SHA由Git解析，避免自引用。

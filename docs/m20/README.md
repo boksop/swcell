@@ -117,3 +117,7 @@ Pong 为 168 words/336 bytes，Snake 为 368 words/736 bytes；尚无 OLED/SPI�
 原rtl/fpga/sim/host/results范围308个既有普通文件的路径+SHA映射摘要前后一致：`f041b6f2968310a116071cfdbee184aab5f431abbe10f4f6b739a69909949f69`；Git index的SHA仍为`ac2b0d7c6dbd88a804b174f62e84e0c672a987d508deabbed8bd5ff3d0ef0c6a`。本次没有新增暂存、commit或push。
 
 v0.2补充：已将747取值拆成164颗存储MUX、62颗保持/使能MUX、521颗其它组合/控制预算；容量阵列为0。下一状态/控制240仍是估算上沿，存储/IO控制各12也待结构审计，不能写成已经实现的精确门数。此次只修改M20规划文件，根任务入口保持不变；下次继续时先阅读本页、预算和待决项。
+
+## 本地版本与恢复
+
+[版本历史/标签](M20_RELEASE_HISTORY.md)、[来源SHA与只读审计](M20_SOURCE_MANIFEST.md)、[实际恢复报告](M20_LOCAL_GIT_REPORT.md)。数字逻辑tag不代表实物时序；物理分析tag保留ESTIMATED/TBD。

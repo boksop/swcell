@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "date": "2026-11-03",
+  "files": 1730,
+  "bytes": 41065753,
+  "index_sha256": "17db00c77be7f27220a31d1d59320a4fee7955fe8f6d87e760f7a972f79bca85",
+  "logic": {
+    "status": "PASS",
+    "tree": "/tmp/swcell-local-restore-20261103-a92op1up/logic",
+    "commit": "c20501bef7666f2666d75838efb578dec7398cdf",
+    "checks": [
+      {
+        "test": "release_audit",
+        "returncode": 0,
+        "seconds": 0.187,
+        "log": "/tmp/swcell-local-restore-20261103-a92op1up/logic/build/recovery/release_audit.log"
+      },
+      {
+        "test": "python_tests",
+        "returncode": 0,
+        "seconds": 10.982,
+        "log": "/tmp/swcell-local-restore-20261103-a92op1up/logic/build/recovery/python_tests.log"
+      },
+      {
+        "test": "xsim_v21",
+        "returncode": 0,
+        "seconds": 40.855,
+        "log": "/tmp/swcell-local-restore-20261103-a92op1up/logic/build/recovery/xsim_v21.log"
+      },
+      {
+        "test": "physical_models",
+        "returncode": 0,
+        "seconds": 10.467,
+        "log": "/tmp/swcell-local-restore-20261103-a92op1up/logic/build/recovery/physical_models.log"
+      },
+      {
+        "test": "physical_analysis",
+        "returncode": 0,
+        "seconds": 2.844,
+        "log": "/tmp/swcell-local-restore-20261103-a92op1up/logic/build/recovery/physical_analysis.log"
+      }
+    ],
+    "worktree_clean": true,
+    "ignored_old_v1_evidence_absent": true,
+    "verification": "PASS",
+    "co_launch_witness_count": 79
+  },
+  "physical": {
+    "status": "PASS",
+    "tree": "/tmp/swcell-local-restore-20261103-2b5067yj/physical",
+    "commit": "7742a637e41794636f4e8dc4966b1c3e8ac090d4",
+    "checks": [
+      {
+        "test": "release_audit",
+        "returncode": 0,
+        "seconds": 0.188,
+        "log": "/tmp/swcell-local-restore-20261103-2b5067yj/physical/build/recovery/release_audit.log"
+      },
+      {
+        "test": "python_tests",
+        "returncode": 0,
+        "seconds": 10.937,
+        "log": "/tmp/swcell-local-restore-20261103-2b5067yj/physical/build/recovery/python_tests.log"
+      },
+      {
+        "test": "xsim_v21",
+        "returncode": 0,
+        "seconds": 40.064,
+        "log": "/tmp/swcell-local-restore-20261103-2b5067yj/physical/build/recovery/xsim_v21.log"
+      },
+      {
+        "test": "physical_models",
+        "returncode": 0,
+        "seconds": 10.573,
+        "log": "/tmp/swcell-local-restore-20261103-2b5067yj/physical/build/recovery/physical_models.log"
+      },
+      {
+        "test": "physical_analysis",
+        "returncode": 0,
+        "seconds": 2.885,
+        "log": "/tmp/swcell-local-restore-20261103-2b5067yj/physical/build/recovery/physical_analysis.log"
+      }
+    ],
+    "worktree_clean": true,
+    "ignored_old_v1_evidence_absent": true,
+    "verification": "PASS",
+    "co_launch_witness_count": 79
+  },
+  "note": "Copies of newly produced local recovery evidence only. Old test data not rewritten; hardware unqualified."
+}
