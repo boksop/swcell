@@ -1,0 +1,5 @@
+path_class,source,endpoint,endpoint_net,mux_layers,select_arcs,data_arcs,max_scenario_ns,groups,route,sensitization
+FPGA_TO_FF,rom_data[0],state_reg.D[0],n0581,29,11,18,149.35,decode>control>storage,n0080:s;n0082:s;n0084:s;n0086:s;n0087:s;n0088:s;n0089:s;n0090:s;n0106:i1;n0108:i1;n0145:s;n0147:i0;n0149:i0;n0151:i0;n0153:i0;n0155:i0;n0157:i0;n0159:i0;n0224:s;n0226:i1;n0241:s;n0244:i1;n0246:i1;n0248:i0;n0249:i0;n0251:i0;n0253:i0;n0255:i0;n0581:i0,UNPROVEN_STATIC_TOPOLOGY
+FPGA_TO_OUTPUT,rom_data[0],ram_we[0],n0601,23,9,14,118.45,decode>bus,n0080:s;n0082:s;n0084:s;n0086:s;n0087:s;n0088:s;n0089:s;n0090:s;n0106:i1;n0108:i1;n0145:s;n0147:i0;n0149:i0;n0151:i0;n0153:i0;n0155:i0;n0157:i0;n0159:i0;n0593:i1;n0595:i1;n0596:i1;n0600:i1;n0601:i1,UNPROVEN_STATIC_TOPOLOGY
+FF_TO_FF,c_reg,z_reg.D[0],n0568,16,3,13,82.4,alu>result>flags>storage,n0283:s;n0285:i0;n0295:i1;n0298:s;n0299:i1;n0359:i1;n0360:i0;n0361:i0;n0362:i0;n0363:i0;n0389:i0;n0391:i0;n0393:i0;n0394:s;n0567:i1;n0568:i0,UNPROVEN_STATIC_TOPOLOGY
+FF_TO_OUTPUT,state_reg[1],ram_we[0],n0601,9,3,6,46.35,control>bus,n0204:s;n0215:s;n0217:i1;n0263:i0;n0592:i0;n0595:s;n0596:i1;n0600:i1;n0601:i1,UNPROVEN_STATIC_TOPOLOGY

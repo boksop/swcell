@@ -1,0 +1,18 @@
+# Temporary pin-ID diagnostic. V20 AND W23 are outputs; isolate external TX.
+# All physical pins below were supplied by the board owner.
+set_property PACKAGE_PIN D27 [get_ports sys_clk]
+set_property PACKAGE_PIN V20 [get_ports PIN_V20_TX]
+set_property PACKAGE_PIN W23 [get_ports PIN_W23_TX]
+set_property PACKAGE_PIN R24 [get_ports LED_G]
+set_property PACKAGE_PIN T20 [get_ports LED_Y]
+set_property PACKAGE_PIN T21 [get_ports LED_R]
+set_property PACKAGE_PIN L12 [get_ports M11_DL_D]
+set_property PACKAGE_PIN F16 [get_ports M11_DL_EN]
+set_property PACKAGE_PIN H12 [get_ports M11_DFF_D]
+set_property PACKAGE_PIN L11 [get_ports M11_DFF_CLK]
+set_property IOSTANDARD LVCMOS33 [get_ports *]
+set_property DRIVE 4 [get_ports {PIN_V20_TX PIN_W23_TX}]
+set_property SLEW SLOW [get_ports {PIN_V20_TX PIN_W23_TX}]
+create_clock -name sys_clk -period 20.000 [get_ports sys_clk]
+set_property CFGBVS VCCO [current_design]
+set_property CONFIG_VOLTAGE 3.3 [current_design]

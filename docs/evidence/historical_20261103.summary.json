@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-03",
+  "scope": "Local historical build/results and original ZIP archives; not proof of PASS",
+  "files": 11534,
+  "total_bytes": 1513822062,
+  "categories": {
+    "HISTORICAL_BUILD_EVIDENCE": 11120,
+    "WAVEFORM_EVIDENCE": 45,
+    "FPGA_IMAGE_OR_DEBUG_ASSOCIATION": 144,
+    "LOCAL_INPUT_ARCHIVE": 4,
+    "HISTORICAL_RESULT": 221
+  },
+  "skipped_cache_directories": {
+    "venvs": 1,
+    "local_git_20261103": 1,
+    "xsim.dir": 25,
+    ".Xil": 2
+  },
+  "index_sha256": "5ff4610147ec02eb62a476ccb0de0991c462af97893be4ecebb1532b4e818596",
+  "restoration": "Files remain at original relative paths. Index is not an off-machine backup. No evidence regenerated."
+}

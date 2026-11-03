@@ -1,0 +1,10 @@
+item,quantity,unit,classification,notes
+functional_combinational_157,476,IC,VERIFIED,No RAM/ROM/OLED/key logic
+trap_event_observer_157,1,IC,VERIFIED,Optional observer; complete interface count retained
+state_storage_157,66,IC,ESTIMATED_STORAGE_IMPLEMENTATION,33x2 physical mapping; DFF timing uncharacterized
+clock_fanout_buffers,2,package,ESTIMATED_NOT_SELECTED,At least12 branch channels total for two phases; actual load/skew part TBD
+reset_buffer,1,package,ESTIMATED_NOT_SELECTED,Four branches planned
+power_good_supervisor,1,IC,TBD,May be shared with platform only if sequencing proven
+local_bypass_100nF,543,capacitor,ESTIMATED,One per157; buffers need additional bypass
+regional_bulk,6,capacitor,ESTIMATED,Values/package/derating TBD
+clock_source_series_termination,12,resistor_position,ESTIMATED,Values from SI/measurement; no fixed resistance supplied

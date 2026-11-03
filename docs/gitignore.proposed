@@ -1,0 +1,28 @@
+# Proposed additions only. Review before merging into the root .gitignore.
+# Keep existing project exclusions and results/.gitkeep exception.
+
+# Other locally created Python virtual environments
+/.venv*/
+/venv/
+/env/
+
+# Python tools and editor/system caches
+/.pytest_cache/
+/.mypy_cache/
+/.ruff_cache/
+/.coverage
+/htmlcov/
+/.DS_Store
+
+# Legacy full-project/result archives: back up separately with SHA256.
+/*.zip
+/*.tar
+/*.tar.gz
+
+# Local assistant/credential directories must not enter source history.
+/.agents/
+/.codex/
+/.aws/
+
+# Personal working prompts: review separately before publishing.
+/codex提示词.txt

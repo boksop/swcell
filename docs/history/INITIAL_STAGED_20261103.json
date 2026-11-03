@@ -1,0 +1,30 @@
+[
+  {
+    "path": "AGENTS.md",
+    "blob": "1652e5d8969c10e3d19ce1e7b1be4450ec316303",
+    "mode": "100644",
+    "staged_sha256": "3b679eec9169748924e1f6850c29d8d75e9211e64d7b833c61716f7b270087d2",
+    "worktree_sha256": "3b679eec9169748924e1f6850c29d8d75e9211e64d7b833c61716f7b270087d2"
+  },
+  {
+    "path": "TASK_PROGRESS.md",
+    "blob": "7cdc2733a3b5c5fb02b16cff551d17dd8a00fe3c",
+    "mode": "100644",
+    "staged_sha256": "708f8dd86f56c261bd89555927ed44f5b2d8f907ed9df490b53f60b1b02c2078",
+    "worktree_sha256": "884fa83d3e2173442b5e5f58433d52cffd7d3ce14a01604d349b2ad39b7d66ab"
+  },
+  {
+    "path": "docs/tasks/m11-phase2b-20261016.md",
+    "blob": "c35beb667238ce815f9643c23a702d0487e1c832",
+    "mode": "100644",
+    "staged_sha256": "e41709c407e038f6b25b30bb1da50de48834e608d34c0933ffe562d475ffa855",
+    "worktree_sha256": "e41709c407e038f6b25b30bb1da50de48834e608d34c0933ffe562d475ffa855"
+  },
+  {
+    "path": "docs/tasks/progress-persistence-20261016.md",
+    "blob": "917aaf906a9469c4bf8b1df63a198c915f27d695",
+    "mode": "100644",
+    "staged_sha256": "f37d87f5c48ebfe6b4cb52c2a1c7b31bb3f2319ff63a311cf791598072836af7",
+    "worktree_sha256": "f37d87f5c48ebfe6b4cb52c2a1c7b31bb3f2319ff63a311cf791598072836af7"
+  }
+]

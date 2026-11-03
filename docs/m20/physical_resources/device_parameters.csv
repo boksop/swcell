@@ -1,0 +1,4 @@
+part,source,revision,vcc_range,temperature,cl_pf,data_min_ns,data_typ_ns,data_max_ns,select_min_ns,select_typ_ns,select_max_ns,cin_typ_pf,icc_max_ua,cpd_typ_pf,package
+"74LVC1G157GW,125",https://assets.nexperia.com/documents/data-sheet/74LVC1G157.pdf,12 / 2023-08-15,"[1.65, 5.5]","[-40, 85]",50,1.0,2.7,5.0,1.0,2.9,5.0,2.5,4,18,TSSOP6 / SOT363-2 / SC-88A
+NC7SV157P6X,https://www.onsemi.com/download/data-sheet/pdf/nc7sv157-d.pdf,3 / 2024-01,"[0.9, 3.6]","[-40, 85]",30,,1.9,3.6,,1.9,3.6,2.0,0.9,10,SC-88A; CASE419B-02
+NC7SZ157P6X,https://www.onsemi.com/download/data-sheet/pdf/nc7sz157-d.pdf,7 / 2024-08,"[1.65, 5.5]","[-40, 85]",50,,3.2,5.0,,3.2,5.2,2.0,10,14,SC70 / SC-88; CASE419B-02

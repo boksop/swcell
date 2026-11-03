@@ -1,0 +1,3720 @@
+{
+  "schema_version": 1,
+  "module": "m20v2_decoder",
+  "variant": "baseline",
+  "inputs": {
+    "instruction": 16
+  },
+  "outputs": {
+    "legal": [
+      "m000263"
+    ],
+    "is_memory": [
+      "m000196"
+    ],
+    "memory_write": [
+      "m000199"
+    ],
+    "indirect": [
+      "m000264"
+    ],
+    "op": [
+      "m000279",
+      "m000293",
+      "m000305",
+      "m000317",
+      "m000329",
+      "m000265"
+    ]
+  },
+  "functional_outputs": {
+    "legal": [
+      "m000263"
+    ],
+    "is_memory": [
+      "m000196"
+    ],
+    "memory_write": [
+      "m000199"
+    ],
+    "indirect": [
+      "m000264"
+    ],
+    "op": [
+      "m000279",
+      "m000293",
+      "m000305",
+      "m000317",
+      "m000329",
+      "m000265"
+    ]
+  },
+  "registers": [],
+  "nodes": [
+    {
+      "id": "m000001",
+      "s": "instruction[12]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000001",
+      "instance": "g_decoder.u_m000001"
+    },
+    {
+      "id": "m000002",
+      "s": "instruction[13]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000002",
+      "instance": "g_decoder.u_m000002"
+    },
+    {
+      "id": "m000003",
+      "s": "instruction[14]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000003",
+      "instance": "g_decoder.u_m000003"
+    },
+    {
+      "id": "m000004",
+      "s": "instruction[15]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000004",
+      "instance": "g_decoder.u_m000004"
+    },
+    {
+      "id": "m000005",
+      "s": "m000001",
+      "i0": "0",
+      "i1": "m000002",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000005",
+      "instance": "g_decoder.u_m000005"
+    },
+    {
+      "id": "m000006",
+      "s": "m000005",
+      "i0": "0",
+      "i1": "m000003",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000006",
+      "instance": "g_decoder.u_m000006"
+    },
+    {
+      "id": "m000007",
+      "s": "m000006",
+      "i0": "0",
+      "i1": "m000004",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000007",
+      "instance": "g_decoder.u_m000007"
+    },
+    {
+      "id": "m000008",
+      "s": "instruction[13]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000008",
+      "instance": "g_decoder.u_m000008"
+    },
+    {
+      "id": "m000009",
+      "s": "instruction[14]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000009",
+      "instance": "g_decoder.u_m000009"
+    },
+    {
+      "id": "m000010",
+      "s": "instruction[15]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000010",
+      "instance": "g_decoder.u_m000010"
+    },
+    {
+      "id": "m000011",
+      "s": "instruction[12]",
+      "i0": "0",
+      "i1": "m000008",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000011",
+      "instance": "g_decoder.u_m000011"
+    },
+    {
+      "id": "m000012",
+      "s": "m000011",
+      "i0": "0",
+      "i1": "m000009",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000012",
+      "instance": "g_decoder.u_m000012"
+    },
+    {
+      "id": "m000013",
+      "s": "m000012",
+      "i0": "0",
+      "i1": "m000010",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000013",
+      "instance": "g_decoder.u_m000013"
+    },
+    {
+      "id": "m000014",
+      "s": "instruction[12]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000014",
+      "instance": "g_decoder.u_m000014"
+    },
+    {
+      "id": "m000015",
+      "s": "instruction[14]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000015",
+      "instance": "g_decoder.u_m000015"
+    },
+    {
+      "id": "m000016",
+      "s": "instruction[15]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000016",
+      "instance": "g_decoder.u_m000016"
+    },
+    {
+      "id": "m000017",
+      "s": "m000014",
+      "i0": "0",
+      "i1": "instruction[13]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000017",
+      "instance": "g_decoder.u_m000017"
+    },
+    {
+      "id": "m000018",
+      "s": "m000017",
+      "i0": "0",
+      "i1": "m000015",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000018",
+      "instance": "g_decoder.u_m000018"
+    },
+    {
+      "id": "m000019",
+      "s": "m000018",
+      "i0": "0",
+      "i1": "m000016",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000019",
+      "instance": "g_decoder.u_m000019"
+    },
+    {
+      "id": "m000020",
+      "s": "instruction[14]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000020",
+      "instance": "g_decoder.u_m000020"
+    },
+    {
+      "id": "m000021",
+      "s": "instruction[15]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000021",
+      "instance": "g_decoder.u_m000021"
+    },
+    {
+      "id": "m000022",
+      "s": "instruction[12]",
+      "i0": "0",
+      "i1": "instruction[13]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000022",
+      "instance": "g_decoder.u_m000022"
+    },
+    {
+      "id": "m000023",
+      "s": "m000022",
+      "i0": "0",
+      "i1": "m000020",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000023",
+      "instance": "g_decoder.u_m000023"
+    },
+    {
+      "id": "m000024",
+      "s": "m000023",
+      "i0": "0",
+      "i1": "m000021",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000024",
+      "instance": "g_decoder.u_m000024"
+    },
+    {
+      "id": "m000025",
+      "s": "instruction[12]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000025",
+      "instance": "g_decoder.u_m000025"
+    },
+    {
+      "id": "m000026",
+      "s": "instruction[13]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000026",
+      "instance": "g_decoder.u_m000026"
+    },
+    {
+      "id": "m000027",
+      "s": "instruction[15]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000027",
+      "instance": "g_decoder.u_m000027"
+    },
+    {
+      "id": "m000028",
+      "s": "m000025",
+      "i0": "0",
+      "i1": "m000026",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000028",
+      "instance": "g_decoder.u_m000028"
+    },
+    {
+      "id": "m000029",
+      "s": "m000028",
+      "i0": "0",
+      "i1": "instruction[14]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000029",
+      "instance": "g_decoder.u_m000029"
+    },
+    {
+      "id": "m000030",
+      "s": "m000029",
+      "i0": "0",
+      "i1": "m000027",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000030",
+      "instance": "g_decoder.u_m000030"
+    },
+    {
+      "id": "m000031",
+      "s": "instruction[13]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000031",
+      "instance": "g_decoder.u_m000031"
+    },
+    {
+      "id": "m000032",
+      "s": "instruction[15]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000032",
+      "instance": "g_decoder.u_m000032"
+    },
+    {
+      "id": "m000033",
+      "s": "instruction[12]",
+      "i0": "0",
+      "i1": "m000031",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000033",
+      "instance": "g_decoder.u_m000033"
+    },
+    {
+      "id": "m000034",
+      "s": "m000033",
+      "i0": "0",
+      "i1": "instruction[14]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000034",
+      "instance": "g_decoder.u_m000034"
+    },
+    {
+      "id": "m000035",
+      "s": "m000034",
+      "i0": "0",
+      "i1": "m000032",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000035",
+      "instance": "g_decoder.u_m000035"
+    },
+    {
+      "id": "m000036",
+      "s": "instruction[12]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000036",
+      "instance": "g_decoder.u_m000036"
+    },
+    {
+      "id": "m000037",
+      "s": "instruction[15]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000037",
+      "instance": "g_decoder.u_m000037"
+    },
+    {
+      "id": "m000038",
+      "s": "m000036",
+      "i0": "0",
+      "i1": "instruction[13]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000038",
+      "instance": "g_decoder.u_m000038"
+    },
+    {
+      "id": "m000039",
+      "s": "m000038",
+      "i0": "0",
+      "i1": "instruction[14]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000039",
+      "instance": "g_decoder.u_m000039"
+    },
+    {
+      "id": "m000040",
+      "s": "m000039",
+      "i0": "0",
+      "i1": "m000037",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000040",
+      "instance": "g_decoder.u_m000040"
+    },
+    {
+      "id": "m000041",
+      "s": "instruction[15]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000041",
+      "instance": "g_decoder.u_m000041"
+    },
+    {
+      "id": "m000042",
+      "s": "instruction[12]",
+      "i0": "0",
+      "i1": "instruction[13]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000042",
+      "instance": "g_decoder.u_m000042"
+    },
+    {
+      "id": "m000043",
+      "s": "m000042",
+      "i0": "0",
+      "i1": "instruction[14]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000043",
+      "instance": "g_decoder.u_m000043"
+    },
+    {
+      "id": "m000044",
+      "s": "m000043",
+      "i0": "0",
+      "i1": "m000041",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000044",
+      "instance": "g_decoder.u_m000044"
+    },
+    {
+      "id": "m000045",
+      "s": "instruction[12]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000045",
+      "instance": "g_decoder.u_m000045"
+    },
+    {
+      "id": "m000046",
+      "s": "instruction[13]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000046",
+      "instance": "g_decoder.u_m000046"
+    },
+    {
+      "id": "m000047",
+      "s": "instruction[14]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000047",
+      "instance": "g_decoder.u_m000047"
+    },
+    {
+      "id": "m000048",
+      "s": "m000045",
+      "i0": "0",
+      "i1": "m000046",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000048",
+      "instance": "g_decoder.u_m000048"
+    },
+    {
+      "id": "m000049",
+      "s": "m000048",
+      "i0": "0",
+      "i1": "m000047",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000049",
+      "instance": "g_decoder.u_m000049"
+    },
+    {
+      "id": "m000050",
+      "s": "m000049",
+      "i0": "0",
+      "i1": "instruction[15]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000050",
+      "instance": "g_decoder.u_m000050"
+    },
+    {
+      "id": "m000051",
+      "s": "instruction[13]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000051",
+      "instance": "g_decoder.u_m000051"
+    },
+    {
+      "id": "m000052",
+      "s": "instruction[14]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000052",
+      "instance": "g_decoder.u_m000052"
+    },
+    {
+      "id": "m000053",
+      "s": "instruction[12]",
+      "i0": "0",
+      "i1": "m000051",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000053",
+      "instance": "g_decoder.u_m000053"
+    },
+    {
+      "id": "m000054",
+      "s": "m000053",
+      "i0": "0",
+      "i1": "m000052",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000054",
+      "instance": "g_decoder.u_m000054"
+    },
+    {
+      "id": "m000055",
+      "s": "m000054",
+      "i0": "0",
+      "i1": "instruction[15]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000055",
+      "instance": "g_decoder.u_m000055"
+    },
+    {
+      "id": "m000056",
+      "s": "instruction[12]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000056",
+      "instance": "g_decoder.u_m000056"
+    },
+    {
+      "id": "m000057",
+      "s": "instruction[14]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000057",
+      "instance": "g_decoder.u_m000057"
+    },
+    {
+      "id": "m000058",
+      "s": "m000056",
+      "i0": "0",
+      "i1": "instruction[13]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000058",
+      "instance": "g_decoder.u_m000058"
+    },
+    {
+      "id": "m000059",
+      "s": "m000058",
+      "i0": "0",
+      "i1": "m000057",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000059",
+      "instance": "g_decoder.u_m000059"
+    },
+    {
+      "id": "m000060",
+      "s": "m000059",
+      "i0": "0",
+      "i1": "instruction[15]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000060",
+      "instance": "g_decoder.u_m000060"
+    },
+    {
+      "id": "m000061",
+      "s": "instruction[14]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000061",
+      "instance": "g_decoder.u_m000061"
+    },
+    {
+      "id": "m000062",
+      "s": "instruction[12]",
+      "i0": "0",
+      "i1": "instruction[13]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000062",
+      "instance": "g_decoder.u_m000062"
+    },
+    {
+      "id": "m000063",
+      "s": "m000062",
+      "i0": "0",
+      "i1": "m000061",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000063",
+      "instance": "g_decoder.u_m000063"
+    },
+    {
+      "id": "m000064",
+      "s": "m000063",
+      "i0": "0",
+      "i1": "instruction[15]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000064",
+      "instance": "g_decoder.u_m000064"
+    },
+    {
+      "id": "m000065",
+      "s": "instruction[12]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000065",
+      "instance": "g_decoder.u_m000065"
+    },
+    {
+      "id": "m000066",
+      "s": "instruction[13]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000066",
+      "instance": "g_decoder.u_m000066"
+    },
+    {
+      "id": "m000067",
+      "s": "m000065",
+      "i0": "0",
+      "i1": "m000066",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000067",
+      "instance": "g_decoder.u_m000067"
+    },
+    {
+      "id": "m000068",
+      "s": "m000067",
+      "i0": "0",
+      "i1": "instruction[14]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000068",
+      "instance": "g_decoder.u_m000068"
+    },
+    {
+      "id": "m000069",
+      "s": "m000068",
+      "i0": "0",
+      "i1": "instruction[15]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000069",
+      "instance": "g_decoder.u_m000069"
+    },
+    {
+      "id": "m000070",
+      "s": "instruction[13]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000070",
+      "instance": "g_decoder.u_m000070"
+    },
+    {
+      "id": "m000071",
+      "s": "instruction[12]",
+      "i0": "0",
+      "i1": "m000070",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000071",
+      "instance": "g_decoder.u_m000071"
+    },
+    {
+      "id": "m000072",
+      "s": "m000071",
+      "i0": "0",
+      "i1": "instruction[14]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000072",
+      "instance": "g_decoder.u_m000072"
+    },
+    {
+      "id": "m000073",
+      "s": "m000072",
+      "i0": "0",
+      "i1": "instruction[15]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000073",
+      "instance": "g_decoder.u_m000073"
+    },
+    {
+      "id": "m000074",
+      "s": "instruction[12]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000074",
+      "instance": "g_decoder.u_m000074"
+    },
+    {
+      "id": "m000075",
+      "s": "m000074",
+      "i0": "0",
+      "i1": "instruction[13]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000075",
+      "instance": "g_decoder.u_m000075"
+    },
+    {
+      "id": "m000076",
+      "s": "m000075",
+      "i0": "0",
+      "i1": "instruction[14]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000076",
+      "instance": "g_decoder.u_m000076"
+    },
+    {
+      "id": "m000077",
+      "s": "m000076",
+      "i0": "0",
+      "i1": "instruction[15]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000077",
+      "instance": "g_decoder.u_m000077"
+    },
+    {
+      "id": "m000078",
+      "s": "instruction[12]",
+      "i0": "0",
+      "i1": "instruction[13]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000078",
+      "instance": "g_decoder.u_m000078"
+    },
+    {
+      "id": "m000079",
+      "s": "m000078",
+      "i0": "0",
+      "i1": "instruction[14]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000079",
+      "instance": "g_decoder.u_m000079"
+    },
+    {
+      "id": "m000080",
+      "s": "m000079",
+      "i0": "0",
+      "i1": "instruction[15]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000080",
+      "instance": "g_decoder.u_m000080"
+    },
+    {
+      "id": "m000081",
+      "s": "instruction[8]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000081",
+      "instance": "g_decoder.u_m000081"
+    },
+    {
+      "id": "m000082",
+      "s": "instruction[9]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000082",
+      "instance": "g_decoder.u_m000082"
+    },
+    {
+      "id": "m000083",
+      "s": "instruction[10]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000083",
+      "instance": "g_decoder.u_m000083"
+    },
+    {
+      "id": "m000084",
+      "s": "instruction[11]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000084",
+      "instance": "g_decoder.u_m000084"
+    },
+    {
+      "id": "m000085",
+      "s": "m000081",
+      "i0": "0",
+      "i1": "m000082",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000085",
+      "instance": "g_decoder.u_m000085"
+    },
+    {
+      "id": "m000086",
+      "s": "m000085",
+      "i0": "0",
+      "i1": "m000083",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000086",
+      "instance": "g_decoder.u_m000086"
+    },
+    {
+      "id": "m000087",
+      "s": "m000086",
+      "i0": "0",
+      "i1": "m000084",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000087",
+      "instance": "g_decoder.u_m000087"
+    },
+    {
+      "id": "m000088",
+      "s": "instruction[9]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000088",
+      "instance": "g_decoder.u_m000088"
+    },
+    {
+      "id": "m000089",
+      "s": "instruction[10]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000089",
+      "instance": "g_decoder.u_m000089"
+    },
+    {
+      "id": "m000090",
+      "s": "instruction[11]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000090",
+      "instance": "g_decoder.u_m000090"
+    },
+    {
+      "id": "m000091",
+      "s": "instruction[8]",
+      "i0": "0",
+      "i1": "m000088",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000091",
+      "instance": "g_decoder.u_m000091"
+    },
+    {
+      "id": "m000092",
+      "s": "m000091",
+      "i0": "0",
+      "i1": "m000089",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000092",
+      "instance": "g_decoder.u_m000092"
+    },
+    {
+      "id": "m000093",
+      "s": "m000092",
+      "i0": "0",
+      "i1": "m000090",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000093",
+      "instance": "g_decoder.u_m000093"
+    },
+    {
+      "id": "m000094",
+      "s": "instruction[8]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000094",
+      "instance": "g_decoder.u_m000094"
+    },
+    {
+      "id": "m000095",
+      "s": "instruction[10]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000095",
+      "instance": "g_decoder.u_m000095"
+    },
+    {
+      "id": "m000096",
+      "s": "instruction[11]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000096",
+      "instance": "g_decoder.u_m000096"
+    },
+    {
+      "id": "m000097",
+      "s": "m000094",
+      "i0": "0",
+      "i1": "instruction[9]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000097",
+      "instance": "g_decoder.u_m000097"
+    },
+    {
+      "id": "m000098",
+      "s": "m000097",
+      "i0": "0",
+      "i1": "m000095",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000098",
+      "instance": "g_decoder.u_m000098"
+    },
+    {
+      "id": "m000099",
+      "s": "m000098",
+      "i0": "0",
+      "i1": "m000096",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000099",
+      "instance": "g_decoder.u_m000099"
+    },
+    {
+      "id": "m000100",
+      "s": "instruction[10]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000100",
+      "instance": "g_decoder.u_m000100"
+    },
+    {
+      "id": "m000101",
+      "s": "instruction[11]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000101",
+      "instance": "g_decoder.u_m000101"
+    },
+    {
+      "id": "m000102",
+      "s": "instruction[8]",
+      "i0": "0",
+      "i1": "instruction[9]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000102",
+      "instance": "g_decoder.u_m000102"
+    },
+    {
+      "id": "m000103",
+      "s": "m000102",
+      "i0": "0",
+      "i1": "m000100",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000103",
+      "instance": "g_decoder.u_m000103"
+    },
+    {
+      "id": "m000104",
+      "s": "m000103",
+      "i0": "0",
+      "i1": "m000101",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000104",
+      "instance": "g_decoder.u_m000104"
+    },
+    {
+      "id": "m000105",
+      "s": "instruction[8]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000105",
+      "instance": "g_decoder.u_m000105"
+    },
+    {
+      "id": "m000106",
+      "s": "instruction[9]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000106",
+      "instance": "g_decoder.u_m000106"
+    },
+    {
+      "id": "m000107",
+      "s": "instruction[11]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000107",
+      "instance": "g_decoder.u_m000107"
+    },
+    {
+      "id": "m000108",
+      "s": "m000105",
+      "i0": "0",
+      "i1": "m000106",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000108",
+      "instance": "g_decoder.u_m000108"
+    },
+    {
+      "id": "m000109",
+      "s": "m000108",
+      "i0": "0",
+      "i1": "instruction[10]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000109",
+      "instance": "g_decoder.u_m000109"
+    },
+    {
+      "id": "m000110",
+      "s": "m000109",
+      "i0": "0",
+      "i1": "m000107",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000110",
+      "instance": "g_decoder.u_m000110"
+    },
+    {
+      "id": "m000111",
+      "s": "instruction[9]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000111",
+      "instance": "g_decoder.u_m000111"
+    },
+    {
+      "id": "m000112",
+      "s": "instruction[11]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000112",
+      "instance": "g_decoder.u_m000112"
+    },
+    {
+      "id": "m000113",
+      "s": "instruction[8]",
+      "i0": "0",
+      "i1": "m000111",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000113",
+      "instance": "g_decoder.u_m000113"
+    },
+    {
+      "id": "m000114",
+      "s": "m000113",
+      "i0": "0",
+      "i1": "instruction[10]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000114",
+      "instance": "g_decoder.u_m000114"
+    },
+    {
+      "id": "m000115",
+      "s": "m000114",
+      "i0": "0",
+      "i1": "m000112",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000115",
+      "instance": "g_decoder.u_m000115"
+    },
+    {
+      "id": "m000116",
+      "s": "instruction[8]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000116",
+      "instance": "g_decoder.u_m000116"
+    },
+    {
+      "id": "m000117",
+      "s": "instruction[11]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000117",
+      "instance": "g_decoder.u_m000117"
+    },
+    {
+      "id": "m000118",
+      "s": "m000116",
+      "i0": "0",
+      "i1": "instruction[9]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000118",
+      "instance": "g_decoder.u_m000118"
+    },
+    {
+      "id": "m000119",
+      "s": "m000118",
+      "i0": "0",
+      "i1": "instruction[10]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000119",
+      "instance": "g_decoder.u_m000119"
+    },
+    {
+      "id": "m000120",
+      "s": "m000119",
+      "i0": "0",
+      "i1": "m000117",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000120",
+      "instance": "g_decoder.u_m000120"
+    },
+    {
+      "id": "m000121",
+      "s": "instruction[11]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000121",
+      "instance": "g_decoder.u_m000121"
+    },
+    {
+      "id": "m000122",
+      "s": "instruction[8]",
+      "i0": "0",
+      "i1": "instruction[9]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000122",
+      "instance": "g_decoder.u_m000122"
+    },
+    {
+      "id": "m000123",
+      "s": "m000122",
+      "i0": "0",
+      "i1": "instruction[10]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000123",
+      "instance": "g_decoder.u_m000123"
+    },
+    {
+      "id": "m000124",
+      "s": "m000123",
+      "i0": "0",
+      "i1": "m000121",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000124",
+      "instance": "g_decoder.u_m000124"
+    },
+    {
+      "id": "m000125",
+      "s": "instruction[8]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000125",
+      "instance": "g_decoder.u_m000125"
+    },
+    {
+      "id": "m000126",
+      "s": "instruction[9]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000126",
+      "instance": "g_decoder.u_m000126"
+    },
+    {
+      "id": "m000127",
+      "s": "instruction[10]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000127",
+      "instance": "g_decoder.u_m000127"
+    },
+    {
+      "id": "m000128",
+      "s": "m000125",
+      "i0": "0",
+      "i1": "m000126",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000128",
+      "instance": "g_decoder.u_m000128"
+    },
+    {
+      "id": "m000129",
+      "s": "m000128",
+      "i0": "0",
+      "i1": "m000127",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000129",
+      "instance": "g_decoder.u_m000129"
+    },
+    {
+      "id": "m000130",
+      "s": "m000129",
+      "i0": "0",
+      "i1": "instruction[11]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000130",
+      "instance": "g_decoder.u_m000130"
+    },
+    {
+      "id": "m000131",
+      "s": "instruction[9]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000131",
+      "instance": "g_decoder.u_m000131"
+    },
+    {
+      "id": "m000132",
+      "s": "instruction[10]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000132",
+      "instance": "g_decoder.u_m000132"
+    },
+    {
+      "id": "m000133",
+      "s": "instruction[8]",
+      "i0": "0",
+      "i1": "m000131",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000133",
+      "instance": "g_decoder.u_m000133"
+    },
+    {
+      "id": "m000134",
+      "s": "m000133",
+      "i0": "0",
+      "i1": "m000132",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000134",
+      "instance": "g_decoder.u_m000134"
+    },
+    {
+      "id": "m000135",
+      "s": "m000134",
+      "i0": "0",
+      "i1": "instruction[11]",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000135",
+      "instance": "g_decoder.u_m000135"
+    },
+    {
+      "id": "m000136",
+      "s": "instruction[0]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000136",
+      "instance": "g_decoder.u_m000136"
+    },
+    {
+      "id": "m000137",
+      "s": "instruction[1]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000137",
+      "instance": "g_decoder.u_m000137"
+    },
+    {
+      "id": "m000138",
+      "s": "instruction[2]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000138",
+      "instance": "g_decoder.u_m000138"
+    },
+    {
+      "id": "m000139",
+      "s": "instruction[3]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000139",
+      "instance": "g_decoder.u_m000139"
+    },
+    {
+      "id": "m000140",
+      "s": "instruction[4]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000140",
+      "instance": "g_decoder.u_m000140"
+    },
+    {
+      "id": "m000141",
+      "s": "instruction[5]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000141",
+      "instance": "g_decoder.u_m000141"
+    },
+    {
+      "id": "m000142",
+      "s": "instruction[6]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000142",
+      "instance": "g_decoder.u_m000142"
+    },
+    {
+      "id": "m000143",
+      "s": "instruction[7]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000143",
+      "instance": "g_decoder.u_m000143"
+    },
+    {
+      "id": "m000144",
+      "s": "m000136",
+      "i0": "0",
+      "i1": "m000137",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000144",
+      "instance": "g_decoder.u_m000144"
+    },
+    {
+      "id": "m000145",
+      "s": "m000144",
+      "i0": "0",
+      "i1": "m000138",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000145",
+      "instance": "g_decoder.u_m000145"
+    },
+    {
+      "id": "m000146",
+      "s": "m000145",
+      "i0": "0",
+      "i1": "m000139",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000146",
+      "instance": "g_decoder.u_m000146"
+    },
+    {
+      "id": "m000147",
+      "s": "m000146",
+      "i0": "0",
+      "i1": "m000140",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000147",
+      "instance": "g_decoder.u_m000147"
+    },
+    {
+      "id": "m000148",
+      "s": "m000147",
+      "i0": "0",
+      "i1": "m000141",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000148",
+      "instance": "g_decoder.u_m000148"
+    },
+    {
+      "id": "m000149",
+      "s": "m000148",
+      "i0": "0",
+      "i1": "m000142",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000149",
+      "instance": "g_decoder.u_m000149"
+    },
+    {
+      "id": "m000150",
+      "s": "m000149",
+      "i0": "0",
+      "i1": "m000143",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000150",
+      "instance": "g_decoder.u_m000150"
+    },
+    {
+      "id": "m000151",
+      "s": "instruction[4]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000151",
+      "instance": "g_decoder.u_m000151"
+    },
+    {
+      "id": "m000152",
+      "s": "instruction[5]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000152",
+      "instance": "g_decoder.u_m000152"
+    },
+    {
+      "id": "m000153",
+      "s": "instruction[6]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000153",
+      "instance": "g_decoder.u_m000153"
+    },
+    {
+      "id": "m000154",
+      "s": "instruction[7]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000154",
+      "instance": "g_decoder.u_m000154"
+    },
+    {
+      "id": "m000155",
+      "s": "m000151",
+      "i0": "0",
+      "i1": "m000152",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000155",
+      "instance": "g_decoder.u_m000155"
+    },
+    {
+      "id": "m000156",
+      "s": "m000155",
+      "i0": "0",
+      "i1": "m000153",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000156",
+      "instance": "g_decoder.u_m000156"
+    },
+    {
+      "id": "m000157",
+      "s": "m000156",
+      "i0": "0",
+      "i1": "m000154",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000157",
+      "instance": "g_decoder.u_m000157"
+    },
+    {
+      "id": "m000158",
+      "s": "instruction[4]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000158",
+      "instance": "g_decoder.u_m000158"
+    },
+    {
+      "id": "m000159",
+      "s": "instruction[5]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000159",
+      "instance": "g_decoder.u_m000159"
+    },
+    {
+      "id": "m000160",
+      "s": "instruction[6]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000160",
+      "instance": "g_decoder.u_m000160"
+    },
+    {
+      "id": "m000161",
+      "s": "instruction[7]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000161",
+      "instance": "g_decoder.u_m000161"
+    },
+    {
+      "id": "m000162",
+      "s": "instruction[8]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000162",
+      "instance": "g_decoder.u_m000162"
+    },
+    {
+      "id": "m000163",
+      "s": "instruction[9]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000163",
+      "instance": "g_decoder.u_m000163"
+    },
+    {
+      "id": "m000164",
+      "s": "instruction[10]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000164",
+      "instance": "g_decoder.u_m000164"
+    },
+    {
+      "id": "m000165",
+      "s": "instruction[11]",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000165",
+      "instance": "g_decoder.u_m000165"
+    },
+    {
+      "id": "m000166",
+      "s": "m000158",
+      "i0": "0",
+      "i1": "m000159",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000166",
+      "instance": "g_decoder.u_m000166"
+    },
+    {
+      "id": "m000167",
+      "s": "m000166",
+      "i0": "0",
+      "i1": "m000160",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000167",
+      "instance": "g_decoder.u_m000167"
+    },
+    {
+      "id": "m000168",
+      "s": "m000167",
+      "i0": "0",
+      "i1": "m000161",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000168",
+      "instance": "g_decoder.u_m000168"
+    },
+    {
+      "id": "m000169",
+      "s": "m000168",
+      "i0": "0",
+      "i1": "m000162",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000169",
+      "instance": "g_decoder.u_m000169"
+    },
+    {
+      "id": "m000170",
+      "s": "m000169",
+      "i0": "0",
+      "i1": "m000163",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000170",
+      "instance": "g_decoder.u_m000170"
+    },
+    {
+      "id": "m000171",
+      "s": "m000170",
+      "i0": "0",
+      "i1": "m000164",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000171",
+      "instance": "g_decoder.u_m000171"
+    },
+    {
+      "id": "m000172",
+      "s": "m000171",
+      "i0": "0",
+      "i1": "m000165",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000172",
+      "instance": "g_decoder.u_m000172"
+    },
+    {
+      "id": "m000173",
+      "s": "m000007",
+      "i0": "0",
+      "i1": "m000172",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000173",
+      "instance": "g_decoder.u_m000173"
+    },
+    {
+      "id": "m000174",
+      "s": "m000013",
+      "i0": "0",
+      "i1": "m000172",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000174",
+      "instance": "g_decoder.u_m000174"
+    },
+    {
+      "id": "m000175",
+      "s": "m000019",
+      "i0": "0",
+      "i1": "m000172",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000175",
+      "instance": "g_decoder.u_m000175"
+    },
+    {
+      "id": "m000176",
+      "s": "m000024",
+      "i0": "0",
+      "i1": "m000172",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000176",
+      "instance": "g_decoder.u_m000176"
+    },
+    {
+      "id": "m000177",
+      "s": "m000030",
+      "i0": "0",
+      "i1": "m000172",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000177",
+      "instance": "g_decoder.u_m000177"
+    },
+    {
+      "id": "m000178",
+      "s": "m000035",
+      "i0": "0",
+      "i1": "m000172",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000178",
+      "instance": "g_decoder.u_m000178"
+    },
+    {
+      "id": "m000179",
+      "s": "m000040",
+      "i0": "0",
+      "i1": "m000172",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000179",
+      "instance": "g_decoder.u_m000179"
+    },
+    {
+      "id": "m000180",
+      "s": "m000044",
+      "i0": "0",
+      "i1": "m000150",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000180",
+      "instance": "g_decoder.u_m000180"
+    },
+    {
+      "id": "m000181",
+      "s": "m000180",
+      "i0": "0",
+      "i1": "m000087",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000181",
+      "instance": "g_decoder.u_m000181"
+    },
+    {
+      "id": "m000182",
+      "s": "m000180",
+      "i0": "0",
+      "i1": "m000093",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000182",
+      "instance": "g_decoder.u_m000182"
+    },
+    {
+      "id": "m000183",
+      "s": "m000180",
+      "i0": "0",
+      "i1": "m000099",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000183",
+      "instance": "g_decoder.u_m000183"
+    },
+    {
+      "id": "m000184",
+      "s": "m000050",
+      "i0": "m000055",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000184",
+      "instance": "g_decoder.u_m000184"
+    },
+    {
+      "id": "m000185",
+      "s": "m000050",
+      "i0": "m000150",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000185",
+      "instance": "g_decoder.u_m000185"
+    },
+    {
+      "id": "m000186",
+      "s": "m000184",
+      "i0": "0",
+      "i1": "m000185",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000186",
+      "instance": "g_decoder.u_m000186"
+    },
+    {
+      "id": "m000187",
+      "s": "m000087",
+      "i0": "m000093",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000187",
+      "instance": "g_decoder.u_m000187"
+    },
+    {
+      "id": "m000188",
+      "s": "m000187",
+      "i0": "m000099",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000188",
+      "instance": "g_decoder.u_m000188"
+    },
+    {
+      "id": "m000189",
+      "s": "m000188",
+      "i0": "m000104",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000189",
+      "instance": "g_decoder.u_m000189"
+    },
+    {
+      "id": "m000190",
+      "s": "m000189",
+      "i0": "m000110",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000190",
+      "instance": "g_decoder.u_m000190"
+    },
+    {
+      "id": "m000191",
+      "s": "m000190",
+      "i0": "m000115",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000191",
+      "instance": "g_decoder.u_m000191"
+    },
+    {
+      "id": "m000192",
+      "s": "m000191",
+      "i0": "m000120",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000192",
+      "instance": "g_decoder.u_m000192"
+    },
+    {
+      "id": "m000193",
+      "s": "m000192",
+      "i0": "m000124",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000193",
+      "instance": "g_decoder.u_m000193"
+    },
+    {
+      "id": "m000194",
+      "s": "m000193",
+      "i0": "m000130",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000194",
+      "instance": "g_decoder.u_m000194"
+    },
+    {
+      "id": "m000195",
+      "s": "m000194",
+      "i0": "m000135",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000195",
+      "instance": "g_decoder.u_m000195"
+    },
+    {
+      "id": "m000196",
+      "s": "m000186",
+      "i0": "0",
+      "i1": "m000195",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000196",
+      "instance": "g_decoder.u_m000196"
+    },
+    {
+      "id": "m000197",
+      "s": "m000196",
+      "i0": "0",
+      "i1": "m000087",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000197",
+      "instance": "g_decoder.u_m000197"
+    },
+    {
+      "id": "m000198",
+      "s": "m000173",
+      "i0": "m000197",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000198",
+      "instance": "g_decoder.u_m000198"
+    },
+    {
+      "id": "m000199",
+      "s": "m000196",
+      "i0": "0",
+      "i1": "m000093",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000199",
+      "instance": "g_decoder.u_m000199"
+    },
+    {
+      "id": "m000200",
+      "s": "m000196",
+      "i0": "0",
+      "i1": "m000099",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000200",
+      "instance": "g_decoder.u_m000200"
+    },
+    {
+      "id": "m000201",
+      "s": "m000174",
+      "i0": "m000200",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000201",
+      "instance": "g_decoder.u_m000201"
+    },
+    {
+      "id": "m000202",
+      "s": "m000196",
+      "i0": "0",
+      "i1": "m000104",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000202",
+      "instance": "g_decoder.u_m000202"
+    },
+    {
+      "id": "m000203",
+      "s": "m000175",
+      "i0": "m000202",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000203",
+      "instance": "g_decoder.u_m000203"
+    },
+    {
+      "id": "m000204",
+      "s": "m000196",
+      "i0": "0",
+      "i1": "m000110",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000204",
+      "instance": "g_decoder.u_m000204"
+    },
+    {
+      "id": "m000205",
+      "s": "m000176",
+      "i0": "m000204",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000205",
+      "instance": "g_decoder.u_m000205"
+    },
+    {
+      "id": "m000206",
+      "s": "m000196",
+      "i0": "0",
+      "i1": "m000115",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000206",
+      "instance": "g_decoder.u_m000206"
+    },
+    {
+      "id": "m000207",
+      "s": "m000177",
+      "i0": "m000206",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000207",
+      "instance": "g_decoder.u_m000207"
+    },
+    {
+      "id": "m000208",
+      "s": "m000196",
+      "i0": "0",
+      "i1": "m000120",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000208",
+      "instance": "g_decoder.u_m000208"
+    },
+    {
+      "id": "m000209",
+      "s": "m000196",
+      "i0": "0",
+      "i1": "m000124",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000209",
+      "instance": "g_decoder.u_m000209"
+    },
+    {
+      "id": "m000210",
+      "s": "m000178",
+      "i0": "m000209",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000210",
+      "instance": "g_decoder.u_m000210"
+    },
+    {
+      "id": "m000211",
+      "s": "m000196",
+      "i0": "0",
+      "i1": "m000130",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000211",
+      "instance": "g_decoder.u_m000211"
+    },
+    {
+      "id": "m000212",
+      "s": "m000179",
+      "i0": "m000211",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000212",
+      "instance": "g_decoder.u_m000212"
+    },
+    {
+      "id": "m000213",
+      "s": "m000196",
+      "i0": "0",
+      "i1": "m000135",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000213",
+      "instance": "g_decoder.u_m000213"
+    },
+    {
+      "id": "m000214",
+      "s": "m000060",
+      "i0": "0",
+      "i1": "m000157",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000214",
+      "instance": "g_decoder.u_m000214"
+    },
+    {
+      "id": "m000215",
+      "s": "m000214",
+      "i0": "0",
+      "i1": "m000087",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000215",
+      "instance": "g_decoder.u_m000215"
+    },
+    {
+      "id": "m000216",
+      "s": "m000214",
+      "i0": "0",
+      "i1": "m000093",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000216",
+      "instance": "g_decoder.u_m000216"
+    },
+    {
+      "id": "m000217",
+      "s": "m000214",
+      "i0": "0",
+      "i1": "m000099",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000217",
+      "instance": "g_decoder.u_m000217"
+    },
+    {
+      "id": "m000218",
+      "s": "m000217",
+      "i0": "0",
+      "i1": "m000150",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000218",
+      "instance": "g_decoder.u_m000218"
+    },
+    {
+      "id": "m000219",
+      "s": "m000214",
+      "i0": "0",
+      "i1": "m000104",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000219",
+      "instance": "g_decoder.u_m000219"
+    },
+    {
+      "id": "m000220",
+      "s": "m000219",
+      "i0": "0",
+      "i1": "m000150",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000220",
+      "instance": "g_decoder.u_m000220"
+    },
+    {
+      "id": "m000221",
+      "s": "m000214",
+      "i0": "0",
+      "i1": "m000110",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000221",
+      "instance": "g_decoder.u_m000221"
+    },
+    {
+      "id": "m000222",
+      "s": "m000221",
+      "i0": "0",
+      "i1": "m000150",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000222",
+      "instance": "g_decoder.u_m000222"
+    },
+    {
+      "id": "m000223",
+      "s": "m000214",
+      "i0": "0",
+      "i1": "m000115",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000223",
+      "instance": "g_decoder.u_m000223"
+    },
+    {
+      "id": "m000224",
+      "s": "m000223",
+      "i0": "0",
+      "i1": "m000150",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000224",
+      "instance": "g_decoder.u_m000224"
+    },
+    {
+      "id": "m000225",
+      "s": "m000214",
+      "i0": "0",
+      "i1": "m000120",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000225",
+      "instance": "g_decoder.u_m000225"
+    },
+    {
+      "id": "m000226",
+      "s": "m000225",
+      "i0": "0",
+      "i1": "m000150",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000226",
+      "instance": "g_decoder.u_m000226"
+    },
+    {
+      "id": "m000227",
+      "s": "m000077",
+      "i0": "0",
+      "i1": "m000150",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000227",
+      "instance": "g_decoder.u_m000227"
+    },
+    {
+      "id": "m000228",
+      "s": "m000227",
+      "i0": "0",
+      "i1": "m000087",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000228",
+      "instance": "g_decoder.u_m000228"
+    },
+    {
+      "id": "m000229",
+      "s": "m000077",
+      "i0": "0",
+      "i1": "m000150",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000229",
+      "instance": "g_decoder.u_m000229"
+    },
+    {
+      "id": "m000230",
+      "s": "m000229",
+      "i0": "0",
+      "i1": "m000093",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000230",
+      "instance": "g_decoder.u_m000230"
+    },
+    {
+      "id": "m000231",
+      "s": "m000077",
+      "i0": "0",
+      "i1": "m000150",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000231",
+      "instance": "g_decoder.u_m000231"
+    },
+    {
+      "id": "m000232",
+      "s": "m000231",
+      "i0": "0",
+      "i1": "m000099",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000232",
+      "instance": "g_decoder.u_m000232"
+    },
+    {
+      "id": "m000233",
+      "s": "m000080",
+      "i0": "0",
+      "i1": "m000150",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000233",
+      "instance": "g_decoder.u_m000233"
+    },
+    {
+      "id": "m000234",
+      "s": "m000233",
+      "i0": "0",
+      "i1": "m000087",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000234",
+      "instance": "g_decoder.u_m000234"
+    },
+    {
+      "id": "m000235",
+      "s": "m000080",
+      "i0": "0",
+      "i1": "m000150",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000235",
+      "instance": "g_decoder.u_m000235"
+    },
+    {
+      "id": "m000236",
+      "s": "m000235",
+      "i0": "0",
+      "i1": "m000093",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000236",
+      "instance": "g_decoder.u_m000236"
+    },
+    {
+      "id": "m000237",
+      "s": "m000198",
+      "i0": "m000201",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000237",
+      "instance": "g_decoder.u_m000237"
+    },
+    {
+      "id": "m000238",
+      "s": "m000237",
+      "i0": "m000203",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000238",
+      "instance": "g_decoder.u_m000238"
+    },
+    {
+      "id": "m000239",
+      "s": "m000238",
+      "i0": "m000205",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000239",
+      "instance": "g_decoder.u_m000239"
+    },
+    {
+      "id": "m000240",
+      "s": "m000239",
+      "i0": "m000207",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000240",
+      "instance": "g_decoder.u_m000240"
+    },
+    {
+      "id": "m000241",
+      "s": "m000240",
+      "i0": "m000208",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000241",
+      "instance": "g_decoder.u_m000241"
+    },
+    {
+      "id": "m000242",
+      "s": "m000241",
+      "i0": "m000210",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000242",
+      "instance": "g_decoder.u_m000242"
+    },
+    {
+      "id": "m000243",
+      "s": "m000242",
+      "i0": "m000212",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000243",
+      "instance": "g_decoder.u_m000243"
+    },
+    {
+      "id": "m000244",
+      "s": "m000243",
+      "i0": "m000213",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000244",
+      "instance": "g_decoder.u_m000244"
+    },
+    {
+      "id": "m000245",
+      "s": "m000244",
+      "i0": "m000183",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000245",
+      "instance": "g_decoder.u_m000245"
+    },
+    {
+      "id": "m000246",
+      "s": "m000245",
+      "i0": "m000181",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000246",
+      "instance": "g_decoder.u_m000246"
+    },
+    {
+      "id": "m000247",
+      "s": "m000246",
+      "i0": "m000182",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000247",
+      "instance": "g_decoder.u_m000247"
+    },
+    {
+      "id": "m000248",
+      "s": "m000247",
+      "i0": "m000199",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000248",
+      "instance": "g_decoder.u_m000248"
+    },
+    {
+      "id": "m000249",
+      "s": "m000248",
+      "i0": "m000215",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000249",
+      "instance": "g_decoder.u_m000249"
+    },
+    {
+      "id": "m000250",
+      "s": "m000249",
+      "i0": "m000216",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000250",
+      "instance": "g_decoder.u_m000250"
+    },
+    {
+      "id": "m000251",
+      "s": "m000250",
+      "i0": "m000218",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000251",
+      "instance": "g_decoder.u_m000251"
+    },
+    {
+      "id": "m000252",
+      "s": "m000251",
+      "i0": "m000220",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000252",
+      "instance": "g_decoder.u_m000252"
+    },
+    {
+      "id": "m000253",
+      "s": "m000252",
+      "i0": "m000222",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000253",
+      "instance": "g_decoder.u_m000253"
+    },
+    {
+      "id": "m000254",
+      "s": "m000253",
+      "i0": "m000224",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000254",
+      "instance": "g_decoder.u_m000254"
+    },
+    {
+      "id": "m000255",
+      "s": "m000254",
+      "i0": "m000226",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000255",
+      "instance": "g_decoder.u_m000255"
+    },
+    {
+      "id": "m000256",
+      "s": "m000255",
+      "i0": "m000064",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000256",
+      "instance": "g_decoder.u_m000256"
+    },
+    {
+      "id": "m000257",
+      "s": "m000256",
+      "i0": "m000069",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000257",
+      "instance": "g_decoder.u_m000257"
+    },
+    {
+      "id": "m000258",
+      "s": "m000257",
+      "i0": "m000073",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000258",
+      "instance": "g_decoder.u_m000258"
+    },
+    {
+      "id": "m000259",
+      "s": "m000258",
+      "i0": "m000228",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000259",
+      "instance": "g_decoder.u_m000259"
+    },
+    {
+      "id": "m000260",
+      "s": "m000259",
+      "i0": "m000230",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000260",
+      "instance": "g_decoder.u_m000260"
+    },
+    {
+      "id": "m000261",
+      "s": "m000260",
+      "i0": "m000232",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000261",
+      "instance": "g_decoder.u_m000261"
+    },
+    {
+      "id": "m000262",
+      "s": "m000261",
+      "i0": "m000234",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000262",
+      "instance": "g_decoder.u_m000262"
+    },
+    {
+      "id": "m000263",
+      "s": "m000262",
+      "i0": "m000236",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000263",
+      "instance": "g_decoder.u_m000263"
+    },
+    {
+      "id": "m000264",
+      "s": "m000196",
+      "i0": "0",
+      "i1": "m000055",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000264",
+      "instance": "g_decoder.u_m000264"
+    },
+    {
+      "id": "m000265",
+      "s": "m000263",
+      "i0": "1",
+      "i1": "0",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000265",
+      "instance": "g_decoder.u_m000265"
+    },
+    {
+      "id": "m000266",
+      "s": "m000201",
+      "i0": "m000205",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000266",
+      "instance": "g_decoder.u_m000266"
+    },
+    {
+      "id": "m000267",
+      "s": "m000266",
+      "i0": "m000208",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000267",
+      "instance": "g_decoder.u_m000267"
+    },
+    {
+      "id": "m000268",
+      "s": "m000267",
+      "i0": "m000212",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000268",
+      "instance": "g_decoder.u_m000268"
+    },
+    {
+      "id": "m000269",
+      "s": "m000268",
+      "i0": "m000183",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000269",
+      "instance": "g_decoder.u_m000269"
+    },
+    {
+      "id": "m000270",
+      "s": "m000269",
+      "i0": "m000182",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000270",
+      "instance": "g_decoder.u_m000270"
+    },
+    {
+      "id": "m000271",
+      "s": "m000270",
+      "i0": "m000215",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000271",
+      "instance": "g_decoder.u_m000271"
+    },
+    {
+      "id": "m000272",
+      "s": "m000271",
+      "i0": "m000218",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000272",
+      "instance": "g_decoder.u_m000272"
+    },
+    {
+      "id": "m000273",
+      "s": "m000272",
+      "i0": "m000222",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000273",
+      "instance": "g_decoder.u_m000273"
+    },
+    {
+      "id": "m000274",
+      "s": "m000273",
+      "i0": "m000226",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000274",
+      "instance": "g_decoder.u_m000274"
+    },
+    {
+      "id": "m000275",
+      "s": "m000274",
+      "i0": "m000069",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000275",
+      "instance": "g_decoder.u_m000275"
+    },
+    {
+      "id": "m000276",
+      "s": "m000275",
+      "i0": "m000228",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000276",
+      "instance": "g_decoder.u_m000276"
+    },
+    {
+      "id": "m000277",
+      "s": "m000276",
+      "i0": "m000232",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000277",
+      "instance": "g_decoder.u_m000277"
+    },
+    {
+      "id": "m000278",
+      "s": "m000277",
+      "i0": "m000236",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000278",
+      "instance": "g_decoder.u_m000278"
+    },
+    {
+      "id": "m000279",
+      "s": "m000265",
+      "i0": "m000278",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000279",
+      "instance": "g_decoder.u_m000279"
+    },
+    {
+      "id": "m000280",
+      "s": "m000203",
+      "i0": "m000205",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000280",
+      "instance": "g_decoder.u_m000280"
+    },
+    {
+      "id": "m000281",
+      "s": "m000280",
+      "i0": "m000210",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000281",
+      "instance": "g_decoder.u_m000281"
+    },
+    {
+      "id": "m000282",
+      "s": "m000281",
+      "i0": "m000212",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000282",
+      "instance": "g_decoder.u_m000282"
+    },
+    {
+      "id": "m000283",
+      "s": "m000282",
+      "i0": "m000181",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000283",
+      "instance": "g_decoder.u_m000283"
+    },
+    {
+      "id": "m000284",
+      "s": "m000283",
+      "i0": "m000182",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000284",
+      "instance": "g_decoder.u_m000284"
+    },
+    {
+      "id": "m000285",
+      "s": "m000284",
+      "i0": "m000216",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000285",
+      "instance": "g_decoder.u_m000285"
+    },
+    {
+      "id": "m000286",
+      "s": "m000285",
+      "i0": "m000218",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000286",
+      "instance": "g_decoder.u_m000286"
+    },
+    {
+      "id": "m000287",
+      "s": "m000286",
+      "i0": "m000224",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000287",
+      "instance": "g_decoder.u_m000287"
+    },
+    {
+      "id": "m000288",
+      "s": "m000287",
+      "i0": "m000226",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000288",
+      "instance": "g_decoder.u_m000288"
+    },
+    {
+      "id": "m000289",
+      "s": "m000288",
+      "i0": "m000073",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000289",
+      "instance": "g_decoder.u_m000289"
+    },
+    {
+      "id": "m000290",
+      "s": "m000289",
+      "i0": "m000228",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000290",
+      "instance": "g_decoder.u_m000290"
+    },
+    {
+      "id": "m000291",
+      "s": "m000290",
+      "i0": "m000234",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000291",
+      "instance": "g_decoder.u_m000291"
+    },
+    {
+      "id": "m000292",
+      "s": "m000291",
+      "i0": "m000236",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000292",
+      "instance": "g_decoder.u_m000292"
+    },
+    {
+      "id": "m000293",
+      "s": "m000265",
+      "i0": "m000292",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000293",
+      "instance": "g_decoder.u_m000293"
+    },
+    {
+      "id": "m000294",
+      "s": "m000207",
+      "i0": "m000208",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000294",
+      "instance": "g_decoder.u_m000294"
+    },
+    {
+      "id": "m000295",
+      "s": "m000294",
+      "i0": "m000210",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000295",
+      "instance": "g_decoder.u_m000295"
+    },
+    {
+      "id": "m000296",
+      "s": "m000295",
+      "i0": "m000212",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000296",
+      "instance": "g_decoder.u_m000296"
+    },
+    {
+      "id": "m000297",
+      "s": "m000296",
+      "i0": "m000199",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000297",
+      "instance": "g_decoder.u_m000297"
+    },
+    {
+      "id": "m000298",
+      "s": "m000297",
+      "i0": "m000215",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000298",
+      "instance": "g_decoder.u_m000298"
+    },
+    {
+      "id": "m000299",
+      "s": "m000298",
+      "i0": "m000216",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000299",
+      "instance": "g_decoder.u_m000299"
+    },
+    {
+      "id": "m000300",
+      "s": "m000299",
+      "i0": "m000218",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000300",
+      "instance": "g_decoder.u_m000300"
+    },
+    {
+      "id": "m000301",
+      "s": "m000300",
+      "i0": "m000064",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000301",
+      "instance": "g_decoder.u_m000301"
+    },
+    {
+      "id": "m000302",
+      "s": "m000301",
+      "i0": "m000069",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000302",
+      "instance": "g_decoder.u_m000302"
+    },
+    {
+      "id": "m000303",
+      "s": "m000302",
+      "i0": "m000073",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000303",
+      "instance": "g_decoder.u_m000303"
+    },
+    {
+      "id": "m000304",
+      "s": "m000303",
+      "i0": "m000228",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000304",
+      "instance": "g_decoder.u_m000304"
+    },
+    {
+      "id": "m000305",
+      "s": "m000265",
+      "i0": "m000304",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000305",
+      "instance": "g_decoder.u_m000305"
+    },
+    {
+      "id": "m000306",
+      "s": "m000213",
+      "i0": "m000183",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000306",
+      "instance": "g_decoder.u_m000306"
+    },
+    {
+      "id": "m000307",
+      "s": "m000306",
+      "i0": "m000181",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000307",
+      "instance": "g_decoder.u_m000307"
+    },
+    {
+      "id": "m000308",
+      "s": "m000307",
+      "i0": "m000182",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000308",
+      "instance": "g_decoder.u_m000308"
+    },
+    {
+      "id": "m000309",
+      "s": "m000308",
+      "i0": "m000199",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000309",
+      "instance": "g_decoder.u_m000309"
+    },
+    {
+      "id": "m000310",
+      "s": "m000309",
+      "i0": "m000215",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000310",
+      "instance": "g_decoder.u_m000310"
+    },
+    {
+      "id": "m000311",
+      "s": "m000310",
+      "i0": "m000216",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000311",
+      "instance": "g_decoder.u_m000311"
+    },
+    {
+      "id": "m000312",
+      "s": "m000311",
+      "i0": "m000218",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000312",
+      "instance": "g_decoder.u_m000312"
+    },
+    {
+      "id": "m000313",
+      "s": "m000312",
+      "i0": "m000230",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000313",
+      "instance": "g_decoder.u_m000313"
+    },
+    {
+      "id": "m000314",
+      "s": "m000313",
+      "i0": "m000232",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000314",
+      "instance": "g_decoder.u_m000314"
+    },
+    {
+      "id": "m000315",
+      "s": "m000314",
+      "i0": "m000234",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000315",
+      "instance": "g_decoder.u_m000315"
+    },
+    {
+      "id": "m000316",
+      "s": "m000315",
+      "i0": "m000236",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000316",
+      "instance": "g_decoder.u_m000316"
+    },
+    {
+      "id": "m000317",
+      "s": "m000265",
+      "i0": "m000316",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000317",
+      "instance": "g_decoder.u_m000317"
+    },
+    {
+      "id": "m000318",
+      "s": "m000220",
+      "i0": "m000222",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000318",
+      "instance": "g_decoder.u_m000318"
+    },
+    {
+      "id": "m000319",
+      "s": "m000318",
+      "i0": "m000224",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000319",
+      "instance": "g_decoder.u_m000319"
+    },
+    {
+      "id": "m000320",
+      "s": "m000319",
+      "i0": "m000226",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000320",
+      "instance": "g_decoder.u_m000320"
+    },
+    {
+      "id": "m000321",
+      "s": "m000320",
+      "i0": "m000064",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000321",
+      "instance": "g_decoder.u_m000321"
+    },
+    {
+      "id": "m000322",
+      "s": "m000321",
+      "i0": "m000069",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000322",
+      "instance": "g_decoder.u_m000322"
+    },
+    {
+      "id": "m000323",
+      "s": "m000322",
+      "i0": "m000073",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000323",
+      "instance": "g_decoder.u_m000323"
+    },
+    {
+      "id": "m000324",
+      "s": "m000323",
+      "i0": "m000228",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000324",
+      "instance": "g_decoder.u_m000324"
+    },
+    {
+      "id": "m000325",
+      "s": "m000324",
+      "i0": "m000230",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000325",
+      "instance": "g_decoder.u_m000325"
+    },
+    {
+      "id": "m000326",
+      "s": "m000325",
+      "i0": "m000232",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000326",
+      "instance": "g_decoder.u_m000326"
+    },
+    {
+      "id": "m000327",
+      "s": "m000326",
+      "i0": "m000234",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000327",
+      "instance": "g_decoder.u_m000327"
+    },
+    {
+      "id": "m000328",
+      "s": "m000327",
+      "i0": "m000236",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000328",
+      "instance": "g_decoder.u_m000328"
+    },
+    {
+      "id": "m000329",
+      "s": "m000265",
+      "i0": "m000328",
+      "i1": "1",
+      "group": "decoder",
+      "category": "comb",
+      "y": "m000329",
+      "instance": "g_decoder.u_m000329"
+    }
+  ],
+  "physical_mux_count": 329,
+  "pruned_nodes": 0,
+  "ff_bits": 0,
+  "source_sha256": "6547f9ef2932484fa137288df6aec5125254c11e4371c1e5f25a790c202ed59a",
+  "group_counts": {
+    "decoder": 329
+  },
+  "category_counts": {
+    "comb": 329
+  },
+  "shared_requests": [],
+  "pruned_shared_requests": 0,
+  "simplifications": [
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "m000001",
+      "result": "m000001",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "instruction[12]",
+      "result": "instruction[12]",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "m000014",
+      "result": "m000014",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "instruction[12]",
+      "result": "instruction[12]",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "m000025",
+      "result": "m000025",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "instruction[12]",
+      "result": "instruction[12]",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "m000036",
+      "result": "m000036",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "instruction[12]",
+      "result": "instruction[12]",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "m000045",
+      "result": "m000045",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "instruction[12]",
+      "result": "instruction[12]",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "m000056",
+      "result": "m000056",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "instruction[12]",
+      "result": "instruction[12]",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "m000065",
+      "result": "m000065",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "instruction[12]",
+      "result": "instruction[12]",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "m000074",
+      "result": "m000074",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "instruction[12]",
+      "result": "instruction[12]",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "m000081",
+      "result": "m000081",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "instruction[8]",
+      "result": "instruction[8]",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "m000094",
+      "result": "m000094",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "instruction[8]",
+      "result": "instruction[8]",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "m000105",
+      "result": "m000105",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "instruction[8]",
+      "result": "instruction[8]",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "m000116",
+      "result": "m000116",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "instruction[8]",
+      "result": "instruction[8]",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "m000125",
+      "result": "m000125",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "instruction[8]",
+      "result": "instruction[8]",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "m000136",
+      "result": "m000136",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "m000151",
+      "result": "m000151",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "m000158",
+      "result": "m000158",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 0,
+      "i0": "m000087",
+      "i1": 1,
+      "result": "m000087",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 0,
+      "i0": "m000199",
+      "i1": 1,
+      "result": "m000199",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 0,
+      "i0": "m000208",
+      "i1": 1,
+      "result": "m000208",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 0,
+      "i0": "m000213",
+      "i1": 1,
+      "result": "m000213",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 0,
+      "i0": "m000198",
+      "i1": 1,
+      "result": "m000198",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 0,
+      "i0": "m000201",
+      "i1": 1,
+      "result": "m000201",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 0,
+      "i0": "m000203",
+      "i1": 1,
+      "result": "m000203",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 0,
+      "i0": "m000207",
+      "i1": 1,
+      "result": "m000207",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 0,
+      "i0": "m000213",
+      "i1": 1,
+      "result": "m000213",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": 0,
+      "i0": "m000220",
+      "i1": 1,
+      "result": "m000220",
+      "reason": "constant_selector",
+      "group": "decoder",
+      "category": "comb"
+    },
+    {
+      "s": "m000265",
+      "i0": 0,
+      "i1": 1,
+      "result": "m000265",
+      "reason": "direct_selector_wire",
+      "group": "decoder",
+      "category": "comb"
+    }
+  ],
+  "observation_validity": "All outputs combinationally specified."
+}

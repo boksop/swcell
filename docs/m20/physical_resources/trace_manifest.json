@@ -1,0 +1,16 @@
+{
+  "trace_directory": "/home/boksop/swcell/build/m20_300/v21/regression_r3/games",
+  "trace_files": {
+    "build/m20_300/v21/regression_r3/games/metadata.json": "360ae0a2a02133a80014e45da517cd84379875f3a6af84e7526577e1e78c5bf9",
+    "build/m20_300/v21/regression_r3/games/pong_boot.keys.txt": "e22cc744b742b57f666b2b3b702a41ba2f7ea7036046c25107a534240ddab3a1",
+    "build/m20_300/v21/regression_r3/games/pong_boot.rtl.csv": "dd9fb32eb89e10d015cbf3925a4a405cb75bdfca6e5138de46411fc445a7ce6e",
+    "build/m20_300/v21/regression_r3/games/pong_continuous_64.keys.txt": "34b31e959b85a608dbff30e66b1905f48f583df0e83cde0dd9367fa9d17c0c7d",
+    "build/m20_300/v21/regression_r3/games/pong_continuous_64.rtl.csv": "7e6d95da23b8ecd3a279d7b9fe2eb56b36ad900a836bf995ccfdd7410cb7d425",
+    "build/m20_300/v21/regression_r3/games/snake_boot.keys.txt": "64b91109b5172d5cbfda348ad577bb72d6014f65c7b793d452949464612043c4",
+    "build/m20_300/v21/regression_r3/games/snake_boot.rtl.csv": "113e0786050895c7dc3ad49f87389b3578ca114125bc75020ae6c96ffba4db28",
+    "build/m20_300/v21/regression_r3/games/snake_continuous_64.keys.txt": "aa19ad19517eb6b47aa5887d2d5af19fc2200d27ac859defca4e6c78578db2f0",
+    "build/m20_300/v21/regression_r3/games/snake_continuous_64.rtl.csv": "e0542c0b7bda0bc3fc23916e5a927a07396d32033d0aae43e2970449a3bef4db"
+  },
+  "netlist_sha256": "7a9b0fd7eb6358b5a27d807eb2a44a00686ef461c50af8a5393010be01739427",
+  "co_launch_witness_count": 79
+}

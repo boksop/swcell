@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "classification": "DATASHEET_FACTS_AND_EXPLICIT_ENGINEERING_ASSUMPTIONS_NOT_MEASUREMENT",
+  "devices": {
+    "74LVC1G157GW,125": {
+      "manufacturer": "Nexperia",
+      "source": "https://assets.nexperia.com/documents/data-sheet/74LVC1G157.pdf",
+      "revision": "12 / 2023-08-15",
+      "pages": "2-8",
+      "vcc_range_v": [
+        1.65,
+        5.5
+      ],
+      "timing_vcc_v": [
+        3.0,
+        3.6
+      ],
+      "temperature_c": [
+        -40,
+        85
+      ],
+      "extended_temperature_c": [
+        -40,
+        125
+      ],
+      "load_pf": 50,
+      "load_ohm": 500,
+      "input_transition_max_ns": 2.5,
+      "data_ns": {
+        "min": 1.0,
+        "typ": 2.7,
+        "max": 5.0,
+        "max_125c": 6.3
+      },
+      "select_ns": {
+        "min": 1.0,
+        "typ": 2.9,
+        "max": 5.0,
+        "max_125c": 6.3
+      },
+      "tcd_guaranteed_min_ns": null,
+      "cin_typ_pf": 2.5,
+      "cin_max_pf": null,
+      "cpd_typ_pf": 18,
+      "icc_max_ua": 4,
+      "vih_min_v": 2.0,
+      "vil_max_v": 0.8,
+      "voh_min_v_at_3v_minus24ma": 2.3,
+      "vol_max_v_at_3v_24ma": 0.55,
+      "voh_min_v_at_3v_minus24ma_125c": 2.0,
+      "vol_max_v_at_3v_24ma_125c": 0.8,
+      "ioh_iol_test_ma": 24,
+      "input_leak_max_ua": 1,
+      "input_slew_max_ns_per_v": 10,
+      "package": "TSSOP6 / SOT363-2 / SC-88A",
+      "pin_order": "1 I1,2 GND,3 I0,4 Y,5 VCC,6 S",
+      "body_mm_estimate": [
+        2.0,
+        1.25
+      ],
+      "body_dimension_status": "nominal planning; use original outline for land-pattern release",
+      "setup_ns": null,
+      "hold_ns": null,
+      "clock_to_q_ns": null,
+      "min_high_ns": null,
+      "min_low_ns": null
+    },
+    "NC7SV157P6X": {
+      "manufacturer": "onsemi",
+      "source": "https://www.onsemi.com/download/data-sheet/pdf/nc7sv157-d.pdf",
+      "revision": "3 / 2024-01",
+      "pages": "3-4,6,8",
+      "vcc_range_v": [
+        0.9,
+        3.6
+      ],
+      "timing_vcc_v": [
+        2.7,
+        3.6
+      ],
+      "temperature_c": [
+        -40,
+        85
+      ],
+      "load_pf": 30,
+      "load_ohm": 500,
+      "input_transition_max_ns": 3.0,
+      "data_ns": {
+        "min": null,
+        "typ": 1.9,
+        "max": 3.6
+      },
+      "select_ns": {
+        "min": null,
+        "typ": 1.9,
+        "max": 3.6
+      },
+      "tcd_guaranteed_min_ns": null,
+      "cin_typ_pf": 2.0,
+      "cin_max_pf": null,
+      "cin_condition": "VCC=0V",
+      "cpd_typ_pf": 10,
+      "icc_max_ua": 0.9,
+      "vih_min_v": 2.0,
+      "vil_max_v": 0.8,
+      "voh_min_v_at_2p7_to_3p6_minus24ma": 2.2,
+      "vol_max_v_at_2p7_to_3p6_24ma": 0.55,
+      "ioh_iol_test_ma": 24,
+      "input_leak_max_ua": 0.5,
+      "input_slew_max_ns_per_v": 10,
+      "package": "SC-88A; CASE419B-02",
+      "pin_order": "1 I1,2 GND,3 I0,4 Z,5 VCC,6 S",
+      "body_mm_estimate": [
+        2.0,
+        1.25
+      ],
+      "body_dimension_status": "planning only; original outline required",
+      "setup_ns": null,
+      "hold_ns": null,
+      "clock_to_q_ns": null,
+      "min_high_ns": null,
+      "min_low_ns": null
+    },
+    "NC7SZ157P6X": {
+      "manufacturer": "onsemi",
+      "source": "https://www.onsemi.com/download/data-sheet/pdf/nc7sz157-d.pdf",
+      "revision": "7 / 2024-08",
+      "pages": "4-6,11",
+      "vcc_range_v": [
+        1.65,
+        5.5
+      ],
+      "timing_vcc_v": [
+        3.0,
+        3.6
+      ],
+      "temperature_c": [
+        -40,
+        85
+      ],
+      "load_pf": 50,
+      "load_ohm": 500,
+      "input_transition_max_ns": 3.0,
+      "data_ns": {
+        "min": null,
+        "typ": 3.2,
+        "max": 5.0
+      },
+      "select_ns": {
+        "min": null,
+        "typ": 3.2,
+        "max": 5.2
+      },
+      "alternate_load_15pf": {
+        "data_typ_ns": 2.6,
+        "data_max_ns": 4.2,
+        "select_typ_ns": 2.6,
+        "select_max_ns": 4.5,
+        "load_ohm": 1000000
+      },
+      "tcd_guaranteed_min_ns": null,
+      "cin_typ_pf": 2.0,
+      "cin_max_pf": null,
+      "cin_condition": "VCC=0V",
+      "cpd_typ_pf": 14,
+      "icc_max_ua": 10,
+      "vih_min_ratio_vcc": 0.7,
+      "vil_max_ratio_vcc": 0.3,
+      "voh_min_v_at_3v_minus16ma": 2.4,
+      "vol_max_v_at_3v_16ma": 0.4,
+      "vol_max_v_at_3v_24ma": 0.55,
+      "ioh_iol_test_ma": 24,
+      "input_leak_max_ua": 1,
+      "input_slew_max_ns_per_v": 10,
+      "package": "SC70 / SC-88; CASE419B-02",
+      "pin_order": "1 I1,2 GND,3 I0,4 Z,5 VCC,6 S",
+      "body_mm_estimate": [
+        2.0,
+        1.25
+      ],
+      "body_dimension_status": "planning only; original outline required",
+      "setup_ns": null,
+      "hold_ns": null,
+      "clock_to_q_ns": null,
+      "min_high_ns": null,
+      "min_low_ns": null
+    }
+  },
+  "scenario": {
+    "status": "ESTIMATED_NOT_QUALIFIED",
+    "nominal_vcc_v": 3.3,
+    "device": "74LVC1G157GW,125",
+    "wire_cap_pf_per_net": 10,
+    "wire_delay_ns_per_gate": 0.15,
+    "clock_to_q_assumed_ns": 10,
+    "setup_assumed_ns": 10,
+    "skew_assumed_ns": 5,
+    "board_fixed_delay_assumed_ns": 10,
+    "margin_assumed_ns": 20,
+    "fpga_rom_service_assumed_ns": 160,
+    "hold_guarantee": "TBD; propagation minimum is not a contamination/setup-hold characterization",
+    "frequencies_hz": [
+      100000,
+      500000,
+      1000000,
+      2000000,
+      5000000,
+      10000000
+    ],
+    "activity_factors": [
+      0.05,
+      0.2,
+      1.0
+    ],
+    "internal_input_switch_factor": 1,
+    "fpga_input_cap_assumed_pf": 5
+  }
+}

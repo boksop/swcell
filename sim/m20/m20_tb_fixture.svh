@@ -1,0 +1,34 @@
+// Included inside simulation tops only; no state here belongs to the CPU.
+logic clk=0;
+always #5 clk=~clk;
+logic rst=1;
+logic [5:0] keys=0;
+wire [11:0] rom_addr;
+wire [15:0] rom_data;
+wire rom_mapped;
+wire [7:0] ram_addr;
+wire [3:0] ram_wdata,ram_rdata;
+wire ram_ce,ram_oe,ram_we;
+wire [11:0] dbg_pc;
+wire [3:0] dbg_a;
+wire [7:0] dbg_ar;
+wire dbg_z,dbg_c;
+wire [3:0] dbg_gpo;
+wire [2:0] dbg_state;
+wire halted,trapped;
+wire retire_valid;
+wire [11:0] retire_pc,retire_next_pc;
+wire [15:0] retire_instruction;
+wire [3:0] retire_a;
+wire [7:0] retire_ar;
+wire retire_z,retire_c;
+wire [3:0] retire_gpo;
+wire retire_ram_valid,retire_ram_write;
+wire [7:0] retire_ram_addr;
+wire [3:0] retire_ram_wdata,retire_ram_rdata;
+wire retire_is_memory;
+wire [2:0] retire_instruction_cycles;
+m20_cpu_core dut(.*);
+m20_rom_model rom(.addr(rom_addr),.data(rom_data),.mapped(rom_mapped));
+m20_ram_model ram(.clk(clk),.addr(ram_addr),.wdata(ram_wdata),.rdata(ram_rdata),
+    .ce(ram_ce),.oe(ram_oe),.we(ram_we));

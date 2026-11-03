@@ -1,0 +1,13 @@
+signal,width,cpu_direction,fpga_direction,scope
+rom_addr,12,output,input,BASE_SINGLE_CLOCK
+rom_data,16,input,output,BASE_SINGLE_CLOCK
+ram_addr,8,output,input,BASE_SINGLE_CLOCK
+ram_wdata,4,output,input,BASE_SINGLE_CLOCK
+ram_rdata,4,input,output,BASE_SINGLE_CLOCK
+ram_ce,1,output,input,BASE_SINGLE_CLOCK
+ram_oe,1,output,input,BASE_SINGLE_CLOCK
+ram_we,1,output,input,BASE_SINGLE_CLOCK
+clk,1,input,output,BASE_SINGLE_CLOCK
+rst,1,input,output,BASE_SINGLE_CLOCK
+keys,6,input,output,BASE_SINGLE_CLOCK
+gpo,4,output,input,BASE_SINGLE_CLOCK

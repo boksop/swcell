@@ -1,0 +1,2907 @@
+{
+  "schema_version": 1,
+  "module": "m20v2_alu",
+  "variant": "shared",
+  "inputs": {
+    "op": 6,
+    "a": 4,
+    "operand": 4,
+    "c_in": 1
+  },
+  "outputs": {
+    "result": [
+      "m000147",
+      "m000148",
+      "m000149",
+      "m000150"
+    ],
+    "z_out": [
+      "m000157"
+    ],
+    "c_out": [
+      "m000153"
+    ],
+    "a_we": [
+      "m000171"
+    ],
+    "z_we": [
+      "m000178"
+    ],
+    "c_we": [
+      "m000180"
+    ]
+  },
+  "functional_outputs": {
+    "result": [
+      "m000147",
+      "m000148",
+      "m000149",
+      "m000150"
+    ],
+    "z_out": [
+      "m000157"
+    ],
+    "c_out": [
+      "m000153"
+    ],
+    "a_we": [
+      "m000171"
+    ],
+    "z_we": [
+      "m000178"
+    ],
+    "c_we": [
+      "m000180"
+    ]
+  },
+  "registers": [],
+  "nodes": [
+    {
+      "id": "m000001",
+      "s": "op[0]",
+      "i0": "1",
+      "i1": "0",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000001",
+      "instance": "g_alu_decode.u_m000001"
+    },
+    {
+      "id": "m000002",
+      "s": "op[1]",
+      "i0": "1",
+      "i1": "0",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000002",
+      "instance": "g_alu_decode.u_m000002"
+    },
+    {
+      "id": "m000003",
+      "s": "op[2]",
+      "i0": "1",
+      "i1": "0",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000003",
+      "instance": "g_alu_decode.u_m000003"
+    },
+    {
+      "id": "m000004",
+      "s": "op[3]",
+      "i0": "1",
+      "i1": "0",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000004",
+      "instance": "g_alu_decode.u_m000004"
+    },
+    {
+      "id": "m000005",
+      "s": "op[4]",
+      "i0": "1",
+      "i1": "0",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000005",
+      "instance": "g_alu_decode.u_m000005"
+    },
+    {
+      "id": "m000006",
+      "s": "op[5]",
+      "i0": "1",
+      "i1": "0",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000006",
+      "instance": "g_alu_decode.u_m000006"
+    },
+    {
+      "id": "m000007",
+      "s": "m000001",
+      "i0": "0",
+      "i1": "m000002",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000007",
+      "instance": "g_alu_decode.u_m000007"
+    },
+    {
+      "id": "m000008",
+      "s": "m000007",
+      "i0": "0",
+      "i1": "m000003",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000008",
+      "instance": "g_alu_decode.u_m000008"
+    },
+    {
+      "id": "m000009",
+      "s": "m000008",
+      "i0": "0",
+      "i1": "m000004",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000009",
+      "instance": "g_alu_decode.u_m000009"
+    },
+    {
+      "id": "m000010",
+      "s": "m000009",
+      "i0": "0",
+      "i1": "m000005",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000010",
+      "instance": "g_alu_decode.u_m000010"
+    },
+    {
+      "id": "m000011",
+      "s": "m000010",
+      "i0": "0",
+      "i1": "m000006",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000011",
+      "instance": "g_alu_decode.u_m000011"
+    },
+    {
+      "id": "m000012",
+      "s": "op[0]",
+      "i0": "0",
+      "i1": "m000002",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000012",
+      "instance": "g_alu_decode.u_m000012"
+    },
+    {
+      "id": "m000013",
+      "s": "m000012",
+      "i0": "0",
+      "i1": "m000003",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000013",
+      "instance": "g_alu_decode.u_m000013"
+    },
+    {
+      "id": "m000014",
+      "s": "m000013",
+      "i0": "0",
+      "i1": "m000004",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000014",
+      "instance": "g_alu_decode.u_m000014"
+    },
+    {
+      "id": "m000015",
+      "s": "m000014",
+      "i0": "0",
+      "i1": "m000005",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000015",
+      "instance": "g_alu_decode.u_m000015"
+    },
+    {
+      "id": "m000016",
+      "s": "m000015",
+      "i0": "0",
+      "i1": "m000006",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000016",
+      "instance": "g_alu_decode.u_m000016"
+    },
+    {
+      "id": "m000017",
+      "s": "m000001",
+      "i0": "0",
+      "i1": "op[1]",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000017",
+      "instance": "g_alu_decode.u_m000017"
+    },
+    {
+      "id": "m000018",
+      "s": "m000017",
+      "i0": "0",
+      "i1": "m000003",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000018",
+      "instance": "g_alu_decode.u_m000018"
+    },
+    {
+      "id": "m000019",
+      "s": "m000018",
+      "i0": "0",
+      "i1": "m000004",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000019",
+      "instance": "g_alu_decode.u_m000019"
+    },
+    {
+      "id": "m000020",
+      "s": "m000019",
+      "i0": "0",
+      "i1": "m000005",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000020",
+      "instance": "g_alu_decode.u_m000020"
+    },
+    {
+      "id": "m000021",
+      "s": "m000020",
+      "i0": "0",
+      "i1": "m000006",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000021",
+      "instance": "g_alu_decode.u_m000021"
+    },
+    {
+      "id": "m000022",
+      "s": "op[0]",
+      "i0": "0",
+      "i1": "op[1]",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000022",
+      "instance": "g_alu_decode.u_m000022"
+    },
+    {
+      "id": "m000023",
+      "s": "m000022",
+      "i0": "0",
+      "i1": "m000003",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000023",
+      "instance": "g_alu_decode.u_m000023"
+    },
+    {
+      "id": "m000024",
+      "s": "m000023",
+      "i0": "0",
+      "i1": "m000004",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000024",
+      "instance": "g_alu_decode.u_m000024"
+    },
+    {
+      "id": "m000025",
+      "s": "m000024",
+      "i0": "0",
+      "i1": "m000005",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000025",
+      "instance": "g_alu_decode.u_m000025"
+    },
+    {
+      "id": "m000026",
+      "s": "m000025",
+      "i0": "0",
+      "i1": "m000006",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000026",
+      "instance": "g_alu_decode.u_m000026"
+    },
+    {
+      "id": "m000027",
+      "s": "m000007",
+      "i0": "0",
+      "i1": "op[2]",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000027",
+      "instance": "g_alu_decode.u_m000027"
+    },
+    {
+      "id": "m000028",
+      "s": "m000027",
+      "i0": "0",
+      "i1": "m000004",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000028",
+      "instance": "g_alu_decode.u_m000028"
+    },
+    {
+      "id": "m000029",
+      "s": "m000028",
+      "i0": "0",
+      "i1": "m000005",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000029",
+      "instance": "g_alu_decode.u_m000029"
+    },
+    {
+      "id": "m000030",
+      "s": "m000029",
+      "i0": "0",
+      "i1": "m000006",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000030",
+      "instance": "g_alu_decode.u_m000030"
+    },
+    {
+      "id": "m000031",
+      "s": "m000012",
+      "i0": "0",
+      "i1": "op[2]",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000031",
+      "instance": "g_alu_decode.u_m000031"
+    },
+    {
+      "id": "m000032",
+      "s": "m000031",
+      "i0": "0",
+      "i1": "m000004",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000032",
+      "instance": "g_alu_decode.u_m000032"
+    },
+    {
+      "id": "m000033",
+      "s": "m000032",
+      "i0": "0",
+      "i1": "m000005",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000033",
+      "instance": "g_alu_decode.u_m000033"
+    },
+    {
+      "id": "m000034",
+      "s": "m000033",
+      "i0": "0",
+      "i1": "m000006",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000034",
+      "instance": "g_alu_decode.u_m000034"
+    },
+    {
+      "id": "m000035",
+      "s": "m000017",
+      "i0": "0",
+      "i1": "op[2]",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000035",
+      "instance": "g_alu_decode.u_m000035"
+    },
+    {
+      "id": "m000036",
+      "s": "m000035",
+      "i0": "0",
+      "i1": "m000004",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000036",
+      "instance": "g_alu_decode.u_m000036"
+    },
+    {
+      "id": "m000037",
+      "s": "m000036",
+      "i0": "0",
+      "i1": "m000005",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000037",
+      "instance": "g_alu_decode.u_m000037"
+    },
+    {
+      "id": "m000038",
+      "s": "m000037",
+      "i0": "0",
+      "i1": "m000006",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000038",
+      "instance": "g_alu_decode.u_m000038"
+    },
+    {
+      "id": "m000039",
+      "s": "m000022",
+      "i0": "0",
+      "i1": "op[2]",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000039",
+      "instance": "g_alu_decode.u_m000039"
+    },
+    {
+      "id": "m000040",
+      "s": "m000039",
+      "i0": "0",
+      "i1": "m000004",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000040",
+      "instance": "g_alu_decode.u_m000040"
+    },
+    {
+      "id": "m000041",
+      "s": "m000040",
+      "i0": "0",
+      "i1": "m000005",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000041",
+      "instance": "g_alu_decode.u_m000041"
+    },
+    {
+      "id": "m000042",
+      "s": "m000041",
+      "i0": "0",
+      "i1": "m000006",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000042",
+      "instance": "g_alu_decode.u_m000042"
+    },
+    {
+      "id": "m000043",
+      "s": "m000008",
+      "i0": "0",
+      "i1": "op[3]",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000043",
+      "instance": "g_alu_decode.u_m000043"
+    },
+    {
+      "id": "m000044",
+      "s": "m000043",
+      "i0": "0",
+      "i1": "m000005",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000044",
+      "instance": "g_alu_decode.u_m000044"
+    },
+    {
+      "id": "m000045",
+      "s": "m000044",
+      "i0": "0",
+      "i1": "m000006",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000045",
+      "instance": "g_alu_decode.u_m000045"
+    },
+    {
+      "id": "m000046",
+      "s": "m000013",
+      "i0": "0",
+      "i1": "op[3]",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000046",
+      "instance": "g_alu_decode.u_m000046"
+    },
+    {
+      "id": "m000047",
+      "s": "m000046",
+      "i0": "0",
+      "i1": "m000005",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000047",
+      "instance": "g_alu_decode.u_m000047"
+    },
+    {
+      "id": "m000048",
+      "s": "m000047",
+      "i0": "0",
+      "i1": "m000006",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000048",
+      "instance": "g_alu_decode.u_m000048"
+    },
+    {
+      "id": "m000049",
+      "s": "m000018",
+      "i0": "0",
+      "i1": "op[3]",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000049",
+      "instance": "g_alu_decode.u_m000049"
+    },
+    {
+      "id": "m000050",
+      "s": "m000049",
+      "i0": "0",
+      "i1": "m000005",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000050",
+      "instance": "g_alu_decode.u_m000050"
+    },
+    {
+      "id": "m000051",
+      "s": "m000050",
+      "i0": "0",
+      "i1": "m000006",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000051",
+      "instance": "g_alu_decode.u_m000051"
+    },
+    {
+      "id": "m000052",
+      "s": "m000023",
+      "i0": "0",
+      "i1": "op[3]",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000052",
+      "instance": "g_alu_decode.u_m000052"
+    },
+    {
+      "id": "m000053",
+      "s": "m000052",
+      "i0": "0",
+      "i1": "m000005",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000053",
+      "instance": "g_alu_decode.u_m000053"
+    },
+    {
+      "id": "m000054",
+      "s": "m000053",
+      "i0": "0",
+      "i1": "m000006",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000054",
+      "instance": "g_alu_decode.u_m000054"
+    },
+    {
+      "id": "m000055",
+      "s": "m000014",
+      "i0": "0",
+      "i1": "op[4]",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000055",
+      "instance": "g_alu_decode.u_m000055"
+    },
+    {
+      "id": "m000056",
+      "s": "m000055",
+      "i0": "0",
+      "i1": "m000006",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000056",
+      "instance": "g_alu_decode.u_m000056"
+    },
+    {
+      "id": "m000057",
+      "s": "m000019",
+      "i0": "0",
+      "i1": "op[4]",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000057",
+      "instance": "g_alu_decode.u_m000057"
+    },
+    {
+      "id": "m000058",
+      "s": "m000057",
+      "i0": "0",
+      "i1": "m000006",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000058",
+      "instance": "g_alu_decode.u_m000058"
+    },
+    {
+      "id": "m000059",
+      "s": "m000040",
+      "i0": "0",
+      "i1": "op[4]",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000059",
+      "instance": "g_alu_decode.u_m000059"
+    },
+    {
+      "id": "m000060",
+      "s": "m000059",
+      "i0": "0",
+      "i1": "m000006",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000060",
+      "instance": "g_alu_decode.u_m000060"
+    },
+    {
+      "id": "m000061",
+      "s": "m000043",
+      "i0": "0",
+      "i1": "op[4]",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000061",
+      "instance": "g_alu_decode.u_m000061"
+    },
+    {
+      "id": "m000062",
+      "s": "m000061",
+      "i0": "0",
+      "i1": "m000006",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000062",
+      "instance": "g_alu_decode.u_m000062"
+    },
+    {
+      "id": "m000063",
+      "s": "m000026",
+      "i0": "m000030",
+      "i1": "1",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000063",
+      "instance": "g_alu_decode.u_m000063"
+    },
+    {
+      "id": "m000064",
+      "s": "m000063",
+      "i0": "m000034",
+      "i1": "1",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000064",
+      "instance": "g_alu_decode.u_m000064"
+    },
+    {
+      "id": "m000065",
+      "s": "m000021",
+      "i0": "m000030",
+      "i1": "1",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000065",
+      "instance": "g_alu_decode.u_m000065"
+    },
+    {
+      "id": "m000066",
+      "s": "m000065",
+      "i0": "m000064",
+      "i1": "c_in",
+      "group": "alu.arithmetic",
+      "category": "alu",
+      "y": "m000066",
+      "instance": "g_alu_arithmetic.u_m000066"
+    },
+    {
+      "id": "m000067",
+      "s": "operand[0]",
+      "i0": "1",
+      "i1": "0",
+      "group": "alu.arithmetic",
+      "category": "alu",
+      "y": "m000067",
+      "instance": "g_alu_arithmetic.u_m000067"
+    },
+    {
+      "id": "m000068",
+      "s": "m000064",
+      "i0": "operand[0]",
+      "i1": "m000067",
+      "group": "alu.arithmetic",
+      "category": "alu",
+      "y": "m000068",
+      "instance": "g_alu_arithmetic.u_m000068"
+    },
+    {
+      "id": "m000069",
+      "s": "operand[1]",
+      "i0": "1",
+      "i1": "0",
+      "group": "alu.arithmetic",
+      "category": "alu",
+      "y": "m000069",
+      "instance": "g_alu_arithmetic.u_m000069"
+    },
+    {
+      "id": "m000070",
+      "s": "m000064",
+      "i0": "operand[1]",
+      "i1": "m000069",
+      "group": "alu.arithmetic",
+      "category": "alu",
+      "y": "m000070",
+      "instance": "g_alu_arithmetic.u_m000070"
+    },
+    {
+      "id": "m000071",
+      "s": "operand[2]",
+      "i0": "1",
+      "i1": "0",
+      "group": "alu.arithmetic",
+      "category": "alu",
+      "y": "m000071",
+      "instance": "g_alu_arithmetic.u_m000071"
+    },
+    {
+      "id": "m000072",
+      "s": "m000064",
+      "i0": "operand[2]",
+      "i1": "m000071",
+      "group": "alu.arithmetic",
+      "category": "alu",
+      "y": "m000072",
+      "instance": "g_alu_arithmetic.u_m000072"
+    },
+    {
+      "id": "m000073",
+      "s": "operand[3]",
+      "i0": "1",
+      "i1": "0",
+      "group": "alu.arithmetic",
+      "category": "alu",
+      "y": "m000073",
+      "instance": "g_alu_arithmetic.u_m000073"
+    },
+    {
+      "id": "m000074",
+      "s": "m000064",
+      "i0": "operand[3]",
+      "i1": "m000073",
+      "group": "alu.arithmetic",
+      "category": "alu",
+      "y": "m000074",
+      "instance": "g_alu_arithmetic.u_m000074"
+    },
+    {
+      "id": "m000075",
+      "s": "m000068",
+      "i0": "1",
+      "i1": "0",
+      "group": "alu.arithmetic",
+      "category": "alu",
+      "y": "m000075",
+      "instance": "g_alu_arithmetic.u_m000075"
+    },
+    {
+      "id": "m000076",
+      "s": "a[0]",
+      "i0": "m000068",
+      "i1": "m000075",
+      "group": "alu.arithmetic",
+      "category": "alu",
+      "y": "m000076",
+      "instance": "g_alu_arithmetic.u_m000076"
+    },
+    {
+      "id": "m000077",
+      "s": "m000066",
+      "i0": "1",
+      "i1": "0",
+      "group": "alu.arithmetic",
+      "category": "alu",
+      "y": "m000077",
+      "instance": "g_alu_arithmetic.u_m000077"
+    },
+    {
+      "id": "m000078",
+      "s": "m000076",
+      "i0": "m000066",
+      "i1": "m000077",
+      "group": "alu.arithmetic",
+      "category": "alu",
+      "y": "m000078",
+      "instance": "g_alu_arithmetic.u_m000078"
+    },
+    {
+      "id": "m000079",
+      "s": "m000076",
+      "i0": "a[0]",
+      "i1": "m000066",
+      "group": "alu.arithmetic",
+      "category": "alu",
+      "y": "m000079",
+      "instance": "g_alu_arithmetic.u_m000079"
+    },
+    {
+      "id": "m000080",
+      "s": "m000070",
+      "i0": "1",
+      "i1": "0",
+      "group": "alu.arithmetic",
+      "category": "alu",
+      "y": "m000080",
+      "instance": "g_alu_arithmetic.u_m000080"
+    },
+    {
+      "id": "m000081",
+      "s": "a[1]",
+      "i0": "m000070",
+      "i1": "m000080",
+      "group": "alu.arithmetic",
+      "category": "alu",
+      "y": "m000081",
+      "instance": "g_alu_arithmetic.u_m000081"
+    },
+    {
+      "id": "m000082",
+      "s": "m000079",
+      "i0": "1",
+      "i1": "0",
+      "group": "alu.arithmetic",
+      "category": "alu",
+      "y": "m000082",
+      "instance": "g_alu_arithmetic.u_m000082"
+    },
+    {
+      "id": "m000083",
+      "s": "m000081",
+      "i0": "m000079",
+      "i1": "m000082",
+      "group": "alu.arithmetic",
+      "category": "alu",
+      "y": "m000083",
+      "instance": "g_alu_arithmetic.u_m000083"
+    },
+    {
+      "id": "m000084",
+      "s": "m000081",
+      "i0": "a[1]",
+      "i1": "m000079",
+      "group": "alu.arithmetic",
+      "category": "alu",
+      "y": "m000084",
+      "instance": "g_alu_arithmetic.u_m000084"
+    },
+    {
+      "id": "m000085",
+      "s": "m000072",
+      "i0": "1",
+      "i1": "0",
+      "group": "alu.arithmetic",
+      "category": "alu",
+      "y": "m000085",
+      "instance": "g_alu_arithmetic.u_m000085"
+    },
+    {
+      "id": "m000086",
+      "s": "a[2]",
+      "i0": "m000072",
+      "i1": "m000085",
+      "group": "alu.arithmetic",
+      "category": "alu",
+      "y": "m000086",
+      "instance": "g_alu_arithmetic.u_m000086"
+    },
+    {
+      "id": "m000087",
+      "s": "m000084",
+      "i0": "1",
+      "i1": "0",
+      "group": "alu.arithmetic",
+      "category": "alu",
+      "y": "m000087",
+      "instance": "g_alu_arithmetic.u_m000087"
+    },
+    {
+      "id": "m000088",
+      "s": "m000086",
+      "i0": "m000084",
+      "i1": "m000087",
+      "group": "alu.arithmetic",
+      "category": "alu",
+      "y": "m000088",
+      "instance": "g_alu_arithmetic.u_m000088"
+    },
+    {
+      "id": "m000089",
+      "s": "m000086",
+      "i0": "a[2]",
+      "i1": "m000084",
+      "group": "alu.arithmetic",
+      "category": "alu",
+      "y": "m000089",
+      "instance": "g_alu_arithmetic.u_m000089"
+    },
+    {
+      "id": "m000090",
+      "s": "m000074",
+      "i0": "1",
+      "i1": "0",
+      "group": "alu.arithmetic",
+      "category": "alu",
+      "y": "m000090",
+      "instance": "g_alu_arithmetic.u_m000090"
+    },
+    {
+      "id": "m000091",
+      "s": "a[3]",
+      "i0": "m000074",
+      "i1": "m000090",
+      "group": "alu.arithmetic",
+      "category": "alu",
+      "y": "m000091",
+      "instance": "g_alu_arithmetic.u_m000091"
+    },
+    {
+      "id": "m000092",
+      "s": "m000089",
+      "i0": "1",
+      "i1": "0",
+      "group": "alu.arithmetic",
+      "category": "alu",
+      "y": "m000092",
+      "instance": "g_alu_arithmetic.u_m000092"
+    },
+    {
+      "id": "m000093",
+      "s": "m000091",
+      "i0": "m000089",
+      "i1": "m000092",
+      "group": "alu.arithmetic",
+      "category": "alu",
+      "y": "m000093",
+      "instance": "g_alu_arithmetic.u_m000093"
+    },
+    {
+      "id": "m000094",
+      "s": "m000091",
+      "i0": "a[3]",
+      "i1": "m000089",
+      "group": "alu.arithmetic",
+      "category": "alu",
+      "y": "m000094",
+      "instance": "g_alu_arithmetic.u_m000094"
+    },
+    {
+      "id": "m000095",
+      "s": "a[0]",
+      "i0": "0",
+      "i1": "operand[0]",
+      "group": "alu.logic",
+      "category": "alu",
+      "y": "m000095",
+      "instance": "g_alu_logic.u_m000095"
+    },
+    {
+      "id": "m000096",
+      "s": "a[1]",
+      "i0": "0",
+      "i1": "operand[1]",
+      "group": "alu.logic",
+      "category": "alu",
+      "y": "m000096",
+      "instance": "g_alu_logic.u_m000096"
+    },
+    {
+      "id": "m000097",
+      "s": "a[2]",
+      "i0": "0",
+      "i1": "operand[2]",
+      "group": "alu.logic",
+      "category": "alu",
+      "y": "m000097",
+      "instance": "g_alu_logic.u_m000097"
+    },
+    {
+      "id": "m000098",
+      "s": "a[3]",
+      "i0": "0",
+      "i1": "operand[3]",
+      "group": "alu.logic",
+      "category": "alu",
+      "y": "m000098",
+      "instance": "g_alu_logic.u_m000098"
+    },
+    {
+      "id": "m000099",
+      "s": "a[0]",
+      "i0": "operand[0]",
+      "i1": "m000067",
+      "group": "alu.logic",
+      "category": "alu",
+      "y": "m000099",
+      "instance": "g_alu_logic.u_m000099"
+    },
+    {
+      "id": "m000100",
+      "s": "a[1]",
+      "i0": "operand[1]",
+      "i1": "m000069",
+      "group": "alu.logic",
+      "category": "alu",
+      "y": "m000100",
+      "instance": "g_alu_logic.u_m000100"
+    },
+    {
+      "id": "m000101",
+      "s": "a[2]",
+      "i0": "operand[2]",
+      "i1": "m000071",
+      "group": "alu.logic",
+      "category": "alu",
+      "y": "m000101",
+      "instance": "g_alu_logic.u_m000101"
+    },
+    {
+      "id": "m000102",
+      "s": "a[3]",
+      "i0": "operand[3]",
+      "i1": "m000073",
+      "group": "alu.logic",
+      "category": "alu",
+      "y": "m000102",
+      "instance": "g_alu_logic.u_m000102"
+    },
+    {
+      "id": "m000103",
+      "s": "a[0]",
+      "i0": "operand[0]",
+      "i1": "1",
+      "group": "alu.logic",
+      "category": "alu",
+      "y": "m000103",
+      "instance": "g_alu_logic.u_m000103"
+    },
+    {
+      "id": "m000104",
+      "s": "a[1]",
+      "i0": "operand[1]",
+      "i1": "1",
+      "group": "alu.logic",
+      "category": "alu",
+      "y": "m000104",
+      "instance": "g_alu_logic.u_m000104"
+    },
+    {
+      "id": "m000105",
+      "s": "a[2]",
+      "i0": "operand[2]",
+      "i1": "1",
+      "group": "alu.logic",
+      "category": "alu",
+      "y": "m000105",
+      "instance": "g_alu_logic.u_m000105"
+    },
+    {
+      "id": "m000106",
+      "s": "a[3]",
+      "i0": "operand[3]",
+      "i1": "1",
+      "group": "alu.logic",
+      "category": "alu",
+      "y": "m000106",
+      "instance": "g_alu_logic.u_m000106"
+    },
+    {
+      "id": "m000107",
+      "s": "a[0]",
+      "i0": "1",
+      "i1": "0",
+      "group": "alu.logic",
+      "category": "alu",
+      "y": "m000107",
+      "instance": "g_alu_logic.u_m000107"
+    },
+    {
+      "id": "m000108",
+      "s": "a[1]",
+      "i0": "1",
+      "i1": "0",
+      "group": "alu.logic",
+      "category": "alu",
+      "y": "m000108",
+      "instance": "g_alu_logic.u_m000108"
+    },
+    {
+      "id": "m000109",
+      "s": "a[2]",
+      "i0": "1",
+      "i1": "0",
+      "group": "alu.logic",
+      "category": "alu",
+      "y": "m000109",
+      "instance": "g_alu_logic.u_m000109"
+    },
+    {
+      "id": "m000110",
+      "s": "a[3]",
+      "i0": "1",
+      "i1": "0",
+      "group": "alu.logic",
+      "category": "alu",
+      "y": "m000110",
+      "instance": "g_alu_logic.u_m000110"
+    },
+    {
+      "id": "m000111",
+      "s": "m000011",
+      "i0": "m000056",
+      "i1": "1",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000111",
+      "instance": "g_alu_decode.u_m000111"
+    },
+    {
+      "id": "m000112",
+      "s": "m000111",
+      "i0": "m000058",
+      "i1": "1",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000112",
+      "instance": "g_alu_decode.u_m000112"
+    },
+    {
+      "id": "m000113",
+      "s": "m000112",
+      "i0": "m000060",
+      "i1": "1",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000113",
+      "instance": "g_alu_decode.u_m000113"
+    },
+    {
+      "id": "m000114",
+      "s": "m000113",
+      "i0": "m000062",
+      "i1": "1",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000114",
+      "instance": "g_alu_decode.u_m000114"
+    },
+    {
+      "id": "m000115",
+      "s": "m000016",
+      "i0": "m000021",
+      "i1": "1",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000115",
+      "instance": "g_alu_decode.u_m000115"
+    },
+    {
+      "id": "m000116",
+      "s": "m000115",
+      "i0": "m000026",
+      "i1": "1",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000116",
+      "instance": "g_alu_decode.u_m000116"
+    },
+    {
+      "id": "m000117",
+      "s": "m000116",
+      "i0": "m000030",
+      "i1": "1",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000117",
+      "instance": "g_alu_decode.u_m000117"
+    },
+    {
+      "id": "m000118",
+      "s": "m000117",
+      "i0": "m000034",
+      "i1": "1",
+      "group": "alu.decode",
+      "category": "control",
+      "y": "m000118",
+      "instance": "g_alu_decode.u_m000118"
+    },
+    {
+      "id": "m000119",
+      "s": "m000114",
+      "i0": "a[0]",
+      "i1": "operand[0]",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000119",
+      "instance": "g_alu_result.u_m000119"
+    },
+    {
+      "id": "m000120",
+      "s": "m000114",
+      "i0": "a[1]",
+      "i1": "operand[1]",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000120",
+      "instance": "g_alu_result.u_m000120"
+    },
+    {
+      "id": "m000121",
+      "s": "m000114",
+      "i0": "a[2]",
+      "i1": "operand[2]",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000121",
+      "instance": "g_alu_result.u_m000121"
+    },
+    {
+      "id": "m000122",
+      "s": "m000114",
+      "i0": "a[3]",
+      "i1": "operand[3]",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000122",
+      "instance": "g_alu_result.u_m000122"
+    },
+    {
+      "id": "m000123",
+      "s": "m000118",
+      "i0": "m000119",
+      "i1": "m000078",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000123",
+      "instance": "g_alu_result.u_m000123"
+    },
+    {
+      "id": "m000124",
+      "s": "m000118",
+      "i0": "m000120",
+      "i1": "m000083",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000124",
+      "instance": "g_alu_result.u_m000124"
+    },
+    {
+      "id": "m000125",
+      "s": "m000118",
+      "i0": "m000121",
+      "i1": "m000088",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000125",
+      "instance": "g_alu_result.u_m000125"
+    },
+    {
+      "id": "m000126",
+      "s": "m000118",
+      "i0": "m000122",
+      "i1": "m000093",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000126",
+      "instance": "g_alu_result.u_m000126"
+    },
+    {
+      "id": "m000127",
+      "s": "m000038",
+      "i0": "m000123",
+      "i1": "m000095",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000127",
+      "instance": "g_alu_result.u_m000127"
+    },
+    {
+      "id": "m000128",
+      "s": "m000038",
+      "i0": "m000124",
+      "i1": "m000096",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000128",
+      "instance": "g_alu_result.u_m000128"
+    },
+    {
+      "id": "m000129",
+      "s": "m000038",
+      "i0": "m000125",
+      "i1": "m000097",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000129",
+      "instance": "g_alu_result.u_m000129"
+    },
+    {
+      "id": "m000130",
+      "s": "m000038",
+      "i0": "m000126",
+      "i1": "m000098",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000130",
+      "instance": "g_alu_result.u_m000130"
+    },
+    {
+      "id": "m000131",
+      "s": "m000042",
+      "i0": "m000127",
+      "i1": "m000099",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000131",
+      "instance": "g_alu_result.u_m000131"
+    },
+    {
+      "id": "m000132",
+      "s": "m000042",
+      "i0": "m000128",
+      "i1": "m000100",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000132",
+      "instance": "g_alu_result.u_m000132"
+    },
+    {
+      "id": "m000133",
+      "s": "m000042",
+      "i0": "m000129",
+      "i1": "m000101",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000133",
+      "instance": "g_alu_result.u_m000133"
+    },
+    {
+      "id": "m000134",
+      "s": "m000042",
+      "i0": "m000130",
+      "i1": "m000102",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000134",
+      "instance": "g_alu_result.u_m000134"
+    },
+    {
+      "id": "m000135",
+      "s": "m000045",
+      "i0": "m000131",
+      "i1": "m000103",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000135",
+      "instance": "g_alu_result.u_m000135"
+    },
+    {
+      "id": "m000136",
+      "s": "m000045",
+      "i0": "m000132",
+      "i1": "m000104",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000136",
+      "instance": "g_alu_result.u_m000136"
+    },
+    {
+      "id": "m000137",
+      "s": "m000045",
+      "i0": "m000133",
+      "i1": "m000105",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000137",
+      "instance": "g_alu_result.u_m000137"
+    },
+    {
+      "id": "m000138",
+      "s": "m000045",
+      "i0": "m000134",
+      "i1": "m000106",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000138",
+      "instance": "g_alu_result.u_m000138"
+    },
+    {
+      "id": "m000139",
+      "s": "m000048",
+      "i0": "m000135",
+      "i1": "m000107",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000139",
+      "instance": "g_alu_result.u_m000139"
+    },
+    {
+      "id": "m000140",
+      "s": "m000048",
+      "i0": "m000136",
+      "i1": "m000108",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000140",
+      "instance": "g_alu_result.u_m000140"
+    },
+    {
+      "id": "m000141",
+      "s": "m000048",
+      "i0": "m000137",
+      "i1": "m000109",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000141",
+      "instance": "g_alu_result.u_m000141"
+    },
+    {
+      "id": "m000142",
+      "s": "m000048",
+      "i0": "m000138",
+      "i1": "m000110",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000142",
+      "instance": "g_alu_result.u_m000142"
+    },
+    {
+      "id": "m000143",
+      "s": "m000051",
+      "i0": "m000139",
+      "i1": "0",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000143",
+      "instance": "g_alu_result.u_m000143"
+    },
+    {
+      "id": "m000144",
+      "s": "m000051",
+      "i0": "m000140",
+      "i1": "a[0]",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000144",
+      "instance": "g_alu_result.u_m000144"
+    },
+    {
+      "id": "m000145",
+      "s": "m000051",
+      "i0": "m000141",
+      "i1": "a[1]",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000145",
+      "instance": "g_alu_result.u_m000145"
+    },
+    {
+      "id": "m000146",
+      "s": "m000051",
+      "i0": "m000142",
+      "i1": "a[2]",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000146",
+      "instance": "g_alu_result.u_m000146"
+    },
+    {
+      "id": "m000147",
+      "s": "m000054",
+      "i0": "m000143",
+      "i1": "a[1]",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000147",
+      "instance": "g_alu_result.u_m000147"
+    },
+    {
+      "id": "m000148",
+      "s": "m000054",
+      "i0": "m000144",
+      "i1": "a[2]",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000148",
+      "instance": "g_alu_result.u_m000148"
+    },
+    {
+      "id": "m000149",
+      "s": "m000054",
+      "i0": "m000145",
+      "i1": "a[3]",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000149",
+      "instance": "g_alu_result.u_m000149"
+    },
+    {
+      "id": "m000150",
+      "s": "m000054",
+      "i0": "m000146",
+      "i1": "0",
+      "group": "alu.result",
+      "category": "selection",
+      "y": "m000150",
+      "instance": "g_alu_result.u_m000150"
+    },
+    {
+      "id": "m000151",
+      "s": "m000118",
+      "i0": "c_in",
+      "i1": "m000094",
+      "group": "alu.flags",
+      "category": "control",
+      "y": "m000151",
+      "instance": "g_alu_flags.u_m000151"
+    },
+    {
+      "id": "m000152",
+      "s": "m000051",
+      "i0": "m000151",
+      "i1": "a[3]",
+      "group": "alu.flags",
+      "category": "control",
+      "y": "m000152",
+      "instance": "g_alu_flags.u_m000152"
+    },
+    {
+      "id": "m000153",
+      "s": "m000054",
+      "i0": "m000152",
+      "i1": "a[0]",
+      "group": "alu.flags",
+      "category": "control",
+      "y": "m000153",
+      "instance": "g_alu_flags.u_m000153"
+    },
+    {
+      "id": "m000154",
+      "s": "m000147",
+      "i0": "m000148",
+      "i1": "1",
+      "group": "alu.flags",
+      "category": "control",
+      "y": "m000154",
+      "instance": "g_alu_flags.u_m000154"
+    },
+    {
+      "id": "m000155",
+      "s": "m000154",
+      "i0": "m000149",
+      "i1": "1",
+      "group": "alu.flags",
+      "category": "control",
+      "y": "m000155",
+      "instance": "g_alu_flags.u_m000155"
+    },
+    {
+      "id": "m000156",
+      "s": "m000155",
+      "i0": "m000150",
+      "i1": "1",
+      "group": "alu.flags",
+      "category": "control",
+      "y": "m000156",
+      "instance": "g_alu_flags.u_m000156"
+    },
+    {
+      "id": "m000157",
+      "s": "m000156",
+      "i0": "1",
+      "i1": "0",
+      "group": "alu.flags",
+      "category": "control",
+      "y": "m000157",
+      "instance": "g_alu_flags.u_m000157"
+    },
+    {
+      "id": "m000158",
+      "s": "m000011",
+      "i0": "m000016",
+      "i1": "1",
+      "group": "alu.flags",
+      "category": "control",
+      "y": "m000158",
+      "instance": "g_alu_flags.u_m000158"
+    },
+    {
+      "id": "m000159",
+      "s": "m000158",
+      "i0": "m000021",
+      "i1": "1",
+      "group": "alu.flags",
+      "category": "control",
+      "y": "m000159",
+      "instance": "g_alu_flags.u_m000159"
+    },
+    {
+      "id": "m000160",
+      "s": "m000159",
+      "i0": "m000026",
+      "i1": "1",
+      "group": "alu.flags",
+      "category": "control",
+      "y": "m000160",
+      "instance": "g_alu_flags.u_m000160"
+    },
+    {
+      "id": "m000161",
+      "s": "m000160",
+      "i0": "m000030",
+      "i1": "1",
+      "group": "alu.flags",
+      "category": "control",
+      "y": "m000161",
+      "instance": "g_alu_flags.u_m000161"
+    },
+    {
+      "id": "m000162",
+      "s": "m000161",
+      "i0": "m000038",
+      "i1": "1",
+      "group": "alu.flags",
+      "category": "control",
+      "y": "m000162",
+      "instance": "g_alu_flags.u_m000162"
+    },
+    {
+      "id": "m000163",
+      "s": "m000162",
+      "i0": "m000042",
+      "i1": "1",
+      "group": "alu.flags",
+      "category": "control",
+      "y": "m000163",
+      "instance": "g_alu_flags.u_m000163"
+    },
+    {
+      "id": "m000164",
+      "s": "m000163",
+      "i0": "m000045",
+      "i1": "1",
+      "group": "alu.flags",
+      "category": "control",
+      "y": "m000164",
+      "instance": "g_alu_flags.u_m000164"
+    },
+    {
+      "id": "m000165",
+      "s": "m000164",
+      "i0": "m000048",
+      "i1": "1",
+      "group": "alu.flags",
+      "category": "control",
+      "y": "m000165",
+      "instance": "g_alu_flags.u_m000165"
+    },
+    {
+      "id": "m000166",
+      "s": "m000165",
+      "i0": "m000051",
+      "i1": "1",
+      "group": "alu.flags",
+      "category": "control",
+      "y": "m000166",
+      "instance": "g_alu_flags.u_m000166"
+    },
+    {
+      "id": "m000167",
+      "s": "m000166",
+      "i0": "m000054",
+      "i1": "1",
+      "group": "alu.flags",
+      "category": "control",
+      "y": "m000167",
+      "instance": "g_alu_flags.u_m000167"
+    },
+    {
+      "id": "m000168",
+      "s": "m000167",
+      "i0": "m000056",
+      "i1": "1",
+      "group": "alu.flags",
+      "category": "control",
+      "y": "m000168",
+      "instance": "g_alu_flags.u_m000168"
+    },
+    {
+      "id": "m000169",
+      "s": "m000168",
+      "i0": "m000058",
+      "i1": "1",
+      "group": "alu.flags",
+      "category": "control",
+      "y": "m000169",
+      "instance": "g_alu_flags.u_m000169"
+    },
+    {
+      "id": "m000170",
+      "s": "m000169",
+      "i0": "m000060",
+      "i1": "1",
+      "group": "alu.flags",
+      "category": "control",
+      "y": "m000170",
+      "instance": "g_alu_flags.u_m000170"
+    },
+    {
+      "id": "m000171",
+      "s": "m000170",
+      "i0": "m000062",
+      "i1": "1",
+      "group": "alu.flags",
+      "category": "control",
+      "y": "m000171",
+      "instance": "g_alu_flags.u_m000171"
+    },
+    {
+      "id": "m000172",
+      "s": "m000161",
+      "i0": "m000034",
+      "i1": "1",
+      "group": "alu.flags",
+      "category": "control",
+      "y": "m000172",
+      "instance": "g_alu_flags.u_m000172"
+    },
+    {
+      "id": "m000173",
+      "s": "m000172",
+      "i0": "m000038",
+      "i1": "1",
+      "group": "alu.flags",
+      "category": "control",
+      "y": "m000173",
+      "instance": "g_alu_flags.u_m000173"
+    },
+    {
+      "id": "m000174",
+      "s": "m000173",
+      "i0": "m000042",
+      "i1": "1",
+      "group": "alu.flags",
+      "category": "control",
+      "y": "m000174",
+      "instance": "g_alu_flags.u_m000174"
+    },
+    {
+      "id": "m000175",
+      "s": "m000174",
+      "i0": "m000045",
+      "i1": "1",
+      "group": "alu.flags",
+      "category": "control",
+      "y": "m000175",
+      "instance": "g_alu_flags.u_m000175"
+    },
+    {
+      "id": "m000176",
+      "s": "m000175",
+      "i0": "m000048",
+      "i1": "1",
+      "group": "alu.flags",
+      "category": "control",
+      "y": "m000176",
+      "instance": "g_alu_flags.u_m000176"
+    },
+    {
+      "id": "m000177",
+      "s": "m000176",
+      "i0": "m000051",
+      "i1": "1",
+      "group": "alu.flags",
+      "category": "control",
+      "y": "m000177",
+      "instance": "g_alu_flags.u_m000177"
+    },
+    {
+      "id": "m000178",
+      "s": "m000177",
+      "i0": "m000054",
+      "i1": "1",
+      "group": "alu.flags",
+      "category": "control",
+      "y": "m000178",
+      "instance": "g_alu_flags.u_m000178"
+    },
+    {
+      "id": "m000179",
+      "s": "m000118",
+      "i0": "m000051",
+      "i1": "1",
+      "group": "alu.flags",
+      "category": "control",
+      "y": "m000179",
+      "instance": "g_alu_flags.u_m000179"
+    },
+    {
+      "id": "m000180",
+      "s": "m000179",
+      "i0": "m000054",
+      "i1": "1",
+      "group": "alu.flags",
+      "category": "control",
+      "y": "m000180",
+      "instance": "g_alu_flags.u_m000180"
+    }
+  ],
+  "physical_mux_count": 180,
+  "pruned_nodes": 0,
+  "ff_bits": 0,
+  "source_sha256": "b2b7849c34d656b318d6dcdfe1a9922e287d894718b94426252ec471cf87bf3c",
+  "group_counts": {
+    "alu.decode": 73,
+    "alu.arithmetic": 29,
+    "alu.logic": 16,
+    "alu.result": 32,
+    "alu.flags": 30
+  },
+  "category_counts": {
+    "control": 103,
+    "alu": 45,
+    "selection": 32
+  },
+  "shared_requests": [
+    {
+      "id": "m000002",
+      "s": "op[1]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000003",
+      "s": "op[2]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000004",
+      "s": "op[3]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000005",
+      "s": "op[4]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000006",
+      "s": "op[5]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000001",
+      "s": "op[0]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000003",
+      "s": "op[2]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000004",
+      "s": "op[3]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000005",
+      "s": "op[4]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000006",
+      "s": "op[5]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000003",
+      "s": "op[2]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000004",
+      "s": "op[3]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000005",
+      "s": "op[4]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000006",
+      "s": "op[5]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000001",
+      "s": "op[0]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000002",
+      "s": "op[1]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000004",
+      "s": "op[3]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000005",
+      "s": "op[4]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000006",
+      "s": "op[5]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000007",
+      "s": "m000001",
+      "i0": 0,
+      "i1": "m000002",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000002",
+      "s": "op[1]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000004",
+      "s": "op[3]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000005",
+      "s": "op[4]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000006",
+      "s": "op[5]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000012",
+      "s": "op[0]",
+      "i0": 0,
+      "i1": "m000002",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000001",
+      "s": "op[0]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000004",
+      "s": "op[3]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000005",
+      "s": "op[4]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000006",
+      "s": "op[5]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000017",
+      "s": "m000001",
+      "i0": 0,
+      "i1": "op[1]",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000004",
+      "s": "op[3]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000005",
+      "s": "op[4]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000006",
+      "s": "op[5]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000022",
+      "s": "op[0]",
+      "i0": 0,
+      "i1": "op[1]",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000001",
+      "s": "op[0]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000002",
+      "s": "op[1]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000003",
+      "s": "op[2]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000005",
+      "s": "op[4]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000006",
+      "s": "op[5]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000007",
+      "s": "m000001",
+      "i0": 0,
+      "i1": "m000002",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000008",
+      "s": "m000007",
+      "i0": 0,
+      "i1": "m000003",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000002",
+      "s": "op[1]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000003",
+      "s": "op[2]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000005",
+      "s": "op[4]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000006",
+      "s": "op[5]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000012",
+      "s": "op[0]",
+      "i0": 0,
+      "i1": "m000002",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000013",
+      "s": "m000012",
+      "i0": 0,
+      "i1": "m000003",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000001",
+      "s": "op[0]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000003",
+      "s": "op[2]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000005",
+      "s": "op[4]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000006",
+      "s": "op[5]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000017",
+      "s": "m000001",
+      "i0": 0,
+      "i1": "op[1]",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000018",
+      "s": "m000017",
+      "i0": 0,
+      "i1": "m000003",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000003",
+      "s": "op[2]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000005",
+      "s": "op[4]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000006",
+      "s": "op[5]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000022",
+      "s": "op[0]",
+      "i0": 0,
+      "i1": "op[1]",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000023",
+      "s": "m000022",
+      "i0": 0,
+      "i1": "m000003",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000002",
+      "s": "op[1]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000003",
+      "s": "op[2]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000004",
+      "s": "op[3]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000006",
+      "s": "op[5]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000012",
+      "s": "op[0]",
+      "i0": 0,
+      "i1": "m000002",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000013",
+      "s": "m000012",
+      "i0": 0,
+      "i1": "m000003",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000014",
+      "s": "m000013",
+      "i0": 0,
+      "i1": "m000004",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000001",
+      "s": "op[0]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000003",
+      "s": "op[2]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000004",
+      "s": "op[3]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000006",
+      "s": "op[5]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000017",
+      "s": "m000001",
+      "i0": 0,
+      "i1": "op[1]",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000018",
+      "s": "m000017",
+      "i0": 0,
+      "i1": "m000003",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000019",
+      "s": "m000018",
+      "i0": 0,
+      "i1": "m000004",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000004",
+      "s": "op[3]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000006",
+      "s": "op[5]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000022",
+      "s": "op[0]",
+      "i0": 0,
+      "i1": "op[1]",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000039",
+      "s": "m000022",
+      "i0": 0,
+      "i1": "op[2]",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000040",
+      "s": "m000039",
+      "i0": 0,
+      "i1": "m000004",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000001",
+      "s": "op[0]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000002",
+      "s": "op[1]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000003",
+      "s": "op[2]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000006",
+      "s": "op[5]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000007",
+      "s": "m000001",
+      "i0": 0,
+      "i1": "m000002",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000008",
+      "s": "m000007",
+      "i0": 0,
+      "i1": "m000003",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000043",
+      "s": "m000008",
+      "i0": 0,
+      "i1": "op[3]",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "id": "m000067",
+      "s": "operand[0]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.logic",
+      "category": "alu"
+    },
+    {
+      "id": "m000069",
+      "s": "operand[1]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.logic",
+      "category": "alu"
+    },
+    {
+      "id": "m000071",
+      "s": "operand[2]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.logic",
+      "category": "alu"
+    },
+    {
+      "id": "m000073",
+      "s": "operand[3]",
+      "i0": 1,
+      "i1": 0,
+      "group": "alu.logic",
+      "category": "alu"
+    },
+    {
+      "id": "m000115",
+      "s": "m000016",
+      "i0": "m000021",
+      "i1": 1,
+      "group": "alu.flags",
+      "category": "control"
+    },
+    {
+      "id": "m000116",
+      "s": "m000115",
+      "i0": "m000026",
+      "i1": 1,
+      "group": "alu.flags",
+      "category": "control"
+    },
+    {
+      "id": "m000117",
+      "s": "m000116",
+      "i0": "m000030",
+      "i1": 1,
+      "group": "alu.flags",
+      "category": "control"
+    },
+    {
+      "id": "m000118",
+      "s": "m000117",
+      "i0": "m000034",
+      "i1": 1,
+      "group": "alu.flags",
+      "category": "control"
+    },
+    {
+      "id": "m000158",
+      "s": "m000011",
+      "i0": "m000016",
+      "i1": 1,
+      "group": "alu.flags",
+      "category": "control"
+    },
+    {
+      "id": "m000159",
+      "s": "m000158",
+      "i0": "m000021",
+      "i1": 1,
+      "group": "alu.flags",
+      "category": "control"
+    },
+    {
+      "id": "m000160",
+      "s": "m000159",
+      "i0": "m000026",
+      "i1": 1,
+      "group": "alu.flags",
+      "category": "control"
+    },
+    {
+      "id": "m000161",
+      "s": "m000160",
+      "i0": "m000030",
+      "i1": 1,
+      "group": "alu.flags",
+      "category": "control"
+    },
+    {
+      "id": "m000115",
+      "s": "m000016",
+      "i0": "m000021",
+      "i1": 1,
+      "group": "alu.flags",
+      "category": "control"
+    },
+    {
+      "id": "m000116",
+      "s": "m000115",
+      "i0": "m000026",
+      "i1": 1,
+      "group": "alu.flags",
+      "category": "control"
+    },
+    {
+      "id": "m000117",
+      "s": "m000116",
+      "i0": "m000030",
+      "i1": 1,
+      "group": "alu.flags",
+      "category": "control"
+    },
+    {
+      "id": "m000118",
+      "s": "m000117",
+      "i0": "m000034",
+      "i1": 1,
+      "group": "alu.flags",
+      "category": "control"
+    }
+  ],
+  "pruned_shared_requests": 0,
+  "simplifications": [
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "m000001",
+      "result": "m000001",
+      "reason": "constant_selector",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "op[0]",
+      "result": "op[0]",
+      "reason": "constant_selector",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "m000001",
+      "result": "m000001",
+      "reason": "constant_selector",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "op[0]",
+      "result": "op[0]",
+      "reason": "constant_selector",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "m000001",
+      "result": "m000001",
+      "reason": "constant_selector",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "op[0]",
+      "result": "op[0]",
+      "reason": "constant_selector",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "m000001",
+      "result": "m000001",
+      "reason": "constant_selector",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "op[0]",
+      "result": "op[0]",
+      "reason": "constant_selector",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "m000001",
+      "result": "m000001",
+      "reason": "constant_selector",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "op[0]",
+      "result": "op[0]",
+      "reason": "constant_selector",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "m000001",
+      "result": "m000001",
+      "reason": "constant_selector",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "op[0]",
+      "result": "op[0]",
+      "reason": "constant_selector",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "op[0]",
+      "result": "op[0]",
+      "reason": "constant_selector",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "m000001",
+      "result": "m000001",
+      "reason": "constant_selector",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "op[0]",
+      "result": "op[0]",
+      "reason": "constant_selector",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "s": 1,
+      "i0": 0,
+      "i1": "m000001",
+      "result": "m000001",
+      "reason": "constant_selector",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "s": 0,
+      "i0": "m000026",
+      "i1": 1,
+      "result": "m000026",
+      "reason": "constant_selector",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "s": 0,
+      "i0": "m000021",
+      "i1": 1,
+      "result": "m000021",
+      "reason": "constant_selector",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "s": 0,
+      "i0": "m000011",
+      "i1": 1,
+      "result": "m000011",
+      "reason": "constant_selector",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "s": 0,
+      "i0": "m000016",
+      "i1": 1,
+      "result": "m000016",
+      "reason": "constant_selector",
+      "group": "alu.decode",
+      "category": "control"
+    },
+    {
+      "s": 0,
+      "i0": "m000016",
+      "i1": 1,
+      "result": "m000016",
+      "reason": "constant_selector",
+      "group": "alu.flags",
+      "category": "control"
+    },
+    {
+      "s": 0,
+      "i0": "m000147",
+      "i1": 1,
+      "result": "m000147",
+      "reason": "constant_selector",
+      "group": "alu.flags",
+      "category": "control"
+    },
+    {
+      "s": 0,
+      "i0": "m000011",
+      "i1": 1,
+      "result": "m000011",
+      "reason": "constant_selector",
+      "group": "alu.flags",
+      "category": "control"
+    },
+    {
+      "s": 0,
+      "i0": "m000011",
+      "i1": 1,
+      "result": "m000011",
+      "reason": "constant_selector",
+      "group": "alu.flags",
+      "category": "control"
+    },
+    {
+      "s": 0,
+      "i0": "m000016",
+      "i1": 1,
+      "result": "m000016",
+      "reason": "constant_selector",
+      "group": "alu.flags",
+      "category": "control"
+    }
+  ],
+  "observation_validity": "All outputs combinationally specified."
+}

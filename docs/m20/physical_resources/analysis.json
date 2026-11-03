@@ -1,0 +1,135 @@
+{
+  "status": "ESTIMATED_PHYSICAL_NOT_STA",
+  "topology_status": "VERIFIED",
+  "mux": 477,
+  "full_equivalent": 543,
+  "functional_equivalent": 542,
+  "max_topology_layers": 29,
+  "worst": {
+    "path_class": "FPGA_TO_FF",
+    "source": "rom_data[0]",
+    "endpoint": "state_reg.D[0]",
+    "endpoint_net": "n0581",
+    "mux_layers": 29,
+    "select_arcs": 11,
+    "data_arcs": 18,
+    "max_scenario_ns": 149.35,
+    "groups": "decode>control>storage",
+    "route": "n0080:s;n0082:s;n0084:s;n0086:s;n0087:s;n0088:s;n0089:s;n0090:s;n0106:i1;n0108:i1;n0145:s;n0147:i0;n0149:i0;n0151:i0;n0153:i0;n0155:i0;n0157:i0;n0159:i0;n0224:s;n0226:i1;n0241:s;n0244:i1;n0246:i1;n0248:i0;n0249:i0;n0251:i0;n0253:i0;n0255:i0;n0581:i0",
+    "sensitization": "UNPROVEN_STATIC_TOPOLOGY"
+  },
+  "path_classes": {
+    "FPGA_TO_FF": {
+      "path_class": "FPGA_TO_FF",
+      "source": "rom_data[0]",
+      "endpoint": "state_reg.D[0]",
+      "endpoint_net": "n0581",
+      "mux_layers": 29,
+      "select_arcs": 11,
+      "data_arcs": 18,
+      "max_scenario_ns": 149.35,
+      "groups": "decode>control>storage",
+      "route": "n0080:s;n0082:s;n0084:s;n0086:s;n0087:s;n0088:s;n0089:s;n0090:s;n0106:i1;n0108:i1;n0145:s;n0147:i0;n0149:i0;n0151:i0;n0153:i0;n0155:i0;n0157:i0;n0159:i0;n0224:s;n0226:i1;n0241:s;n0244:i1;n0246:i1;n0248:i0;n0249:i0;n0251:i0;n0253:i0;n0255:i0;n0581:i0",
+      "sensitization": "UNPROVEN_STATIC_TOPOLOGY"
+    },
+    "FPGA_TO_OUTPUT": {
+      "path_class": "FPGA_TO_OUTPUT",
+      "source": "rom_data[0]",
+      "endpoint": "ram_we[0]",
+      "endpoint_net": "n0601",
+      "mux_layers": 23,
+      "select_arcs": 9,
+      "data_arcs": 14,
+      "max_scenario_ns": 118.45,
+      "groups": "decode>bus",
+      "route": "n0080:s;n0082:s;n0084:s;n0086:s;n0087:s;n0088:s;n0089:s;n0090:s;n0106:i1;n0108:i1;n0145:s;n0147:i0;n0149:i0;n0151:i0;n0153:i0;n0155:i0;n0157:i0;n0159:i0;n0593:i1;n0595:i1;n0596:i1;n0600:i1;n0601:i1",
+      "sensitization": "UNPROVEN_STATIC_TOPOLOGY"
+    },
+    "FF_TO_FF": {
+      "path_class": "FF_TO_FF",
+      "source": "c_reg",
+      "endpoint": "z_reg.D[0]",
+      "endpoint_net": "n0568",
+      "mux_layers": 16,
+      "select_arcs": 3,
+      "data_arcs": 13,
+      "max_scenario_ns": 82.4,
+      "groups": "alu>result>flags>storage",
+      "route": "n0283:s;n0285:i0;n0295:i1;n0298:s;n0299:i1;n0359:i1;n0360:i0;n0361:i0;n0362:i0;n0363:i0;n0389:i0;n0391:i0;n0393:i0;n0394:s;n0567:i1;n0568:i0",
+      "sensitization": "UNPROVEN_STATIC_TOPOLOGY"
+    },
+    "FF_TO_OUTPUT": {
+      "path_class": "FF_TO_OUTPUT",
+      "source": "state_reg[1]",
+      "endpoint": "ram_we[0]",
+      "endpoint_net": "n0601",
+      "mux_layers": 9,
+      "select_arcs": 3,
+      "data_arcs": 6,
+      "max_scenario_ns": 46.35,
+      "groups": "control>bus",
+      "route": "n0204:s;n0215:s;n0217:i1;n0263:i0;n0592:i0;n0595:s;n0596:i1;n0600:i1;n0601:i1",
+      "sensitization": "UNPROVEN_STATIC_TOPOLOGY"
+    }
+  },
+  "shortest_nonself": {
+    "source": "a_reg[0]",
+    "destination": "gpo_reg[0]",
+    "mux_layers": 2,
+    "self_feedback": false,
+    "route": "n0573:i1;n0574:i0",
+    "contamination_min_ns": "",
+    "hold_status": "TBD_NOT_CERTIFIED",
+    "sensitization": "UNPROVEN_INCLUDES_HOLD_PATHS"
+  },
+  "static_witness_count": 0,
+  "witness_attempts": 3000,
+  "unproven_paths": 50,
+  "clock": {
+    "state_bits": 33,
+    "clock_select_pins": 66,
+    "clock_pin_cap_typ_pf": 165.0,
+    "clock_route_cap_pf": null,
+    "two_phase_pins_per_phase": 33,
+    "status": "ESTIMATED_TYP_CAP_TBD_SKEW"
+  },
+  "overloaded_model_nets": [
+    "n0095",
+    "n0235",
+    "rst"
+  ],
+  "topology_warning": "All paths unproven as worst sensitizable dynamic paths; static witnesses are not reachable-state proof",
+  "hold_status": "TBD_FOR_ALL_FREQUENCIES",
+  "source_sha256": "ffb7b75194c59acfdc467cb35212d249074993e8a676e8c49360d4d48dbdd040",
+  "model_sha256": "13a852a690df30f25697759ca57bfeab002075343413b40781c772205132b51a",
+  "scenario": {
+    "status": "ESTIMATED_NOT_QUALIFIED",
+    "nominal_vcc_v": 3.3,
+    "device": "74LVC1G157GW,125",
+    "wire_cap_pf_per_net": 10,
+    "wire_delay_ns_per_gate": 0.15,
+    "clock_to_q_assumed_ns": 10,
+    "setup_assumed_ns": 10,
+    "skew_assumed_ns": 5,
+    "board_fixed_delay_assumed_ns": 10,
+    "margin_assumed_ns": 20,
+    "fpga_rom_service_assumed_ns": 160,
+    "hold_guarantee": "TBD; propagation minimum is not a contamination/setup-hold characterization",
+    "frequencies_hz": [
+      100000,
+      500000,
+      1000000,
+      2000000,
+      5000000,
+      10000000
+    ],
+    "activity_factors": [
+      0.05,
+      0.2,
+      1.0
+    ],
+    "internal_input_switch_factor": 1,
+    "fpga_input_cap_assumed_pf": 5
+  },
+  "analyzer_sha256": "0f73fa5e6b20bc102f9e68f7ed4a703ad169d8493d0ce56818ef47a98b28a6b0"
+}

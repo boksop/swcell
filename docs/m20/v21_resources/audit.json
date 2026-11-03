@@ -1,0 +1,52 @@
+{
+  "status": "VERIFIED",
+  "combinational_mux": 477,
+  "functional_mux": 476,
+  "debug_only_mux": 1,
+  "debug_nodes": [
+    "n0602"
+  ],
+  "ff_bits": 33,
+  "dff_equivalent": 66,
+  "full_equivalent": 543,
+  "functional_equivalent": 542,
+  "reset_mux": 33,
+  "groups": {
+    "alu": 55,
+    "ar": 51,
+    "bus": 17,
+    "control": 47,
+    "decode": 132,
+    "flags": 23,
+    "pc": 73,
+    "result": 55,
+    "storage": 24
+  },
+  "max_mux_depth": 29,
+  "max_internal_pin_load": 34,
+  "highest_load_nodes": [
+    "rst"
+  ],
+  "max_mux_output_load": 21,
+  "load_histogram": {
+    "1": 308,
+    "2": 59,
+    "3": 52,
+    "4": 35,
+    "5": 18,
+    "6": 7,
+    "7": 1,
+    "8": 2,
+    "9": 1,
+    "11": 4,
+    "12": 1,
+    "13": 2,
+    "20": 1,
+    "21": 1,
+    "34": 1
+  },
+  "sv_sha256": "ffb7b75194c59acfdc467cb35212d249074993e8a676e8c49360d4d48dbdd040",
+  "json_sha256": "7a9b0fd7eb6358b5a27d807eb2a44a00686ef461c50af8a5393010be01739427",
+  "primitive_sha256": "22ab0b3dfefd2febd72a979dc93585403d768a4b32ee1439042bb9c083adee02",
+  "audit_sha256": "708a7fbd3501977e1abc959c5d6580d9f46d36e0c0c23ccb771f496a92da6168"
+}

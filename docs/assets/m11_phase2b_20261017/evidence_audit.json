@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "audited_at": "2026-10-17T06:31:50.233027+08:00",
+  "source_sha256": "b0209deae54271113fb461148b4a794d467ba2612ed6996ff19f13c1d16fb79b",
+  "started_at": "2026-10-16T22:14:35.847444+08:00",
+  "completed_at": "2026-10-17T02:22:00.486885+08:00",
+  "attempts": 111,
+  "attempt_statuses": {
+    "MEASURED": 108,
+    "INTERRUPTED": 2,
+    "STARTED": 1
+  },
+  "latest_measured_jobs": 108,
+  "unique_implemented_images": 105,
+  "phase_rows": 96,
+  "long_rows": 12,
+  "raw_messages": 398,
+  "raw_bytes": 531730,
+  "raw_sha256": "bcbcc762a6b4eaed474da83274722a0414112dd39d908ae42b2b14c4e25b4a56",
+  "frequency": [
+    {
+      "frequency_hz": 75000000,
+      "jobs": 36,
+      "min_wns_ns": 1.682,
+      "min_whs_ns": 0.078,
+      "min_wpws_ns": 6.267,
+      "checks_per_lane": 101340000
+    },
+    {
+      "frequency_hz": 100000000,
+      "jobs": 36,
+      "min_wns_ns": 1.002,
+      "min_whs_ns": 0.047,
+      "min_wpws_ns": 4.6,
+      "checks_per_lane": 101340000
+    },
+    {
+      "frequency_hz": 125000000,
+      "jobs": 36,
+      "min_wns_ns": 0.407,
+      "min_whs_ns": 0.064,
+      "min_wpws_ns": 3.6,
+      "checks_per_lane": 101340000
+    }
+  ],
+  "cdc_per_image": {
+    "CDC-1": 2,
+    "CDC-3": "4 or 5 info (phase-dependent related clocks)",
+    "CDC-10": 3,
+    "CDC-15": 512
+  },
+  "cdc_review": "External Q/QM IOB capture; async-assert reset synchronizers; 512 frozen bundled-data bits with synchronized done and settle wait. Not zero warnings.",
+  "external_delays_calibrated": false,
+  "output_hashes": {
+    "qm_phase_scan.png": "2d5e1c2555107e57a4b07707de0a760b34faef683e2dd1003bc9c456d116d939",
+    "summary.json": "ff07622e58aa5384af615469110aac4331ffe40804acf0726f713681d62cc947",
+    "report.md": "41ff47bdb8045af14af68f0772121a3c8c2742f02a43a10cec27f46ee85be8a1",
+    "frequency_summary.png": "fc47bc7f1c4f945c857edf53b5c72e3c47d6bcf635e69ea990b6e20a21ed29b7",
+    "long_run.csv": "6f7986c96c03926414ca904b211fe5cabd83063e36a54678d742516d7368b714",
+    "raw.jsonl": "bcbcc762a6b4eaed474da83274722a0414112dd39d908ae42b2b14c4e25b4a56",
+    "phase_scan.csv": "152c97fda83f38e4bc5f3c7622329505539289ad52f616a72459d5f0eb2fa261",
+    "checkpoint.json": "2816eb0f2ef4a7705104e7feb12f4f15d88421c311085cd1bb0b20d77853cb10",
+    "q_phase_scan.png": "b004c5af820905fa045b0e6e0dcfd0b986225b4a06c5d9b6b3e90ea95b04a6c0"
+  },
+  "unreferenced_attempt_files": [
+    "results/M11/phase2b_20261016_reset_sync/attempts/0007_q_75000000_5_6_10000_5_1.jsonl"
+  ]
+}
