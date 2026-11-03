@@ -25,8 +25,9 @@ def checked_output(path):
 
 def fingerprints():
     # Fixed V1 manifest, rather than globbing all future host/m20 additions.
-    prior=json.loads((ROOT/'build/m20_300/v1/inputs_manifest.json').read_text())
+    prior=json.loads((ROOT/'software/m20_300/reference/v1_source_paths.json').read_text())['paths']
     paths=[ROOT/path for path in prior]
+    paths.append(ROOT/'software/m20_300/reference/v1_source_paths.json')
     for directory in (ROOT/'rtl/m20/v2',ROOT/'sim/m20_v2'):
         paths += [p for p in directory.rglob('*') if p.is_file() and '__pycache__' not in p.parts]
     paths += [ROOT/'host/python/m20/v2_verify.py',ROOT/'sim/scripts/run_m20_v2.sh']

@@ -11,8 +11,9 @@ def checked(path):
     return p
 
 def sources():
-    old=json.loads((ROOT/'build/m20_300/v1/inputs_manifest.json').read_text())
+    old=json.loads((ROOT/'software/m20_300/reference/v1_source_paths.json').read_text())['paths']
     paths=[ROOT/p for p in old]
+    paths.append(ROOT/'software/m20_300/reference/v1_source_paths.json')
     for d in ('rtl/m20/v21','sim/m20_v21'):
         paths += [p for p in (ROOT/d).rglob('*') if p.is_file()]
     paths += [ROOT/f'host/python/m20/v21_{x}.py' for x in ('build','audit','verify')]

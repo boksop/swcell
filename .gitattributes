@@ -1,0 +1,2 @@
+# Freeze source/evidence-summary bytes exactly, independently of global autocrlf.
+* -text
