@@ -1,0 +1,11 @@
+profile,suite,status,cases,events,microcycles
+zero,instructions,PASS,49,22223,51340
+zero,games,PASS,38,35108,115651
+zero,pressure,PASS,5,12,45
+delayed,instructions,PASS,49,22223,51340
+delayed,games,PASS,38,35108,115651
+delayed,pressure,PASS,5,12,45
+reduced,pressure,PASS,5,12,45
+max_delay,pressure,PASS,5,12,45
+master_late,pressure,PASS,5,12,45
+slave_early,pressure,PASS,5,12,45

@@ -1,0 +1,12 @@
+{
+  "base_commit": "c2edd9ba5baff58c86ef471b4435275e3f1bc876",
+  "original_files": 284,
+  "unchanged": 280,
+  "changed_management_documents": [
+    ".gitignore",
+    "README.md",
+    "TASK_PROGRESS.md",
+    "docs/m20/README.md"
+  ],
+  "rtl_isa_asm_historical_data_unchanged": true
+}

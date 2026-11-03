@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "base_sha256": "ffb7b75194c59acfdc467cb35212d249074993e8a676e8c49360d4d48dbdd040",
+  "v23_sha256": "07c663201817520cfd08781abcc7ec5f0c20bda84232eb22d93f5288d6f6a36d",
+  "comb_mux": 477,
+  "state_bits": 33,
+  "ideal_ff_native_bits": 33,
+  "two_phase_native_ff_bits": 0,
+  "two_phase_storage_mux": 66,
+  "full_equivalent": 543,
+  "functional_equivalent": 542,
+  "method": "Frozen combinational body comparison + independent477/33 audit + exact D/Q/QM bit mappings; monitor counters excluded"
+}

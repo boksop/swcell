@@ -1,0 +1,105 @@
+{
+  "status": "PASS",
+  "timing_profile": "M20-300-V1-TIMING-0.1",
+  "profiles": [
+    {
+      "profile": "zero",
+      "suite": "instructions",
+      "status": "PASS",
+      "cases": 49,
+      "events": 22223,
+      "microcycles": 51340
+    },
+    {
+      "profile": "zero",
+      "suite": "games",
+      "status": "PASS",
+      "cases": 38,
+      "events": 35108,
+      "microcycles": 115651
+    },
+    {
+      "profile": "zero",
+      "suite": "pressure",
+      "status": "PASS",
+      "cases": 5,
+      "events": 12,
+      "microcycles": 45
+    },
+    {
+      "profile": "delayed",
+      "suite": "instructions",
+      "status": "PASS",
+      "cases": 49,
+      "events": 22223,
+      "microcycles": 51340
+    },
+    {
+      "profile": "delayed",
+      "suite": "games",
+      "status": "PASS",
+      "cases": 38,
+      "events": 35108,
+      "microcycles": 115651
+    },
+    {
+      "profile": "delayed",
+      "suite": "pressure",
+      "status": "PASS",
+      "cases": 5,
+      "events": 12,
+      "microcycles": 45
+    },
+    {
+      "profile": "reduced",
+      "suite": "pressure",
+      "status": "PASS",
+      "cases": 5,
+      "events": 12,
+      "microcycles": 45
+    },
+    {
+      "profile": "max_delay",
+      "suite": "pressure",
+      "status": "PASS",
+      "cases": 5,
+      "events": 12,
+      "microcycles": 45
+    },
+    {
+      "profile": "master_late",
+      "suite": "pressure",
+      "status": "PASS",
+      "cases": 5,
+      "events": 12,
+      "microcycles": 45
+    },
+    {
+      "profile": "slave_early",
+      "suite": "pressure",
+      "status": "PASS",
+      "cases": 5,
+      "events": 12,
+      "microcycles": 45
+    }
+  ],
+  "illegal_actual_terminal": 50521,
+  "illegal_reset_recovery": 50521,
+  "memory_checks_per_profile": 7,
+  "resource_audit": {
+    "status": "PASS",
+    "base_sha256": "ffb7b75194c59acfdc467cb35212d249074993e8a676e8c49360d4d48dbdd040",
+    "v23_sha256": "07c663201817520cfd08781abcc7ec5f0c20bda84232eb22d93f5288d6f6a36d",
+    "comb_mux": 477,
+    "state_bits": 33,
+    "ideal_ff_native_bits": 33,
+    "two_phase_native_ff_bits": 0,
+    "two_phase_storage_mux": 66,
+    "full_equivalent": 543,
+    "functional_equivalent": 542,
+    "method": "Frozen combinational body comparison + independent477/33 audit + exact D/Q/QM bit mappings; monitor counters excluded"
+  },
+  "expected_overlap_negative": "DETECTED",
+  "actual_penetration": "DETECTED",
+  "limitations": "Digital delay experiments only; not physical NC7SZ157 hold/setup signoff"
+}

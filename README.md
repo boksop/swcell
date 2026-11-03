@@ -23,6 +23,8 @@ sim/scripts/run_all_regressions.sh
 
 ## M20 游戏CPU
 
+2026-11-03：新增[V2.3双相锁存器与同步FPGA存储联合验证](docs/m20/M20_300_V2_3_TEST_REPORT.md)，保留477组合MUX，状态切换为66个真实反馈MUX；原ISA和游戏码不变。架构、完整回归与[两相/存储时序契约](docs/m20/M20_300_V2_3_FPGA_MEMORY_TIMING.md)独立交付；只属数字模型验证，未作实物时序签核。
+
 当前入口：[V2.1正式543结构与本轮验证](docs/m20/M20_300_V2_1_TEST_REPORT.md)、[真实157物理规格](docs/m20/M20_PHYSICAL_FEASIBILITY.md)。2026-11-02：接受500+核心规模，已补全部非法编码实际TRAP/恢复验证；物理时序/时钟/电源/接口仍按VERIFIED、ESTIMATED、TBD分别记录，未进行PCB或实物测试。
 
 历史记录：M20-300的ISA与V1.3功能RTL已通过真实XSIM指令差分，用户在V2任务确认，见[V1正式报告](docs/reports/m20_phaseV1_20261029.md)。V2已新增显式157结构与精确审计：朴素738颗、共享603颗核心等价，两版功能三方回归通过，但未达到原328或300目标。当前仅数字仿真，未综合/STA或上板；后续决定见[V2结果](docs/m20/M20_300_V2_TEST_REPORT.md)。[M20索引](docs/m20/README.md)与[TASK_PROGRESS](TASK_PROGRESS.md)记录源码、命令和恢复入口。

@@ -1,0 +1,7 @@
+profile,all_master_closed_before_any_slave_open_ns,all_slave_closed_before_any_master_open_ns,source
+zero,80,80,configured digital branch/selector delays; not physical STA
+delayed,158.9,159.9,configured digital branch/selector delays; not physical STA
+reduced,18.9,19.9,configured digital branch/selector delays; not physical STA
+max_delay,154,158,configured digital branch/selector delays; not physical STA
+master_late,121.5,190.5,configured digital branch/selector delays; not physical STA
+slave_early,58.4,160.4,configured digital branch/selector delays; not physical STA

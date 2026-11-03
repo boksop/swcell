@@ -1,0 +1,14 @@
+{
+  "python": {
+    "status": "PASS",
+    "tests": 123,
+    "command": "PYTHONPATH=host/python build/venvs/python312/bin/python -B -m unittest discover -s host/python/tests -q",
+    "log": "build/m20_300/v23/session_20261103/python_tests_delivery.log",
+    "sha256": "5b25bf1b6754869b7496c662ac8be0136abd75054a856d204cef61cc69fd15f2"
+  },
+  "frozen_v21_rerun": {
+    "status": "PASS",
+    "evidence": "build/m20_300/v23/v21_baseline_20261103/verification.json",
+    "sha256": "5f1093303fdd731029defc66a6196850bf09f5aa25394bfd0f4905beee98650e"
+  }
+}

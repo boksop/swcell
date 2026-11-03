@@ -1,0 +1,191 @@
+$date
+   Tue Nov  3 20:26:37 2026
+$end
+
+$version
+  2026.1.1
+$end
+
+$timescale
+  1ps
+$end
+
+$scope module tb_m20v23_penetration $end
+$var reg 1 : master_hold $end
+$var reg 1 ; slave_open $end
+$var reg 1 < d $end
+$var reg 1 = checks_enable $end
+$var wire 1 * q $end
+$var wire 1 # qm $end
+$var integer 32 > tf [31:0] $end
+$var parameter 0 ? CF $end
+$scope module cell_dut $end
+$var wire 1 0 master_hold $end
+$var wire 1 1 slave_open $end
+$var wire 1 " d $end
+$var wire 1 2 checks_enable $end
+$var wire 1 * q $end
+$var wire 1 # qm $end
+$var wire 1 ! m_pin $end
+$var wire 1 ) s_pin $end
+$var integer 32 3 overlap_events [31:0] $end
+$var integer 32 4 closed_changes [31:0] $end
+$var parameter 0 5 DATA_NS $end
+$var parameter 0 6 SELECT_NS $end
+$var parameter 0 7 MASTER_NS $end
+$var parameter 0 8 SLAVE_NS $end
+$var parameter 0 9 CHECK_FATAL $end
+$scope module master $end
+$var wire 1 ! s $end
+$var wire 1 " i0 $end
+$var wire 1 # i1 $end
+$var wire 1 # y $end
+$var wire 1 $ s_eff $end
+$var wire 1 % a_eff $end
+$var wire 1 & b_eff $end
+$var parameter 0 ' DATA_NS $end
+$var parameter 0 ( SELECT_NS $end
+$upscope $end
+$scope module slave $end
+$var wire 1 ) s $end
+$var wire 1 * i0 $end
+$var wire 1 # i1 $end
+$var wire 1 * y $end
+$var wire 1 + s_eff $end
+$var wire 1 , a_eff $end
+$var wire 1 - b_eff $end
+$var parameter 0 . DATA_NS $end
+$var parameter 0 / SELECT_NS $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+
+#0
+$dumpvars
+x!
+0"
+x#
+x$
+x%
+x&
+r1 '
+r0.5 (
+0)
+x*
+x+
+x,
+x-
+r1 .
+r0.5 /
+00
+01
+02
+b0 3
+b0 4
+r1 5
+r0.5 6
+r12 7
+r0 8
+09
+0:
+0;
+0<
+0=
+b11111111111111111011000111100000 >
+0?
+$end
+
+#500
+0+
+
+#1000
+0%
+
+#12000
+0!
+
+#12500
+0#
+0$
+
+#13500
+0&
+0-
+
+#30000
+10
+1:
+
+#42000
+1!
+
+#42500
+1$
+
+#60000
+1)
+11
+1;
+
+#60500
+0*
+1+
+
+#61500
+0,
+
+#90000
+0)
+01
+0;
+
+#90500
+0+
+
+#120000
+00
+0:
+
+#132000
+0!
+
+#132500
+0$
+
+#150000
+1)
+10
+11
+12
+1:
+1;
+1=
+
+#150500
+1+
+
+#150501
+b1 3
+
+#153000
+1"
+1<
+
+#154000
+1#
+1%
+
+#155000
+1&
+1*
+1-
+
+#156000
+1,
+
+#162000
+1!
+
+#162500
+1$

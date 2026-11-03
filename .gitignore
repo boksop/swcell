@@ -30,3 +30,6 @@ fpga/xc7k325t/constraints/board.local.xdc
 /docs/m20.zip
 /docs/m20/*.zip
 /software/m20_300.zip
+
+# V2.3: deliberately retained 2KB negative-test waveform; large raw waves stay ignored.
+!docs/m20/v23_resources/penetration.vcd

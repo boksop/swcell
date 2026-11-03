@@ -1,0 +1,7 @@
+{
+  "run_path": "/home/boksop/swcell/build/m20_300/v23/regression_r6",
+  "verification_sha256": "38b3de525918fcbd0689150f349e5e71f6bc01d0997b8956696d83cc7630adaa",
+  "indexed_files": 2802,
+  "indexed_bytes": 64531391,
+  "description": "Actual local XSIM evidence; no physical hardware claims"
+}
