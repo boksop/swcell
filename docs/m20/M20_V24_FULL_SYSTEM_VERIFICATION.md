@@ -199,3 +199,5 @@ Git HEAD 仍 `5e601a9`，V23 tag 仍指 `aecf570`；任务前 147 个受保护�
 定版审核发现旧632实验入口依赖ignored历史build。新增 `sim/scripts/run_m20_ff16_cones_replay.sh`，直接读取纳管的原79见证JSON；相同网表、时序模型、旧判据不改，逐项对比所有错误path ID。实际632重放与旧结果完全一致，131错误/316正向无错。原 `run_m20_ff16_review.sh` 继续用于持有历史原始数据时的深度证据审计。
 
 一键system入口改为调用独立重放。原full_r1模拟主体、源指纹及全部8089原始文件不变；新恢复入口按定版报告另外验证，不改写原 `delivery_sources.json/final_checks.json` 等历史检查点以匹配新HEAD。当前版本的技术源指纹与纳管清单另见 `M20_V24_SOURCE_MANIFEST.json` 和 `M20_V24_GIT_FILES.csv`。
+
+干净检出时，两个旧“拒绝覆盖输出”测试假定历史目录已经存在，首轮报告2个夹具缺失失败，日志保留。新增 `tools/test/run_python_tests.py`提供受控空目录夹具并清理，不改冻结测试、CPU或断言，不复制历史数据。一键system使用此自足入口；单独运行Python套件也使用 `python -B tools/test/run_python_tests.py`。实际干净恢复结果见本地定版报告。

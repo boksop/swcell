@@ -550,8 +550,8 @@
       "sha256": "cfa2295078a6b0057978b818b52dc49c25165f0d196d09584ce89a76aa3aaaab"
     }
   ],
-  "technical_fingerprinted_files": 512,
-  "reviewed_tree_paths": 519,
+  "technical_fingerprinted_files": 513,
+  "reviewed_tree_paths": 520,
   "large_generated_cache_or_wave_newly_included": false,
   "existing_small_v23_negative_vcd_preserved": true,
   "raw_data_excluded_and_left_in_place": true,

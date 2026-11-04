@@ -76,7 +76,7 @@
     "docs/m20/M20_V24_DESIGN_REVIEW.md": "f47bffbd9c94cabe5455277afa136c6170494acb359f1e2cb8eb084b218b8cbc",
     "docs/m20/M20_V24_FEEDFORWARD_ARCHITECTURE.md": "e998dd5cb78bd1cc675dfc931932f48fa42105ec62362575a78e086313da32da",
     "docs/m20/M20_V24_FPGA_MEMORY_TIMING.md": "0b52b14249b177dda70601eb6f7bb3da67ef006880075f659606be5c7d442ac5",
-    "docs/m20/M20_V24_FULL_SYSTEM_VERIFICATION.md": "24a6057c9da307bb86878fb9ff893dd5581706b46404b39005e7668a7963a900",
+    "docs/m20/M20_V24_FULL_SYSTEM_VERIFICATION.md": "c421066bf021016fc42cc03e3beba8ea3231847cb76fef6276a9ffa1c5cc03c7",
     "docs/m20/M20_V24_MEMORY_ADAPTER_DESIGN.md": "212ab0a393fcfb960aebde544632811d2649679779836b1e9dbf906b64e21d7b",
     "docs/m20/M20_V24_MUX_AUDIT.md": "e1575e31272c2d019b34b5faec214fd7e188e3047377e2dcfd3eafe99ef956ca",
     "docs/m20/M20_V24_NONOVERLAP_VERIFICATION.md": "b82901cb9dc2b6378a0d26790ddb3e79fe4e4d7f0334310bd0ba9c14ab69bb90",
@@ -240,7 +240,7 @@
     "docs/reports/m11_phase1_20261016.md": "e230ad2a3d5e7df9a6785922807af77e043157070790cf39591e75798d6c1236",
     "docs/reports/m20_phaseV1_20261029.md": "7387b07f3db7e10c8ae5cbca6dd9c16b17b2020599041b7d9eb48aaa0db14528",
     "docs/reports/m20_phaseV2.3_20261103.md": "4fdf86957f2514295b4ea4f66cf6d1341b251df01461fefb34ac3fdf3c0f08db",
-    "docs/reports/m20_phaseV2.4_20261104.md": "2801e97c82f8862404373dc37b3fccfedab8cf0d9c779ff2755e950cb934f702",
+    "docs/reports/m20_phaseV2.4_20261104.md": "ab8c1535e14017d56f8604f98122389b8b99a232119067d6a5f81a8bc3236fd0",
     "docs/reports/stage_report_template.md": "ebefa53143fb7eb0833095048fd4710697b30bf1496e8e53e3051ec2af32e745",
     "docs/tasks/env-prep-20261028.md": "d7a12c7b4a9c1983965877618d9ba3101c4e2100d81b2d968b95b312f89604ba",
     "docs/tasks/local-git-freeze-20261103.md": "ad1e4bd5ed5bdf2ad95a626300f73223526466773a62fa5502bdfd31cc975943",
@@ -484,7 +484,7 @@
     "sim/scripts/run_m20_v23_stress.sh": "32f5b5773b690550ffb5e0479d3aa426436bfcbeb5fa43a0039e77793bd79b95",
     "sim/scripts/run_m20_v24.sh": "4b39666c168a45cb409f68608eea0184c2daa6f91a7b9e0e565cb7d862741298",
     "sim/scripts/run_m20_v24_dev.sh": "f57c6b7d800cea767a06c8b4b5c6c17625c4fa33eabbeb773660c449c207f8a7",
-    "sim/scripts/run_m20_v24_system.sh": "31d3e345d5a9b718fb79612e16df8c3ef342eb5baa86796d53996a8eb6bdc873",
+    "sim/scripts/run_m20_v24_system.sh": "eb34e9fa16bb204ecb9dcaaec2680b346c8fa49dd953fd8f4919df421f3a9855",
     "sim/scripts/run_m20_v24_unit.sh": "7b9489fcb445597a5c8235e86f8d225b5a55abafac3ca97d96cfaeae84705cd7",
     "sim/scripts/run_phase2.sh": "279447e565d0f8897703cbc9a3773e8fde6db4979dadd874c857c3858fca01df",
     "sim/scripts/run_phase2_controls.sh": "822d3a5e79a73d9ebd9173ee94134853edc60ad9aaed18df636fa75bd3734f93",
@@ -513,7 +513,8 @@
     "tools/m20/ffcd_evidence.py": "0c058c4598759b6df769bf046c1d27e73db90eb0735c14160f27433c06ab663b",
     "tools/m20/plot_ff16_margin_errors.py": "124bd5a610442265de6fa2bc6deb619ec2ef020dcee5b46251668c167cffcdc4",
     "tools/m20/v23_evidence.py": "66751de405694fcdb08738cc6bb2c04662bd2994d08bfa8177ba3f81ca088b19",
-    "tools/m20/v24_evidence.py": "cfa2295078a6b0057978b818b52dc49c25165f0d196d09584ce89a76aa3aaaab"
+    "tools/m20/v24_evidence.py": "cfa2295078a6b0057978b818b52dc49c25165f0d196d09584ce89a76aa3aaaab",
+    "tools/test/run_python_tests.py": "49181be501c181505699ceb4c7697c92a8c944ba9a323e516360c6e7c45aabde"
   },
   "excluded_from_content_hashes": [
     "TASK_PROGRESS.md",

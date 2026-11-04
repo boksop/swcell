@@ -18,6 +18,6 @@ N="${M20_FFCD_NEG_SMALL:-$R/build/m20_300/v24_ff16/${name}_ffcd_negative_small}"
 Q="${M20_FFCD_NEG_CONES:-$R/build/m20_300/v24_ff16/${name}_ffcd_negative_cones}"
 M20_FF16_OUTPUT_DIR="$N" bash "$R/sim/scripts/run_m20_ff16_small.sh" > "$D/negative_small.console.log" 2>&1
 M20_FF16_REVIEW_OUTPUT_DIR="$Q" bash "$R/sim/scripts/run_m20_ff16_cones_replay.sh" > "$D/negative_cones.console.log" 2>&1
-"$P" -B -m unittest discover -s "$R/host/python/tests" > "$D/python_tests.log" 2>&1
+"$P" -B "$R/tools/test/run_python_tests.py" > "$D/python_tests.log" 2>&1
 "$P" -B "$R/tools/m20/ffcd_evidence.py" --run "$D" --output "$D/readable_evidence" --negative-small "$N" --negative-cones "$Q" --baseline "$BLINE"
 echo "M20_V24_DIGITAL_SYSTEM_COMPLETE evidence=$D/readable_evidence ; physical_timing=NOT_VERIFIED ; no_commit_tag_remote"
