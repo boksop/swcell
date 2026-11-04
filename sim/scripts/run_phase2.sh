@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 set -euo pipefail
 root="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
-mkdir -p "$root/build/xsim_phase2"
-cd "$root/build/xsim_phase2"
-mapfile -t sources < <(find "$root/rtl/common" "$root/rtl/modules/m11/phase2" "$root/fpga/xc7k325t/phase2" "$root/sim/phase2" -name '*.sv' | sort)
+python_bin="${SWCELL_PYTHON:-python3}"
+export PYTHONPATH="$root/host/python${PYTHONPATH:+:$PYTHONPATH}" PYTHONDONTWRITEBYTECODE=1
+mkdir -p "$root/build/sim/m11/performance"
+cd "$root/build/sim/m11/performance"
+mapfile -t sources < <(find "$root/rtl/common" "$root/rtl/modules/m11/phase2" "$root/fpga/projects/m11/performance/rtl" "$root/sim/phase2" -name '*.sv' | sort)
 xvlog --sv "${sources[@]}" >compile.log 2>&1 || { cat compile.log;exit 1; }
 vivado_root="$(cd "$(dirname "$(command -v xvlog)")/.." && pwd)"
 xvlog "$vivado_root/data/verilog/src/glbl.v" >>compile.log 2>&1
@@ -12,10 +14,10 @@ run_case() {
   xelab tb_m11_hs glbl -L unisims_ver --snapshot "$name" --timescale 1ns/1ps "$@" >"$name.elab.log" 2>&1 || { cat "$name.elab.log";exit 1; }
   xsim "$name" --tclbatch "$root/sim/scripts/run_all.tcl" --testplusarg "OUTPUT=$name.jsonl" --log "$name.log" >"$name.console.log" 2>&1 || { cat "$name.console.log";exit 1; }
   grep '^HS_SIM_PASS ' "$name.log" || { cat "$name.log";exit 1; }
-  "$root/.venv/bin/python" - "$name.jsonl" <<'PY'
+  "$python_bin" - "$name.jsonl" <<'PY'
 import json,sys
 from pathlib import Path
-sys.path.insert(0,str(Path.cwd().parents[1]/'host/python'))
+# PYTHONPATH is resolved from the repository, independently of the output depth.
 from swcell_capture import parse_record
 records=[parse_record(x) for x in open(sys.argv[1])]
 if records[0]['type']!='SWEEP_START' or records[-1]['type']!='SWEEP_COMPLETE':raise SystemExit('Missing UART envelope')

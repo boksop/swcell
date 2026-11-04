@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "MODULE/TEST",
+  "status": "PLANNED",
+  "description": "填写明确的验证目标",
+  "board_profile": "fpga/boards/swcell_k325t/board.tcl",
+  "build_script": null,
+  "readme": "fpga/projects/MODULE/TEST/README.md",
+  "constraints": [],
+  "source_globs": [],
+  "references": [],
+  "todos": ["创建真实RTL/仿真/约束与构建入口后才改为IMPLEMENTED"]
+}

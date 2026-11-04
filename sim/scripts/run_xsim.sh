@@ -2,16 +2,16 @@
 set -euo pipefail
 repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 python_bin="${SWCELL_PYTHON:-python3}"
-if [[ -z "${SWCELL_PYTHON:-}" && -x "$repo_root/.venv/bin/python" ]]; then
-  python_bin="$repo_root/.venv/bin/python"
+if [[ -z "${SWCELL_PYTHON:-}" && -x "$repo_root/build/venvs/python312/bin/python" ]]; then
+  python_bin="$repo_root/build/venvs/python312/bin/python"
 fi
 for tool in xvlog xelab xsim "$python_bin"; do
   command -v "$tool" >/dev/null || { echo "Missing tool: $tool; source Vivado 2022.1/settings64.sh" >&2; exit 127; }
 done
-run_dir="$repo_root/build/xsim"
+run_dir="$repo_root/build/sim/m11/functional"
 mkdir -p "$run_dir"
 cd "$run_dir"
-mapfile -t sources < <(find "$repo_root/rtl" "$repo_root/fpga/xc7k325t/rtl" "$repo_root/fpga/xc7k325t/diagnostics" "$repo_root/sim/models" "$repo_root/sim/m11" -name '*.sv' | sort)
+mapfile -t sources < <(find "$repo_root/rtl/common" "$repo_root/rtl/modules/m11" "$repo_root/fpga/projects/m11/functional/rtl" "$repo_root/fpga/projects/diagnostics" "$repo_root/sim/models" "$repo_root/sim/m11" -maxdepth 2 -name '*.sv' | sort)
 xvlog --sv "${sources[@]}" >compile.log 2>&1 || { cat compile.log; exit 1; }
 xelab tb_m11 --snapshot m11_regression --timescale 1ns/1ps >elaborate.log 2>&1 || { cat elaborate.log; exit 1; }
 for fault in 0 1 2 3; do
@@ -48,5 +48,5 @@ xsim uart_unit --tclbatch "$repo_root/sim/scripts/run_all.tcl" \
   --log uart_unit.log >uart_unit.console.log 2>&1 || { cat uart_unit.console.log; exit 1; }
 grep -q 'UART_UNIT_PASS' uart_unit.log || { cat uart_unit.log; exit 1; }
 "$repo_root/sim/scripts/run_uart_pin_id.sh"
-"$python_bin" -m unittest discover -s "$repo_root/host/python/tests" -v
+"$python_bin" -B "$repo_root/tools/test/run_python_tests.py"
 printf 'XSIM_REGRESSION_PASS (4 M11 scenarios + alternate timing + board 50MHz + UART 115200 + POR + dual pin-ID)\n'

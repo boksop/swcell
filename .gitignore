@@ -9,6 +9,7 @@ build/
 __pycache__/
 *.pyc
 .venv/
+# Legacy local override guards remain for unmigrated private files.
 fpga/xc7k325t/config/board.local.tcl
 fpga/xc7k325t/constraints/board.local.xdc
 
@@ -33,3 +34,9 @@ fpga/xc7k325t/constraints/board.local.xdc
 
 # V2.3: deliberately retained 2KB negative-test waveform; large raw waves stay ignored.
 !docs/m20/v23_resources/penetration.vcd
+
+# Module/board-local overrides in the multi-project layout.
+/fpga/boards/**/board.local.tcl
+/fpga/boards/**/constraints/*.local.xdc
+/fpga/projects/**/config/board.local.tcl
+/fpga/projects/**/constraints/board.local.xdc

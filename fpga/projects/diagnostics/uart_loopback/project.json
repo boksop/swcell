@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "diagnostics/uart_loopback",
+  "status": "IMPLEMENTED",
+  "description": "板卡UART直接回环诊断",
+  "board_profile": "fpga/boards/swcell_k325t/board.tcl",
+  "build_script": "fpga/projects/diagnostics/uart_loopback/scripts/build.tcl",
+  "readme": "fpga/projects/diagnostics/uart_loopback/README.md",
+  "constraints": [
+    "fpga/boards/swcell_k325t/constraints/base_io.xdc",
+    "fpga/projects/m11/common/constraints/m11_io.xdc"
+  ],
+  "source_globs": [
+    "rtl/common/swc_input_sync.sv",
+    "fpga/projects/diagnostics/uart_loopback/rtl/*.sv"
+  ]
+}

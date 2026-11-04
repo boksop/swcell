@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "m20/cpu_validation",
+  "status": "PLANNED",
+  "description": "M20完整CPU的FPGA原型接入准备，不生成bitstream",
+  "board_profile": "fpga/boards/swcell_k325t/board.tcl",
+  "build_script": null,
+  "readme": "fpga/projects/m20/cpu_validation/README.md",
+  "constraints": [],
+  "source_globs": [],
+  "references": [
+    "rtl/m20/v21/generated/m20v21_cpu_core.sv",
+    "docs/reports/m20_phaseV2.4_20261104.md"
+  ],
+  "todos": [
+    "明确FPGA原生FF CPU原型与外部157接口的验证边界",
+    "实现独立板级顶层和同步ROM/RAM/调试集成",
+    "确认M20外部引脚再创建模块XDC；不得复用M11七路",
+    "完成综合、实现、STA/CDC和独立实机验收"
+  ]
+}

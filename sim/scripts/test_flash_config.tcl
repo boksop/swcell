@@ -1,7 +1,7 @@
 # No Vivado or board required: tclsh8.6 sim/scripts/test_flash_config.tcl
 set root [file normalize [file join [file dirname [info script]] ../..]]
-source [file join $root fpga xc7k325t scripts flash_config.tcl]
-source [file join $root fpga xc7k325t config board_50mhz.tcl]
+source [file join $root fpga common tcl flash_config.tcl]
+source [file join $root fpga boards swcell_k325t board.tcl]
 proc require {condition message} {if {![uplevel 1 [list expr $condition]]} {error $message}}
 set settings [swc_flash_settings swc]
 require {[dict get $settings rate_mhz]==50} "Expected 50 MHz auto selection"

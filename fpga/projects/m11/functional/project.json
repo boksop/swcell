@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "m11/functional",
+  "status": "IMPLEMENTED",
+  "description": "M11低速基础功能/17项检查",
+  "board_profile": "fpga/boards/swcell_k325t/board.tcl",
+  "build_script": "fpga/projects/m11/functional/scripts/build.tcl",
+  "readme": "fpga/projects/m11/functional/README.md",
+  "constraints": [
+    "fpga/boards/swcell_k325t/constraints/base_io.xdc",
+    "fpga/projects/m11/common/constraints/m11_io.xdc",
+    "fpga/projects/m11/functional/constraints/cdc.xdc"
+  ],
+  "source_globs": [
+    "rtl/common/*.sv",
+    "rtl/modules/m11/*.sv",
+    "fpga/projects/m11/functional/rtl/*.sv"
+  ]
+}

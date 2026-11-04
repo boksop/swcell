@@ -1,0 +1,10 @@
+# Shared board IO and configuration bank; clock timing is created by each project.
+set_property PACKAGE_PIN D27 [get_ports sys_clk]
+set_property PACKAGE_PIN R24 [get_ports LED_G]
+set_property PACKAGE_PIN T20 [get_ports LED_Y]
+set_property PACKAGE_PIN T21 [get_ports LED_R]
+set_property PACKAGE_PIN W23 [get_ports UART_TX]
+set_property PACKAGE_PIN V20 [get_ports UART_RXD]
+set_property IOSTANDARD LVCMOS33 [get_ports {sys_clk LED_G LED_Y LED_R UART_TX UART_RXD}]
+set_property CFGBVS VCCO [current_design]
+set_property CONFIG_VOLTAGE 3.3 [current_design]

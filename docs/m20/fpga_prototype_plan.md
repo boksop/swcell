@@ -15,7 +15,7 @@
 |L6|Pong/Snake机器码、软件回归、游戏检查|游戏逻辑由程序执行|
 |AUX（不混入L0–L6预算）|FPGA时钟封装、装载器、UART、trace/比较器、OLED观察模型|只用于验证，单独网表层级/报告|
 
-目录建议（**未来**）：通用MUX库置`rtl/common/ite/`；M20数据/控制在`rtl/modules/m20/`；独立模型`sim/models/m20/`；CPU TB/程序场景`sim/m20/`；新工程封装`fpga/xc7k325t/m20/`；软件工具`host/python/m20/`。不得为了CPU测试重写M11顶层或复用旧.xpr产生混合工程。
+目录建议（**未来**）：通用MUX库置`rtl/common/ite/`；M20数据/控制在`rtl/modules/m20/`；独立模型`sim/models/m20/`；CPU TB/程序场景`sim/m20/`；新工程封装`fpga/projects/m11/m20/`；软件工具`host/python/m20/`。不得为了CPU测试重写M11顶层或复用旧.xpr产生混合工程。
 
 ## 2. 两种状态绑定
 

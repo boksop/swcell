@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 root="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
-mkdir -p "$root/build/xsim_phase2_controls"
-cd "$root/build/xsim_phase2_controls"
+mkdir -p "$root/build/sim/m11/controls"
+cd "$root/build/sim/m11/controls"
 xvlog --sv "$root/rtl/common/swc_prbs31.sv" "$root/rtl/common/swc_snapshot_bridge.sv" \
  "$root/rtl/common/xilinx/swc_hs_pattern_driver.sv" "$root/rtl/common/xilinx/swc_hs_clocks.sv" \
  "$root/sim/phase2/tb_hs_controls.sv" "$root/sim/phase2/tb_hs_clock_grid.sv" >compile.log 2>&1 || { cat compile.log;exit 1; }

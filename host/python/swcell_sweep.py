@@ -21,7 +21,7 @@ FREQUENCIES=(1000000,5000000,10000000,25000000,50000000,75000000,100000000,12500
 
 def fingerprint():
     paths=[*ROOT.glob('rtl/common/**/*.sv'),*ROOT.glob('rtl/modules/m11/phase2/*.sv'),
-           *ROOT.glob('fpga/xc7k325t/phase2/*'),ROOT/'fpga/xc7k325t/constraints/board_50mhz.xdc']
+           *ROOT.glob('fpga/projects/m11/performance/rtl/*'),*ROOT.glob('fpga/projects/m11/performance/scripts/*.tcl'),ROOT/'fpga/projects/m11/common/constraints/m11_io.xdc',ROOT/'fpga/boards/swcell_k325t/constraints/base_io.xdc',ROOT/'fpga/boards/swcell_k325t/board.tcl',ROOT/'fpga/common/tcl/repo_paths.tcl']
     h=hashlib.sha256()
     for path in sorted(paths):
         if path.is_file():h.update(str(path.relative_to(ROOT)).encode());h.update(path.read_bytes())
@@ -38,7 +38,7 @@ def build_point(point,args):
     hz,q,m,bits,pattern,scan=point
     source_id=fingerprint()
     key=f'f{hz}_q{q}_m{m}_n{bits}_p{pattern}_s{scan}_{source_id[:12]}'
-    out=ROOT/'build/phase2/images'/key;out.mkdir(parents=True,exist_ok=True)
+    out=ROOT/'build/fpga/m11/performance/images'/key;out.mkdir(parents=True,exist_ok=True)
     status=out/'build_status.json'
     bit=out/'swcell_m11_hs_top.bit'
     provenance=out/'source_manifest.json'
@@ -56,7 +56,7 @@ def build_point(point,args):
     # A failed/interrupted rebuild must not leave an old SUPPORTED marker valid.
     status.unlink(missing_ok=True)
     command=[args.vivado,'-mode','batch','-nojournal','-log',str(out/'vivado.log'),
-             '-source',str(ROOT/'fpga/xc7k325t/phase2/build_hs.tcl'),'-tclargs',
+             '-source',str(ROOT/'fpga/projects/m11/performance/scripts/build_hs.tcl'),'-tclargs',
              *map(str,(hz,q,m,bits,pattern,scan)),str(out)]
     print('BUILD',key,flush=True)
     with (out/'console.log').open('wb') as log:
@@ -95,7 +95,7 @@ def run_hardware(point,out,args,raw,analysis):
     # Open before programming, and read while Vivado runs: no 4KiB tty overflow.
     with serial.Serial(args.port,args.baud,timeout=.1,exclusive=True) as stream, (out/'program.console.log').open('wb') as log:
         command=[args.vivado,'-mode','batch','-nojournal','-log',str(out/'program.log'),
-                 '-source',str(ROOT/'fpga/xc7k325t/scripts/program.tcl'),'-tclargs',
+                 '-source',str(ROOT/'fpga/common/tcl/program.tcl'),'-tclargs',
                  str(out/'swcell_m11_hs_top.bit'),args.device]
         process=subprocess.Popen(command,cwd=ROOT,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)
         deadline=time.monotonic()+args.program_timeout+bits/hz+5

@@ -4,6 +4,7 @@ Only a new report directory and a private temporary generation directory are wri
 """
 import argparse,hashlib,json,os,subprocess,sys,tempfile
 from pathlib import Path
+from layout_paths import verify_migration
 ROOT=Path(__file__).resolve().parents[2]
 
 def sha(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
@@ -29,6 +30,13 @@ def inspect(root,manifest):
     for relative,expected in files.items():
         p=Path(relative)
         if p.is_absolute() or '..' in p.parts or not (root/p).resolve().is_relative_to(root):raise ValueError('unsafe manifest path')
+        try:
+            migrated=verify_migration(root,relative,expected)
+        except (OSError,ValueError,subprocess.CalledProcessError) as error:
+            result['errors'].append(str(error));continue
+        if migrated is not None:
+            result.setdefault('verified_migrations',{})[relative]=migrated
+            continue
         if not (root/p).is_file():result['errors'].append('missing '+relative);continue
         digest=sha(root/p);result['hashes'][relative]=digest
         if digest!=expected:result['errors'].append('SHA mismatch '+relative)

@@ -32,7 +32,7 @@
 |`build/env_setup_20261028/`|环境准备日志、安装引导、隔离重分析副本、审核manifest|建议保存验证摘要与版本信息；不必提交所有安装/重绘副本|
 |`.Xil/`、`__pycache__/`、`*.pyc/*.jou/*.log/*.wdb/*.pb`|运行/编译缓存和大型波形|诊断日志按需留档；不能用这些模式决定删除已引用的测试证据|
 |`M11_P1&P2.zip`、`M11_P2B.zip`|历史工程/结果归档，重复且不适合普通Git增量|**必须备份**；P1正式原始数据目前在前者内部|
-|`fpga/xc7k325t/config/board.local.tcl`、`constraints/board.local.xdc`|机器/板卡本地覆盖项|若实际使用，独立备份并审查；当前默认真实board_50mhz文件仍提交|
+|`fpga/projects/m11/functional/config/board.local.tcl`、`constraints/board.local.xdc`|机器/板卡本地覆盖项|若实际使用，独立备份并审查；当前默认真实board_50mhz文件仍提交|
 |`codex提示词.txt`|个人工作提示词，首次提交不默认纳入|另存个人资料，内容评审后再决定是否公开|
 |`.agents/`、`.codex/`、`.aws/`、认证文件/数据库|本地助手/账户状态，非工程源码|按各自安全策略管理，不并入源码仓库|
 

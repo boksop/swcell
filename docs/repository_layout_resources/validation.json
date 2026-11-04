@@ -1,0 +1,122 @@
+{
+  "status": "PASS_WITH_PREEXISTING_DATA_GAPS",
+  "date": "2026-11-04",
+  "baseline_commit": "48564b53cd9121b827af4f4692cd798303d3512e",
+  "head_unchanged": true,
+  "index_entries_unchanged": true,
+  "original_tag_objects_unchanged": true,
+  "new_commits_tags_branches_remotes": "NONE",
+  "actual_files_moved": 27,
+  "root_readme_m11_guide_copy": true,
+  "registered_projects": 5,
+  "implemented_projects": 4,
+  "planned_projects": [
+    "m20/cpu_validation"
+  ],
+  "layout_audit": {
+    "status": "PASS",
+    "date": "2026-11-04T14:27:34.965373+08:00",
+    "baseline_commit": "48564b53cd9121b827af4f4692cd798303d3512e",
+    "migration_entries": 44,
+    "immutable_evidence_files": 138,
+    "unchanged_logical_sources": 175,
+    "literal_tcl_references": 26,
+    "original_tag_objects_unchanged": true,
+    "errors": [],
+    "limits": "path/source/lineage checks only; not synthesis, STA or hardware validation"
+  },
+  "python": {
+    "tests": 156,
+    "result": "PASS",
+    "seconds": 12.613
+  },
+  "m11": {
+    "result": "PASS",
+    "entry": "sim/scripts/run_all_regressions.sh",
+    "high_speed_cases": 25,
+    "includes_prbs_million": true,
+    "clock_grid_frequencies": 10,
+    "phase2b_frequencies": 3,
+    "phase2b_independent_points": 96,
+    "hardware_result": "NOT_RUN"
+  },
+  "m20": {
+    "result": "PASS_C_GATE_ONLY",
+    "per_mode_memory_checks": 7,
+    "per_mode_control_checks": 7,
+    "per_mode_minimal_cases": 2,
+    "per_mode_minimal_events": 9,
+    "total_mux": 563,
+    "full_system_87_case_suite": "NOT_RERUN_LOGICAL_SOURCES_UNCHANGED",
+    "old_full_r1_source_hashes_match": true,
+    "old_full_r1_raw_files_rehashed": 8089
+  },
+  "vivado": {
+    "version": "2026.1.1",
+    "functional_project_create": "PASS_FROM_TMP",
+    "other_source_loads": "PASS_3_STOPPED_BEFORE_SYNTHESIS",
+    "synthesis": "NOT_RUN",
+    "implementation": "NOT_RUN",
+    "STA": "NOT_RUN",
+    "bitstream": "NOT_GENERATED",
+    "hardware": "NOT_RUN"
+  },
+  "legacy_manifest": {
+    "result": "PASS",
+    "files": 192,
+    "explicit_migrations": 26
+  },
+  "v24_historical_manifest": {
+    "result": "PASS",
+    "files": 513,
+    "explicit_migrations": 44,
+    "historical_file_bytes": "NOT_REWRITTEN"
+  },
+  "links": {
+    "status": "PASS",
+    "documents_checked": 39,
+    "local_links_checked": 189,
+    "introduced_missing_links": [],
+    "preexisting_missing_links": [
+      {
+        "file": "docs/reports/m11_phase1_20261016.md",
+        "link": "../../results/m11_20261016_164852_164402+0800/results.csv",
+        "resolved": "/home/boksop/swcell/results/m11_20261016_164852_164402+0800/results.csv"
+      },
+      {
+        "file": "docs/reports/m11_phase1_20261016.md",
+        "link": "../../results/m11_20261016_164852_164402+0800/raw.jsonl",
+        "resolved": "/home/boksop/swcell/results/m11_20261016_164852_164402+0800/raw.jsonl"
+      },
+      {
+        "file": "docs/reports/m11_phase1_20261016.md",
+        "link": "../../results/m11_20261016_164852_164402+0800/hardware_validation.json",
+        "resolved": "/home/boksop/swcell/results/m11_20261016_164852_164402+0800/hardware_validation.json"
+      },
+      {
+        "file": "docs/reports/m11_phase1_20261016.md",
+        "link": "../../results/m11_20261016_164852_164402+0800/metadata.json",
+        "resolved": "/home/boksop/swcell/results/m11_20261016_164852_164402+0800/metadata.json"
+      },
+      {
+        "file": "docs/reports/m11_phase1_20261016.md",
+        "link": "../../results/m11_20261016_164852_164402+0800/capture_summary.json",
+        "resolved": "/home/boksop/swcell/results/m11_20261016_164852_164402+0800/capture_summary.json"
+      },
+      {
+        "file": "docs/reports/m11_phase1_20261016.md",
+        "link": "../../results/m11_20261016_164852_164402+0800/operator_context.json",
+        "resolved": "/home/boksop/swcell/results/m11_20261016_164852_164402+0800/operator_context.json"
+      },
+      {
+        "file": "docs/reports/m11_phase1_20261016.md",
+        "link": "../../results/m11_20261016_164735_233687+0800/results.csv",
+        "resolved": "/home/boksop/swcell/results/m11_20261016_164735_233687+0800/results.csv"
+      }
+    ],
+    "scope": "local file existence only; URL reachability and Markdown anchors are not tested"
+  },
+  "evidence_files_indexed": 260,
+  "evidence_bytes_indexed": 1282041,
+  "raw_data_policy": "old build/results and recorded failures preserved in place; no automatic restore or delete"
+}

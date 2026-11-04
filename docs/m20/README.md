@@ -118,7 +118,7 @@ Pong 为 168 words/336 bytes，Snake 为 368 words/736 bytes；尚无 OLED/SPI�
 
 ## 事实、提案、TBD
 
-- **工程已确认**：板卡part为`xc7k325tffg900-2`，配置50MHz；资料来自`fpga/xc7k325t/config/board_50mhz.tcl`。M11 P1/P2/P2B证据保留，但不是M20频率依据。
+- **工程已确认**：板卡part为`xc7k325tffg900-2`，配置50MHz；资料来自`fpga/projects/m11/functional/config/default.tcl`。M11 P1/P2/P2B证据保留，但不是M20频率依据。
 - **用户已确定**：真实CPU主要由单路2:1 MUX构成；自定义ISA；CPU自主执行游戏；RAM/ROM由FPGA或外部并口芯片提供而非157；FPGA原型用原生FF；不复用/移植旧M11 Vivado工程；本次不编写CPU或引脚约束。
 - **推荐、未冻结**：本文全部CPU位宽、编码、存储布局、GPIO位定义、显示假设及预算。
 - **TBD**：OLED控制器/分辨率/时序/电平、六键电路、两存储方案的最终选择和候选器件的具体连接模式、M20实际157厂商料号、PCB时钟/复位/负载、外设引脚与可接受数量上限。

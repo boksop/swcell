@@ -53,3 +53,10 @@
 - 对验证通过的独立工作单元建议独立提交，message说明目的；只有实际存在且核实的提交才引用hash。
 - `TASK_PROGRESS.md`、`AGENTS.md` 和 `docs/tasks/` 应纳入Git版本管理；仓库尚未初始化时记录为待完成，不能声称已经跟踪。
 - 不无差别添加构建缓存、临时文件、大型波形、结果原始数据或机密文件。遵守 `.gitignore`，新增文件先检查范围；不以提交记录代替测试证据。
+
+## 多模块目录约定
+
+- FPGA板卡身份/公共IO放 `fpga/boards/<board_id>/`；模块验证顶层、构建、项目参数及私有约束放 `fpga/projects/<module>/<test>/`，不要重新建立混合的芯片型号目录。
+- 每个实际或规划工程用project.json登记，PLANNED不代表可综合/上板；按 `docs/repository_layout.md` 接入。
+- 共享逻辑留rtl/common；新模块按rtl/modules/<module>、sim/<module>、docs/<module>组织。rtl/m20等冻结参考位置是有意保留的例外，不无关重构ISA/网表。
+- 新输出按build/fpga和build/sim分模块；旧build/results及历史SHA清单不搬动或改写。迁移更新当前脚本/文档，旧路径用显式迁移索引和原Git标签核验。

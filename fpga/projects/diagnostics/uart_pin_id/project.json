@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "id": "diagnostics/uart_pin_id",
+  "status": "IMPLEMENTED",
+  "description": "V20/W23双输出引脚识别（需断开外部TX驱动）",
+  "board_profile": "fpga/boards/swcell_k325t/board.tcl",
+  "build_script": "fpga/projects/diagnostics/uart_pin_id/scripts/build.tcl",
+  "readme": "fpga/projects/diagnostics/uart_pin_id/README.md",
+  "constraints": [
+    "fpga/projects/diagnostics/uart_pin_id/constraints/uart_pin_id.xdc"
+  ],
+  "source_globs": [
+    "rtl/common/swc_power_on_reset.sv",
+    "rtl/common/swc_uart_tx.sv",
+    "rtl/common/swc_uart_text_beacon.sv",
+    "fpga/projects/diagnostics/uart_pin_id/rtl/*.sv"
+  ]
+}

@@ -2,7 +2,7 @@
 
 ## 使用的配置
 
-用户已确认VCCO_0=3.3V、CFGBVS接VCCO，以及x4 SPI启动连接。配置bank属性已经写入真实XDC，Flash参数集中在`fpga/xc7k325t/config/board_50mhz.tcl`，由`flash_config.tcl`检查并生成构建目录中的`flash_config.xdc`。
+用户已确认VCCO_0=3.3V、CFGBVS接VCCO，以及x4 SPI启动连接。配置bank属性已经写入真实XDC，Flash参数集中在`fpga/projects/m11/functional/config/default.tcl`，由`flash_config.tcl`检查并生成构建目录中的`flash_config.xdc`。
 
 | 项目 | 当前设置 |
 |---|---|
@@ -42,17 +42,17 @@ Vivado允许的档位中取不超过它的最大值：50MHz
 ## 生成与校验镜像
 
 ```bash
-vivado -mode batch -source fpga/xc7k325t/scripts/build.tcl -tclargs --stage bitstream
-.venv/bin/python host/python/swcell_check_flash_image.py \
-  --mcs build/vivado/flash/swcell_m11.mcs \
-  --bin build/vivado/flash/swcell_m11.bin \
-  --size-mib 32 --report build/vivado/flash/image_check.json
+vivado -mode batch -source fpga/projects/m11/functional/scripts/build.tcl -tclargs --stage bitstream
+build/venvs/python312/bin/python host/python/swcell_check_flash_image.py \
+  --mcs build/fpga/m11/functional/flash/swcell_m11.mcs \
+  --bin build/fpga/m11/functional/flash/swcell_m11.bin \
+  --size-mib 32 --report build/fpga/m11/functional/flash/image_check.json
 ```
 
 输出：
 
-- `.bit`：`build/vivado/swcell_m11.runs/impl_1/swcell_fpga_top.bit`，可直接JTAG配置。
-- `.mcs`与`.bin`：`build/vivado/flash/swcell_m11.*`，SPIx4、Flash容量32MiB、起始地址0。
+- `.bit`：`build/fpga/m11/functional/swcell_m11.runs/impl_1/swcell_fpga_top.bit`，可直接JTAG配置。
+- `.mcs`与`.bin`：`build/fpga/m11/functional/flash/swcell_m11.*`，SPIx4、Flash容量32MiB、起始地址0。
 - `flash_settings.rpt`：实际计算的速度、最坏CCLK、时序余量、编程器器件项等。
 - `image_check.json`：MCS/BIN数据一致性、地址范围、长度及SHA-256。
 
@@ -75,8 +75,8 @@ MEM_DENSITY      = 256
 先确认直接JTAG配置后的M11功能结果，再按实际Hardware Manager设备名执行：
 
 ```bash
-vivado -mode batch -source fpga/xc7k325t/scripts/program_flash.tcl -tclargs \
-  build/vivado/flash/swcell_m11.mcs ACTUAL_DEVICE_NAME
+vivado -mode batch -source fpga/common/tcl/program_flash.tcl -tclargs \
+  build/fpga/m11/functional/flash/swcell_m11.mcs ACTUAL_DEVICE_NAME
 ```
 
 可在设备名之后指定板卡配置路径，以及完整JTAG target名称。多目标环境要求明确target，不自动取第一个目标。脚本在连接硬件前校验同目录配套BIN，随后选择唯一指定设备，下载Vivado生成的间接SPI访问bitstream，按镜像覆盖范围擦除、写入并读回验证；该范围按Flash扇区对齐，执行前应保存其中原有内容。
