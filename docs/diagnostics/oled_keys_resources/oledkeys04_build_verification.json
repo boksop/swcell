@@ -1,0 +1,45 @@
+{
+  "build": "OLEDKEYS04",
+  "date": "2026-11-04",
+  "bit_sha256": "a9f1f43f2eca4c5ce563ab51be0d2634a58371b5431c500b049d1589c45f505d",
+  "timing": {
+    "status": "FPGA_INTERNAL_TIMING_PASS",
+    "wns_ns": 2.199,
+    "whs_ns": 0.065,
+    "wpws_ns": 9.6,
+    "hardware_verified": false,
+    "oled_ack_available": false
+  },
+  "source_sha256": {
+    "fpga/projects/diagnostics/oled_keys/scripts/build.tcl": "21e961b75659990ee16d59b2e731525dc1c6faffadae6bbb863c84102e649676",
+    "fpga/boards/swcell_k325t/board.tcl": "1e267f58fd8613924783683db4e78eed57d3b59ce1c135ae1217c594fdca3026",
+    "fpga/projects/diagnostics/oled_keys/constraints/io.xdc": "7b0c8db17c7b90e76adba1dcf52b83d04858c77367b8ef1418c7c7dd30e57627",
+    "rtl/common/swc_input_sync.sv": "0c6bc29542fdd6a70e4beead69dca3a42b3c3c382eba8e960b48915f8b47d709",
+    "rtl/common/swc_power_on_reset.sv": "b316216a4630ed009cdfa0f0123b72e6862d924659495d8694342a72fedece01",
+    "rtl/common/swc_debounce.sv": "7ac074c8d1abd769898f52868d8abc7a0f22d4f054fcf3214702d3a0d2a8c517",
+    "rtl/common/swc_spi_tx.sv": "1d01c507fdd5d2398059e0fac66cad859f14182b56207507dec0a42cf907485b",
+    "rtl/common/swc_uart_tx.sv": "ebb27d1384197af26db1766586ad6ab908465e14cc33bfdafce9a7b18df78207",
+    "rtl/common/display/swc_ssd1306.sv": "f6934180ee25813f2db3908a60bbc253fef19ef5eb9f96436ffc92e56695e29f",
+    "fpga/projects/diagnostics/oled_keys/rtl/swcell_oled_keys_top.sv": "aab8fff1d27b9827cda4f715b39b6d6b55c6857f8bf99fa8069bb761f7aa1f7b",
+    "fpga/projects/diagnostics/oled_keys/rtl/swc_io_diag_uart.sv": "5d26ed74daf720a18f87412004a93ce2a21dc2345d9a15b19a81c58fe240ba21",
+    "fpga/projects/diagnostics/oled_keys/rtl/swc_io_diag_pixels.sv": "c9f93c3e2d6e0a8530af1e687f4cb6ab82e3f7e9425cfc30304ca28e35827fb9",
+    "fpga/projects/diagnostics/oled_keys/rtl/swc_oled_font_pkg.sv": "9d5b3eafd4b312459c2f3c256bea61aa3cde7ca9de9b71ddde8ca289b40d0c21"
+  },
+  "simulation": {
+    "status": "PASS",
+    "frame_cycles": 849259,
+    "transfer_cycles": 49258,
+    "frame_hz": 58.874854431922415,
+    "spi_hz": 10000000,
+    "spi_high_ns": 40,
+    "spi_low_ns": 60,
+    "frames_checked": 47,
+    "uart_bytes": 4736
+  },
+  "python_tests": 160,
+  "jtag_program": "PASS",
+  "new_build_uart_received": true,
+  "visual_rotation_and_flicker": "USER_CONFIRMED_ROTATION_CORRECT_FLICKER_UNCHANGED",
+  "raw_directory": "/home/boksop/swcell/results/BOARD_IO/20261104_162120_10mhz_59hz",
+  "flicker_followup": "User explicitly deferred flicker investigation"
+}

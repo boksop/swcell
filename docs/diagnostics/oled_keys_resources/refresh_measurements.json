@@ -1,0 +1,42 @@
+[
+  {
+    "build": "OLEDKEYS01",
+    "spi_hz": 1000000,
+    "sys_clk_hz": 50000000,
+    "frame_cycles": 2450022,
+    "transfer_cycles": 450021,
+    "frame_hz": 20.40798000997542,
+    "provenance": "XSIM production SPI and frame-gap defaults; reset waits accelerated",
+    "status": "accepted basic pins; display flicker remains"
+  },
+  {
+    "build": "OLEDKEYS02",
+    "spi_hz": 1000000,
+    "sys_clk_hz": 50000000,
+    "frame_cycles": 2449595,
+    "transfer_cycles": 449594,
+    "frame_hz": 20.411537417409818,
+    "provenance": "XSIM production SPI and frame-gap defaults; reset waits accelerated",
+    "status": "rotated, change-only inverse; programmed, no visual reacceptance"
+  },
+  {
+    "build": "OLEDKEYS03",
+    "spi_hz": 10000000,
+    "sys_clk_hz": 50000000,
+    "frame_cycles": 2049259,
+    "transfer_cycles": 49258,
+    "frame_hz": 24.399063271162895,
+    "provenance": "XSIM production SPI and frame-gap defaults; reset waits accelerated",
+    "status": "simulated; implementation superseded before bit, not programmed"
+  },
+  {
+    "build": "OLEDKEYS04",
+    "spi_hz": 10000000,
+    "sys_clk_hz": 50000000,
+    "frame_cycles": 849259,
+    "transfer_cycles": 49258,
+    "frame_hz": 58.874854431922415,
+    "provenance": "XSIM production SPI and frame-gap defaults; reset waits accelerated",
+    "status": "programmed; visual reacceptance pending"
+  }
+]

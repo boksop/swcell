@@ -1,0 +1,160 @@
+{
+  "board": "swcell_k325t",
+  "clock_hz": 50000000,
+  "voltage_v": 3.3,
+  "source": "user-provided peripheral wiring 2026-11-04; existing clock/UART retained",
+  "buttons_active_low": true,
+  "key_leds_active_low": true,
+  "pins": [
+    {
+      "port": "sys_clk",
+      "package_pin": "D27",
+      "direction": "IN",
+      "group": "clock"
+    },
+    {
+      "port": "OLED_RST_N",
+      "package_pin": "Y28",
+      "direction": "OUT",
+      "group": "oled"
+    },
+    {
+      "port": "OLED_DC",
+      "package_pin": "M30",
+      "direction": "OUT",
+      "group": "oled"
+    },
+    {
+      "port": "OLED_SCK",
+      "package_pin": "M29",
+      "direction": "OUT",
+      "group": "oled"
+    },
+    {
+      "port": "OLED_MOSI",
+      "package_pin": "N24",
+      "direction": "OUT",
+      "group": "oled"
+    },
+    {
+      "port": "OLED_CS_N",
+      "package_pin": "P22",
+      "direction": "OUT",
+      "group": "oled"
+    },
+    {
+      "port": "RST_N",
+      "package_pin": "N27",
+      "direction": "IN",
+      "group": "button"
+    },
+    {
+      "port": "KEY0",
+      "package_pin": "AK28",
+      "direction": "IN",
+      "group": "button"
+    },
+    {
+      "port": "KEY1",
+      "package_pin": "AF26",
+      "direction": "IN",
+      "group": "button"
+    },
+    {
+      "port": "KEY2",
+      "package_pin": "AE26",
+      "direction": "IN",
+      "group": "button"
+    },
+    {
+      "port": "KEY3",
+      "package_pin": "AG28",
+      "direction": "IN",
+      "group": "button"
+    },
+    {
+      "port": "KEY4",
+      "package_pin": "AF27",
+      "direction": "IN",
+      "group": "button"
+    },
+    {
+      "port": "KEY5",
+      "package_pin": "N19",
+      "direction": "IN",
+      "group": "button"
+    },
+    {
+      "port": "KEY6",
+      "package_pin": "M19",
+      "direction": "IN",
+      "group": "button"
+    },
+    {
+      "port": "KEY7",
+      "package_pin": "M27",
+      "direction": "IN",
+      "group": "button"
+    },
+    {
+      "port": "LED0",
+      "package_pin": "AD27",
+      "direction": "OUT",
+      "group": "led"
+    },
+    {
+      "port": "LED1",
+      "package_pin": "AD28",
+      "direction": "OUT",
+      "group": "led"
+    },
+    {
+      "port": "LED2",
+      "package_pin": "AE29",
+      "direction": "OUT",
+      "group": "led"
+    },
+    {
+      "port": "LED3",
+      "package_pin": "AD29",
+      "direction": "OUT",
+      "group": "led"
+    },
+    {
+      "port": "LED4",
+      "package_pin": "AB28",
+      "direction": "OUT",
+      "group": "led"
+    },
+    {
+      "port": "LED5",
+      "package_pin": "AA27",
+      "direction": "OUT",
+      "group": "led"
+    },
+    {
+      "port": "LED6",
+      "package_pin": "Y30",
+      "direction": "OUT",
+      "group": "led"
+    },
+    {
+      "port": "LED7",
+      "package_pin": "Y29",
+      "direction": "OUT",
+      "group": "led"
+    },
+    {
+      "port": "UART_TX",
+      "package_pin": "W23",
+      "direction": "OUT",
+      "group": "uart"
+    },
+    {
+      "port": "UART_RXD",
+      "package_pin": "V20",
+      "direction": "IN",
+      "group": "uart"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "scope": "BOARD_IO_PHASE1_BASIC_PINS_WITH_OPEN_WHITE_BACKGROUND_FLICKER",
+  "date": "2026-11-04",
+  "build": "OLEDKEYS01",
+  "user_confirmed": "图案和文字均正常；功能都正常；整片白色背景明暗闪动；需要旋转180度",
+  "automatic_summary": {
+    "valid_records": 859,
+    "resets_observed": 0,
+    "current_boot_pressed_observed": 511,
+    "current_boot_released_observed": 511,
+    "fpga_seen_mask": 511,
+    "press_counts": [
+      9,
+      8,
+      7,
+      7,
+      20,
+      22,
+      15,
+      15,
+      13
+    ],
+    "all_inputs_seen_by_fpga": true,
+    "all_levels_observed_by_host": true,
+    "all_patterns_transmitted": true,
+    "oled_initialized": 1,
+    "oled_visual_verification": "NOT_CONFIRMED",
+    "led_visual_verification": "NOT_CONFIRMED",
+    "note": "input observations and SPI transmission do not prove physical labels, LED light or OLED pixels"
+  },
+  "metadata": {
+    "time": "2026-11-04T16:10:22.691785+08:00",
+    "port": "/dev/ttyUSB1",
+    "baud": 115200,
+    "input": null,
+    "interrupted": true,
+    "unrecognized_lines": 38,
+    "rx_probe_sent": true,
+    "raw_sha256": "e67359906a420786f2f2f09ab5b1cb9065bdaf5750ecaf54b33b966e47ed6198",
+    "physical_oled_or_led_confirmed": false
+  },
+  "bit_sha256": "3cdbd63c491acdc2adf096d4bd1d3da249f788b6e0825850e20954952014224a",
+  "source_sha256": {
+    "fpga/projects/diagnostics/oled_keys/scripts/build.tcl": "21e961b75659990ee16d59b2e731525dc1c6faffadae6bbb863c84102e649676",
+    "fpga/boards/swcell_k325t/board.tcl": "1e267f58fd8613924783683db4e78eed57d3b59ce1c135ae1217c594fdca3026",
+    "fpga/projects/diagnostics/oled_keys/constraints/io.xdc": "7b0c8db17c7b90e76adba1dcf52b83d04858c77367b8ef1418c7c7dd30e57627",
+    "rtl/common/swc_input_sync.sv": "0c6bc29542fdd6a70e4beead69dca3a42b3c3c382eba8e960b48915f8b47d709",
+    "rtl/common/swc_power_on_reset.sv": "b316216a4630ed009cdfa0f0123b72e6862d924659495d8694342a72fedece01",
+    "rtl/common/swc_debounce.sv": "7ac074c8d1abd769898f52868d8abc7a0f22d4f054fcf3214702d3a0d2a8c517",
+    "rtl/common/swc_spi_tx.sv": "d92f344f5d2e16066217cd4e15d3a0c09b3060bdb5c8df71ca16dc346ff0c1ba",
+    "rtl/common/swc_uart_tx.sv": "ebb27d1384197af26db1766586ad6ab908465e14cc33bfdafce9a7b18df78207",
+    "rtl/common/display/swc_ssd1306.sv": "eefc4681a97c09a2af2f98f996a128c53195b69d0d42f42453d8ceb5eaa26ad9",
+    "fpga/projects/diagnostics/oled_keys/rtl/swcell_oled_keys_top.sv": "4bae640147234b7c3eb15271dcf2eb41049f1c7c844c2d59bbdb38404dfb6791",
+    "fpga/projects/diagnostics/oled_keys/rtl/swc_io_diag_uart.sv": "f9d2316c4acfc5f119b2f48a2725f648c17ed59c2c8973484e9b11e6f4f40192",
+    "fpga/projects/diagnostics/oled_keys/rtl/swc_io_diag_pixels.sv": "c9f93c3e2d6e0a8530af1e687f4cb6ab82e3f7e9425cfc30304ca28e35827fb9",
+    "fpga/projects/diagnostics/oled_keys/rtl/swc_oled_font_pkg.sv": "9d5b3eafd4b312459c2f3c256bea61aa3cde7ca9de9b71ddde8ca289b40d0c21"
+  },
+  "source_snapshot": "build/oled_keys_20261104/r2_hardware_pass_before_rotation/sources",
+  "raw_directory": "results/BOARD_IO/20261104_160402_oled_connected",
+  "replay_notes": "Preserve the raw file including 38 unrecognized lines. Automatic visual fields remain NOT_CONFIRMED; manual user observation is recorded separately. No physical SPI/scan frequency measurement."
+}

@@ -8,3 +8,5 @@
 - JTAG/Flash显式工具位于 `fpga/common/tcl/`；本轮目录整理不调用它们连接/写入硬件。
 
 默认flash profile继续保留旧SDR参数及工程预算，不将其改写成实体实测。UART双输出诊断因端口方向不同，使用项目自己的约束，不和base_io.xdc同时加载。
+
+2026-11-04新增的OLED/按键/8路低有效LED引脚独立登记于 `oled_keys.json`，由独立诊断项目加载自己的XDC，不改变旧LED_G/Y/R的极性或M11连接。CPU后续可从这些外设选择接口，不能把诊断通过自动视为CPU通过。

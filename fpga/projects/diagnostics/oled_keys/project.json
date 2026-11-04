@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "diagnostics/oled_keys",
+  "status": "IMPLEMENTED",
+  "description": "独立SSD1306 SPI、9键、低有效8LED及UART引脚诊断",
+  "board_profile": "fpga/boards/swcell_k325t/board.tcl",
+  "build_script": "fpga/projects/diagnostics/oled_keys/scripts/build.tcl",
+  "readme": "fpga/projects/diagnostics/oled_keys/README.md",
+  "constraints": [
+    "fpga/projects/diagnostics/oled_keys/constraints/io.xdc"
+  ],
+  "source_globs": [
+    "rtl/common/swc_debounce.sv",
+    "rtl/common/swc_spi_tx.sv",
+    "rtl/common/swc_input_sync.sv",
+    "rtl/common/swc_uart_tx.sv",
+    "rtl/common/swc_power_on_reset.sv",
+    "rtl/common/display/swc_ssd1306.sv",
+    "fpga/projects/diagnostics/oled_keys/rtl/*.sv"
+  ],
+  "references": [
+    "fpga/boards/swcell_k325t/oled_keys.json"
+  ]
+}
