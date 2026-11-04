@@ -103,3 +103,5 @@ M20_VIVADO_BIN=/path/to/Vivado/bin \
 默认创建新的 build 输出，不覆盖历史。固定 79 见证重放入口为 `bash sim/scripts/run_m20_ff16_cones_replay.sh`；旧 `run_m20_ff16_review.sh` 是历史 build 原始证据再审计，仍需原始数据，不与干净源码重放混用。Git 保留源码、生成器/正式生成件、关键汇总和哈希索引；大型原始波形、缓存及 tar 保留原位，另行离线备份，未上传。
 
 定版恢复补充：原直接unittest命令的两个“拒绝覆盖”测试依赖历史目录先存在，首轮干净树因此出现2个夹具失败（日志保留）。公开套件入口 `python -B tools/test/run_python_tests.py`只创建缺少的受控空目录并在结束后清理，运行相同冻结测试，不修改V23逻辑或断言；完整恢复结果见本地定版报告。
+
+最终干净恢复结果：在源码提交80593a1的新detached检出中，151测试通过（13.309s）；56/632负测和B/C存储、控制、最小CPU门禁通过；7份生成文件字节一致、独立计数563。首轮2个夹具失败日志及所有原时序失败保留，详见[恢复机器记录](../m20/v24_release_resources/recovery_validation.json)。

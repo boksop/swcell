@@ -1,0 +1,90 @@
+{
+  "status": "PASS_DIGITAL_RELEASE_RECOVERY",
+  "verified_source_commit": "80593a1cca39dd1df632b1934878ce4fd63d2ecd",
+  "history_commit": "86fdc9e036fb7beee16c896ee00e5502b5391708",
+  "source_delivery_commit": "4a95665966edff747f04963f5b1869ca46ee83ba",
+  "core_audit": {
+    "status": "PASS",
+    "technical_fingerprints": 513,
+    "generated_files_byte_identical": [
+      "rtl/m20/v24_ffcd/generated/binding_manifest.json",
+      "rtl/m20/v24_ffcd/generated/m20ffcd_cpu_core.sv",
+      "sim/m20_ffcd/generated/tb_m20ffcd_memory.sv",
+      "sim/m20_ffcd/generated/ffcd_fixture.svh",
+      "sim/m20_ffcd/generated/tb_m20ffcd_mode_a.sv",
+      "sim/m20_ffcd/generated/tb_m20ffcd_cpu.sv",
+      "sim/m20_ffcd/generated/tb_m20ffcd_illegal.sv"
+    ],
+    "resource_audit": {
+      "status": "VERIFIED",
+      "comb_mux": 477,
+      "state_bits": 33,
+      "storage_mux": 66,
+      "cpu_total": 543,
+      "generator_mux": 20,
+      "total_excluding_buffers": 563,
+      "physical_timing": "NOT_VERIFIED",
+      "native_ff_in_cpu_latch_branch": 0,
+      "fpga_control_and_memories": "EXCLUDED_FROM_EXTERNAL_157_BUDGET",
+      "generated_sv_sha256": "c93664d07eae09e7d6bf35bad016e33f6ea4e149ebbb0eb5284901922569932e",
+      "method": "exact frozen combinational body, independent D/Q/QM aliases, exact storage-only branch, pair topology, fixed20 audit"
+    },
+    "v23_protected_files": 206,
+    "full_r1_simulation_source_fingerprints_match": true,
+    "source_commit": "80593a1cca39dd1df632b1934878ce4fd63d2ecd"
+  },
+  "python": {
+    "tests": 151,
+    "result": "PASS",
+    "seconds": 13.309,
+    "empty_guard_fixtures_created": 2,
+    "owned_empty_fixtures_removed": true,
+    "historical_data_copied": false
+  },
+  "first_clean_attempt": {
+    "result": "FAIL",
+    "tests": 151,
+    "failures": 2,
+    "cause": "frozen output guard tests require existing directories; test fixture precondition missing",
+    "log": "build/m20_300/v24_release_20261104/clean_python_initial_FAILED.log",
+    "disposition": "preserved; frozen tests untouched; explicit empty-fixture runner"
+  },
+  "b_c_gate": {
+    "status": "PASS",
+    "per_mode_memory_checks": 7,
+    "per_mode_control_checks": 7,
+    "per_mode_explicit_steps": 26,
+    "per_mode_smoke_cases": 2,
+    "per_mode_smoke_events": 9
+  },
+  "small_replay": {
+    "cases": 56,
+    "conditional": 32,
+    "failed_configurations_preserved": 24
+  },
+  "local_cones_replay": {
+    "cases": 632,
+    "positive_controls": 316,
+    "positive_errors": 0,
+    "assumed_mismatches_preserved": 131,
+    "exact_original_path_ids_match": true
+  },
+  "original_raw_files_rehashed": 8089,
+  "original_archive_sha256": "c1ceb0f32f305aa1ee567620f4d014799c8e27638c4d4bc70618bed2aa21c0f3",
+  "v23_tag_object": "eaa85bf5908549f6c0c2fcb9b43a0a912a04f48b",
+  "v23_tag_target": "aecf570c2e33563179e95e1615fd005cc19817f5",
+  "v23_tag_unchanged": true,
+  "no_remotes": true,
+  "logs_sha256": {
+    "build/m20_300/v24_release_20261104/clean_python_initial_FAILED.log": "1940fabb861cb9a83c3131b9372e1e7da45511c28da4eefb3f2cb33648a00f90",
+    "build/m20_300/v24_release_20261104/final_clean_python.log": "be6c89b3193c66da4d6a5f8241e3c883d34e27a7d4713f3e4aca5349559d0417",
+    "build/m20_300/v24_release_20261104/final_clean_cd_gate.log": "93cd74b6c3aabc938f79cc2782813848e71840b0e789249b17816e65a60f6799",
+    "build/m20_300/v24_release_20261104/final_clean_small.log": "55ead75b02de7066eb7351a72358ab2192004c0fc5a439a644e87b971a23ca9f",
+    "build/m20_300/v24_release_20261104/final_clean_cones.log": "ff0ba392d12d67ef14add77d266694f23f4bceb35d16074f0560438e603937a9",
+    "build/m20_300/v24_release_20261104/final_clean_core_audit.json": "87ba4c54d6e76df207c8c09c3e57a450777829d4c39c7bd1090c10f39db86dd0"
+  },
+  "full_87x6": "original full_r1 source fingerprints unchanged; not rerun solely for Git",
+  "physical_timing": "NOT_VERIFIED",
+  "fpga_implementation": "NOT_VERIFIED",
+  "hardware": "NOT_VERIFIED"
+}

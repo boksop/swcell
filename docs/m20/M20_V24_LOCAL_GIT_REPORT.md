@@ -57,3 +57,25 @@ VERIFIED：结构/功能与故障检出；CONDITIONAL：指定TAP16延迟/偏斜
 冻结V23测试/逻辑不修改。新增 `tools/test/run_python_tests.py`在两个目录缺少时创建空夹具，跑同一151测试，最后只对自己创建且仍为空的目录rmdir；已有历史目录不触碰，不补造原日志。一键system调用此入口。原直接unittest命令在完全干净树仍有上述夹具前提，使用公开入口可自足复现；这属于测试环境修复，非放宽断言。
 
 生成的SVG带Matplotlib路径格式行尾空格；保留原始字节，未为默认空白提示改写证据。CRLF-aware的源码检查排除原SVG，技术清单逐字节指纹验证仍完整执行。
+
+### 最终干净恢复：PASS
+
+- `4a95665966edff747f04963f5b1869ca46ee83ba`：完整源码、正式验收报告与自足79向量重放入口提交。
+- `80593a1cca39dd1df632b1934878ce4fd63d2ecd`：明确的空目录夹具测试入口修复，不改冻结V23/CPU/断言。
+- 新detached worktree `build/m20_300/v24_release_20261104/clean_final`开始时没有build历史；最终151测试全部通过（13.309s），确实创建2个空夹具且结束后清理。
+- 实际XSIM：56组仍32 CONDITIONAL/24 FAILED；632局部实验仍131错误、316正向无错，所有错误path ID与原JSON相同；B/C各7内存＋7控制（26显式单步）＋2最小场景9事件通过。
+- 生成器从跟踪文件重建7个CPU绑定/manifest/平台文件，字节一致；独立563预算、206份V23保护文件、全部513技术指纹与full_r1模拟源指纹一致。原8089原始文件和系统tar重新校验。
+
+[机器结果](v24_release_resources/recovery_validation.json)保留首轮2失败及最终通过，[恢复原始SHA索引](v24_release_resources/recovery_evidence_sha256.csv)管理本轮新增日志/CSV/VCD；原始内容仍在build，未纳入Git。最后一份文档提交仅记录这些实际结果/清单/进度，验收tag指完整最终树，代码与80593a1一致。
+
+最终状态应由以下本地只读命令核对：
+
+```bash
+git status --short
+git rev-parse m20-v2.4-digital-verified^{}
+git cat-file -t m20-v2.4-digital-verified
+git for-each-ref --format='%(contents)' refs/tags/m20-v2.4-digital-verified
+git remote -v
+```
+
+已有V23 tag对象/目标均保持；原90 staged blob已经单独历史提交，并非丢弃或混入未审内容。所有当前非忽略文件均纳管；生成缓存/大型波形仍排除且原位保留。没有远程操作，没有进入下一硬件阶段。

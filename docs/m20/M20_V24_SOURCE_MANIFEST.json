@@ -240,7 +240,7 @@
     "docs/reports/m11_phase1_20261016.md": "e230ad2a3d5e7df9a6785922807af77e043157070790cf39591e75798d6c1236",
     "docs/reports/m20_phaseV1_20261029.md": "7387b07f3db7e10c8ae5cbca6dd9c16b17b2020599041b7d9eb48aaa0db14528",
     "docs/reports/m20_phaseV2.3_20261103.md": "4fdf86957f2514295b4ea4f66cf6d1341b251df01461fefb34ac3fdf3c0f08db",
-    "docs/reports/m20_phaseV2.4_20261104.md": "ab8c1535e14017d56f8604f98122389b8b99a232119067d6a5f81a8bc3236fd0",
+    "docs/reports/m20_phaseV2.4_20261104.md": "935b3062dea014840a8030c80d533e8cd6bc36131482a117ff9dd27fedea7391",
     "docs/reports/stage_report_template.md": "ebefa53143fb7eb0833095048fd4710697b30bf1496e8e53e3051ec2af32e745",
     "docs/tasks/env-prep-20261028.md": "d7a12c7b4a9c1983965877618d9ba3101c4e2100d81b2d968b95b312f89604ba",
     "docs/tasks/local-git-freeze-20261103.md": "ad1e4bd5ed5bdf2ad95a626300f73223526466773a62fa5502bdfd31cc975943",
@@ -523,6 +523,8 @@
     "docs/m20/M20_V24_LOCAL_GIT_REPORT.md",
     "docs/m20/M20_V24_SOURCE_MANIFEST.json",
     "docs/m20/v24_release_resources/precommit_review.json",
+    "docs/m20/v24_release_resources/recovery_evidence_sha256.csv",
+    "docs/m20/v24_release_resources/recovery_validation.json",
     "docs/tasks/m20-v24-release-20261104.md"
   ],
   "physical_timing": "NOT_VERIFIED",
