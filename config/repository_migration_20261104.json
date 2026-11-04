@@ -318,8 +318,9 @@
     "tools/git/local_release_audit.py": {
       "before_sha256": "8d740a0a58a3d0c3c6517a2d08b608ff2d59342c787fff847852d0b3b0c27e5f",
       "current_files": {
-        "tools/git/local_release_audit.py": "1758c7e0511dee8fb42b06456fb97c17ff64786521de721487dbbd60b64def94",
-        "tools/git/layout_paths.py": "a26f3b209c1ae64820490e1ad2ca69b478f76137c7284f6ab11ededfedfb6350"
+        "tools/git/local_release_audit.py": "3f16f24f153a0807a25c1bccce23ef2ba564d6cf44792ce2c390374af1915291",
+        "tools/git/layout_paths.py": "a26f3b209c1ae64820490e1ad2ca69b478f76137c7284f6ab11ededfedfb6350",
+        "config/git_publication.json": "12678292d88d21c3a2419a6d9f097b65bdc45c16fd7535e95dbf33cf85d08fd3"
       },
       "change_type": "PATH_OR_NAVIGATION_UPDATED"
     }
@@ -569,6 +570,14 @@
       "previous_current_sha256": "0f14bf3feef9cfb9c64ff395ba8afd9e885a847e2d383f65415b82f570c8d95a",
       "current_sha256": "6f7428b073eb8dd88019cbeb0b343eaa7dca28c8b354126fdf0140efc3a6e02a",
       "reason": "Document verified clean Python bootstrap and required Ubuntu venv dependency; no functional source change"
+    },
+    {
+      "date": "2026-11-04",
+      "task": "SWCELL-GITHUB-PUBLISH-20261104",
+      "path": "tools/git/local_release_audit.py",
+      "previous_current_sha256": "1758c7e0511dee8fb42b06456fb97c17ff64786521de721487dbbd60b64def94",
+      "current_sha256": "3f16f24f153a0807a25c1bccce23ef2ba564d6cf44792ce2c390374af1915291",
+      "reason": "Remote-clone regression exposed historical reject-all-remotes policy. Only explicit authorized origin URL now accepted; unknown remotes remain rejected. Frozen manifest/historical blob retained, source and resource checks unchanged."
     }
   ]
 }

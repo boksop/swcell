@@ -6,6 +6,8 @@
 
 新增原样精选证据可放docs/evidence/m20_v3并用manifest记录来源/大小/SHA；原始build/results不移动、不改写。Private不等于自动开源：当前未选择许可证；第三方工具/数据手册仅保留必要来源链接，不纳管Vivado安装、许可或凭据。使用tools/git/github_publish_audit.py在发布前扫描全部可达Git对象与当前候选，模式扫描不替代人工版权/保密审查。
 
+首次远程克隆发现旧local_release_audit将任何remote判错，导致1项工具只读性测试失败；本次通过明确的config/git_publication.json仅允许授权origin=https://github.com/boksop/swcell.git，其他名称/地址或无策略仍拒绝，另有正反单元测试。旧来源manifest与历史Tag不改，当前审计工具变更通过显式来源映射记录，不改CPU/ISA/资源预期。Private可见性必须另用GitHub API核对，离线URL许可不是可见性证明。
+
 2026-11-03。用户本轮授权本地 commits 和 annotated tags；严格禁止添加remote、远程访问、push/pull/fetch、上传或同步。当前不是远程备份方案。
 
 ## 纳管边界

@@ -2,15 +2,30 @@
 import importlib.util
 import json
 from pathlib import Path
+import sys
 import unittest
 
 ROOT = Path(__file__).resolve().parents[3]
 SPEC = importlib.util.spec_from_file_location('publication_audit', ROOT / 'tools/git/github_publish_audit.py')
 AUDIT = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(AUDIT)
+sys.path.insert(0, str(ROOT / 'tools/git'))
+LOCAL_SPEC = importlib.util.spec_from_file_location('local_audit_policy', ROOT / 'tools/git/local_release_audit.py')
+LOCAL = importlib.util.module_from_spec(LOCAL_SPEC)
+LOCAL_SPEC.loader.exec_module(LOCAL)
 
 
 class PublicationAuditTests(unittest.TestCase):
+    def test_only_explicitly_approved_origin_is_accepted(self):
+        url='https://github.com/boksop/swcell.git'
+        self.assertEqual(LOCAL.remote_configuration_errors(['origin '+url+' (fetch)', 'origin '+url+' (push)'], {'origin':url}), [])
+
+    def test_unapproved_remote_or_absent_policy_is_rejected(self):
+        url='https://github.com/boksop/swcell.git'
+        self.assertTrue(LOCAL.remote_configuration_errors(['origin '+url+' (fetch)'], {}))
+        self.assertTrue(LOCAL.remote_configuration_errors(['other '+url+' (fetch)'], {'origin':url}))
+        self.assertTrue(LOCAL.remote_configuration_errors(['origin https://github.com/other/repo.git (push)'], {'origin':url}))
+
     def test_token_finding_is_redacted(self):
         fake = b'gh' + b'p_' + b'A' * 36
         findings = AUDIT.findings(b'prefix\n' + fake + b'\n')

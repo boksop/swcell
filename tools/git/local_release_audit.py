@@ -15,6 +15,14 @@ def git(root,*args):
     if p.returncode:raise ValueError('local git check failed: '+' '.join(args)+' '+p.stderr.strip())
     return p.stdout.strip()
 
+def remote_configuration_errors(lines,allowed):
+    errors=[]
+    for line in lines:
+        fields=line.split()
+        if len(fields)!=3 or fields[2] not in ('(fetch)','(push)') or allowed.get(fields[0])!=fields[1]:
+            errors.append('unexpected remote configuration')
+    return errors
+
 def inspect(root,manifest):
     root=Path(root).resolve();manifest=Path(manifest).resolve()
     metadata=dict(commit=git(root,'rev-parse','HEAD'),branch=git(root,'rev-parse','--abbrev-ref','HEAD'),
@@ -24,7 +32,10 @@ def inspect(root,manifest):
                   tracked_count=len(git(root,'ls-files').splitlines()),
                   worktree_changes=git(root,'status','--porcelain=v1','-uall').splitlines())
     result=dict(status='FAIL',git=metadata,checks={},errors=[],hashes={},limits='Digital/source restoration only; no real 157 timing or FPGA hardware qualification')
-    if metadata['remotes']:result['errors'].append('unexpected remote configuration')
+    policy=root/'config/git_publication.json'
+    allowed=json.loads(policy.read_text()).get('allowed_remotes',{}) if policy.is_file() else {}
+    result['errors'].extend(remote_configuration_errors(metadata['remotes'],allowed))
+    result['approved_remote_urls']=allowed
     definition=json.loads(manifest.read_text());files=definition['files']
     if manifest.is_relative_to(root) and str(manifest.relative_to(root)) in files:raise ValueError('manifest must not include itself')
     for relative,expected in files.items():

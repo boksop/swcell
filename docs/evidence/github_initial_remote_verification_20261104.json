@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "url": "https://github.com/boksop/swcell",
+  "private": true,
+  "main_commit": "bbf229e8d101f5ea5019cb428b5a655139cf093b",
+  "tags": [
+    {
+      "name": "m20-v2.1-logic-verified",
+      "object_sha": "77a9d89a677a0a261d611e50404512686fee9c3d",
+      "target_commit": "c20501bef7666f2666d75838efb578dec7398cdf"
+    },
+    {
+      "name": "m20-v2.2-physical-analysis",
+      "object_sha": "dfb25f144f1efbbc1fa2df177f9f3fef59113c2b",
+      "target_commit": "7742a637e41794636f4e8dc4966b1c3e8ac090d4"
+    },
+    {
+      "name": "m20-v2.3-two-phase-sim-verified",
+      "object_sha": "eaa85bf5908549f6c0c2fcb9b43a0a912a04f48b",
+      "target_commit": "aecf570c2e33563179e95e1615fd005cc19817f5"
+    },
+    {
+      "name": "m20-v2.4-digital-verified",
+      "object_sha": "b4e6faf6abe5d270b55fc79fbc65f779ed909b93",
+      "target_commit": "48564b53cd9121b827af4f4692cd798303d3512e"
+    },
+    {
+      "name": "m20-v3-fpga-hardware-verified",
+      "object_sha": "d47fe2b32114136ac7cc46ea3bbc1a6c13f4cd25",
+      "target_commit": "8fab9f6ad142e0b0fb3f8655411f5c538312f529"
+    }
+  ],
+  "tracked_files_verified": 759,
+  "readme_api_blob": "21bc9b413f26a8aab10b540e74fe1251030d5fef",
+  "independent_remote_clone": "/tmp/swcell-github-verify-7u5y6o8k",
+  "github_size_kib": 0,
+  "no_new_hardware_run": true,
+  "scope": "Initial publication checkpoint; a final documentation-only commit follows, with exact final SHA verified outside Git to avoid self-hash recursion"
+}

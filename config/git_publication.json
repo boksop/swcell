@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "authorization_date": "2026-11-04",
+  "intended_visibility": "private",
+  "allowed_remotes": {
+    "origin": "https://github.com/boksop/swcell.git"
+  },
+  "scope": "User-authorized first Private publication. URL matching only; visibility is verified separately with GitHub API. No credential or permission to force-push, rewrite tags, or publish Public."
+}

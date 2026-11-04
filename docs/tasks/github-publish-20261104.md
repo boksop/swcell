@@ -33,3 +33,9 @@
 先读根TASK、本文、git status及build/github_publish_20261104/审计。gh路径/home/boksop/.local/bin/gh；检查gh auth status，不输出token。认证未完成时继续剩余本地项，不创建假URL/远程结果。使用tools/git/github_publish_audit.py复核当前全部候选及历史；所有输出选新目录。已有提交或Tag须先核对，不重复创建，不reset/rebase/amend/force。
 
 本地已完成：b4081d3诊断、8fab9f6 V3，Tag目标8fab9f6；干净恢复详见docs/evidence/m20_v3_recovery_20261104.json。下一步远程创建及推送，当前尚未执行。不重复创建Tag。
+
+## 远程发布与工具修正检查点
+
+Private https://github.com/boksop/swcell已创建并push main bbf229e及5正式tags。独立远程克隆、759文件逐blob、README API及远程Tag对象/目标均匹配；记录docs/evidence/github_initial_remote_verification_20261104.json。
+
+真实新失败：远程克隆Python168项中1项test_audit_is_read_only_for_git_index失败，原因旧审计器拒绝所有remote；CPU不受影响。原失败build/github_publish_20261104/remote_python.txt保留。修正只读工具认可用户明确授权的origin URL，新增config/git_publication.json及两项正反测试，旧manifest/Tag不改。当前本机170项通过，待提交修复并从新远程克隆验证；V3源67项仍须相同，不能把工具修正当成新硬件验证。
