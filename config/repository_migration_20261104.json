@@ -28,7 +28,7 @@
       "before_sha256": "05f9e18d63508d7a94caf0d9283b6cc85d75afd2473edd5e913ea6be31a7f139",
       "current_files": {
         "docs/m11/README.md": "c96d7a6c4da0b8d393258105b165414442dd40118d839c7f4657881916ec6585",
-        "README.md": "6f7428b073eb8dd88019cbeb0b343eaa7dca28c8b354126fdf0140efc3a6e02a"
+        "README.md": "e31535013d6b3d3496c1abe6ecc158c6318052a4308fb5fe8e2b63325c1038b4"
       },
       "change_type": "SPLIT_OR_REPLACED_WITH_EXPLICIT_LINEAGE"
     },
@@ -71,7 +71,7 @@
     "docs/m20/README.md": {
       "before_sha256": "cb0d97458829f9f9f5b527154db84d7ca14ec88c8492af88d6d12c13730c1070",
       "current_files": {
-        "docs/m20/README.md": "cd6275e597eddbbeac0c3071c5788b68058a9928fcf576771b41ad9cff2d0814"
+        "docs/m20/README.md": "e517c1c1f58de6a3e5d154dc24b413ffcdb62851153f6a9b918b9b4449135e6a"
       },
       "change_type": "PATH_OR_NAVIGATION_UPDATED"
     },
@@ -578,6 +578,22 @@
       "previous_current_sha256": "1758c7e0511dee8fb42b06456fb97c17ff64786521de721487dbbd60b64def94",
       "current_sha256": "3f16f24f153a0807a25c1bccce23ef2ba564d6cf44792ce2c390374af1915291",
       "reason": "Remote-clone regression exposed historical reject-all-remotes policy. Only explicit authorized origin URL now accepted; unknown remotes remain rejected. Frozen manifest/historical blob retained, source and resource checks unchanged."
+    },
+    {
+      "date": "2026-11-04",
+      "task": "SWCELL-GITHUB-PUBLISH-20261104",
+      "path": "README.md",
+      "previous_current_sha256": "6f7428b073eb8dd88019cbeb0b343eaa7dca28c8b354126fdf0140efc3a6e02a",
+      "current_sha256": "e31535013d6b3d3496c1abe6ecc158c6318052a4308fb5fe8e2b63325c1038b4",
+      "reason": "Add verified Private repository and immutable V3 tag links after successful publication; no source/evidence changes"
+    },
+    {
+      "date": "2026-11-04",
+      "task": "SWCELL-GITHUB-PUBLISH-20261104",
+      "path": "docs/m20/README.md",
+      "previous_current_sha256": "cd6275e597eddbbeac0c3071c5788b68058a9928fcf576771b41ad9cff2d0814",
+      "current_sha256": "e517c1c1f58de6a3e5d154dc24b413ffcdb62851153f6a9b918b9b4449135e6a",
+      "reason": "Link user-confirmed V3 overall functional acceptance and verified Private publication; historical stage records and tags unchanged"
     }
   ]
 }

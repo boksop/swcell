@@ -1,6 +1,6 @@
 # SwCell 首次GitHub Private发布记录
 
-2026-11-04，Asia/Shanghai。**当前状态：本地V3定版及干净恢复完成，已认证boksop；尚未创建远程仓库、未push。** 本页后续只记录真实执行结果，不预填URL/SHA。
+2026-11-04，Asia/Shanghai。**状态：Private仓库已创建并推送，远程文件/标签/README及独立恢复验证通过。** 本页后续只记录真实执行结果，不预填URL/SHA。
 
 ## 初始核查
 
@@ -37,11 +37,39 @@ Vivado/XSIM2026.1.1（V3）、历史M11的2022.1、厂商安装与许可需使�
 - 现有V2.1/V2.2/V2.3/V2.4四Tag对象未变。完整历史及当前候选模式扫描PASS，未匹配凭据/超限文件；厂商版权抬头均位于项目运行报告，人工保留来源，不包含软件/IP全文。
 - 手写源/文档whitespace检查通过；原样报告空格及CSV的CRLF按证据字节保留，不为diff检查而归一化。
 
-## 远程待办
+## 远程完整性与最终入口
 
-创建Private https://github.com/boksop/swcell，推送main及5个正式tags；再校验远程main/tag对象、README、全部文件哈希及独立浅克隆。未实际完成前不宣称远程PASS。
+仓库：[https://github.com/boksop/swcell](https://github.com/boksop/swcell)；可见性由GitHub API确认**Private**，default branch为main。origin fetch/push均https://github.com/boksop/swcell.git，没有其他remote。
 
-在线审查入口已具备源码和复现结构；ChatGPT Work需安装有权限的源码插件，Codex Cloud需连接并选择仓库，账号必须有仓库访问权，见[OpenAI官方Code review](https://learn.chatgpt.com/docs/code-review?surface=app)及[Cloud environments](https://learn.chatgpt.com/docs/environments/cloud-environments)。本机gh登录不等于ChatGPT连接器已授权，本次不代替用户配置连接器。
+|版本|实际提交 / Tag目标|标签|
+|---|---|---|
+|V2.1|c20501bef7666f2666d75838efb578dec7398cdf|m20-v2.1-logic-verified|
+|V2.2|7742a637e41794636f4e8dc4966b1c3e8ac090d4|m20-v2.2-physical-analysis|
+|V2.3|aecf570c2e33563179e95e1615fd005cc19817f5；后续报告5e601a9|m20-v2.3-two-phase-sim-verified|
+|V2.4|数字实现4a95665；恢复80593a1；Tag目标48564b53cd9121b827af4f4692cd798303d3512e|m20-v2.4-digital-verified|
+|V3|8fab9f6ad142e0b0fb3f8655411f5c538312f529|m20-v3-fpga-hardware-verified|
+
+本次新增b4081d3（外设诊断）、8fab9f6（V3正式源码/证据）、bbf229e（隔离恢复记录）、365e543（授权origin工具兼容修正），以及本报告最终元数据提交。全部增量提交，无reset/rebase/amend/squash/force；旧4Tag对象逐一与初始快照相同，新V3Tag的FUNCTIONAL_STORAGE/STRICT_MUX边界保留。
+
+main与5个annotated tags已正常推送。第一次远程检查点bbf229e8d101f5ea5019cb428b5a655139cf093b的759个文件逐blob与本地一致，Tag对象及peeled目标一致，GitHub README API与本地blob相同。`gh repo view --web`调用成功，浏览器尝试打开；随后另用HTML media API确认README确实渲染h1/SwCell标题，不把浏览器进程日志当作页面人工验收。
+
+第一次完整远程测试发现旧“仅本地”审计器拒绝所有remote：167/168通过、1项工具测试失败。原失败日志保留；365e543通过明确config/git_publication.json仅认可本次授权origin，未知remote继续拒绝，增加2项正反测试。未改原测试预期、冻结manifest/Tag、CPU/ISA/资源结果。V3Tag仍指向原硬件代码8fab9f6，工具兼容修正只在后续main，不移动Tag。
+
+从GitHub再次独立克隆365e5433f3926dc2ce3c8ac956d09cda9f36240b，**全部170项Python、67源SHA、10份生成文件字节、477/33/543 CPU及20-MUX发生器、74份精选证据SHA通过**；[远程恢复记录](evidence/github_remote_recovery_20261104.json)。初次完整远程检查记录在[JSON](evidence/github_initial_remote_verification_20261104.json)。干净本地恢复另已实际执行87/57331核心XSIM、50521非法/恢复、27840算术、7访存、板级5877字节及SPI/键位、新Vivado综合477MUX，见m20_v3_recovery_20261104.json。未本轮重新运行M11硬件、V2.4全部长扫或新布局布线/bit/JTAG。
+
+最终仅main一个分支和上述5正式标签发布。初始561文件全部保留；本报告及最后1份恢复JSON纳管后共762个跟踪文件。常规Git历史最大blob约1.95MiB，无>50/100MiB对象，未纳入缓存/大波形/bit或凭据。完整Git对象本地约21MiB；GitHub的size值为服务器异步统计，精确最终值与远程main SHA写在工程外`~/swcell_github_publish_final.json`并在最终答复提供，以避免让提交中的报告循环包含自身commit SHA。本报告表中的SHA均为已实际验证检查点，最后元数据提交不改变功能源码。
+
+[README入口](https://github.com/boksop/swcell/blob/main/README.md)。V3构建：
+
+```bash
+vivado -mode batch -source "$PWD/fpga/projects/m20/cpu_validation/scripts/build.tcl" \
+  -tclargs --mode FUNCTIONAL_STORAGE --output build/fpga/m20/cpu_validation/run_new \
+  --snake-rom software/m20_300/variants/snake_shuffled_v0_1/snake_shuffled.memh --snake-done 313
+```
+
+Python需要3.12及requirements快照；Ubuntu精简安装需要python3.12-venv或已验证的无pip环境引导方式。Vivado/XSIM安装/许可与板卡驱动不上传。当前V3无XCI/外部IP/子模块/Git LFS依赖，ROM和生成源完整。不选择开源许可证；本次仅Private。
+
+GitHub/API读取已验证，具备在线审查源码入口。ChatGPT Work仍需安装/连接有仓库权限的源码插件，Codex Cloud需连接GitHub并选择该仓库；本机gh登录不等于ChatGPT连接器授权。本次未代替用户配置或验证该连接器，可在授权后按main/指定Tag审查而无需ZIP，参见[OpenAI官方Code review](https://learn.chatgpt.com/docs/code-review?surface=app)及[Cloud environments](https://learn.chatgpt.com/docs/environments/cloud-environments)。
 
 ## 已知边界
 

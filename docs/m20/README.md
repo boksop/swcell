@@ -161,3 +161,5 @@ F04方向事件缓存已获用户确认短按明显改善。另有[固定乱序�
 启动页入口统一：[F06记录](M20_V3_BOOT_ENTRY_F06.md)。BOOT页KEY5启动当前游戏，KEY7不启动；游戏中继续KEY5切换、KEY7暂停。F05键位互换已获用户确认，新启动入口独立记录验证状态。
 
 用户随后确认F06“已经完全正常了”；[启动与按键交互正式验收报告](../reports/m20_phaseV3-F06_20261104.md)及独立人工确认记录已保存。该范围不扩展为实体543颗157时序或整个V3最终冻结。
+
+后续首次Private发布任务中，用户明确确认V3整体游戏功能已通过：[V3整体正式报告](../reports/m20_phaseV3_20261104.md)、[GitHub发布记录](../GITHUB_PUBLISH_REPORT.md)。Private仓库boksop/swcell及m20-v3-fpga-hardware-verified Tag保留历史代码；仅FUNCTIONAL_STORAGE通过，不修改早期证据或扩展实体时序结论。

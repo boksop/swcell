@@ -2,6 +2,8 @@
 
 SwCell 覆盖 M0～M20 等模块的逻辑设计、仿真和实体测试。仓库按“可复用逻辑 / 模块验证 / 公共板卡”分层；FPGA 芯片型号不再作为所有测试工程的混合目录。
 
+仓库：[boksop/swcell](https://github.com/boksop/swcell)（Private）；V3硬件功能代码标签：[m20-v3-fpga-hardware-verified](https://github.com/boksop/swcell/tree/m20-v3-fpga-hardware-verified)。main含后续已授权origin的工具兼容修正；历史标签不移动。
+
 当前板卡为用户确认的 **XC7K325T-2FFG900C，50MHz，3.3V 单端 IO**；具体 PCB 修订未记录。M11 已有上板验证工程，M20 已完成 CPU 数字联合验收，V3功能存储FPGA原型已上板，严格反馈存储未放行。
 
 ## 项目与正式版本

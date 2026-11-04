@@ -1,6 +1,6 @@
 # SWCELL-GITHUB-PUBLISH-20261104
 
-状态IN_PROGRESS，2026-11-04，main，起始HEAD70daf6f。用户明确授权本次本地提交、V3 annotated Tag、创建Private GitHub仓库swcell及正常push。此前“仅本地、不远程”的会话限制由本次授权取代；不延伸为未来自动发布/Public权限。
+状态COMPLETED，2026-11-04，main，起始HEAD70daf6f。用户明确授权本次本地提交、V3 annotated Tag、创建Private GitHub仓库swcell及正常push。此前“仅本地、不远程”的会话限制由本次授权取代；不延伸为未来自动发布/Public权限。
 
 ## 已核实 / 已完成
 
@@ -17,8 +17,8 @@
 - [x] 全部待纳管文件和全历史再次扫描；明确清单暂存/本地提交；不得误入clockInfo/tight_setup_hold_pins。
 - [x] 干净隔离检出验证：Python164项、网表逐字节再生成/477+33计数、V3关键XSIM及可用的Vivado综合。
 - [x] 创建m20-v3-fpga-hardware-verified annotated Tag：仅FUNCTIONAL_STORAGE上板通过，STRICT_MUX反馈存储未放行，实体157时序开放。
-- [ ] gh认证成功后确认活动账号/owner、swcell名称、无冲突origin；创建Private仓库、push main和正式标签，不force。
-- [ ] 隔离远程检出，检查main/标签SHA、关键文件/README/无缓存，保存最终发布报告并push文档。
+- [x] gh认证成功后确认活动账号/owner、swcell名称、无冲突origin；创建Private仓库、push main和正式标签，不force。
+- [x] 隔离远程检出，检查main/标签SHA、关键文件/README/无缓存，保存最终发布报告并push文档。
 
 ## 依赖与风险
 
@@ -39,3 +39,7 @@
 Private https://github.com/boksop/swcell已创建并push main bbf229e及5正式tags。独立远程克隆、759文件逐blob、README API及远程Tag对象/目标均匹配；记录docs/evidence/github_initial_remote_verification_20261104.json。
 
 真实新失败：远程克隆Python168项中1项test_audit_is_read_only_for_git_index失败，原因旧审计器拒绝所有remote；CPU不受影响。原失败build/github_publish_20261104/remote_python.txt保留。修正只读工具认可用户明确授权的origin URL，新增config/git_publication.json及两项正反测试，旧manifest/Tag不改。当前本机170项通过，待提交修复并从新远程克隆验证；V3源67项仍须相同，不能把工具修正当成新硬件验证。
+
+## 完成状态
+
+Private boksop/swcell已创建，main/5Tag已推送；原561文件全部保留。新远程检出修正后全部170 Python/源与ROM再生成/证据校验通过；首轮remote策略失败保留，修正不动CPU/ISA/Tag。README HTML/全树/标签对象/可见性核查通过。最终报告docs/GITHUB_PUBLISH_REPORT.md；最终元数据提交后再做一次SHA对齐并写工程外swcell_github_publish_final.json，避免自引用。当前没有剩余源码修改、无新硬件执行。连接器授权未验证且不是GitHub发布失败。后续无新任务时停止，不自动Public、PCB或继续push。
