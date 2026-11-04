@@ -1,0 +1,533 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1.1 (lin64) Build 6605303 Fri Sep 04 05:45:32 MDT 2026
+| Date         : Wed Nov  4 17:37:43 2026
+| Host         : b760m running 64-bit Ubuntu 24.04.5 LTS
+| Command      : report_drc -file /home/boksop/swcell/build/fpga/m20/cpu_validation/strict_r2/drc.rpt
+| Design       : swcell_m20_v3_top
+| Device       : xc7k325tffg900-2
+| Speed File   : -2
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: swcell_m20_v3_top
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max checks: <unlimited>
+             Checks found: 85
++---------+------------------+--------------------------+--------+
+| Rule    | Severity         | Description              | Checks |
++---------+------------------+--------------------------+--------+
+| LUTLP-1 | Critical Warning | Combinatorial Loop Alert | 85     |
++---------+------------------+--------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+LUTLP-1#1 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit0/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit0/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#2 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit0/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit0/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#3 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit1/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit1/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#4 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit1/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit1/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#5 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit10/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit10/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#6 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit10/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit10/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#7 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit11/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit11/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#8 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit11/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit11/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#9 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit12/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit12/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#10 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit12/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit12/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#11 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit13/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit13/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#12 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit13/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit13/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#13 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit14/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit14/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#14 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit14/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit14/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#15 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit15/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit15/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#16 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit15/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit15/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#17 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit16/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit16/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#18 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit16/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit16/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#19 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit17/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit17/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#20 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit17/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit17/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#21 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit18/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit18/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#22 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit18/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit18/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#23 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit19/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit19/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#24 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit19/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit19/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#25 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit2/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit2/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#26 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit2/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit2/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#27 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit20/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit20/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#28 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit20/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit20/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#29 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit21/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit21/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#30 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit21/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit21/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#31 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit22/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit22/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#32 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit22/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit22/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#33 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit23/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit23/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#34 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit23/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit23/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#35 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit24/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit24/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#36 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit24/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit24/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#37 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit25/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit25/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#38 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit25/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit25/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#39 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit26/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit26/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#40 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit26/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit26/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#41 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit27/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit27/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#42 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit27/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit27/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#43 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit28/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit28/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#44 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit28/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit28/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#45 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit29/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit29/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#46 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit29/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit29/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#47 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit3/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit3/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#48 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit3/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit3/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#49 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit30/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit30/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#50 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit30/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit30/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#51 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit31/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit31/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#52 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit31/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit31/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#53 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit32/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit32/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#54 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit32/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit32/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#55 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit4/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit4/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#56 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit4/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit4/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#57 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit5/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit5/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#58 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit5/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit5/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#59 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit6/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit6/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#60 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit6/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit6/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#61 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit7/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit7/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#62 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit7/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit7/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#63 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit8/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit8/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#64 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit8/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit8/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#65 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit9/master/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit9/master/cell_mux.
+Related violations: <none>
+
+LUTLP-1#66 Critical Warning
+Combinatorial Loop Alert  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_strict.u_bit9/slave/y. Please evaluate your design. The cells in the loop are: system/cpu/g_strict.u_bit9/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#67 Critical Warning
+Combinatorial Loop Alert  
+161 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_alu.u_n0283/y. Please evaluate your design. The cells in the loop are: system/cpu/g_alu.u_n0283/cell_mux, system/cpu/g_alu.u_n0284/cell_mux,
+system/cpu/g_alu.u_n0285/cell_mux, system/cpu/g_alu.u_n0292/cell_mux,
+system/cpu/g_alu.u_n0293/cell_mux, system/cpu/g_alu.u_n0294/cell_mux,
+system/cpu/g_alu.u_n0295/cell_mux, system/cpu/g_alu.u_n0297/cell_mux,
+system/cpu/g_alu.u_n0298/cell_mux, system/cpu/g_alu.u_n0299/cell_mux,
+system/cpu/g_alu.u_n0300/cell_mux, system/cpu/g_alu.u_n0302/cell_mux,
+system/cpu/g_alu.u_n0303/cell_mux, system/cpu/g_alu.u_n0304/cell_mux,
+system/cpu/g_alu.u_n0305/cell_mux (the first 15 of 161 listed).
+Related violations: <none>
+
+LUTLP-1#68 Critical Warning
+Combinatorial Loop Alert  
+4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_storage.u_n0567/y. Please evaluate your design. The cells in the loop are: system/cpu/g_storage.u_n0567/cell_mux,
+system/cpu/g_storage.u_n0568/cell_mux,
+system/cpu/g_strict.u_bit24/master/cell_mux
+system/cpu/g_strict.u_bit24/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#69 Critical Warning
+Combinatorial Loop Alert  
+4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_storage.u_n0573/y. Please evaluate your design. The cells in the loop are: system/cpu/g_storage.u_n0573/cell_mux,
+system/cpu/g_storage.u_n0574/cell_mux,
+system/cpu/g_strict.u_bit26/master/cell_mux
+system/cpu/g_strict.u_bit26/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#70 Critical Warning
+Combinatorial Loop Alert  
+4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_storage.u_n0575/y. Please evaluate your design. The cells in the loop are: system/cpu/g_storage.u_n0575/cell_mux,
+system/cpu/g_storage.u_n0576/cell_mux,
+system/cpu/g_strict.u_bit27/master/cell_mux
+system/cpu/g_strict.u_bit27/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#71 Critical Warning
+Combinatorial Loop Alert  
+4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_storage.u_n0577/y. Please evaluate your design. The cells in the loop are: system/cpu/g_storage.u_n0577/cell_mux,
+system/cpu/g_storage.u_n0578/cell_mux,
+system/cpu/g_strict.u_bit28/master/cell_mux
+system/cpu/g_strict.u_bit28/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#72 Critical Warning
+Combinatorial Loop Alert  
+4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_storage.u_n0579/y. Please evaluate your design. The cells in the loop are: system/cpu/g_storage.u_n0579/cell_mux,
+system/cpu/g_storage.u_n0580/cell_mux,
+system/cpu/g_strict.u_bit29/master/cell_mux
+system/cpu/g_strict.u_bit29/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#73 Critical Warning
+Combinatorial Loop Alert  
+48 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_control.u_n0203/y. Please evaluate your design. The cells in the loop are: system/cpu/g_control.u_n0203/cell_mux,
+system/cpu/g_control.u_n0204/cell_mux,
+system/cpu/g_control.u_n0205/cell_mux,
+system/cpu/g_control.u_n0207/cell_mux,
+system/cpu/g_control.u_n0209/cell_mux,
+system/cpu/g_control.u_n0210/cell_mux,
+system/cpu/g_control.u_n0211/cell_mux,
+system/cpu/g_control.u_n0213/cell_mux,
+system/cpu/g_control.u_n0214/cell_mux,
+system/cpu/g_control.u_n0215/cell_mux,
+system/cpu/g_control.u_n0217/cell_mux,
+system/cpu/g_control.u_n0218/cell_mux,
+system/cpu/g_control.u_n0219/cell_mux,
+system/cpu/g_control.u_n0221/cell_mux,
+system/cpu/g_control.u_n0222/cell_mux (the first 15 of 48 listed).
+Related violations: <none>
+
+LUTLP-1#74 Critical Warning
+Combinatorial Loop Alert  
+6 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_pc.u_n0426/y. Please evaluate your design. The cells in the loop are: system/cpu/g_pc.u_n0426/cell_mux, system/cpu/g_pc.u_n0468/cell_mux,
+system/cpu/g_pc.u_n0469/cell_mux, system/cpu/g_pc.u_n0470/cell_mux,
+system/cpu/g_strict.u_bit0/master/cell_mux
+system/cpu/g_strict.u_bit0/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#75 Critical Warning
+Combinatorial Loop Alert  
+6 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_pc.u_n0427/y. Please evaluate your design. The cells in the loop are: system/cpu/g_pc.u_n0427/cell_mux, system/cpu/g_pc.u_n0471/cell_mux,
+system/cpu/g_pc.u_n0472/cell_mux, system/cpu/g_pc.u_n0473/cell_mux,
+system/cpu/g_strict.u_bit1/master/cell_mux
+system/cpu/g_strict.u_bit1/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#76 Critical Warning
+Combinatorial Loop Alert  
+6 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_pc.u_n0430/y. Please evaluate your design. The cells in the loop are: system/cpu/g_pc.u_n0430/cell_mux, system/cpu/g_pc.u_n0474/cell_mux,
+system/cpu/g_pc.u_n0475/cell_mux, system/cpu/g_pc.u_n0476/cell_mux,
+system/cpu/g_strict.u_bit2/master/cell_mux
+system/cpu/g_strict.u_bit2/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#77 Critical Warning
+Combinatorial Loop Alert  
+6 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_pc.u_n0433/y. Please evaluate your design. The cells in the loop are: system/cpu/g_pc.u_n0433/cell_mux, system/cpu/g_pc.u_n0477/cell_mux,
+system/cpu/g_pc.u_n0478/cell_mux, system/cpu/g_pc.u_n0479/cell_mux,
+system/cpu/g_strict.u_bit3/master/cell_mux
+system/cpu/g_strict.u_bit3/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#78 Critical Warning
+Combinatorial Loop Alert  
+6 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_pc.u_n0436/y. Please evaluate your design. The cells in the loop are: system/cpu/g_pc.u_n0436/cell_mux, system/cpu/g_pc.u_n0480/cell_mux,
+system/cpu/g_pc.u_n0481/cell_mux, system/cpu/g_pc.u_n0482/cell_mux,
+system/cpu/g_strict.u_bit4/master/cell_mux
+system/cpu/g_strict.u_bit4/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#79 Critical Warning
+Combinatorial Loop Alert  
+6 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_pc.u_n0439/y. Please evaluate your design. The cells in the loop are: system/cpu/g_pc.u_n0439/cell_mux, system/cpu/g_pc.u_n0483/cell_mux,
+system/cpu/g_pc.u_n0484/cell_mux, system/cpu/g_pc.u_n0485/cell_mux,
+system/cpu/g_strict.u_bit5/master/cell_mux
+system/cpu/g_strict.u_bit5/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#80 Critical Warning
+Combinatorial Loop Alert  
+6 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_pc.u_n0442/y. Please evaluate your design. The cells in the loop are: system/cpu/g_pc.u_n0442/cell_mux, system/cpu/g_pc.u_n0486/cell_mux,
+system/cpu/g_pc.u_n0487/cell_mux, system/cpu/g_pc.u_n0488/cell_mux,
+system/cpu/g_strict.u_bit6/master/cell_mux
+system/cpu/g_strict.u_bit6/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#81 Critical Warning
+Combinatorial Loop Alert  
+6 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_pc.u_n0445/y. Please evaluate your design. The cells in the loop are: system/cpu/g_pc.u_n0445/cell_mux, system/cpu/g_pc.u_n0489/cell_mux,
+system/cpu/g_pc.u_n0490/cell_mux, system/cpu/g_pc.u_n0491/cell_mux,
+system/cpu/g_strict.u_bit7/master/cell_mux
+system/cpu/g_strict.u_bit7/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#82 Critical Warning
+Combinatorial Loop Alert  
+6 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_pc.u_n0448/y. Please evaluate your design. The cells in the loop are: system/cpu/g_pc.u_n0448/cell_mux, system/cpu/g_pc.u_n0492/cell_mux,
+system/cpu/g_pc.u_n0493/cell_mux, system/cpu/g_pc.u_n0494/cell_mux,
+system/cpu/g_strict.u_bit8/master/cell_mux
+system/cpu/g_strict.u_bit8/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#83 Critical Warning
+Combinatorial Loop Alert  
+6 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_pc.u_n0451/y. Please evaluate your design. The cells in the loop are: system/cpu/g_pc.u_n0451/cell_mux, system/cpu/g_pc.u_n0495/cell_mux,
+system/cpu/g_pc.u_n0496/cell_mux, system/cpu/g_pc.u_n0497/cell_mux,
+system/cpu/g_strict.u_bit9/master/cell_mux
+system/cpu/g_strict.u_bit9/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#84 Critical Warning
+Combinatorial Loop Alert  
+6 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_pc.u_n0454/y. Please evaluate your design. The cells in the loop are: system/cpu/g_pc.u_n0454/cell_mux, system/cpu/g_pc.u_n0498/cell_mux,
+system/cpu/g_pc.u_n0499/cell_mux, system/cpu/g_pc.u_n0500/cell_mux,
+system/cpu/g_strict.u_bit10/master/cell_mux
+system/cpu/g_strict.u_bit10/slave/cell_mux.
+Related violations: <none>
+
+LUTLP-1#85 Critical Warning
+Combinatorial Loop Alert  
+6 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is system/cpu/g_pc.u_n0457/y. Please evaluate your design. The cells in the loop are: system/cpu/g_pc.u_n0457/cell_mux, system/cpu/g_pc.u_n0501/cell_mux,
+system/cpu/g_pc.u_n0502/cell_mux, system/cpu/g_pc.u_n0503/cell_mux,
+system/cpu/g_strict.u_bit11/master/cell_mux
+system/cpu/g_strict.u_bit11/slave/cell_mux.
+Related violations: <none>
+
+

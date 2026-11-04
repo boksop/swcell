@@ -40,3 +40,22 @@ fpga/xc7k325t/constraints/board.local.xdc
 /fpga/boards/**/constraints/*.local.xdc
 /fpga/projects/**/config/board.local.tcl
 /fpga/projects/**/constraints/board.local.xdc
+
+# Vivado auxiliary reports/caches; preserve on disk, never publish tool state.
+/clockInfo.txt
+/tight_setup_hold_pins.txt
+**/.cache/
+**/*.runs/
+**/*.sim/
+**/*.gen/
+**/ip_user_files/
+
+# Local credentials and environment; example configuration may be versioned.
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+id_rsa
+id_ed25519

@@ -1,0 +1,156 @@
+{
+  "status": "PASS",
+  "error": null,
+  "checks": [
+    {
+      "test": "STOP",
+      "status": "PASS",
+      "micro": 57368,
+      "writes": 2662
+    },
+    {
+      "test": "STEP_ONE_MICROCYCLE",
+      "status": "PASS",
+      "before": 57368,
+      "after": 57369
+    },
+    {
+      "test": "RESET_WHILE_STOPPED",
+      "status": "PASS"
+    },
+    {
+      "test": "ACTIVE_RATE",
+      "status": "PASS",
+      "divider": 500,
+      "rate_hz": 100000,
+      "observed_micro_delta": 2046
+    },
+    {
+      "test": "ACTIVE_RATE",
+      "status": "PASS",
+      "divider": 100,
+      "rate_hz": 500000,
+      "observed_micro_delta": 1999
+    },
+    {
+      "test": "ACTIVE_RATE",
+      "status": "PASS",
+      "divider": 50,
+      "rate_hz": 1000000,
+      "observed_micro_delta": 2034
+    },
+    {
+      "test": "SNAKE_ZERO_KEY_RAM_ORACLE",
+      "status": "PASS",
+      "last_local_tick": 66,
+      "complete_ram_snapshots": 12,
+      "cells_per_snapshot": 256,
+      "source": "software/m20_300/variants/snake_shuffled_v0_1/snake_shuffled.asm",
+      "source_sha256": "e36f5dbe57ab383bbcde3cb9a325494b9b16b7df02836d6511cb2743e566030a"
+    }
+  ],
+  "commands": [
+    {
+      "command": " ",
+      "time": "2026-11-04T20:14:46.830721+08:00"
+    },
+    {
+      "command": "n",
+      "time": "2026-11-04T20:14:48.831723+08:00"
+    },
+    {
+      "command": "r",
+      "time": "2026-11-04T20:14:49.822598+08:00"
+    },
+    {
+      "command": "1",
+      "time": "2026-11-04T20:14:52.830231+08:00"
+    },
+    {
+      "command": " ",
+      "time": "2026-11-04T20:14:54.830333+08:00"
+    },
+    {
+      "command": " ",
+      "time": "2026-11-04T20:14:58.830092+08:00"
+    },
+    {
+      "command": "2",
+      "time": "2026-11-04T20:14:59.821944+08:00"
+    },
+    {
+      "command": " ",
+      "time": "2026-11-04T20:15:01.821895+08:00"
+    },
+    {
+      "command": " ",
+      "time": "2026-11-04T20:15:05.821906+08:00"
+    },
+    {
+      "command": "3",
+      "time": "2026-11-04T20:15:06.829662+08:00"
+    },
+    {
+      "command": " ",
+      "time": "2026-11-04T20:15:08.829511+08:00"
+    },
+    {
+      "command": " ",
+      "time": "2026-11-04T20:15:12.829327+08:00"
+    },
+    {
+      "command": "s",
+      "time": "2026-11-04T20:15:13.821205+08:00"
+    },
+    {
+      "command": " ",
+      "time": "2026-11-04T20:15:15.821120+08:00"
+    }
+  ],
+  "valid_records": 44,
+  "unrecognized_lines": 1,
+  "last": {
+    "type": "M20_V3_STATE",
+    "build": "M20V3F04",
+    "game": 1,
+    "frame_game": 1,
+    "frame_valid": 1,
+    "frame_ticks": 470,
+    "debug": 184958784001799405764676,
+    "micro": 99696,
+    "retired": 32326,
+    "reads": 20082,
+    "writes": 4986,
+    "ticks": 470,
+    "errors": 0,
+    "oled_frames": 4117,
+    "cycle_ticks": 50,
+    "phase_trace": 184,
+    "pc": 313,
+    "ar": 85,
+    "a": 1,
+    "z": 0,
+    "c": 1,
+    "gpo": 8,
+    "ustate": 1,
+    "rom_word": 61440,
+    "ram_addr": 0,
+    "ram_wdata": 1,
+    "ram_rdata": 1,
+    "ram_ce": 0,
+    "ram_oe": 0,
+    "ram_we": 0,
+    "keys": 0,
+    "master_hold": 1,
+    "slave_open": 0,
+    "active": 0,
+    "reset": 0,
+    "run": 1,
+    "halted": 0,
+    "trapped": 0,
+    "queued_keys": 0,
+    "input_overflows": 0
+  },
+  "raw_sha256": "55cbab6e1f415e82e45e4b9a977b5faae16f4f9dc88f22b5aebee694d2457d45",
+  "limits": "UART controls/complete RAM comparisons; no manual OLED/button gameplay confirmation"
+}

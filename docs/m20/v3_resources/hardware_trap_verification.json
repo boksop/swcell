@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "profile": "ILLEGAL_0010_NOT_GAME",
+  "raw_directory": "/home/boksop/swcell/results/M20_V3/20261104_180622_trap_diagnostic",
+  "raw_sha256": "6648449c1b13d5db70e644b163c0ac8190eb1449f4e62ea4f3c70ec0fa14da7e",
+  "word": "0010",
+  "micro": 3,
+  "retired": 0,
+  "writes": 0,
+  "ustate": 7,
+  "terminal_snapshots": 51,
+  "limits": "one actual hardware illegal word; 50521 exhaustive illegal codes are XSIM evidence only"
+}

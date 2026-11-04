@@ -1,0 +1,2123 @@
+{
+  "source": "rtl/m20/v21/generated/m20v21_cpu_core.sv",
+  "source_sha256": "ffb7b75194c59acfdc467cb35212d249074993e8a676e8c49360d4d48dbdd040",
+  "netlist_sha256": "7a9b0fd7eb6358b5a27d807eb2a44a00686ef461c50af8a5393010be01739427",
+  "generated_sha256": "ef78a14c01cb48ba5eff7e910b341423fd466f3745890a0a705172e765482ce4",
+  "combination_mux_count": 477,
+  "state_bits": 33,
+  "strict_storage_mux_count": 66,
+  "states": [
+    {
+      "state": "pc_reg[0]",
+      "next_d": "n0470",
+      "master": "g_strict.u_bit0.master",
+      "slave": "g_strict.u_bit0.slave"
+    },
+    {
+      "state": "pc_reg[1]",
+      "next_d": "n0473",
+      "master": "g_strict.u_bit1.master",
+      "slave": "g_strict.u_bit1.slave"
+    },
+    {
+      "state": "pc_reg[2]",
+      "next_d": "n0476",
+      "master": "g_strict.u_bit2.master",
+      "slave": "g_strict.u_bit2.slave"
+    },
+    {
+      "state": "pc_reg[3]",
+      "next_d": "n0479",
+      "master": "g_strict.u_bit3.master",
+      "slave": "g_strict.u_bit3.slave"
+    },
+    {
+      "state": "pc_reg[4]",
+      "next_d": "n0482",
+      "master": "g_strict.u_bit4.master",
+      "slave": "g_strict.u_bit4.slave"
+    },
+    {
+      "state": "pc_reg[5]",
+      "next_d": "n0485",
+      "master": "g_strict.u_bit5.master",
+      "slave": "g_strict.u_bit5.slave"
+    },
+    {
+      "state": "pc_reg[6]",
+      "next_d": "n0488",
+      "master": "g_strict.u_bit6.master",
+      "slave": "g_strict.u_bit6.slave"
+    },
+    {
+      "state": "pc_reg[7]",
+      "next_d": "n0491",
+      "master": "g_strict.u_bit7.master",
+      "slave": "g_strict.u_bit7.slave"
+    },
+    {
+      "state": "pc_reg[8]",
+      "next_d": "n0494",
+      "master": "g_strict.u_bit8.master",
+      "slave": "g_strict.u_bit8.slave"
+    },
+    {
+      "state": "pc_reg[9]",
+      "next_d": "n0497",
+      "master": "g_strict.u_bit9.master",
+      "slave": "g_strict.u_bit9.slave"
+    },
+    {
+      "state": "pc_reg[10]",
+      "next_d": "n0500",
+      "master": "g_strict.u_bit10.master",
+      "slave": "g_strict.u_bit10.slave"
+    },
+    {
+      "state": "pc_reg[11]",
+      "next_d": "n0503",
+      "master": "g_strict.u_bit11.master",
+      "slave": "g_strict.u_bit11.slave"
+    },
+    {
+      "state": "ar_reg[0]",
+      "next_d": "n0537",
+      "master": "g_strict.u_bit12.master",
+      "slave": "g_strict.u_bit12.slave"
+    },
+    {
+      "state": "ar_reg[1]",
+      "next_d": "n0540",
+      "master": "g_strict.u_bit13.master",
+      "slave": "g_strict.u_bit13.slave"
+    },
+    {
+      "state": "ar_reg[2]",
+      "next_d": "n0543",
+      "master": "g_strict.u_bit14.master",
+      "slave": "g_strict.u_bit14.slave"
+    },
+    {
+      "state": "ar_reg[3]",
+      "next_d": "n0546",
+      "master": "g_strict.u_bit15.master",
+      "slave": "g_strict.u_bit15.slave"
+    },
+    {
+      "state": "ar_reg[4]",
+      "next_d": "n0549",
+      "master": "g_strict.u_bit16.master",
+      "slave": "g_strict.u_bit16.slave"
+    },
+    {
+      "state": "ar_reg[5]",
+      "next_d": "n0552",
+      "master": "g_strict.u_bit17.master",
+      "slave": "g_strict.u_bit17.slave"
+    },
+    {
+      "state": "ar_reg[6]",
+      "next_d": "n0555",
+      "master": "g_strict.u_bit18.master",
+      "slave": "g_strict.u_bit18.slave"
+    },
+    {
+      "state": "ar_reg[7]",
+      "next_d": "n0558",
+      "master": "g_strict.u_bit19.master",
+      "slave": "g_strict.u_bit19.slave"
+    },
+    {
+      "state": "a_reg[0]",
+      "next_d": "n0560",
+      "master": "g_strict.u_bit20.master",
+      "slave": "g_strict.u_bit20.slave"
+    },
+    {
+      "state": "a_reg[1]",
+      "next_d": "n0562",
+      "master": "g_strict.u_bit21.master",
+      "slave": "g_strict.u_bit21.slave"
+    },
+    {
+      "state": "a_reg[2]",
+      "next_d": "n0564",
+      "master": "g_strict.u_bit22.master",
+      "slave": "g_strict.u_bit22.slave"
+    },
+    {
+      "state": "a_reg[3]",
+      "next_d": "n0566",
+      "master": "g_strict.u_bit23.master",
+      "slave": "g_strict.u_bit23.slave"
+    },
+    {
+      "state": "z_reg",
+      "next_d": "n0568",
+      "master": "g_strict.u_bit24.master",
+      "slave": "g_strict.u_bit24.slave"
+    },
+    {
+      "state": "c_reg",
+      "next_d": "n0570",
+      "master": "g_strict.u_bit25.master",
+      "slave": "g_strict.u_bit25.slave"
+    },
+    {
+      "state": "gpo_reg[0]",
+      "next_d": "n0574",
+      "master": "g_strict.u_bit26.master",
+      "slave": "g_strict.u_bit26.slave"
+    },
+    {
+      "state": "gpo_reg[1]",
+      "next_d": "n0576",
+      "master": "g_strict.u_bit27.master",
+      "slave": "g_strict.u_bit27.slave"
+    },
+    {
+      "state": "gpo_reg[2]",
+      "next_d": "n0578",
+      "master": "g_strict.u_bit28.master",
+      "slave": "g_strict.u_bit28.slave"
+    },
+    {
+      "state": "gpo_reg[3]",
+      "next_d": "n0580",
+      "master": "g_strict.u_bit29.master",
+      "slave": "g_strict.u_bit29.slave"
+    },
+    {
+      "state": "state_reg[0]",
+      "next_d": "n0581",
+      "master": "g_strict.u_bit30.master",
+      "slave": "g_strict.u_bit30.slave"
+    },
+    {
+      "state": "state_reg[1]",
+      "next_d": "n0582",
+      "master": "g_strict.u_bit31.master",
+      "slave": "g_strict.u_bit31.slave"
+    },
+    {
+      "state": "state_reg[2]",
+      "next_d": "n0583",
+      "master": "g_strict.u_bit32.master",
+      "slave": "g_strict.u_bit32.slave"
+    }
+  ],
+  "nodes": [
+    {
+      "instance": "u_n0000",
+      "connection": ".s(rom_data[12]), .i0(1'b1), .i1(1'b0), .y(n0000)"
+    },
+    {
+      "instance": "u_n0001",
+      "connection": ".s(rom_data[13]), .i0(1'b1), .i1(1'b0), .y(n0001)"
+    },
+    {
+      "instance": "u_n0003",
+      "connection": ".s(n0000), .i0(1'b0), .i1(n0001), .y(n0003)"
+    },
+    {
+      "instance": "u_n0004",
+      "connection": ".s(rom_data[14]), .i0(1'b1), .i1(1'b0), .y(n0004)"
+    },
+    {
+      "instance": "u_n0005",
+      "connection": ".s(rom_data[15]), .i0(1'b1), .i1(1'b0), .y(n0005)"
+    },
+    {
+      "instance": "u_n0007",
+      "connection": ".s(n0004), .i0(1'b0), .i1(n0005), .y(n0007)"
+    },
+    {
+      "instance": "u_n0009",
+      "connection": ".s(n0003), .i0(1'b0), .i1(n0007), .y(n0009)"
+    },
+    {
+      "instance": "u_n0010",
+      "connection": ".s(n0001), .i0(1'b0), .i1(rom_data[12]), .y(n0010)"
+    },
+    {
+      "instance": "u_n0011",
+      "connection": ".s(n0007), .i0(1'b0), .i1(n0010), .y(n0011)"
+    },
+    {
+      "instance": "u_n0012",
+      "connection": ".s(n0000), .i0(1'b0), .i1(rom_data[13]), .y(n0012)"
+    },
+    {
+      "instance": "u_n0013",
+      "connection": ".s(n0007), .i0(1'b0), .i1(n0012), .y(n0013)"
+    },
+    {
+      "instance": "u_n0014",
+      "connection": ".s(rom_data[12]), .i0(1'b0), .i1(rom_data[13]), .y(n0014)"
+    },
+    {
+      "instance": "u_n0015",
+      "connection": ".s(n0007), .i0(1'b0), .i1(n0014), .y(n0015)"
+    },
+    {
+      "instance": "u_n0016",
+      "connection": ".s(n0005), .i0(1'b0), .i1(rom_data[14]), .y(n0016)"
+    },
+    {
+      "instance": "u_n0018",
+      "connection": ".s(n0003), .i0(1'b0), .i1(n0016), .y(n0018)"
+    },
+    {
+      "instance": "u_n0019",
+      "connection": ".s(n0010), .i0(1'b0), .i1(n0016), .y(n0019)"
+    },
+    {
+      "instance": "u_n0020",
+      "connection": ".s(n0012), .i0(1'b0), .i1(n0016), .y(n0020)"
+    },
+    {
+      "instance": "u_n0021",
+      "connection": ".s(n0014), .i0(1'b0), .i1(n0016), .y(n0021)"
+    },
+    {
+      "instance": "u_n0022",
+      "connection": ".s(n0004), .i0(1'b0), .i1(rom_data[15]), .y(n0022)"
+    },
+    {
+      "instance": "u_n0024",
+      "connection": ".s(n0003), .i0(1'b0), .i1(n0022), .y(n0024)"
+    },
+    {
+      "instance": "u_n0025",
+      "connection": ".s(n0010), .i0(1'b0), .i1(n0022), .y(n0025)"
+    },
+    {
+      "instance": "u_n0026",
+      "connection": ".s(n0012), .i0(1'b0), .i1(n0022), .y(n0026)"
+    },
+    {
+      "instance": "u_n0027",
+      "connection": ".s(n0014), .i0(1'b0), .i1(n0022), .y(n0027)"
+    },
+    {
+      "instance": "u_n0028",
+      "connection": ".s(rom_data[14]), .i0(1'b0), .i1(rom_data[15]), .y(n0028)"
+    },
+    {
+      "instance": "u_n0030",
+      "connection": ".s(n0003), .i0(1'b0), .i1(n0028), .y(n0030)"
+    },
+    {
+      "instance": "u_n0031",
+      "connection": ".s(n0010), .i0(1'b0), .i1(n0028), .y(n0031)"
+    },
+    {
+      "instance": "u_n0032",
+      "connection": ".s(n0012), .i0(1'b0), .i1(n0028), .y(n0032)"
+    },
+    {
+      "instance": "u_n0033",
+      "connection": ".s(n0014), .i0(1'b0), .i1(n0028), .y(n0033)"
+    },
+    {
+      "instance": "u_n0034",
+      "connection": ".s(rom_data[8]), .i0(1'b1), .i1(1'b0), .y(n0034)"
+    },
+    {
+      "instance": "u_n0035",
+      "connection": ".s(rom_data[9]), .i0(1'b1), .i1(1'b0), .y(n0035)"
+    },
+    {
+      "instance": "u_n0037",
+      "connection": ".s(n0034), .i0(1'b0), .i1(n0035), .y(n0037)"
+    },
+    {
+      "instance": "u_n0038",
+      "connection": ".s(rom_data[10]), .i0(1'b1), .i1(1'b0), .y(n0038)"
+    },
+    {
+      "instance": "u_n0039",
+      "connection": ".s(rom_data[11]), .i0(1'b1), .i1(1'b0), .y(n0039)"
+    },
+    {
+      "instance": "u_n0041",
+      "connection": ".s(n0038), .i0(1'b0), .i1(n0039), .y(n0041)"
+    },
+    {
+      "instance": "u_n0043",
+      "connection": ".s(n0037), .i0(1'b0), .i1(n0041), .y(n0043)"
+    },
+    {
+      "instance": "u_n0044",
+      "connection": ".s(n0035), .i0(1'b0), .i1(rom_data[8]), .y(n0044)"
+    },
+    {
+      "instance": "u_n0045",
+      "connection": ".s(n0041), .i0(1'b0), .i1(n0044), .y(n0045)"
+    },
+    {
+      "instance": "u_n0046",
+      "connection": ".s(n0034), .i0(1'b0), .i1(rom_data[9]), .y(n0046)"
+    },
+    {
+      "instance": "u_n0047",
+      "connection": ".s(n0041), .i0(1'b0), .i1(n0046), .y(n0047)"
+    },
+    {
+      "instance": "u_n0048",
+      "connection": ".s(rom_data[8]), .i0(1'b0), .i1(rom_data[9]), .y(n0048)"
+    },
+    {
+      "instance": "u_n0049",
+      "connection": ".s(n0041), .i0(1'b0), .i1(n0048), .y(n0049)"
+    },
+    {
+      "instance": "u_n0050",
+      "connection": ".s(n0039), .i0(1'b0), .i1(rom_data[10]), .y(n0050)"
+    },
+    {
+      "instance": "u_n0052",
+      "connection": ".s(n0037), .i0(1'b0), .i1(n0050), .y(n0052)"
+    },
+    {
+      "instance": "u_n0053",
+      "connection": ".s(n0044), .i0(1'b0), .i1(n0050), .y(n0053)"
+    },
+    {
+      "instance": "u_n0054",
+      "connection": ".s(n0046), .i0(1'b0), .i1(n0050), .y(n0054)"
+    },
+    {
+      "instance": "u_n0055",
+      "connection": ".s(n0048), .i0(1'b0), .i1(n0050), .y(n0055)"
+    },
+    {
+      "instance": "u_n0056",
+      "connection": ".s(n0038), .i0(1'b0), .i1(rom_data[11]), .y(n0056)"
+    },
+    {
+      "instance": "u_n0058",
+      "connection": ".s(n0037), .i0(1'b0), .i1(n0056), .y(n0058)"
+    },
+    {
+      "instance": "u_n0059",
+      "connection": ".s(n0044), .i0(1'b0), .i1(n0056), .y(n0059)"
+    },
+    {
+      "instance": "u_n0069",
+      "connection": ".s(rom_data[4]), .i0(rom_data[5]), .i1(1'b1), .y(n0069)"
+    },
+    {
+      "instance": "u_n0071",
+      "connection": ".s(n0069), .i0(rom_data[6]), .i1(1'b1), .y(n0071)"
+    },
+    {
+      "instance": "u_n0073",
+      "connection": ".s(n0071), .i0(rom_data[7]), .i1(1'b1), .y(n0073)"
+    },
+    {
+      "instance": "u_n0074",
+      "connection": ".s(n0073), .i0(rom_data[8]), .i1(1'b1), .y(n0074)"
+    },
+    {
+      "instance": "u_n0075",
+      "connection": ".s(n0074), .i0(rom_data[9]), .i1(1'b1), .y(n0075)"
+    },
+    {
+      "instance": "u_n0076",
+      "connection": ".s(n0075), .i0(rom_data[10]), .i1(1'b1), .y(n0076)"
+    },
+    {
+      "instance": "u_n0077",
+      "connection": ".s(n0076), .i0(rom_data[11]), .i1(1'b1), .y(n0077)"
+    },
+    {
+      "instance": "u_n0078",
+      "connection": ".s(n0077), .i0(1'b1), .i1(1'b0), .y(n0078)"
+    },
+    {
+      "instance": "u_n0080",
+      "connection": ".s(rom_data[0]), .i0(rom_data[1]), .i1(1'b1), .y(n0080)"
+    },
+    {
+      "instance": "u_n0082",
+      "connection": ".s(n0080), .i0(rom_data[2]), .i1(1'b1), .y(n0082)"
+    },
+    {
+      "instance": "u_n0084",
+      "connection": ".s(n0082), .i0(rom_data[3]), .i1(1'b1), .y(n0084)"
+    },
+    {
+      "instance": "u_n0086",
+      "connection": ".s(n0084), .i0(rom_data[4]), .i1(1'b1), .y(n0086)"
+    },
+    {
+      "instance": "u_n0087",
+      "connection": ".s(n0086), .i0(rom_data[5]), .i1(1'b1), .y(n0087)"
+    },
+    {
+      "instance": "u_n0088",
+      "connection": ".s(n0087), .i0(rom_data[6]), .i1(1'b1), .y(n0088)"
+    },
+    {
+      "instance": "u_n0089",
+      "connection": ".s(n0088), .i0(rom_data[7]), .i1(1'b1), .y(n0089)"
+    },
+    {
+      "instance": "u_n0090",
+      "connection": ".s(n0089), .i0(1'b1), .i1(1'b0), .y(n0090)"
+    },
+    {
+      "instance": "u_n0091",
+      "connection": ".s(n0035), .i0(1'b0), .i1(n0038), .y(n0091)"
+    },
+    {
+      "instance": "u_n0093",
+      "connection": ".s(n0039), .i0(n0091), .i1(1'b1), .y(n0093)"
+    },
+    {
+      "instance": "u_n0095",
+      "connection": ".s(n0024), .i0(n0025), .i1(1'b1), .y(n0095)"
+    },
+    {
+      "instance": "u_n0097",
+      "connection": ".s(n0024), .i0(n0090), .i1(1'b1), .y(n0097)"
+    },
+    {
+      "instance": "u_n0099",
+      "connection": ".s(n0093), .i0(1'b0), .i1(n0095), .y(n0099)"
+    },
+    {
+      "instance": "u_n0101",
+      "connection": ".s(n0097), .i0(1'b0), .i1(n0099), .y(n0101)"
+    },
+    {
+      "instance": "u_n0102",
+      "connection": ".s(n0045), .i0(1'b1), .i1(1'b0), .y(n0102)"
+    },
+    {
+      "instance": "u_n0103",
+      "connection": ".s(n0043), .i0(n0045), .i1(1'b1), .y(n0103)"
+    },
+    {
+      "instance": "u_n0105",
+      "connection": ".s(n0047), .i0(n0103), .i1(1'b1), .y(n0105)"
+    },
+    {
+      "instance": "u_n0106",
+      "connection": ".s(n0021), .i0(1'b0), .i1(n0090), .y(n0106)"
+    },
+    {
+      "instance": "u_n0108",
+      "connection": ".s(n0105), .i0(1'b0), .i1(n0106), .y(n0108)"
+    },
+    {
+      "instance": "u_n0109",
+      "connection": ".s(n0073), .i0(1'b1), .i1(1'b0), .y(n0109)"
+    },
+    {
+      "instance": "u_n0111",
+      "connection": ".s(n0103), .i0(1'b0), .i1(n0109), .y(n0111)"
+    },
+    {
+      "instance": "u_n0113",
+      "connection": ".s(n0047), .i0(n0049), .i1(1'b1), .y(n0113)"
+    },
+    {
+      "instance": "u_n0115",
+      "connection": ".s(n0052), .i0(n0113), .i1(1'b1), .y(n0115)"
+    },
+    {
+      "instance": "u_n0117",
+      "connection": ".s(n0053), .i0(n0115), .i1(1'b1), .y(n0117)"
+    },
+    {
+      "instance": "u_n0119",
+      "connection": ".s(n0054), .i0(n0117), .i1(1'b1), .y(n0119)"
+    },
+    {
+      "instance": "u_n0120",
+      "connection": ".s(n0090), .i0(1'b0), .i1(n0119), .y(n0120)"
+    },
+    {
+      "instance": "u_n0122",
+      "connection": ".s(n0111), .i0(n0120), .i1(1'b1), .y(n0122)"
+    },
+    {
+      "instance": "u_n0124",
+      "connection": ".s(n0026), .i0(1'b0), .i1(n0122), .y(n0124)"
+    },
+    {
+      "instance": "u_n0125",
+      "connection": ".s(n0032), .i0(1'b0), .i1(n0090), .y(n0125)"
+    },
+    {
+      "instance": "u_n0126",
+      "connection": ".s(n0105), .i0(1'b0), .i1(n0125), .y(n0126)"
+    },
+    {
+      "instance": "u_n0127",
+      "connection": ".s(n0033), .i0(1'b0), .i1(n0090), .y(n0127)"
+    },
+    {
+      "instance": "u_n0129",
+      "connection": ".s(n0103), .i0(1'b0), .i1(n0127), .y(n0129)"
+    },
+    {
+      "instance": "u_n0131",
+      "connection": ".s(n0009), .i0(n0011), .i1(1'b1), .y(n0131)"
+    },
+    {
+      "instance": "u_n0133",
+      "connection": ".s(n0013), .i0(n0131), .i1(1'b1), .y(n0133)"
+    },
+    {
+      "instance": "u_n0135",
+      "connection": ".s(n0015), .i0(n0133), .i1(1'b1), .y(n0135)"
+    },
+    {
+      "instance": "u_n0137",
+      "connection": ".s(n0018), .i0(n0135), .i1(1'b1), .y(n0137)"
+    },
+    {
+      "instance": "u_n0139",
+      "connection": ".s(n0019), .i0(n0137), .i1(1'b1), .y(n0139)"
+    },
+    {
+      "instance": "u_n0141",
+      "connection": ".s(n0020), .i0(n0139), .i1(1'b1), .y(n0141)"
+    },
+    {
+      "instance": "u_n0143",
+      "connection": ".s(n0078), .i0(1'b0), .i1(n0141), .y(n0143)"
+    },
+    {
+      "instance": "u_n0145",
+      "connection": ".s(n0108), .i0(n0143), .i1(1'b1), .y(n0145)"
+    },
+    {
+      "instance": "u_n0147",
+      "connection": ".s(n0101), .i0(n0145), .i1(1'b1), .y(n0147)"
+    },
+    {
+      "instance": "u_n0149",
+      "connection": ".s(n0124), .i0(n0147), .i1(1'b1), .y(n0149)"
+    },
+    {
+      "instance": "u_n0151",
+      "connection": ".s(n0027), .i0(n0149), .i1(1'b1), .y(n0151)"
+    },
+    {
+      "instance": "u_n0153",
+      "connection": ".s(n0030), .i0(n0151), .i1(1'b1), .y(n0153)"
+    },
+    {
+      "instance": "u_n0155",
+      "connection": ".s(n0031), .i0(n0153), .i1(1'b1), .y(n0155)"
+    },
+    {
+      "instance": "u_n0157",
+      "connection": ".s(n0126), .i0(n0155), .i1(1'b1), .y(n0157)"
+    },
+    {
+      "instance": "u_n0159",
+      "connection": ".s(n0129), .i0(n0157), .i1(1'b1), .y(n0159)"
+    },
+    {
+      "instance": "u_n0164",
+      "connection": ".s(n0045), .i0(1'b0), .i1(n0095), .y(n0164)"
+    },
+    {
+      "instance": "u_n0165",
+      "connection": ".s(n0047), .i0(1'b0), .i1(n0095), .y(n0165)"
+    },
+    {
+      "instance": "u_n0167",
+      "connection": ".s(n0011), .i0(n0165), .i1(1'b1), .y(n0167)"
+    },
+    {
+      "instance": "u_n0168",
+      "connection": ".s(n0049), .i0(1'b0), .i1(n0095), .y(n0168)"
+    },
+    {
+      "instance": "u_n0170",
+      "connection": ".s(n0013), .i0(n0168), .i1(1'b1), .y(n0170)"
+    },
+    {
+      "instance": "u_n0171",
+      "connection": ".s(n0052), .i0(1'b0), .i1(n0095), .y(n0171)"
+    },
+    {
+      "instance": "u_n0173",
+      "connection": ".s(n0015), .i0(n0171), .i1(1'b1), .y(n0173)"
+    },
+    {
+      "instance": "u_n0174",
+      "connection": ".s(n0053), .i0(1'b0), .i1(n0095), .y(n0174)"
+    },
+    {
+      "instance": "u_n0176",
+      "connection": ".s(n0018), .i0(n0174), .i1(1'b1), .y(n0176)"
+    },
+    {
+      "instance": "u_n0177",
+      "connection": ".s(n0054), .i0(1'b0), .i1(n0095), .y(n0177)"
+    },
+    {
+      "instance": "u_n0179",
+      "connection": ".s(n0055), .i0(1'b0), .i1(n0095), .y(n0179)"
+    },
+    {
+      "instance": "u_n0181",
+      "connection": ".s(n0019), .i0(n0179), .i1(1'b1), .y(n0181)"
+    },
+    {
+      "instance": "u_n0183",
+      "connection": ".s(n0058), .i0(1'b0), .i1(n0095), .y(n0183)"
+    },
+    {
+      "instance": "u_n0185",
+      "connection": ".s(n0020), .i0(n0183), .i1(1'b1), .y(n0185)"
+    },
+    {
+      "instance": "u_n0187",
+      "connection": ".s(n0059), .i0(1'b0), .i1(n0095), .y(n0187)"
+    },
+    {
+      "instance": "u_n0188",
+      "connection": ".s(n0021), .i0(1'b0), .i1(n0043), .y(n0188)"
+    },
+    {
+      "instance": "u_n0189",
+      "connection": ".s(n0021), .i0(1'b0), .i1(n0045), .y(n0189)"
+    },
+    {
+      "instance": "u_n0190",
+      "connection": ".s(n0021), .i0(1'b0), .i1(n0047), .y(n0190)"
+    },
+    {
+      "instance": "u_n0191",
+      "connection": ".s(n0026), .i0(1'b0), .i1(n0052), .y(n0191)"
+    },
+    {
+      "instance": "u_n0192",
+      "connection": ".s(n0026), .i0(1'b0), .i1(n0053), .y(n0192)"
+    },
+    {
+      "instance": "u_n0193",
+      "connection": ".s(n0032), .i0(1'b0), .i1(n0043), .y(n0193)"
+    },
+    {
+      "instance": "u_n0194",
+      "connection": ".s(n0032), .i0(1'b0), .i1(n0045), .y(n0194)"
+    },
+    {
+      "instance": "u_n0195",
+      "connection": ".s(n0032), .i0(1'b0), .i1(n0047), .y(n0195)"
+    },
+    {
+      "instance": "u_n0196",
+      "connection": ".s(n0043), .i0(n0047), .i1(1'b1), .y(n0196)"
+    },
+    {
+      "instance": "u_n0198",
+      "connection": ".s(n0026), .i0(1'b0), .i1(n0196), .y(n0198)"
+    },
+    {
+      "instance": "u_n0199",
+      "connection": ".s(n0045), .i0(n0049), .i1(1'b1), .y(n0199)"
+    },
+    {
+      "instance": "u_n0201",
+      "connection": ".s(n0026), .i0(1'b0), .i1(n0199), .y(n0201)"
+    },
+    {
+      "instance": "u_n0202",
+      "connection": ".s(n0026), .i0(1'b0), .i1(n0054), .y(n0202)"
+    },
+    {
+      "instance": "u_n0203",
+      "connection": ".s(state_reg[0]), .i0(1'b1), .i1(1'b0), .y(n0203)"
+    },
+    {
+      "instance": "u_n0204",
+      "connection": ".s(state_reg[1]), .i0(1'b1), .i1(1'b0), .y(n0204)"
+    },
+    {
+      "instance": "u_n0205",
+      "connection": ".s(state_reg[2]), .i0(1'b1), .i1(1'b0), .y(n0205)"
+    },
+    {
+      "instance": "u_n0207",
+      "connection": ".s(n0204), .i0(1'b0), .i1(n0205), .y(n0207)"
+    },
+    {
+      "instance": "u_n0209",
+      "connection": ".s(n0203), .i0(1'b0), .i1(n0207), .y(n0209)"
+    },
+    {
+      "instance": "u_n0210",
+      "connection": ".s(n0207), .i0(1'b0), .i1(state_reg[0]), .y(n0210)"
+    },
+    {
+      "instance": "u_n0211",
+      "connection": ".s(n0205), .i0(1'b0), .i1(state_reg[1]), .y(n0211)"
+    },
+    {
+      "instance": "u_n0213",
+      "connection": ".s(n0203), .i0(1'b0), .i1(n0211), .y(n0213)"
+    },
+    {
+      "instance": "u_n0214",
+      "connection": ".s(n0211), .i0(1'b0), .i1(state_reg[0]), .y(n0214)"
+    },
+    {
+      "instance": "u_n0215",
+      "connection": ".s(n0204), .i0(1'b0), .i1(state_reg[2]), .y(n0215)"
+    },
+    {
+      "instance": "u_n0217",
+      "connection": ".s(n0203), .i0(1'b0), .i1(n0215), .y(n0217)"
+    },
+    {
+      "instance": "u_n0218",
+      "connection": ".s(n0215), .i0(1'b0), .i1(state_reg[0]), .y(n0218)"
+    },
+    {
+      "instance": "u_n0219",
+      "connection": ".s(state_reg[1]), .i0(1'b0), .i1(state_reg[2]), .y(n0219)"
+    },
+    {
+      "instance": "u_n0221",
+      "connection": ".s(n0203), .i0(1'b0), .i1(n0219), .y(n0221)"
+    },
+    {
+      "instance": "u_n0222",
+      "connection": ".s(n0219), .i0(1'b0), .i1(state_reg[0]), .y(n0222)"
+    },
+    {
+      "instance": "u_n0223",
+      "connection": ".s(n0159), .i0(1'b1), .i1(1'b0), .y(n0223)"
+    },
+    {
+      "instance": "u_n0224",
+      "connection": ".s(n0159), .i0(1'b0), .i1(n0213), .y(n0224)"
+    },
+    {
+      "instance": "u_n0225",
+      "connection": ".s(n0095), .i0(1'b1), .i1(1'b0), .y(n0225)"
+    },
+    {
+      "instance": "u_n0226",
+      "connection": ".s(n0095), .i0(1'b0), .i1(n0224), .y(n0226)"
+    },
+    {
+      "instance": "u_n0228",
+      "connection": ".s(n0224), .i0(1'b0), .i1(n0225), .y(n0228)"
+    },
+    {
+      "instance": "u_n0229",
+      "connection": ".s(n0159), .i0(1'b0), .i1(n0218), .y(n0229)"
+    },
+    {
+      "instance": "u_n0230",
+      "connection": ".s(n0095), .i0(1'b0), .i1(n0229), .y(n0230)"
+    },
+    {
+      "instance": "u_n0232",
+      "connection": ".s(n0228), .i0(n0230), .i1(1'b1), .y(n0232)"
+    },
+    {
+      "instance": "u_n0233",
+      "connection": ".s(rst), .i0(1'b1), .i1(1'b0), .y(n0233)"
+    },
+    {
+      "instance": "u_n0235",
+      "connection": ".s(n0232), .i0(1'b0), .i1(n0233), .y(n0235)"
+    },
+    {
+      "instance": "u_n0237",
+      "connection": ".s(n0213), .i0(1'b0), .i1(n0223), .y(n0237)"
+    },
+    {
+      "instance": "u_n0239",
+      "connection": ".s(n0033), .i0(1'b0), .i1(n0224), .y(n0239)"
+    },
+    {
+      "instance": "u_n0240",
+      "connection": ".s(n0045), .i0(1'b0), .i1(n0239), .y(n0240)"
+    },
+    {
+      "instance": "u_n0241",
+      "connection": ".s(n0226), .i0(1'b1), .i1(1'b0), .y(n0241)"
+    },
+    {
+      "instance": "u_n0242",
+      "connection": ".s(n0240), .i0(1'b1), .i1(1'b0), .y(n0242)"
+    },
+    {
+      "instance": "u_n0244",
+      "connection": ".s(n0213), .i0(1'b0), .i1(n0241), .y(n0244)"
+    },
+    {
+      "instance": "u_n0246",
+      "connection": ".s(n0242), .i0(1'b0), .i1(n0244), .y(n0246)"
+    },
+    {
+      "instance": "u_n0248",
+      "connection": ".s(n0209), .i0(n0246), .i1(1'b1), .y(n0248)"
+    },
+    {
+      "instance": "u_n0249",
+      "connection": ".s(n0226), .i0(n0248), .i1(1'b1), .y(n0249)"
+    },
+    {
+      "instance": "u_n0251",
+      "connection": ".s(n0217), .i0(n0249), .i1(1'b1), .y(n0251)"
+    },
+    {
+      "instance": "u_n0253",
+      "connection": ".s(n0218), .i0(n0251), .i1(1'b1), .y(n0253)"
+    },
+    {
+      "instance": "u_n0255",
+      "connection": ".s(n0222), .i0(n0253), .i1(1'b1), .y(n0255)"
+    },
+    {
+      "instance": "u_n0256",
+      "connection": ".s(n0210), .i0(n0226), .i1(1'b1), .y(n0256)"
+    },
+    {
+      "instance": "u_n0257",
+      "connection": ".s(n0240), .i0(n0256), .i1(1'b1), .y(n0257)"
+    },
+    {
+      "instance": "u_n0259",
+      "connection": ".s(n0237), .i0(n0257), .i1(1'b1), .y(n0259)"
+    },
+    {
+      "instance": "u_n0261",
+      "connection": ".s(n0221), .i0(n0259), .i1(1'b1), .y(n0261)"
+    },
+    {
+      "instance": "u_n0262",
+      "connection": ".s(n0222), .i0(n0261), .i1(1'b1), .y(n0262)"
+    },
+    {
+      "instance": "u_n0263",
+      "connection": ".s(n0214), .i0(n0217), .i1(1'b1), .y(n0263)"
+    },
+    {
+      "instance": "u_n0264",
+      "connection": ".s(n0240), .i0(n0263), .i1(1'b1), .y(n0264)"
+    },
+    {
+      "instance": "u_n0265",
+      "connection": ".s(n0237), .i0(n0264), .i1(1'b1), .y(n0265)"
+    },
+    {
+      "instance": "u_n0266",
+      "connection": ".s(n0221), .i0(n0265), .i1(1'b1), .y(n0266)"
+    },
+    {
+      "instance": "u_n0267",
+      "connection": ".s(n0222), .i0(n0266), .i1(1'b1), .y(n0267)"
+    },
+    {
+      "instance": "u_n0269",
+      "connection": ".s(n0167), .i0(n0170), .i1(1'b1), .y(n0269)"
+    },
+    {
+      "instance": "u_n0271",
+      "connection": ".s(n0173), .i0(n0269), .i1(1'b1), .y(n0271)"
+    },
+    {
+      "instance": "u_n0272",
+      "connection": ".s(n0176), .i0(1'b1), .i1(1'b0), .y(n0272)"
+    },
+    {
+      "instance": "u_n0273",
+      "connection": ".s(n0176), .i0(n0271), .i1(1'b1), .y(n0273)"
+    },
+    {
+      "instance": "u_n0275",
+      "connection": ".s(n0177), .i0(n0273), .i1(1'b1), .y(n0275)"
+    },
+    {
+      "instance": "u_n0276",
+      "connection": ".s(n0173), .i0(n0176), .i1(1'b1), .y(n0276)"
+    },
+    {
+      "instance": "u_n0277",
+      "connection": ".s(n0177), .i0(n0276), .i1(1'b1), .y(n0277)"
+    },
+    {
+      "instance": "u_n0278",
+      "connection": ".s(n0095), .i0(rom_data[0]), .i1(ram_rdata[0]), .y(n0278)"
+    },
+    {
+      "instance": "u_n0279",
+      "connection": ".s(n0095), .i0(rom_data[1]), .i1(ram_rdata[1]), .y(n0279)"
+    },
+    {
+      "instance": "u_n0280",
+      "connection": ".s(n0095), .i0(rom_data[2]), .i1(ram_rdata[2]), .y(n0280)"
+    },
+    {
+      "instance": "u_n0281",
+      "connection": ".s(n0095), .i0(rom_data[3]), .i1(ram_rdata[3]), .y(n0281)"
+    },
+    {
+      "instance": "u_n0283",
+      "connection": ".s(c_reg), .i0(1'b0), .i1(n0170), .y(n0283)"
+    },
+    {
+      "instance": "u_n0284",
+      "connection": ".s(c_reg), .i0(n0272), .i1(1'b1), .y(n0284)"
+    },
+    {
+      "instance": "u_n0285",
+      "connection": ".s(n0277), .i0(n0283), .i1(n0284), .y(n0285)"
+    },
+    {
+      "instance": "u_n0286",
+      "connection": ".s(n0277), .i0(1'b1), .i1(1'b0), .y(n0286)"
+    },
+    {
+      "instance": "u_n0287",
+      "connection": ".s(n0278), .i0(n0277), .i1(n0286), .y(n0287)"
+    },
+    {
+      "instance": "u_n0288",
+      "connection": ".s(n0279), .i0(n0277), .i1(n0286), .y(n0288)"
+    },
+    {
+      "instance": "u_n0289",
+      "connection": ".s(n0280), .i0(n0277), .i1(n0286), .y(n0289)"
+    },
+    {
+      "instance": "u_n0290",
+      "connection": ".s(n0281), .i0(n0277), .i1(n0286), .y(n0290)"
+    },
+    {
+      "instance": "u_n0291",
+      "connection": ".s(n0287), .i0(1'b1), .i1(1'b0), .y(n0291)"
+    },
+    {
+      "instance": "u_n0292",
+      "connection": ".s(a_reg[0]), .i0(n0287), .i1(n0291), .y(n0292)"
+    },
+    {
+      "instance": "u_n0293",
+      "connection": ".s(n0285), .i0(1'b1), .i1(1'b0), .y(n0293)"
+    },
+    {
+      "instance": "u_n0294",
+      "connection": ".s(n0292), .i0(n0285), .i1(n0293), .y(n0294)"
+    },
+    {
+      "instance": "u_n0295",
+      "connection": ".s(n0292), .i0(a_reg[0]), .i1(n0285), .y(n0295)"
+    },
+    {
+      "instance": "u_n0296",
+      "connection": ".s(n0288), .i0(1'b1), .i1(1'b0), .y(n0296)"
+    },
+    {
+      "instance": "u_n0297",
+      "connection": ".s(a_reg[1]), .i0(n0288), .i1(n0296), .y(n0297)"
+    },
+    {
+      "instance": "u_n0298",
+      "connection": ".s(n0295), .i0(1'b1), .i1(1'b0), .y(n0298)"
+    },
+    {
+      "instance": "u_n0299",
+      "connection": ".s(n0297), .i0(n0295), .i1(n0298), .y(n0299)"
+    },
+    {
+      "instance": "u_n0300",
+      "connection": ".s(n0297), .i0(a_reg[1]), .i1(n0295), .y(n0300)"
+    },
+    {
+      "instance": "u_n0301",
+      "connection": ".s(n0289), .i0(1'b1), .i1(1'b0), .y(n0301)"
+    },
+    {
+      "instance": "u_n0302",
+      "connection": ".s(a_reg[2]), .i0(n0289), .i1(n0301), .y(n0302)"
+    },
+    {
+      "instance": "u_n0303",
+      "connection": ".s(n0300), .i0(1'b1), .i1(1'b0), .y(n0303)"
+    },
+    {
+      "instance": "u_n0304",
+      "connection": ".s(n0302), .i0(n0300), .i1(n0303), .y(n0304)"
+    },
+    {
+      "instance": "u_n0305",
+      "connection": ".s(n0302), .i0(a_reg[2]), .i1(n0300), .y(n0305)"
+    },
+    {
+      "instance": "u_n0306",
+      "connection": ".s(n0290), .i0(1'b1), .i1(1'b0), .y(n0306)"
+    },
+    {
+      "instance": "u_n0307",
+      "connection": ".s(a_reg[3]), .i0(n0290), .i1(n0306), .y(n0307)"
+    },
+    {
+      "instance": "u_n0308",
+      "connection": ".s(n0305), .i0(1'b1), .i1(1'b0), .y(n0308)"
+    },
+    {
+      "instance": "u_n0309",
+      "connection": ".s(n0307), .i0(n0305), .i1(n0308), .y(n0309)"
+    },
+    {
+      "instance": "u_n0310",
+      "connection": ".s(n0307), .i0(a_reg[3]), .i1(n0305), .y(n0310)"
+    },
+    {
+      "instance": "u_n0311",
+      "connection": ".s(n0278), .i0(1'b1), .i1(1'b0), .y(n0311)"
+    },
+    {
+      "instance": "u_n0312",
+      "connection": ".s(a_reg[0]), .i0(n0278), .i1(n0311), .y(n0312)"
+    },
+    {
+      "instance": "u_n0313",
+      "connection": ".s(n0279), .i0(1'b1), .i1(1'b0), .y(n0313)"
+    },
+    {
+      "instance": "u_n0314",
+      "connection": ".s(a_reg[1]), .i0(n0279), .i1(n0313), .y(n0314)"
+    },
+    {
+      "instance": "u_n0315",
+      "connection": ".s(n0280), .i0(1'b1), .i1(1'b0), .y(n0315)"
+    },
+    {
+      "instance": "u_n0316",
+      "connection": ".s(a_reg[2]), .i0(n0280), .i1(n0315), .y(n0316)"
+    },
+    {
+      "instance": "u_n0317",
+      "connection": ".s(n0281), .i0(1'b1), .i1(1'b0), .y(n0317)"
+    },
+    {
+      "instance": "u_n0318",
+      "connection": ".s(a_reg[3]), .i0(n0281), .i1(n0317), .y(n0318)"
+    },
+    {
+      "instance": "u_n0319",
+      "connection": ".s(a_reg[0]), .i0(1'b0), .i1(n0278), .y(n0319)"
+    },
+    {
+      "instance": "u_n0320",
+      "connection": ".s(a_reg[1]), .i0(1'b0), .i1(n0279), .y(n0320)"
+    },
+    {
+      "instance": "u_n0321",
+      "connection": ".s(a_reg[2]), .i0(1'b0), .i1(n0280), .y(n0321)"
+    },
+    {
+      "instance": "u_n0322",
+      "connection": ".s(a_reg[3]), .i0(1'b0), .i1(n0281), .y(n0322)"
+    },
+    {
+      "instance": "u_n0323",
+      "connection": ".s(a_reg[0]), .i0(n0278), .i1(1'b1), .y(n0323)"
+    },
+    {
+      "instance": "u_n0324",
+      "connection": ".s(a_reg[1]), .i0(n0279), .i1(1'b1), .y(n0324)"
+    },
+    {
+      "instance": "u_n0325",
+      "connection": ".s(a_reg[2]), .i0(n0280), .i1(1'b1), .y(n0325)"
+    },
+    {
+      "instance": "u_n0326",
+      "connection": ".s(a_reg[3]), .i0(n0281), .i1(1'b1), .y(n0326)"
+    },
+    {
+      "instance": "u_n0328",
+      "connection": ".s(n0181), .i0(n0185), .i1(1'b1), .y(n0328)"
+    },
+    {
+      "instance": "u_n0330",
+      "connection": ".s(n0187), .i0(n0328), .i1(1'b1), .y(n0330)"
+    },
+    {
+      "instance": "u_n0332",
+      "connection": ".s(n0191), .i0(n0192), .i1(1'b1), .y(n0332)"
+    },
+    {
+      "instance": "u_n0334",
+      "connection": ".s(n0188), .i0(n0189), .i1(1'b1), .y(n0334)"
+    },
+    {
+      "instance": "u_n0336",
+      "connection": ".s(n0190), .i0(n0334), .i1(1'b1), .y(n0336)"
+    },
+    {
+      "instance": "u_n0338",
+      "connection": ".s(n0193), .i0(n0194), .i1(1'b1), .y(n0338)"
+    },
+    {
+      "instance": "u_n0339",
+      "connection": ".s(n0095), .i0(n0020), .i1(rom_data[11]), .y(n0339)"
+    },
+    {
+      "instance": "u_n0340",
+      "connection": ".s(rom_data[8]), .i0(n0312), .i1(n0323), .y(n0340)"
+    },
+    {
+      "instance": "u_n0341",
+      "connection": ".s(n0339), .i0(n0319), .i1(n0340), .y(n0341)"
+    },
+    {
+      "instance": "u_n0342",
+      "connection": ".s(rom_data[8]), .i0(1'b0), .i1(a_reg[1]), .y(n0342)"
+    },
+    {
+      "instance": "u_n0343",
+      "connection": ".s(a_reg[0]), .i0(1'b1), .i1(1'b0), .y(n0343)"
+    },
+    {
+      "instance": "u_n0344",
+      "connection": ".s(rom_data[9]), .i0(n0342), .i1(n0343), .y(n0344)"
+    },
+    {
+      "instance": "u_n0345",
+      "connection": ".s(n0192), .i0(ar_reg[0]), .i1(ar_reg[4]), .y(n0345)"
+    },
+    {
+      "instance": "u_n0346",
+      "connection": ".s(n0194), .i0(keys[0]), .i1(keys[4]), .y(n0346)"
+    },
+    {
+      "instance": "u_n0347",
+      "connection": ".s(n0275), .i0(n0278), .i1(n0294), .y(n0347)"
+    },
+    {
+      "instance": "u_n0348",
+      "connection": ".s(n0330), .i0(n0347), .i1(n0341), .y(n0348)"
+    },
+    {
+      "instance": "u_n0349",
+      "connection": ".s(n0336), .i0(n0348), .i1(n0344), .y(n0349)"
+    },
+    {
+      "instance": "u_n0350",
+      "connection": ".s(n0332), .i0(n0349), .i1(n0345), .y(n0350)"
+    },
+    {
+      "instance": "u_n0351",
+      "connection": ".s(n0338), .i0(n0350), .i1(n0346), .y(n0351)"
+    },
+    {
+      "instance": "u_n0352",
+      "connection": ".s(rom_data[8]), .i0(n0314), .i1(n0324), .y(n0352)"
+    },
+    {
+      "instance": "u_n0353",
+      "connection": ".s(n0339), .i0(n0320), .i1(n0352), .y(n0353)"
+    },
+    {
+      "instance": "u_n0354",
+      "connection": ".s(rom_data[8]), .i0(a_reg[0]), .i1(a_reg[2]), .y(n0354)"
+    },
+    {
+      "instance": "u_n0355",
+      "connection": ".s(a_reg[1]), .i0(1'b1), .i1(1'b0), .y(n0355)"
+    },
+    {
+      "instance": "u_n0356",
+      "connection": ".s(rom_data[9]), .i0(n0354), .i1(n0355), .y(n0356)"
+    },
+    {
+      "instance": "u_n0357",
+      "connection": ".s(n0192), .i0(ar_reg[1]), .i1(ar_reg[5]), .y(n0357)"
+    },
+    {
+      "instance": "u_n0358",
+      "connection": ".s(n0194), .i0(keys[1]), .i1(keys[5]), .y(n0358)"
+    },
+    {
+      "instance": "u_n0359",
+      "connection": ".s(n0275), .i0(n0279), .i1(n0299), .y(n0359)"
+    },
+    {
+      "instance": "u_n0360",
+      "connection": ".s(n0330), .i0(n0359), .i1(n0353), .y(n0360)"
+    },
+    {
+      "instance": "u_n0361",
+      "connection": ".s(n0336), .i0(n0360), .i1(n0356), .y(n0361)"
+    },
+    {
+      "instance": "u_n0362",
+      "connection": ".s(n0332), .i0(n0361), .i1(n0357), .y(n0362)"
+    },
+    {
+      "instance": "u_n0363",
+      "connection": ".s(n0338), .i0(n0362), .i1(n0358), .y(n0363)"
+    },
+    {
+      "instance": "u_n0364",
+      "connection": ".s(rom_data[8]), .i0(n0316), .i1(n0325), .y(n0364)"
+    },
+    {
+      "instance": "u_n0365",
+      "connection": ".s(n0339), .i0(n0321), .i1(n0364), .y(n0365)"
+    },
+    {
+      "instance": "u_n0366",
+      "connection": ".s(rom_data[8]), .i0(a_reg[1]), .i1(a_reg[3]), .y(n0366)"
+    },
+    {
+      "instance": "u_n0367",
+      "connection": ".s(a_reg[2]), .i0(1'b1), .i1(1'b0), .y(n0367)"
+    },
+    {
+      "instance": "u_n0368",
+      "connection": ".s(rom_data[9]), .i0(n0366), .i1(n0367), .y(n0368)"
+    },
+    {
+      "instance": "u_n0369",
+      "connection": ".s(n0192), .i0(ar_reg[2]), .i1(ar_reg[6]), .y(n0369)"
+    },
+    {
+      "instance": "u_n0370",
+      "connection": ".s(n0194), .i0(keys[2]), .i1(1'b0), .y(n0370)"
+    },
+    {
+      "instance": "u_n0371",
+      "connection": ".s(n0275), .i0(n0280), .i1(n0304), .y(n0371)"
+    },
+    {
+      "instance": "u_n0372",
+      "connection": ".s(n0330), .i0(n0371), .i1(n0365), .y(n0372)"
+    },
+    {
+      "instance": "u_n0373",
+      "connection": ".s(n0336), .i0(n0372), .i1(n0368), .y(n0373)"
+    },
+    {
+      "instance": "u_n0374",
+      "connection": ".s(n0332), .i0(n0373), .i1(n0369), .y(n0374)"
+    },
+    {
+      "instance": "u_n0375",
+      "connection": ".s(n0338), .i0(n0374), .i1(n0370), .y(n0375)"
+    },
+    {
+      "instance": "u_n0376",
+      "connection": ".s(rom_data[8]), .i0(n0318), .i1(n0326), .y(n0376)"
+    },
+    {
+      "instance": "u_n0377",
+      "connection": ".s(n0339), .i0(n0322), .i1(n0376), .y(n0377)"
+    },
+    {
+      "instance": "u_n0378",
+      "connection": ".s(rom_data[8]), .i0(a_reg[2]), .i1(1'b0), .y(n0378)"
+    },
+    {
+      "instance": "u_n0379",
+      "connection": ".s(a_reg[3]), .i0(1'b1), .i1(1'b0), .y(n0379)"
+    },
+    {
+      "instance": "u_n0380",
+      "connection": ".s(rom_data[9]), .i0(n0378), .i1(n0379), .y(n0380)"
+    },
+    {
+      "instance": "u_n0381",
+      "connection": ".s(n0192), .i0(ar_reg[3]), .i1(ar_reg[7]), .y(n0381)"
+    },
+    {
+      "instance": "u_n0382",
+      "connection": ".s(n0194), .i0(keys[3]), .i1(1'b0), .y(n0382)"
+    },
+    {
+      "instance": "u_n0383",
+      "connection": ".s(n0275), .i0(n0281), .i1(n0309), .y(n0383)"
+    },
+    {
+      "instance": "u_n0384",
+      "connection": ".s(n0330), .i0(n0383), .i1(n0377), .y(n0384)"
+    },
+    {
+      "instance": "u_n0385",
+      "connection": ".s(n0336), .i0(n0384), .i1(n0380), .y(n0385)"
+    },
+    {
+      "instance": "u_n0386",
+      "connection": ".s(n0332), .i0(n0385), .i1(n0381), .y(n0386)"
+    },
+    {
+      "instance": "u_n0387",
+      "connection": ".s(n0338), .i0(n0386), .i1(n0382), .y(n0387)"
+    },
+    {
+      "instance": "u_n0389",
+      "connection": ".s(n0351), .i0(n0363), .i1(1'b1), .y(n0389)"
+    },
+    {
+      "instance": "u_n0391",
+      "connection": ".s(n0375), .i0(n0389), .i1(1'b1), .y(n0391)"
+    },
+    {
+      "instance": "u_n0393",
+      "connection": ".s(n0387), .i0(n0391), .i1(1'b1), .y(n0393)"
+    },
+    {
+      "instance": "u_n0394",
+      "connection": ".s(n0393), .i0(1'b1), .i1(1'b0), .y(n0394)"
+    },
+    {
+      "instance": "u_n0395",
+      "connection": ".s(n0189), .i0(a_reg[3]), .i1(a_reg[0]), .y(n0395)"
+    },
+    {
+      "instance": "u_n0396",
+      "connection": ".s(n0334), .i0(n0310), .i1(n0395), .y(n0396)"
+    },
+    {
+      "instance": "u_n0398",
+      "connection": ".s(n0021), .i0(n0141), .i1(1'b1), .y(n0398)"
+    },
+    {
+      "instance": "u_n0399",
+      "connection": ".s(n0045), .i0(n0054), .i1(1'b1), .y(n0399)"
+    },
+    {
+      "instance": "u_n0400",
+      "connection": ".s(n0399), .i0(1'b1), .i1(1'b0), .y(n0400)"
+    },
+    {
+      "instance": "u_n0402",
+      "connection": ".s(n0095), .i0(1'b0), .i1(n0400), .y(n0402)"
+    },
+    {
+      "instance": "u_n0403",
+      "connection": ".s(n0052), .i0(n0053), .i1(1'b1), .y(n0403)"
+    },
+    {
+      "instance": "u_n0405",
+      "connection": ".s(n0026), .i0(1'b0), .i1(n0403), .y(n0405)"
+    },
+    {
+      "instance": "u_n0406",
+      "connection": ".s(n0032), .i0(1'b0), .i1(n0103), .y(n0406)"
+    },
+    {
+      "instance": "u_n0408",
+      "connection": ".s(n0398), .i0(n0402), .i1(1'b1), .y(n0408)"
+    },
+    {
+      "instance": "u_n0410",
+      "connection": ".s(n0405), .i0(n0408), .i1(1'b1), .y(n0410)"
+    },
+    {
+      "instance": "u_n0412",
+      "connection": ".s(n0406), .i0(n0410), .i1(1'b1), .y(n0412)"
+    },
+    {
+      "instance": "u_n0414",
+      "connection": ".s(n0095), .i0(1'b0), .i1(n0102), .y(n0414)"
+    },
+    {
+      "instance": "u_n0416",
+      "connection": ".s(n0398), .i0(n0414), .i1(1'b1), .y(n0416)"
+    },
+    {
+      "instance": "u_n0418",
+      "connection": ".s(n0188), .i0(n0275), .i1(1'b1), .y(n0418)"
+    },
+    {
+      "instance": "u_n0419",
+      "connection": ".s(n0189), .i0(n0418), .i1(1'b1), .y(n0419)"
+    },
+    {
+      "instance": "u_n0421",
+      "connection": ".s(n0235), .i0(1'b0), .i1(n0412), .y(n0421)"
+    },
+    {
+      "instance": "u_n0423",
+      "connection": ".s(n0235), .i0(1'b0), .i1(n0416), .y(n0423)"
+    },
+    {
+      "instance": "u_n0425",
+      "connection": ".s(n0235), .i0(1'b0), .i1(n0419), .y(n0425)"
+    },
+    {
+      "instance": "u_n0426",
+      "connection": ".s(pc_reg[0]), .i0(1'b1), .i1(1'b0), .y(n0426)"
+    },
+    {
+      "instance": "u_n0427",
+      "connection": ".s(pc_reg[1]), .i0(pc_reg[0]), .i1(n0426), .y(n0427)"
+    },
+    {
+      "instance": "u_n0428",
+      "connection": ".s(pc_reg[0]), .i0(1'b0), .i1(pc_reg[1]), .y(n0428)"
+    },
+    {
+      "instance": "u_n0429",
+      "connection": ".s(n0428), .i0(1'b1), .i1(1'b0), .y(n0429)"
+    },
+    {
+      "instance": "u_n0430",
+      "connection": ".s(pc_reg[2]), .i0(n0428), .i1(n0429), .y(n0430)"
+    },
+    {
+      "instance": "u_n0431",
+      "connection": ".s(n0428), .i0(1'b0), .i1(pc_reg[2]), .y(n0431)"
+    },
+    {
+      "instance": "u_n0432",
+      "connection": ".s(n0431), .i0(1'b1), .i1(1'b0), .y(n0432)"
+    },
+    {
+      "instance": "u_n0433",
+      "connection": ".s(pc_reg[3]), .i0(n0431), .i1(n0432), .y(n0433)"
+    },
+    {
+      "instance": "u_n0434",
+      "connection": ".s(n0431), .i0(1'b0), .i1(pc_reg[3]), .y(n0434)"
+    },
+    {
+      "instance": "u_n0435",
+      "connection": ".s(n0434), .i0(1'b1), .i1(1'b0), .y(n0435)"
+    },
+    {
+      "instance": "u_n0436",
+      "connection": ".s(pc_reg[4]), .i0(n0434), .i1(n0435), .y(n0436)"
+    },
+    {
+      "instance": "u_n0437",
+      "connection": ".s(n0434), .i0(1'b0), .i1(pc_reg[4]), .y(n0437)"
+    },
+    {
+      "instance": "u_n0438",
+      "connection": ".s(n0437), .i0(1'b1), .i1(1'b0), .y(n0438)"
+    },
+    {
+      "instance": "u_n0439",
+      "connection": ".s(pc_reg[5]), .i0(n0437), .i1(n0438), .y(n0439)"
+    },
+    {
+      "instance": "u_n0440",
+      "connection": ".s(n0437), .i0(1'b0), .i1(pc_reg[5]), .y(n0440)"
+    },
+    {
+      "instance": "u_n0441",
+      "connection": ".s(n0440), .i0(1'b1), .i1(1'b0), .y(n0441)"
+    },
+    {
+      "instance": "u_n0442",
+      "connection": ".s(pc_reg[6]), .i0(n0440), .i1(n0441), .y(n0442)"
+    },
+    {
+      "instance": "u_n0443",
+      "connection": ".s(n0440), .i0(1'b0), .i1(pc_reg[6]), .y(n0443)"
+    },
+    {
+      "instance": "u_n0444",
+      "connection": ".s(n0443), .i0(1'b1), .i1(1'b0), .y(n0444)"
+    },
+    {
+      "instance": "u_n0445",
+      "connection": ".s(pc_reg[7]), .i0(n0443), .i1(n0444), .y(n0445)"
+    },
+    {
+      "instance": "u_n0446",
+      "connection": ".s(n0443), .i0(1'b0), .i1(pc_reg[7]), .y(n0446)"
+    },
+    {
+      "instance": "u_n0447",
+      "connection": ".s(n0446), .i0(1'b1), .i1(1'b0), .y(n0447)"
+    },
+    {
+      "instance": "u_n0448",
+      "connection": ".s(pc_reg[8]), .i0(n0446), .i1(n0447), .y(n0448)"
+    },
+    {
+      "instance": "u_n0449",
+      "connection": ".s(n0446), .i0(1'b0), .i1(pc_reg[8]), .y(n0449)"
+    },
+    {
+      "instance": "u_n0450",
+      "connection": ".s(n0449), .i0(1'b1), .i1(1'b0), .y(n0450)"
+    },
+    {
+      "instance": "u_n0451",
+      "connection": ".s(pc_reg[9]), .i0(n0449), .i1(n0450), .y(n0451)"
+    },
+    {
+      "instance": "u_n0452",
+      "connection": ".s(n0449), .i0(1'b0), .i1(pc_reg[9]), .y(n0452)"
+    },
+    {
+      "instance": "u_n0453",
+      "connection": ".s(n0452), .i0(1'b1), .i1(1'b0), .y(n0453)"
+    },
+    {
+      "instance": "u_n0454",
+      "connection": ".s(pc_reg[10]), .i0(n0452), .i1(n0453), .y(n0454)"
+    },
+    {
+      "instance": "u_n0455",
+      "connection": ".s(n0452), .i0(1'b0), .i1(pc_reg[10]), .y(n0455)"
+    },
+    {
+      "instance": "u_n0456",
+      "connection": ".s(n0455), .i0(1'b1), .i1(1'b0), .y(n0456)"
+    },
+    {
+      "instance": "u_n0457",
+      "connection": ".s(pc_reg[11]), .i0(n0455), .i1(n0456), .y(n0457)"
+    },
+    {
+      "instance": "u_n0460",
+      "connection": ".s(n0030), .i0(1'b0), .i1(z_reg), .y(n0460)"
+    },
+    {
+      "instance": "u_n0461",
+      "connection": ".s(c_reg), .i0(1'b0), .i1(n0031), .y(n0461)"
+    },
+    {
+      "instance": "u_n0463",
+      "connection": ".s(n0027), .i0(n0460), .i1(1'b1), .y(n0463)"
+    },
+    {
+      "instance": "u_n0465",
+      "connection": ".s(n0461), .i0(n0463), .i1(1'b1), .y(n0465)"
+    },
+    {
+      "instance": "u_n0467",
+      "connection": ".s(n0235), .i0(1'b0), .i1(n0465), .y(n0467)"
+    },
+    {
+      "instance": "u_n0468",
+      "connection": ".s(n0467), .i0(n0426), .i1(rom_data[0]), .y(n0468)"
+    },
+    {
+      "instance": "u_n0469",
+      "connection": ".s(n0235), .i0(pc_reg[0]), .i1(n0468), .y(n0469)"
+    },
+    {
+      "instance": "u_n0470",
+      "connection": ".s(rst), .i0(n0469), .i1(1'b0), .y(n0470)"
+    },
+    {
+      "instance": "u_n0471",
+      "connection": ".s(n0467), .i0(n0427), .i1(rom_data[1]), .y(n0471)"
+    },
+    {
+      "instance": "u_n0472",
+      "connection": ".s(n0235), .i0(pc_reg[1]), .i1(n0471), .y(n0472)"
+    },
+    {
+      "instance": "u_n0473",
+      "connection": ".s(rst), .i0(n0472), .i1(1'b0), .y(n0473)"
+    },
+    {
+      "instance": "u_n0474",
+      "connection": ".s(n0467), .i0(n0430), .i1(rom_data[2]), .y(n0474)"
+    },
+    {
+      "instance": "u_n0475",
+      "connection": ".s(n0235), .i0(pc_reg[2]), .i1(n0474), .y(n0475)"
+    },
+    {
+      "instance": "u_n0476",
+      "connection": ".s(rst), .i0(n0475), .i1(1'b0), .y(n0476)"
+    },
+    {
+      "instance": "u_n0477",
+      "connection": ".s(n0467), .i0(n0433), .i1(rom_data[3]), .y(n0477)"
+    },
+    {
+      "instance": "u_n0478",
+      "connection": ".s(n0235), .i0(pc_reg[3]), .i1(n0477), .y(n0478)"
+    },
+    {
+      "instance": "u_n0479",
+      "connection": ".s(rst), .i0(n0478), .i1(1'b0), .y(n0479)"
+    },
+    {
+      "instance": "u_n0480",
+      "connection": ".s(n0467), .i0(n0436), .i1(rom_data[4]), .y(n0480)"
+    },
+    {
+      "instance": "u_n0481",
+      "connection": ".s(n0235), .i0(pc_reg[4]), .i1(n0480), .y(n0481)"
+    },
+    {
+      "instance": "u_n0482",
+      "connection": ".s(rst), .i0(n0481), .i1(1'b0), .y(n0482)"
+    },
+    {
+      "instance": "u_n0483",
+      "connection": ".s(n0467), .i0(n0439), .i1(rom_data[5]), .y(n0483)"
+    },
+    {
+      "instance": "u_n0484",
+      "connection": ".s(n0235), .i0(pc_reg[5]), .i1(n0483), .y(n0484)"
+    },
+    {
+      "instance": "u_n0485",
+      "connection": ".s(rst), .i0(n0484), .i1(1'b0), .y(n0485)"
+    },
+    {
+      "instance": "u_n0486",
+      "connection": ".s(n0467), .i0(n0442), .i1(rom_data[6]), .y(n0486)"
+    },
+    {
+      "instance": "u_n0487",
+      "connection": ".s(n0235), .i0(pc_reg[6]), .i1(n0486), .y(n0487)"
+    },
+    {
+      "instance": "u_n0488",
+      "connection": ".s(rst), .i0(n0487), .i1(1'b0), .y(n0488)"
+    },
+    {
+      "instance": "u_n0489",
+      "connection": ".s(n0467), .i0(n0445), .i1(rom_data[7]), .y(n0489)"
+    },
+    {
+      "instance": "u_n0490",
+      "connection": ".s(n0235), .i0(pc_reg[7]), .i1(n0489), .y(n0490)"
+    },
+    {
+      "instance": "u_n0491",
+      "connection": ".s(rst), .i0(n0490), .i1(1'b0), .y(n0491)"
+    },
+    {
+      "instance": "u_n0492",
+      "connection": ".s(n0467), .i0(n0448), .i1(rom_data[8]), .y(n0492)"
+    },
+    {
+      "instance": "u_n0493",
+      "connection": ".s(n0235), .i0(pc_reg[8]), .i1(n0492), .y(n0493)"
+    },
+    {
+      "instance": "u_n0494",
+      "connection": ".s(rst), .i0(n0493), .i1(1'b0), .y(n0494)"
+    },
+    {
+      "instance": "u_n0495",
+      "connection": ".s(n0467), .i0(n0451), .i1(rom_data[9]), .y(n0495)"
+    },
+    {
+      "instance": "u_n0496",
+      "connection": ".s(n0235), .i0(pc_reg[9]), .i1(n0495), .y(n0496)"
+    },
+    {
+      "instance": "u_n0497",
+      "connection": ".s(rst), .i0(n0496), .i1(1'b0), .y(n0497)"
+    },
+    {
+      "instance": "u_n0498",
+      "connection": ".s(n0467), .i0(n0454), .i1(rom_data[10]), .y(n0498)"
+    },
+    {
+      "instance": "u_n0499",
+      "connection": ".s(n0235), .i0(pc_reg[10]), .i1(n0498), .y(n0499)"
+    },
+    {
+      "instance": "u_n0500",
+      "connection": ".s(rst), .i0(n0499), .i1(1'b0), .y(n0500)"
+    },
+    {
+      "instance": "u_n0501",
+      "connection": ".s(n0467), .i0(n0457), .i1(rom_data[11]), .y(n0501)"
+    },
+    {
+      "instance": "u_n0502",
+      "connection": ".s(n0235), .i0(pc_reg[11]), .i1(n0501), .y(n0502)"
+    },
+    {
+      "instance": "u_n0503",
+      "connection": ".s(rst), .i0(n0502), .i1(1'b0), .y(n0503)"
+    },
+    {
+      "instance": "u_n0504",
+      "connection": ".s(ar_reg[0]), .i0(1'b1), .i1(1'b0), .y(n0504)"
+    },
+    {
+      "instance": "u_n0505",
+      "connection": ".s(ar_reg[1]), .i0(ar_reg[0]), .i1(n0504), .y(n0505)"
+    },
+    {
+      "instance": "u_n0506",
+      "connection": ".s(ar_reg[0]), .i0(1'b0), .i1(ar_reg[1]), .y(n0506)"
+    },
+    {
+      "instance": "u_n0507",
+      "connection": ".s(n0506), .i0(1'b1), .i1(1'b0), .y(n0507)"
+    },
+    {
+      "instance": "u_n0508",
+      "connection": ".s(ar_reg[2]), .i0(n0506), .i1(n0507), .y(n0508)"
+    },
+    {
+      "instance": "u_n0509",
+      "connection": ".s(ar_reg[2]), .i0(1'b0), .i1(n0506), .y(n0509)"
+    },
+    {
+      "instance": "u_n0510",
+      "connection": ".s(n0509), .i0(1'b1), .i1(1'b0), .y(n0510)"
+    },
+    {
+      "instance": "u_n0511",
+      "connection": ".s(ar_reg[3]), .i0(n0509), .i1(n0510), .y(n0511)"
+    },
+    {
+      "instance": "u_n0512",
+      "connection": ".s(ar_reg[3]), .i0(1'b0), .i1(n0509), .y(n0512)"
+    },
+    {
+      "instance": "u_n0513",
+      "connection": ".s(n0512), .i0(1'b1), .i1(1'b0), .y(n0513)"
+    },
+    {
+      "instance": "u_n0514",
+      "connection": ".s(ar_reg[4]), .i0(n0512), .i1(n0513), .y(n0514)"
+    },
+    {
+      "instance": "u_n0515",
+      "connection": ".s(ar_reg[4]), .i0(1'b0), .i1(n0512), .y(n0515)"
+    },
+    {
+      "instance": "u_n0516",
+      "connection": ".s(n0515), .i0(1'b1), .i1(1'b0), .y(n0516)"
+    },
+    {
+      "instance": "u_n0517",
+      "connection": ".s(ar_reg[5]), .i0(n0515), .i1(n0516), .y(n0517)"
+    },
+    {
+      "instance": "u_n0518",
+      "connection": ".s(ar_reg[5]), .i0(1'b0), .i1(n0515), .y(n0518)"
+    },
+    {
+      "instance": "u_n0519",
+      "connection": ".s(n0518), .i0(1'b1), .i1(1'b0), .y(n0519)"
+    },
+    {
+      "instance": "u_n0520",
+      "connection": ".s(ar_reg[6]), .i0(n0518), .i1(n0519), .y(n0520)"
+    },
+    {
+      "instance": "u_n0521",
+      "connection": ".s(ar_reg[6]), .i0(1'b0), .i1(n0518), .y(n0521)"
+    },
+    {
+      "instance": "u_n0522",
+      "connection": ".s(n0521), .i0(1'b1), .i1(1'b0), .y(n0522)"
+    },
+    {
+      "instance": "u_n0523",
+      "connection": ".s(ar_reg[7]), .i0(n0521), .i1(n0522), .y(n0523)"
+    },
+    {
+      "instance": "u_n0526",
+      "connection": ".s(n0198), .i0(1'b0), .i1(n0235), .y(n0526)"
+    },
+    {
+      "instance": "u_n0528",
+      "connection": ".s(n0201), .i0(1'b0), .i1(n0235), .y(n0528)"
+    },
+    {
+      "instance": "u_n0530",
+      "connection": ".s(n0202), .i0(1'b0), .i1(n0235), .y(n0530)"
+    },
+    {
+      "instance": "u_n0531",
+      "connection": ".s(rom_data[9]), .i0(rom_data[0]), .i1(a_reg[0]), .y(n0531)"
+    },
+    {
+      "instance": "u_n0532",
+      "connection": ".s(rom_data[9]), .i0(rom_data[1]), .i1(a_reg[1]), .y(n0532)"
+    },
+    {
+      "instance": "u_n0533",
+      "connection": ".s(rom_data[9]), .i0(rom_data[2]), .i1(a_reg[2]), .y(n0533)"
+    },
+    {
+      "instance": "u_n0534",
+      "connection": ".s(rom_data[9]), .i0(rom_data[3]), .i1(a_reg[3]), .y(n0534)"
+    },
+    {
+      "instance": "u_n0535",
+      "connection": ".s(n0530), .i0(ar_reg[0]), .i1(n0504), .y(n0535)"
+    },
+    {
+      "instance": "u_n0536",
+      "connection": ".s(n0526), .i0(n0535), .i1(n0531), .y(n0536)"
+    },
+    {
+      "instance": "u_n0537",
+      "connection": ".s(rst), .i0(n0536), .i1(1'b0), .y(n0537)"
+    },
+    {
+      "instance": "u_n0538",
+      "connection": ".s(n0530), .i0(ar_reg[1]), .i1(n0505), .y(n0538)"
+    },
+    {
+      "instance": "u_n0539",
+      "connection": ".s(n0526), .i0(n0538), .i1(n0532), .y(n0539)"
+    },
+    {
+      "instance": "u_n0540",
+      "connection": ".s(rst), .i0(n0539), .i1(1'b0), .y(n0540)"
+    },
+    {
+      "instance": "u_n0541",
+      "connection": ".s(n0530), .i0(ar_reg[2]), .i1(n0508), .y(n0541)"
+    },
+    {
+      "instance": "u_n0542",
+      "connection": ".s(n0526), .i0(n0541), .i1(n0533), .y(n0542)"
+    },
+    {
+      "instance": "u_n0543",
+      "connection": ".s(rst), .i0(n0542), .i1(1'b0), .y(n0543)"
+    },
+    {
+      "instance": "u_n0544",
+      "connection": ".s(n0530), .i0(ar_reg[3]), .i1(n0511), .y(n0544)"
+    },
+    {
+      "instance": "u_n0545",
+      "connection": ".s(n0526), .i0(n0544), .i1(n0534), .y(n0545)"
+    },
+    {
+      "instance": "u_n0546",
+      "connection": ".s(rst), .i0(n0545), .i1(1'b0), .y(n0546)"
+    },
+    {
+      "instance": "u_n0547",
+      "connection": ".s(n0530), .i0(ar_reg[4]), .i1(n0514), .y(n0547)"
+    },
+    {
+      "instance": "u_n0548",
+      "connection": ".s(n0528), .i0(n0547), .i1(n0531), .y(n0548)"
+    },
+    {
+      "instance": "u_n0549",
+      "connection": ".s(rst), .i0(n0548), .i1(1'b0), .y(n0549)"
+    },
+    {
+      "instance": "u_n0550",
+      "connection": ".s(n0530), .i0(ar_reg[5]), .i1(n0517), .y(n0550)"
+    },
+    {
+      "instance": "u_n0551",
+      "connection": ".s(n0528), .i0(n0550), .i1(n0532), .y(n0551)"
+    },
+    {
+      "instance": "u_n0552",
+      "connection": ".s(rst), .i0(n0551), .i1(1'b0), .y(n0552)"
+    },
+    {
+      "instance": "u_n0553",
+      "connection": ".s(n0530), .i0(ar_reg[6]), .i1(n0520), .y(n0553)"
+    },
+    {
+      "instance": "u_n0554",
+      "connection": ".s(n0528), .i0(n0553), .i1(n0533), .y(n0554)"
+    },
+    {
+      "instance": "u_n0555",
+      "connection": ".s(rst), .i0(n0554), .i1(1'b0), .y(n0555)"
+    },
+    {
+      "instance": "u_n0556",
+      "connection": ".s(n0530), .i0(ar_reg[7]), .i1(n0523), .y(n0556)"
+    },
+    {
+      "instance": "u_n0557",
+      "connection": ".s(n0528), .i0(n0556), .i1(n0534), .y(n0557)"
+    },
+    {
+      "instance": "u_n0558",
+      "connection": ".s(rst), .i0(n0557), .i1(1'b0), .y(n0558)"
+    },
+    {
+      "instance": "u_n0559",
+      "connection": ".s(n0421), .i0(a_reg[0]), .i1(n0351), .y(n0559)"
+    },
+    {
+      "instance": "u_n0560",
+      "connection": ".s(rst), .i0(n0559), .i1(1'b0), .y(n0560)"
+    },
+    {
+      "instance": "u_n0561",
+      "connection": ".s(n0421), .i0(a_reg[1]), .i1(n0363), .y(n0561)"
+    },
+    {
+      "instance": "u_n0562",
+      "connection": ".s(rst), .i0(n0561), .i1(1'b0), .y(n0562)"
+    },
+    {
+      "instance": "u_n0563",
+      "connection": ".s(n0421), .i0(a_reg[2]), .i1(n0375), .y(n0563)"
+    },
+    {
+      "instance": "u_n0564",
+      "connection": ".s(rst), .i0(n0563), .i1(1'b0), .y(n0564)"
+    },
+    {
+      "instance": "u_n0565",
+      "connection": ".s(n0421), .i0(a_reg[3]), .i1(n0387), .y(n0565)"
+    },
+    {
+      "instance": "u_n0566",
+      "connection": ".s(rst), .i0(n0565), .i1(1'b0), .y(n0566)"
+    },
+    {
+      "instance": "u_n0567",
+      "connection": ".s(n0423), .i0(z_reg), .i1(n0394), .y(n0567)"
+    },
+    {
+      "instance": "u_n0568",
+      "connection": ".s(rst), .i0(n0567), .i1(1'b1), .y(n0568)"
+    },
+    {
+      "instance": "u_n0569",
+      "connection": ".s(n0425), .i0(c_reg), .i1(n0396), .y(n0569)"
+    },
+    {
+      "instance": "u_n0570",
+      "connection": ".s(rst), .i0(n0569), .i1(1'b0), .y(n0570)"
+    },
+    {
+      "instance": "u_n0572",
+      "connection": ".s(n0195), .i0(1'b0), .i1(n0235), .y(n0572)"
+    },
+    {
+      "instance": "u_n0573",
+      "connection": ".s(n0572), .i0(gpo_reg[0]), .i1(a_reg[0]), .y(n0573)"
+    },
+    {
+      "instance": "u_n0574",
+      "connection": ".s(rst), .i0(n0573), .i1(1'b0), .y(n0574)"
+    },
+    {
+      "instance": "u_n0575",
+      "connection": ".s(n0572), .i0(gpo_reg[1]), .i1(a_reg[1]), .y(n0575)"
+    },
+    {
+      "instance": "u_n0576",
+      "connection": ".s(rst), .i0(n0575), .i1(1'b0), .y(n0576)"
+    },
+    {
+      "instance": "u_n0577",
+      "connection": ".s(n0572), .i0(gpo_reg[2]), .i1(a_reg[2]), .y(n0577)"
+    },
+    {
+      "instance": "u_n0578",
+      "connection": ".s(rst), .i0(n0577), .i1(1'b0), .y(n0578)"
+    },
+    {
+      "instance": "u_n0579",
+      "connection": ".s(n0572), .i0(gpo_reg[3]), .i1(a_reg[3]), .y(n0579)"
+    },
+    {
+      "instance": "u_n0580",
+      "connection": ".s(rst), .i0(n0579), .i1(1'b1), .y(n0580)"
+    },
+    {
+      "instance": "u_n0581",
+      "connection": ".s(rst), .i0(n0255), .i1(1'b0), .y(n0581)"
+    },
+    {
+      "instance": "u_n0582",
+      "connection": ".s(rst), .i0(n0262), .i1(1'b0), .y(n0582)"
+    },
+    {
+      "instance": "u_n0583",
+      "connection": ".s(rst), .i0(n0267), .i1(1'b0), .y(n0583)"
+    },
+    {
+      "instance": "u_n0584",
+      "connection": ".s(n0025), .i0(rom_data[0]), .i1(ar_reg[0]), .y(n0584)"
+    },
+    {
+      "instance": "u_n0585",
+      "connection": ".s(n0025), .i0(rom_data[1]), .i1(ar_reg[1]), .y(n0585)"
+    },
+    {
+      "instance": "u_n0586",
+      "connection": ".s(n0025), .i0(rom_data[2]), .i1(ar_reg[2]), .y(n0586)"
+    },
+    {
+      "instance": "u_n0587",
+      "connection": ".s(n0025), .i0(rom_data[3]), .i1(ar_reg[3]), .y(n0587)"
+    },
+    {
+      "instance": "u_n0588",
+      "connection": ".s(n0025), .i0(rom_data[4]), .i1(ar_reg[4]), .y(n0588)"
+    },
+    {
+      "instance": "u_n0589",
+      "connection": ".s(n0025), .i0(rom_data[5]), .i1(ar_reg[5]), .y(n0589)"
+    },
+    {
+      "instance": "u_n0590",
+      "connection": ".s(n0025), .i0(rom_data[6]), .i1(ar_reg[6]), .y(n0590)"
+    },
+    {
+      "instance": "u_n0591",
+      "connection": ".s(n0025), .i0(rom_data[7]), .i1(ar_reg[7]), .y(n0591)"
+    },
+    {
+      "instance": "u_n0592",
+      "connection": ".s(n0218), .i0(n0263), .i1(1'b1), .y(n0592)"
+    },
+    {
+      "instance": "u_n0593",
+      "connection": ".s(n0095), .i0(1'b0), .i1(n0159), .y(n0593)"
+    },
+    {
+      "instance": "u_n0595",
+      "connection": ".s(n0592), .i0(1'b0), .i1(n0593), .y(n0595)"
+    },
+    {
+      "instance": "u_n0596",
+      "connection": ".s(n0233), .i0(1'b0), .i1(n0595), .y(n0596)"
+    },
+    {
+      "instance": "u_n0597",
+      "connection": ".s(n0164), .i0(1'b1), .i1(1'b0), .y(n0597)"
+    },
+    {
+      "instance": "u_n0599",
+      "connection": ".s(n0596), .i0(1'b0), .i1(n0597), .y(n0599)"
+    },
+    {
+      "instance": "u_n0600",
+      "connection": ".s(n0164), .i0(1'b0), .i1(n0596), .y(n0600)"
+    },
+    {
+      "instance": "u_n0601",
+      "connection": ".s(n0217), .i0(1'b0), .i1(n0600), .y(n0601)"
+    },
+    {
+      "instance": "u_n0602",
+      "connection": ".s(n0233), .i0(1'b0), .i1(n0237), .y(n0602)"
+    }
+  ],
+  "observed_cpu_nodes": {
+    "input_selected": "n0338",
+    "input_bank": "n0194"
+  }
+}

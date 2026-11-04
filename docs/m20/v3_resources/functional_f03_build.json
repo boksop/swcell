@@ -1,0 +1,18 @@
+{
+  "build": "M20V3F03",
+  "bit_sha256": "ab9cbf4000c8b9a3bc3700764a7af3fafe7efefe607f6eb074a53e4467afd675",
+  "setup_hold_pulse_ns": [
+    1.474,
+    0.085,
+    9.6
+  ],
+  "source_hashes": "PASS",
+  "keys": {
+    "pause": "KEY5",
+    "center": "KEY4 UNUSED"
+  },
+  "game_tick_hz": {
+    "pong": 10,
+    "snake": 5
+  }
+}

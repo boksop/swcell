@@ -149,3 +149,15 @@ v0.2补充：已将747取值拆成164颗存储MUX、62颗保持/使能MUX、521�
 ## 本地版本与恢复
 
 [版本历史/标签](M20_RELEASE_HISTORY.md)、[来源SHA与只读审计](M20_SOURCE_MANIFEST.md)、[实际恢复报告](M20_LOCAL_GIT_REPORT.md)。数字逻辑tag不代表实物时序；物理分析tag保留ESTIMATED/TBD。
+
+## V3 FPGA实机原型（2026-11-04）
+
+[工程与按键](../../fpga/projects/m20/cpu_validation/README.md)、[架构](M20_V3_FPGA_ARCHITECTURE.md)、[结构映射](M20_V3_STRUCTURAL_IMPLEMENTATION.md)、[时钟/存储](M20_V3_CLOCK_MEMORY_INTEGRATION.md)、[按键/OLED](M20_V3_KEY_OLED_INTERFACE.md)、[游戏](M20_V3_GAME_VERIFICATION.md)、[STA/资源](M20_V3_TIMING_RESOURCE_REPORT.md)、[硬件记录](M20_V3_HARDWARE_TEST_REPORT.md)、[总报告](M20_V3_TEST_REPORT.md)、[Pong固定发球说明](M20_V3_PONG_SERVE_REVIEW.md)。功能存储模式已实机运行且用户确认两游戏操作；严格反馈模式85项LUTLP-1，不宣称543物理反馈存储已在FPGA上通过。当前按用户反馈默认Pong10/Snake5tick/s，KEY5暂停，KEY4中键忽略。
+
+F04方向事件缓存已获用户确认短按明显改善。另有[固定乱序食物变体](M20_V3_SNAKE_SHUFFLED.md)：原ASM/ROM不变，新软件315场景/154611事件及实机66tick/12份全RAM对照通过，已下载；食物分布的新人工体验尚待确认。
+
+当前键位调整：[F05互换记录](M20_V3_KEY_SWAP_F05.md)，KEY5/A切游戏、KEY7暂停/继续。前述KEY5暂停为F03/F04历史确认，F05不改游戏ROM、CPU或速度。
+
+启动页入口统一：[F06记录](M20_V3_BOOT_ENTRY_F06.md)。BOOT页KEY5启动当前游戏，KEY7不启动；游戏中继续KEY5切换、KEY7暂停。F05键位互换已获用户确认，新启动入口独立记录验证状态。
+
+用户随后确认F06“已经完全正常了”；[启动与按键交互正式验收报告](../reports/m20_phaseV3-F06_20261104.md)及独立人工确认记录已保存。该范围不扩展为实体543颗157时序或整个V3最终冻结。

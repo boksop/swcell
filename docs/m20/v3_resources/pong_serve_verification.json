@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "source": "frozen Pong machine code executed by Python ISA Machine; independent mathematical rule comparison",
+  "paddle_configurations": 36,
+  "ticks_per_configuration": 128,
+  "checked_ticks": 4608,
+  "witness": "right paddle top5 covers y5..7; fixed serve contacts at new y3, so miss/scoring repeats each7ticks",
+  "original_rom_changed": false,
+  "hardware_claim": false
+}

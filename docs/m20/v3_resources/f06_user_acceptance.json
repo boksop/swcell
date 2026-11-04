@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-04",
+  "timezone": "Asia/Shanghai",
+  "build": "M20V3F06",
+  "status": "USER_CONFIRMED",
+  "scope": "BOOT KEY5 entry; in-game KEY5 selection and KEY7 pause/resume",
+  "context_clarification": "本次JTAG下载后或切换游戏后",
+  "user_response": "已经完全正常了。",
+  "evidence_source": "user reply to asynchronous F06 physical boot-entry confirmation question",
+  "physical_operation_count": null,
+  "raw_uart_modified": false,
+  "prior_validation_summary_preserved": true,
+  "limits": "Manual confirmation recorded separately after the 75-record capture; not a trace of the key press or physical 157 timing sign-off"
+}

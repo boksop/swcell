@@ -1,0 +1,3 @@
+PONG_FILE=/home/boksop/swcell/rtl/modules/m20/v3/generated/pong.memh
+SNAKE_FILE=/home/boksop/swcell/software/m20_300/variants/snake_shuffled_v0_1/snake_shuffled.memh
+SNAKE_TICK_DONE=313

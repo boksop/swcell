@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "profile": "ISA_71_VECTORS_NOT_GAME",
+  "raw_directory": "/home/boksop/swcell/results/M20_V3/20261104_180407_isa_diagnostic",
+  "raw_sha256": "1a561288598358a633818910838ac9384bad4dd7d77a543ee5c0cf09d554f366",
+  "vectors": 71,
+  "retired": 1081,
+  "micro": 3111,
+  "writes": 278,
+  "reads": 114,
+  "pc": 143,
+  "registers": {
+    "pc": 143,
+    "a": 12,
+    "ar": 255,
+    "z": 0,
+    "c": 1,
+    "gpo": 12
+  },
+  "all_256_ram_match_python": true,
+  "limits": "finite vectors/all instruction families, not exhaustive legal encoding hardware proof; initial controller RUN in debug_sample may be stale on HALT"
+}

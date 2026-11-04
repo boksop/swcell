@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "python_tests": 164,
+  "board_simulation": "boot_entry_r2",
+  "board_spi_frames": {
+    "pong": 2,
+    "snake": 1,
+    "boot": 1
+  },
+  "uart_simulated_bytes": 5877,
+  "unchanged_other_build_inputs": 20,
+  "changed_rtl": [
+    "fpga/projects/m20/cpu_validation/rtl/swcell_m20_v3_top.sv",
+    "rtl/modules/m20/v3/swc_m20_v3_display.sv"
+  ],
+  "physical_boot_entry_confirmation": "NOT_VERIFIED",
+  "f05_key_mapping_user_confirmation": "CONFIRMED",
+  "hardware_capture_scope": "75 valid records: initial running then explicit UART STOP+RESET; BOOT wait verified; no physical KEY5 press recorded",
+  "preserved_failure": "boot_entry_r1: fixture expected pause before first Snake frame; corrected scheduling in r2, product assertions retained"
+}

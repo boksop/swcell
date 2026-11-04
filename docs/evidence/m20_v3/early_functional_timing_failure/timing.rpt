@@ -1,0 +1,785 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1.1 (lin64) Build 6605303 Fri Sep 04 05:45:32 MDT 2026
+| Date         : Wed Nov  4 17:40:45 2026
+| Host         : b760m running 64-bit Ubuntu 24.04.5 LTS
+| Command      : report_timing_summary -report_unconstrained -file /home/boksop/swcell/build/fpga/m20/cpu_validation/FUNCTIONAL_STORAGE/timing.rpt
+| Design       : swcell_m20_v3_top
+| Device       : 7k325t-ffg900
+| Speed File   : -2  PRODUCTION 1.12 2017-02-17
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+No report available as report_methodology has not been run prior. Run report_methodology on the current design for the summary of methodology violations.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (10)
+6. checking no_output_delay (0)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (10)
+-------------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 10 input ports with no input delay but user has a false path constraint. (MEDIUM)
+
+
+6. checking no_output_delay (0)
+-------------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     -7.059     -219.953                     32                17566        0.027        0.000                      0                17566        9.600        0.000                       0                  5972  
+
+
+Timing constraints are not met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock    Waveform(ns)       Period(ns)      Frequency(MHz)
+-----    ------------       ----------      --------------
+sys_clk  {0.000 10.000}     20.000          50.000          
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+sys_clk            -7.059     -219.953                     32                17566        0.027        0.000                      0                17566        9.600        0.000                       0                  5972  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                      sys_clk       
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sys_clk
+  To Clock:  sys_clk
+
+Setup :           32  Failing Endpoints,  Worst Slack       -7.059ns,  Total Violation     -219.953ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.027ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        9.600ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (VIOLATED) :        -7.059ns  (required time - arrival time)
+  Source:                 system/game_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            system/tick_timer_reg[25]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             sys_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (sys_clk rise@20.000ns - sys_clk rise@0.000ns)
+  Data Path Delay:        26.763ns  (logic 13.997ns (52.300%)  route 12.766ns (47.700%))
+  Logic Levels:           122  (CARRY4=99 LUT1=1 LUT2=13 LUT3=8 LUT4=1)
+  Clock Path Skew:        -0.294ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.584ns = ( 24.584 - 20.000 ) 
+    Source Clock Delay      (SCD):    5.149ns
+    Clock Pessimism Removal (CPR):    0.271ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk rise edge)    0.000     0.000 r  <hidden>
+    D27                                               0.000     0.000 r  sys_clk
+                         net (fo=0)                   0.000     0.000    sys_clk
+    D27                  IBUF (Prop_ibuf_I_O)         1.553     1.553 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.634     3.187    sys_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     3.280 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=5971, routed)        1.869     5.149    system/clk
+    SLICE_X4Y37          FDRE                                         r  system/game_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X4Y37          FDRE (Prop_fdre_C_Q)         0.223     5.372 f  system/game_reg/Q
+                         net (fo=98, routed)          0.247     5.619    system/game
+    SLICE_X4Y36          LUT1 (Prop_lut1_I0_O)        0.043     5.662 r  system/tick_timer[20]_i_50/O
+                         net (fo=1, routed)           0.280     5.942    system/tick_timer[20]_i_50_n_0
+    SLICE_X7Y34          CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.287     6.229 r  system/tick_timer_reg[20]_i_49/CO[3]
+                         net (fo=1, routed)           0.000     6.229    system/tick_timer_reg[20]_i_49_n_0
+    SLICE_X7Y35          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     6.282 r  system/tick_timer_reg[31]_i_24/CO[3]
+                         net (fo=1, routed)           0.000     6.282    system/tick_timer_reg[31]_i_24_n_0
+    SLICE_X7Y36          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     6.335 r  system/tick_timer_reg[31]_i_23/CO[3]
+                         net (fo=1, routed)           0.000     6.335    system/tick_timer_reg[31]_i_23_n_0
+    SLICE_X7Y37          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     6.388 r  system/tick_timer_reg[31]_i_22/CO[3]
+                         net (fo=1, routed)           0.000     6.388    system/tick_timer_reg[31]_i_22_n_0
+    SLICE_X7Y38          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     6.441 r  system/tick_timer_reg[31]_i_21/CO[3]
+                         net (fo=1, routed)           0.000     6.441    system/tick_timer_reg[31]_i_21_n_0
+    SLICE_X7Y39          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     6.494 r  system/tick_timer_reg[31]_i_20/CO[3]
+                         net (fo=1, routed)           0.000     6.494    system/tick_timer_reg[31]_i_20_n_0
+    SLICE_X7Y40          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     6.547 r  system/tick_timer_reg[31]_i_18/CO[3]
+                         net (fo=1, routed)           0.000     6.547    system/tick_timer_reg[31]_i_18_n_0
+    SLICE_X7Y41          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139     6.686 r  system/tick_timer_reg[31]_i_13/CO[0]
+                         net (fo=11, routed)          0.199     6.885    system/p_0_in0_out[21]
+    SLICE_X4Y41          LUT2 (Prop_lut2_I1_O)        0.131     7.016 r  system/tick_timer[20]_i_26/O
+                         net (fo=1, routed)           0.418     7.434    system/tick_timer[20]_i_26_n_0
+    SLICE_X8Y39          CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.297     7.731 r  system/tick_timer_reg[20]_i_16/CO[3]
+                         net (fo=1, routed)           0.000     7.731    system/tick_timer_reg[20]_i_16_n_0
+    SLICE_X8Y40          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133     7.864 r  system/tick_timer_reg[20]_i_8/CO[0]
+                         net (fo=13, routed)          0.235     8.099    system/p_0_in0_out[20]
+    SLICE_X10Y41         LUT2 (Prop_lut2_I1_O)        0.128     8.227 r  system/tick_timer[20]_i_32/O
+                         net (fo=1, routed)           0.201     8.428    system/tick_timer[20]_i_32_n_0
+    SLICE_X10Y39         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.297     8.725 r  system/tick_timer_reg[20]_i_17/CO[3]
+                         net (fo=1, routed)           0.000     8.725    system/tick_timer_reg[20]_i_17_n_0
+    SLICE_X10Y40         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.076     8.801 r  system/tick_timer_reg[20]_i_9/CO[1]
+                         net (fo=15, routed)          0.326     9.127    system/p_0_in0_out[19]
+    SLICE_X13Y39         LUT2 (Prop_lut2_I1_O)        0.124     9.251 r  system/tick_timer[20]_i_38/O
+                         net (fo=1, routed)           0.109     9.360    system/tick_timer[20]_i_38_n_0
+    SLICE_X12Y39         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.297     9.657 r  system/tick_timer_reg[20]_i_19/CO[3]
+                         net (fo=1, routed)           0.000     9.657    system/tick_timer_reg[20]_i_19_n_0
+    SLICE_X12Y40         CARRY4 (Prop_carry4_CI_CO[2])
+                                                      0.110     9.767 r  system/tick_timer_reg[20]_i_10/CO[2]
+                         net (fo=16, routed)          0.395    10.162    system/p_0_in0_out[18]
+    SLICE_X9Y39          LUT3 (Prop_lut3_I0_O)        0.128    10.290 r  system/tick_timer[20]_i_47/O
+                         net (fo=1, routed)           0.000    10.290    system/tick_timer[20]_i_47_n_0
+    SLICE_X9Y39          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    10.557 r  system/tick_timer_reg[20]_i_22/CO[3]
+                         net (fo=1, routed)           0.000    10.557    system/tick_timer_reg[20]_i_22_n_0
+    SLICE_X9Y40          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    10.610 r  system/tick_timer_reg[20]_i_11/CO[3]
+                         net (fo=18, routed)          0.621    11.231    system/p_0_in0_out[17]
+    SLICE_X9Y42          LUT2 (Prop_lut2_I0_O)        0.043    11.274 r  system/tick_timer[16]_i_28/O
+                         net (fo=1, routed)           0.000    11.274    system/tick_timer[16]_i_28_n_0
+    SLICE_X9Y42          CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.195    11.469 r  system/tick_timer_reg[16]_i_16/CO[3]
+                         net (fo=1, routed)           0.000    11.469    system/tick_timer_reg[16]_i_16_n_0
+    SLICE_X9Y43          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    11.608 r  system/tick_timer_reg[16]_i_8/CO[0]
+                         net (fo=20, routed)          0.379    11.987    system/p_0_in0_out[16]
+    SLICE_X8Y42          LUT3 (Prop_lut3_I0_O)        0.131    12.118 r  system/tick_timer[16]_i_54/O
+                         net (fo=1, routed)           0.000    12.118    system/tick_timer[16]_i_54_n_0
+    SLICE_X8Y42          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256    12.374 r  system/tick_timer_reg[16]_i_31/CO[3]
+                         net (fo=1, routed)           0.000    12.374    system/tick_timer_reg[16]_i_31_n_0
+    SLICE_X8Y43          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    12.428 r  system/tick_timer_reg[16]_i_17/CO[3]
+                         net (fo=1, routed)           0.000    12.428    system/tick_timer_reg[16]_i_17_n_0
+    SLICE_X8Y44          CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.076    12.504 r  system/tick_timer_reg[16]_i_9/CO[1]
+                         net (fo=22, routed)          0.518    13.023    system/p_0_in0_out[15]
+    SLICE_X7Y42          LUT3 (Prop_lut3_I0_O)        0.124    13.147 r  system/tick_timer[16]_i_59/O
+                         net (fo=1, routed)           0.000    13.147    system/tick_timer[16]_i_59_n_0
+    SLICE_X7Y42          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    13.414 r  system/tick_timer_reg[16]_i_36/CO[3]
+                         net (fo=1, routed)           0.000    13.414    system/tick_timer_reg[16]_i_36_n_0
+    SLICE_X7Y43          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    13.467 r  system/tick_timer_reg[16]_i_19/CO[3]
+                         net (fo=1, routed)           0.000    13.467    system/tick_timer_reg[16]_i_19_n_0
+    SLICE_X7Y44          CARRY4 (Prop_carry4_CI_CO[2])
+                                                      0.110    13.577 r  system/tick_timer_reg[16]_i_10/CO[2]
+                         net (fo=25, routed)          0.409    13.986    system/p_0_in0_out[14]
+    SLICE_X4Y40          LUT2 (Prop_lut2_I1_O)        0.129    14.115 r  system/tick_timer[16]_i_61/O
+                         net (fo=1, routed)           0.109    14.224    system/tick_timer[16]_i_61_n_0
+    SLICE_X5Y40          CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.287    14.511 r  system/tick_timer_reg[16]_i_41/CO[3]
+                         net (fo=1, routed)           0.000    14.511    system/tick_timer_reg[16]_i_41_n_0
+    SLICE_X5Y41          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    14.564 r  system/tick_timer_reg[16]_i_22/CO[3]
+                         net (fo=1, routed)           0.000    14.564    system/tick_timer_reg[16]_i_22_n_0
+    SLICE_X5Y42          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    14.617 r  system/tick_timer_reg[16]_i_11/CO[3]
+                         net (fo=27, routed)          0.383    15.000    system/p_0_in0_out[13]
+    SLICE_X2Y41          LUT2 (Prop_lut2_I1_O)        0.043    15.043 r  system/tick_timer[12]_i_66/O
+                         net (fo=1, routed)           0.220    15.263    system/tick_timer[12]_i_66_n_0
+    SLICE_X3Y41          CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.287    15.550 r  system/tick_timer_reg[12]_i_46/CO[3]
+                         net (fo=1, routed)           0.000    15.550    system/tick_timer_reg[12]_i_46_n_0
+    SLICE_X3Y42          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    15.603 r  system/tick_timer_reg[12]_i_26/CO[3]
+                         net (fo=1, routed)           0.000    15.603    system/tick_timer_reg[12]_i_26_n_0
+    SLICE_X3Y43          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    15.656 r  system/tick_timer_reg[12]_i_16/CO[3]
+                         net (fo=1, routed)           0.000    15.656    system/tick_timer_reg[12]_i_16_n_0
+    SLICE_X3Y44          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    15.795 r  system/tick_timer_reg[12]_i_8/CO[0]
+                         net (fo=29, routed)          0.384    16.179    system/p_0_in0_out[12]
+    SLICE_X4Y43          LUT3 (Prop_lut3_I0_O)        0.131    16.310 r  system/tick_timer[12]_i_77/O
+                         net (fo=1, routed)           0.000    16.310    system/tick_timer[12]_i_77_n_0
+    SLICE_X4Y43          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.259    16.569 r  system/tick_timer_reg[12]_i_51/CO[3]
+                         net (fo=1, routed)           0.000    16.569    system/tick_timer_reg[12]_i_51_n_0
+    SLICE_X4Y44          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    16.622 r  system/tick_timer_reg[12]_i_31/CO[3]
+                         net (fo=1, routed)           0.000    16.622    system/tick_timer_reg[12]_i_31_n_0
+    SLICE_X4Y45          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    16.675 r  system/tick_timer_reg[12]_i_17/CO[3]
+                         net (fo=1, routed)           0.000    16.675    system/tick_timer_reg[12]_i_17_n_0
+    SLICE_X4Y46          CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.077    16.752 r  system/tick_timer_reg[12]_i_9/CO[1]
+                         net (fo=30, routed)          0.468    17.221    system/p_0_in0_out[11]
+    SLICE_X6Y43          LUT3 (Prop_lut3_I0_O)        0.122    17.343 r  system/tick_timer[12]_i_82/O
+                         net (fo=1, routed)           0.000    17.343    system/tick_timer[12]_i_82_n_0
+    SLICE_X6Y43          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.246    17.589 r  system/tick_timer_reg[12]_i_56/CO[3]
+                         net (fo=1, routed)           0.000    17.589    system/tick_timer_reg[12]_i_56_n_0
+    SLICE_X6Y44          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    17.643 r  system/tick_timer_reg[12]_i_36/CO[3]
+                         net (fo=1, routed)           0.000    17.643    system/tick_timer_reg[12]_i_36_n_0
+    SLICE_X6Y45          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    17.697 r  system/tick_timer_reg[12]_i_19/CO[3]
+                         net (fo=1, routed)           0.000    17.697    system/tick_timer_reg[12]_i_19_n_0
+    SLICE_X6Y46          CARRY4 (Prop_carry4_CI_CO[2])
+                                                      0.110    17.807 r  system/tick_timer_reg[12]_i_10/CO[2]
+                         net (fo=33, routed)          0.223    18.030    system/p_0_in0_out[10]
+    SLICE_X7Y46          LUT2 (Prop_lut2_I1_O)        0.128    18.158 r  system/tick_timer[12]_i_83/O
+                         net (fo=1, routed)           0.279    18.437    system/tick_timer[12]_i_83_n_0
+    SLICE_X5Y44          CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.287    18.724 r  system/tick_timer_reg[12]_i_61/CO[3]
+                         net (fo=1, routed)           0.000    18.724    system/tick_timer_reg[12]_i_61_n_0
+    SLICE_X5Y45          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    18.777 r  system/tick_timer_reg[12]_i_41/CO[3]
+                         net (fo=1, routed)           0.000    18.777    system/tick_timer_reg[12]_i_41_n_0
+    SLICE_X5Y46          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    18.830 r  system/tick_timer_reg[12]_i_22/CO[3]
+                         net (fo=1, routed)           0.000    18.830    system/tick_timer_reg[12]_i_22_n_0
+    SLICE_X5Y47          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    18.883 r  system/tick_timer_reg[12]_i_11/CO[3]
+                         net (fo=35, routed)          0.431    19.315    system/p_0_in0_out[9]
+    SLICE_X7Y46          LUT2 (Prop_lut2_I1_O)        0.043    19.358 r  system/tick_timer[8]_i_86/O
+                         net (fo=1, routed)           0.326    19.683    system/tick_timer[8]_i_86_n_0
+    SLICE_X8Y46          CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.297    19.980 r  system/tick_timer_reg[8]_i_66/CO[3]
+                         net (fo=1, routed)           0.000    19.980    system/tick_timer_reg[8]_i_66_n_0
+    SLICE_X8Y47          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    20.034 r  system/tick_timer_reg[8]_i_46/CO[3]
+                         net (fo=1, routed)           0.000    20.034    system/tick_timer_reg[8]_i_46_n_0
+    SLICE_X8Y48          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    20.088 r  system/tick_timer_reg[8]_i_26/CO[3]
+                         net (fo=1, routed)           0.000    20.088    system/tick_timer_reg[8]_i_26_n_0
+    SLICE_X8Y49          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    20.142 r  system/tick_timer_reg[8]_i_16/CO[3]
+                         net (fo=1, routed)           0.001    20.143    system/tick_timer_reg[8]_i_16_n_0
+    SLICE_X8Y50          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    20.276 r  system/tick_timer_reg[8]_i_8/CO[0]
+                         net (fo=37, routed)          0.471    20.747    system/p_0_in0_out[8]
+    SLICE_X6Y47          LUT2 (Prop_lut2_I1_O)        0.128    20.875 r  system/tick_timer[8]_i_92/O
+                         net (fo=1, routed)           0.109    20.985    system/tick_timer[8]_i_92_n_0
+    SLICE_X7Y47          CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.287    21.272 r  system/tick_timer_reg[8]_i_71/CO[3]
+                         net (fo=1, routed)           0.000    21.272    system/tick_timer_reg[8]_i_71_n_0
+    SLICE_X7Y48          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    21.325 r  system/tick_timer_reg[8]_i_51/CO[3]
+                         net (fo=1, routed)           0.000    21.325    system/tick_timer_reg[8]_i_51_n_0
+    SLICE_X7Y49          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    21.378 r  system/tick_timer_reg[8]_i_31/CO[3]
+                         net (fo=1, routed)           0.001    21.378    system/tick_timer_reg[8]_i_31_n_0
+    SLICE_X7Y50          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    21.431 r  system/tick_timer_reg[8]_i_17/CO[3]
+                         net (fo=1, routed)           0.000    21.431    system/tick_timer_reg[8]_i_17_n_0
+    SLICE_X7Y51          CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.077    21.508 r  system/tick_timer_reg[8]_i_9/CO[1]
+                         net (fo=38, routed)          0.457    21.965    system/p_0_in0_out[7]
+    SLICE_X6Y48          LUT3 (Prop_lut3_I0_O)        0.122    22.087 r  system/tick_timer[8]_i_101/O
+                         net (fo=1, routed)           0.000    22.087    system/tick_timer[8]_i_101_n_0
+    SLICE_X6Y48          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256    22.343 r  system/tick_timer_reg[8]_i_76/CO[3]
+                         net (fo=1, routed)           0.000    22.343    system/tick_timer_reg[8]_i_76_n_0
+    SLICE_X6Y49          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    22.397 r  system/tick_timer_reg[8]_i_56/CO[3]
+                         net (fo=1, routed)           0.001    22.398    system/tick_timer_reg[8]_i_56_n_0
+    SLICE_X6Y50          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    22.452 r  system/tick_timer_reg[8]_i_36/CO[3]
+                         net (fo=1, routed)           0.000    22.452    system/tick_timer_reg[8]_i_36_n_0
+    SLICE_X6Y51          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    22.506 r  system/tick_timer_reg[8]_i_19/CO[3]
+                         net (fo=1, routed)           0.000    22.506    system/tick_timer_reg[8]_i_19_n_0
+    SLICE_X6Y52          CARRY4 (Prop_carry4_CI_CO[2])
+                                                      0.110    22.616 r  system/tick_timer_reg[8]_i_10/CO[2]
+                         net (fo=40, routed)          0.503    23.119    system/p_0_in0_out[6]
+    SLICE_X4Y49          LUT3 (Prop_lut3_I0_O)        0.128    23.247 r  system/tick_timer[8]_i_107/O
+                         net (fo=1, routed)           0.000    23.247    system/tick_timer[8]_i_107_n_0
+    SLICE_X4Y49          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.259    23.506 r  system/tick_timer_reg[8]_i_81/CO[3]
+                         net (fo=1, routed)           0.001    23.507    system/tick_timer_reg[8]_i_81_n_0
+    SLICE_X4Y50          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    23.560 r  system/tick_timer_reg[8]_i_61/CO[3]
+                         net (fo=1, routed)           0.000    23.560    system/tick_timer_reg[8]_i_61_n_0
+    SLICE_X4Y51          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    23.613 r  system/tick_timer_reg[8]_i_41/CO[3]
+                         net (fo=1, routed)           0.000    23.613    system/tick_timer_reg[8]_i_41_n_0
+    SLICE_X4Y52          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    23.666 r  system/tick_timer_reg[8]_i_22/CO[3]
+                         net (fo=1, routed)           0.000    23.666    system/tick_timer_reg[8]_i_22_n_0
+    SLICE_X4Y53          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    23.719 r  system/tick_timer_reg[8]_i_11/CO[3]
+                         net (fo=43, routed)          0.748    24.467    system/p_0_in0_out[5]
+    SLICE_X3Y48          LUT3 (Prop_lut3_I0_O)        0.043    24.510 r  system/tick_timer[4]_i_111/O
+                         net (fo=1, routed)           0.000    24.510    system/tick_timer[4]_i_111_n_0
+    SLICE_X3Y48          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.259    24.769 r  system/tick_timer_reg[4]_i_86/CO[3]
+                         net (fo=1, routed)           0.000    24.769    system/tick_timer_reg[4]_i_86_n_0
+    SLICE_X3Y49          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    24.822 r  system/tick_timer_reg[4]_i_66/CO[3]
+                         net (fo=1, routed)           0.001    24.822    system/tick_timer_reg[4]_i_66_n_0
+    SLICE_X3Y50          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    24.875 r  system/tick_timer_reg[4]_i_46/CO[3]
+                         net (fo=1, routed)           0.000    24.875    system/tick_timer_reg[4]_i_46_n_0
+    SLICE_X3Y51          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    24.928 r  system/tick_timer_reg[4]_i_26/CO[3]
+                         net (fo=1, routed)           0.000    24.928    system/tick_timer_reg[4]_i_26_n_0
+    SLICE_X3Y52          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    24.981 r  system/tick_timer_reg[4]_i_16/CO[3]
+                         net (fo=1, routed)           0.000    24.981    system/tick_timer_reg[4]_i_16_n_0
+    SLICE_X3Y53          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    25.120 r  system/tick_timer_reg[4]_i_8/CO[0]
+                         net (fo=45, routed)          0.235    25.355    system/p_0_in0_out[4]
+    SLICE_X4Y54          LUT2 (Prop_lut2_I1_O)        0.131    25.486 r  system/tick_timer[4]_i_112/O
+                         net (fo=1, routed)           0.458    25.944    system/tick_timer[4]_i_112_n_0
+    SLICE_X1Y50          CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.287    26.231 r  system/tick_timer_reg[4]_i_91/CO[3]
+                         net (fo=1, routed)           0.000    26.231    system/tick_timer_reg[4]_i_91_n_0
+    SLICE_X1Y51          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    26.284 r  system/tick_timer_reg[4]_i_71/CO[3]
+                         net (fo=1, routed)           0.000    26.284    system/tick_timer_reg[4]_i_71_n_0
+    SLICE_X1Y52          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    26.337 r  system/tick_timer_reg[4]_i_51/CO[3]
+                         net (fo=1, routed)           0.000    26.337    system/tick_timer_reg[4]_i_51_n_0
+    SLICE_X1Y53          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    26.390 r  system/tick_timer_reg[4]_i_31/CO[3]
+                         net (fo=1, routed)           0.000    26.390    system/tick_timer_reg[4]_i_31_n_0
+    SLICE_X1Y54          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    26.443 r  system/tick_timer_reg[4]_i_17/CO[3]
+                         net (fo=1, routed)           0.000    26.443    system/tick_timer_reg[4]_i_17_n_0
+    SLICE_X1Y55          CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.077    26.520 r  system/tick_timer_reg[4]_i_9/CO[1]
+                         net (fo=47, routed)          0.312    26.832    system/p_0_in0_out[3]
+    SLICE_X0Y54          LUT2 (Prop_lut2_I1_O)        0.122    26.954 r  system/tick_timer[4]_i_118/O
+                         net (fo=1, routed)           0.375    27.329    system/tick_timer[4]_i_118_n_0
+    SLICE_X2Y50          CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.297    27.626 r  system/tick_timer_reg[4]_i_96/CO[3]
+                         net (fo=1, routed)           0.000    27.626    system/tick_timer_reg[4]_i_96_n_0
+    SLICE_X2Y51          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    27.680 r  system/tick_timer_reg[4]_i_76/CO[3]
+                         net (fo=1, routed)           0.000    27.680    system/tick_timer_reg[4]_i_76_n_0
+    SLICE_X2Y52          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    27.734 r  system/tick_timer_reg[4]_i_56/CO[3]
+                         net (fo=1, routed)           0.000    27.734    system/tick_timer_reg[4]_i_56_n_0
+    SLICE_X2Y53          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    27.788 r  system/tick_timer_reg[4]_i_36/CO[3]
+                         net (fo=1, routed)           0.000    27.788    system/tick_timer_reg[4]_i_36_n_0
+    SLICE_X2Y54          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    27.842 r  system/tick_timer_reg[4]_i_19/CO[3]
+                         net (fo=1, routed)           0.000    27.842    system/tick_timer_reg[4]_i_19_n_0
+    SLICE_X2Y55          CARRY4 (Prop_carry4_CI_CO[2])
+                                                      0.110    27.952 r  system/tick_timer_reg[4]_i_10/CO[2]
+                         net (fo=49, routed)          0.245    28.197    system/p_0_in0_out[2]
+    SLICE_X4Y55          LUT2 (Prop_lut2_I1_O)        0.128    28.325 r  system/tick_timer[4]_i_124/O
+                         net (fo=1, routed)           0.206    28.531    system/tick_timer[4]_i_124_n_0
+    SLICE_X3Y54          CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.287    28.818 r  system/tick_timer_reg[4]_i_101/CO[3]
+                         net (fo=1, routed)           0.000    28.818    system/tick_timer_reg[4]_i_101_n_0
+    SLICE_X3Y55          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    28.871 r  system/tick_timer_reg[4]_i_81/CO[3]
+                         net (fo=1, routed)           0.000    28.871    system/tick_timer_reg[4]_i_81_n_0
+    SLICE_X3Y56          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    28.924 r  system/tick_timer_reg[4]_i_61/CO[3]
+                         net (fo=1, routed)           0.000    28.924    system/tick_timer_reg[4]_i_61_n_0
+    SLICE_X3Y57          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    28.977 r  system/tick_timer_reg[4]_i_41/CO[3]
+                         net (fo=1, routed)           0.000    28.977    system/tick_timer_reg[4]_i_41_n_0
+    SLICE_X3Y58          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    29.030 r  system/tick_timer_reg[4]_i_22/CO[3]
+                         net (fo=1, routed)           0.000    29.030    system/tick_timer_reg[4]_i_22_n_0
+    SLICE_X3Y59          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    29.083 r  system/tick_timer_reg[4]_i_11/CO[3]
+                         net (fo=50, routed)          0.501    29.584    system/p_0_in0_out[1]
+    SLICE_X4Y58          LUT2 (Prop_lut2_I1_O)        0.043    29.627 r  system/tick_timer[0]_i_28/O
+                         net (fo=1, routed)           0.288    29.914    system/tick_timer[0]_i_28_n_0
+    SLICE_X2Y56          CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.297    30.211 r  system/tick_timer_reg[0]_i_23/CO[3]
+                         net (fo=1, routed)           0.000    30.211    system/tick_timer_reg[0]_i_23_n_0
+    SLICE_X2Y57          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    30.265 r  system/tick_timer_reg[0]_i_18/CO[3]
+                         net (fo=1, routed)           0.000    30.265    system/tick_timer_reg[0]_i_18_n_0
+    SLICE_X2Y58          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    30.319 r  system/tick_timer_reg[0]_i_13/CO[3]
+                         net (fo=1, routed)           0.000    30.319    system/tick_timer_reg[0]_i_13_n_0
+    SLICE_X2Y59          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    30.373 r  system/tick_timer_reg[0]_i_8/CO[3]
+                         net (fo=1, routed)           0.000    30.373    system/tick_timer_reg[0]_i_8_n_0
+    SLICE_X2Y60          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    30.427 r  system/tick_timer_reg[0]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    30.427    system/tick_timer_reg[0]_i_3_n_0
+    SLICE_X2Y61          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    30.481 r  system/tick_timer_reg[0]_i_2/CO[3]
+                         net (fo=2, routed)           0.441    30.922    system/p_0_in0_out[0]
+    SLICE_X3Y60          CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.287    31.209 r  system/tick_timer_reg[4]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    31.209    system/tick_timer_reg[4]_i_3_n_0
+    SLICE_X3Y61          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    31.262 r  system/tick_timer_reg[8]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    31.262    system/tick_timer_reg[8]_i_3_n_0
+    SLICE_X3Y62          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    31.315 r  system/tick_timer_reg[12]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    31.315    system/tick_timer_reg[12]_i_3_n_0
+    SLICE_X3Y63          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    31.368 r  system/tick_timer_reg[16]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    31.368    system/tick_timer_reg[16]_i_3_n_0
+    SLICE_X3Y64          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    31.421 r  system/tick_timer_reg[20]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    31.421    system/tick_timer_reg[20]_i_3_n_0
+    SLICE_X3Y65          CARRY4 (Prop_carry4_CI_CO[2])
+                                                      0.110    31.531 f  system/tick_timer_reg[31]_i_6/CO[2]
+                         net (fo=9, routed)           0.251    31.782    system/tick_timer_reg[31]_i_6_n_1
+    SLICE_X1Y65          LUT4 (Prop_lut4_I1_O)        0.129    31.911 r  system/tick_timer[25]_i_1/O
+                         net (fo=1, routed)           0.000    31.911    system/tick_timer[25]_i_1_n_0
+    SLICE_X1Y65          FDRE                                         r  system/tick_timer_reg[25]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk rise edge)   20.000    20.000 r  <hidden>
+    D27                                               0.000    20.000 r  sys_clk
+                         net (fo=0)                   0.000    20.000    sys_clk
+    D27                  IBUF (Prop_ibuf_I_O)         1.420    21.420 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.523    22.943    sys_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    23.026 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=5971, routed)        1.558    24.584    system/clk
+    SLICE_X1Y65          FDRE                                         r  system/tick_timer_reg[25]/C
+                         clock pessimism              0.271    24.855    <hidden>
+                         clock uncertainty           -0.035    24.819    <hidden>
+    SLICE_X1Y65          FDRE (Setup_fdre_C_D)        0.033    24.852    system/tick_timer_reg[25]
+  -------------------------------------------------------------------
+                         required time                         24.852    <hidden>
+                         arrival time                         -31.911    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -7.059    <hidden>
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.027ns  (arrival time - required time)
+  Source:                 system/frame_ram_reg[553]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            reporter/held_reg[553]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             sys_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk rise@0.000ns - sys_clk rise@0.000ns)
+  Data Path Delay:        0.209ns  (logic 0.100ns (47.786%)  route 0.109ns (52.214%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.139ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.377ns
+    Source Clock Delay      (SCD):    1.922ns
+    Clock Pessimism Removal (CPR):    0.316ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk rise edge)    0.000     0.000 r  <hidden>
+    D27                                               0.000     0.000 r  sys_clk
+                         net (fo=0)                   0.000     0.000    sys_clk
+    D27                  IBUF (Prop_ibuf_I_O)         0.477     0.477 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.717     1.194    sys_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.220 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=5971, routed)        0.702     1.922    system/clk
+    SLICE_X60Y49         FDRE                                         r  system/frame_ram_reg[553]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X60Y49         FDRE (Prop_fdre_C_Q)         0.100     2.022 r  system/frame_ram_reg[553]/Q
+                         net (fo=2, routed)           0.109     2.131    reporter/payload[553]
+    SLICE_X61Y50         FDRE                                         r  reporter/held_reg[553]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk rise edge)    0.000     0.000 r  <hidden>
+    D27                                               0.000     0.000 r  sys_clk
+                         net (fo=0)                   0.000     0.000    sys_clk
+    D27                  IBUF (Prop_ibuf_I_O)         0.674     0.674 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.784     1.458    sys_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.030     1.488 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=5971, routed)        0.889     2.377    reporter/clk
+    SLICE_X61Y50         FDRE                                         r  reporter/held_reg[553]/C
+                         clock pessimism             -0.316     2.061    <hidden>
+    SLICE_X61Y50         FDRE (Hold_fdre_C_D)         0.043     2.104    reporter/held_reg[553]
+  -------------------------------------------------------------------
+                         required time                         -2.104    <hidden>
+                         arrival time                           2.131    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.027    <hidden>
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         sys_clk
+Waveform(ns):       { 0.000 10.000 }
+Period(ns):         20.000
+Sources:            { sys_clk }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location      Pin
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.095         20.000      17.905     RAMB18_X1Y12  system/memory/memory_reg/CLKARDCLK
+Low Pulse Width   Slow    FDRE/C              n/a            0.400         10.000      9.600      SLICE_X0Y97   display/gap_reg[13]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.350         10.000      9.650      SLICE_X13Y35  phase_trace_reg[0]/C
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  sys_clk
+
+Max Delay            10 Endpoints
+Min Delay            10 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 KEY6
+                            (input port)
+  Destination:            filter/sync_inputs/pipe_reg[0][6]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        4.450ns  (logic 1.497ns (33.629%)  route 2.954ns (66.371%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Clock Path Skew:        4.760ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.760ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Timing Exception:       False Path
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    M19                                               0.000     0.000 f  KEY6
+                         net (fo=0)                   0.000     0.000    KEY6
+    M19                  IBUF (Prop_ibuf_I_O)         1.454     1.454 f  KEY6_IBUF_inst/O
+                         net (fo=1, routed)           2.954     4.407    KEY6_IBUF
+    SLICE_X1Y46          LUT1 (Prop_lut1_I0_O)        0.043     4.450 r  filter_i_3/O
+                         net (fo=1, routed)           0.000     4.450    filter/sync_inputs/async_in[6]
+    SLICE_X1Y46          FDRE                                         r  filter/sync_inputs/pipe_reg[0][6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk rise edge)    0.000     0.000 r  <hidden>
+    D27                                               0.000     0.000 r  sys_clk
+                         net (fo=0)                   0.000     0.000    sys_clk
+    D27                  IBUF (Prop_ibuf_I_O)         1.420     1.420 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.523     2.943    sys_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083     3.026 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=5971, routed)        1.734     4.760    filter/sync_inputs/clk
+    SLICE_X1Y46          FDRE                                         r  filter/sync_inputs/pipe_reg[0][6]/C
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 KEY1
+                            (input port)
+  Destination:            filter/sync_inputs/pipe_reg[0][1]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        1.064ns  (logic 0.459ns (43.085%)  route 0.606ns (56.915%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Clock Path Skew:        2.530ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.530ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Timing Exception:       False Path
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    AF26                                              0.000     0.000 f  KEY1
+                         net (fo=0)                   0.000     0.000    KEY1
+    AF26                 IBUF (Prop_ibuf_I_O)         0.431     0.431 f  KEY1_IBUF_inst/O
+                         net (fo=1, routed)           0.606     1.036    KEY1_IBUF
+    SLICE_X1Y43          LUT1 (Prop_lut1_I0_O)        0.028     1.064 r  filter_i_8/O
+                         net (fo=1, routed)           0.000     1.064    filter/sync_inputs/async_in[1]
+    SLICE_X1Y43          FDRE                                         r  filter/sync_inputs/pipe_reg[0][1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk rise edge)    0.000     0.000 r  <hidden>
+    D27                                               0.000     0.000 r  sys_clk
+                         net (fo=0)                   0.000     0.000    sys_clk
+    D27                  IBUF (Prop_ibuf_I_O)         0.674     0.674 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.784     1.458    sys_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.030     1.488 r  sys_clk_IBUF_BUFG_inst/O
+                         net (fo=5971, routed)        1.042     2.530    filter/sync_inputs/clk
+    SLICE_X1Y43          FDRE                                         r  filter/sync_inputs/pipe_reg[0][1]/C
+
+
+
+
+

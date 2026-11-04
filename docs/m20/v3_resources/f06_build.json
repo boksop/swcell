@@ -1,0 +1,21 @@
+{
+  "build": "M20V3F06",
+  "source_hashes": "PASS",
+  "source_files": 22,
+  "pins_checked": 25,
+  "slacks_ns": [
+    0.982,
+    0.062,
+    9.232
+  ],
+  "bit_sha256": "972d8ebc5378c244ce5f530be9c8f0b0c9b04853c6c56576c82f96e995d79c49",
+  "software_profile": "SNAKE-SHUFFLED-0.1",
+  "boot_entry_key": 5,
+  "game_select_key": 5,
+  "pause_key": 7,
+  "route_audit": {
+    "mux_lut3": 477,
+    "cpu_native_ff": 33,
+    "global_clock_buffers": 1
+  }
+}

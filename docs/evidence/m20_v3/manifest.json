@@ -1,0 +1,455 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-04",
+  "selection": "V3 small hardware data, final FPGA reports, positive/negative digital evidence",
+  "copy_policy": "Exact bytes; originals kept in build/results; .log copies named .txt explicitly; no bit/DCP/cache/large waves",
+  "files": [
+    {
+      "source": "build/fpga/m20/cpu_validation/snake_shuffled_boot_r1/timing.rpt",
+      "copy": "fpga_f06/timing.rpt",
+      "bytes": 24937,
+      "sha256": "9b56fb375ee10d1ddbd3e02a417b387b960128e3219d439183cb68c01285909c"
+    },
+    {
+      "source": "build/fpga/m20/cpu_validation/snake_shuffled_boot_r1/utilization.rpt",
+      "copy": "fpga_f06/utilization.rpt",
+      "bytes": 3439,
+      "sha256": "50f87285391758cf4df9a4a263981eb49e6b9c9e709b1f120b943499b3824dee"
+    },
+    {
+      "source": "build/fpga/m20/cpu_validation/snake_shuffled_boot_r1/drc.rpt",
+      "copy": "fpga_f06/drc.rpt",
+      "bytes": 1371,
+      "sha256": "1fddad3588816648441284edbc8b1937b6c37a346c95cd2e2815cf4d51f226cb"
+    },
+    {
+      "source": "build/fpga/m20/cpu_validation/snake_shuffled_boot_r1/cdc.rpt",
+      "copy": "fpga_f06/cdc.rpt",
+      "bytes": 2599,
+      "sha256": "e39f0014b738f4c88ade5c2a34c3250c93302650f01a1d4cda3f9b52b55e5fe8"
+    },
+    {
+      "source": "build/fpga/m20/cpu_validation/snake_shuffled_boot_r1/check_timing.rpt",
+      "copy": "fpga_f06/check_timing.rpt",
+      "bytes": 3236,
+      "sha256": "6403510deedc4f26fae36bd9877952fbd0225f440a160bbce3ae9aac2d915a1f"
+    },
+    {
+      "source": "build/fpga/m20/cpu_validation/snake_shuffled_boot_r1/ram.rpt",
+      "copy": "fpga_f06/ram.rpt",
+      "bytes": 12042,
+      "sha256": "6a000b816fa0a7a9ace61fe729f9e7a613d638de3dc0efc68397032fd38b8f0b"
+    },
+    {
+      "source": "build/fpga/m20/cpu_validation/snake_shuffled_boot_r1/io.rpt",
+      "copy": "fpga_f06/io.rpt",
+      "bytes": 279902,
+      "sha256": "92929ecb793a0ee60ade2bcfd00281950e3422f9b6924e4969e1db71db61f4ea"
+    },
+    {
+      "source": "build/fpga/m20/cpu_validation/snake_shuffled_boot_r1/source_sha256.txt",
+      "copy": "fpga_f06/source_sha256.txt",
+      "bytes": 2336,
+      "sha256": "8dc6bc262249ed4eaadd42bac3ab756aefee5ce8ad52723ad10f77653c9b3fb0"
+    },
+    {
+      "source": "build/fpga/m20/cpu_validation/snake_shuffled_boot_r1/software_profile.txt",
+      "copy": "fpga_f06/software_profile.txt",
+      "bytes": 186,
+      "sha256": "7920cb6f4e7601365413a43d1f5cfafa63f1f05124b4028e574237b198353330"
+    },
+    {
+      "source": "build/fpga/m20/cpu_validation/snake_shuffled_boot_r1/pre_program_verification.json",
+      "copy": "fpga_f06/pre_program_verification.json",
+      "bytes": 444,
+      "sha256": "e23a22d9c371647768ab9e5fdcb6c964e2ce53c5dfbb88c8132f2527fd68e5d0"
+    },
+    {
+      "source": "build/fpga/m20/cpu_validation/snake_shuffled_boot_r1/route_audit/counts.json",
+      "copy": "fpga_f06/route_audit/counts.json",
+      "bytes": 61,
+      "sha256": "3742ca1541eec2bbeece29db6c4d070c99a429e2de719a68a1c5d1c003d326fa"
+    },
+    {
+      "source": "build/fpga/m20/cpu_validation/snake_shuffled_boot_r1/route_audit/mux_mapping.csv",
+      "copy": "fpga_f06/route_audit/mux_mapping.csv",
+      "bytes": 76331,
+      "sha256": "5a4e1d1dbca7f3960d5ca9ffbe41c78d2e0c8b5f2b1811e8e09ff6f9d71c45d9"
+    },
+    {
+      "source": "build/fpga/m20/cpu_validation/snake_shuffled_boot_r1/route_audit/cpu_storage_ff.txt",
+      "copy": "fpga_f06/route_audit/cpu_storage_ff.txt",
+      "bytes": 993,
+      "sha256": "f1301f53dfcf93c79a94cd722aaefbe0222d236d5c245a2284c374df84253f8a"
+    },
+    {
+      "source": "build/fpga/m20/cpu_validation/strict_r2/drc.rpt",
+      "copy": "strict_mux_blocked/drc.rpt",
+      "bytes": 63182,
+      "sha256": "9df17a2c21b18be9bb7f0acc0495a53e213d41c2f49923450167d4a1fb9d2dd0"
+    },
+    {
+      "source": "build/fpga/m20/cpu_validation/strict_r2/timing.rpt",
+      "copy": "strict_mux_blocked/timing.rpt",
+      "bytes": 47251,
+      "sha256": "b738374c8f4276b0bd1d2ad0acf5c84cde7318ed884838870098d445d230e7b0"
+    },
+    {
+      "source": "build/fpga/m20/cpu_validation/strict_r2/utilization.rpt",
+      "copy": "strict_mux_blocked/utilization.rpt",
+      "bytes": 3418,
+      "sha256": "1af5755d406303fd022a8310380f044c5085c04c8e2e938035c1a53b48935d65"
+    },
+    {
+      "source": "build/fpga/m20/cpu_validation/FUNCTIONAL_STORAGE/timing.rpt",
+      "copy": "early_functional_timing_failure/timing.rpt",
+      "bytes": 54963,
+      "sha256": "324d74a387f58499b697caec64c2904883b497620c83445bdfd5ec8e78e1616b"
+    },
+    {
+      "source": "build/sim/m20_v3/core_r2/instructions/comparison.json",
+      "copy": "simulation/core/instructions/comparison.json",
+      "bytes": 10307,
+      "sha256": "ae8249c3245f517a3ef8d27d7b1849bb6765dfa38fbda5ac75b0ecff731b815c"
+    },
+    {
+      "source": "build/sim/m20_v3/core_r2/instructions/three_way_comparison.json",
+      "copy": "simulation/core/instructions/three_way_comparison.json",
+      "bytes": 154,
+      "sha256": "1cd3bb0f6ca149e28a039d335629a6975bfd00182071c9a1fe45724469e8bed3"
+    },
+    {
+      "source": "build/sim/m20_v3/core_r2/games/comparison.json",
+      "copy": "simulation/core/games/comparison.json",
+      "bytes": 8282,
+      "sha256": "63d0004c43e231edde1825c7d59e7527f5fef998c93a7a340adbb9bad0b05522"
+    },
+    {
+      "source": "build/sim/m20_v3/core_r2/games/three_way_comparison.json",
+      "copy": "simulation/core/games/three_way_comparison.json",
+      "bytes": 154,
+      "sha256": "d7bf887b1c29cfaefa5a79c4ada6d39ca475cf4a10767fc48a4054c6a7c37170"
+    },
+    {
+      "source": "build/sim/m20_v3/core_r2/xsim/isa.log",
+      "copy": "simulation/core/isa.txt",
+      "bytes": 1630,
+      "sha256": "c593cc5a12dfaf2a02e774b629f1cdd7e2acc95c98e3615d030f6c08f6a7781f"
+    },
+    {
+      "source": "build/sim/m20_v3/core_r2/xsim/datapath.log",
+      "copy": "simulation/core/datapath.txt",
+      "bytes": 1666,
+      "sha256": "1915aa454995aae946812de6d309e8e674fae99213bec2be45d4372184d0f027"
+    },
+    {
+      "source": "build/sim/m20_v3/core_r2/xsim/illegal.log",
+      "copy": "simulation/core/illegal.txt",
+      "bytes": 1683,
+      "sha256": "71f40d69ecfae5c8318d13a5d63e7b02a88de8f60fc83d25868a28c1961fe9c4"
+    },
+    {
+      "source": "build/sim/m20_v3/core_r2/xsim/memory.log",
+      "copy": "simulation/core/memory.txt",
+      "bytes": 1734,
+      "sha256": "b0ddce8a77ac6ae1db546f8ec9133544fa385a9f3ee051d93944d29c8f2b3079"
+    },
+    {
+      "source": "build/sim/m20_v3/core_r2/xsim/instructions.log",
+      "copy": "simulation/core/instructions.txt",
+      "bytes": 5359,
+      "sha256": "fa9c9b6e28382446a537148e1e110979b84c9f1c94c560c5fe453cd9e2b81335"
+    },
+    {
+      "source": "build/sim/m20_v3/core_r2/xsim/games.log",
+      "copy": "simulation/core/games.txt",
+      "bytes": 4732,
+      "sha256": "0cf5854ebea23d0d27f186624f6baa10c0800653798ff47acbb89ca6d4bca5cc"
+    },
+    {
+      "source": "build/sim/m20_v3/boot_entry_r1/simulation.log",
+      "copy": "simulation/boot_entry_r1/simulation.txt",
+      "bytes": 2202,
+      "sha256": "765c9d90592bc0a27b7491a1b4b4fb72b969a747d17bc6660934d18a487f0931"
+    },
+    {
+      "source": "build/sim/m20_v3/boot_entry_r2/simulation.log",
+      "copy": "simulation/boot_entry_r2/simulation.txt",
+      "bytes": 1814,
+      "sha256": "604974b29aa0e3968dd66f1b1cd025caa5906a2d11c7e65e0661188a366da715"
+    },
+    {
+      "source": "build/sim/m20_v3/system_r11/simulation.log",
+      "copy": "simulation/system_r11/simulation.txt",
+      "bytes": 1740,
+      "sha256": "fe3207a35afc91921de6b6fdb528ae17c9f95d0aeb10fa1bd0b6fe102c3095ef"
+    },
+    {
+      "source": "build/sim/m20_v3/shuffled_r1/xsim/simulation.log",
+      "copy": "simulation/shuffled_r1/simulation.txt",
+      "bytes": 25463,
+      "sha256": "d2dbacca1fea7723258d0177679795b0426c5e02f0ea99ff7485138f33f6a84c"
+    },
+    {
+      "source": "build/sim/m20_v3/inputs_r1/simulation.log",
+      "copy": "simulation/inputs_r1/simulation.txt",
+      "bytes": 1714,
+      "sha256": "d1b00666ca2e481cdf188897f46113350aaa92fa7391c31db72bccac0c18e153"
+    },
+    {
+      "source": "build/sim/m20_v3/system_r11/frame_snapshots.verification.json",
+      "copy": "simulation/system_r11/frame_oracle.json",
+      "bytes": 375,
+      "sha256": "f075ffc68d2ede94826058445b0955a91eb362bb306028c424b4daccb9ae8855"
+    },
+    {
+      "source": "build/sim/m20_v3/shuffled_r1/comparison.json",
+      "copy": "simulation/shuffled_r1/comparison.json",
+      "bytes": 66557,
+      "sha256": "1cd5fd4c541a93417ed37def78f7d279efc5435cecba8c35f9a5b278a2354518"
+    },
+    {
+      "source": "build/sim/m20_v3/shuffled_r1/three_way_comparison.json",
+      "copy": "simulation/shuffled_r1/three_way_comparison.json",
+      "bytes": 156,
+      "sha256": "74f5fc4a010f604c4cd2b55bdb86850f2931d03c3b9e1363c5105adfa67e0795"
+    },
+    {
+      "source": "build/m20_v3_python_boot_entry_r1.log",
+      "copy": "simulation/python_164.txt",
+      "bytes": 4133,
+      "sha256": "db47f0bed315a32ce12d4fc831b9d28575f6ebef4d9ef938df02ed9f4cd0777e"
+    },
+    {
+      "source": "build/m20_v3_program_boot_entry_r1.log",
+      "copy": "fpga_f06/jtag_program.txt",
+      "bytes": 3343,
+      "sha256": "3251a14f2b10a25d2f12065bbb50f3b8ed5ff2a765c0a98ed150df100bbec4e7"
+    },
+    {
+      "source": "results/M20_V3/20261104_174721_functional_first/pong_latest_ram.memh",
+      "copy": "hardware/20261104_174721_functional_first/pong_latest_ram.memh",
+      "bytes": 512,
+      "sha256": "1d6346b99d49860d266fbaa5a36904d961d852b4be8dca14c27116abf2480704"
+    },
+    {
+      "source": "results/M20_V3/20261104_174721_functional_first/raw.jsonl",
+      "copy": "hardware/20261104_174721_functional_first/raw.jsonl",
+      "bytes": 390365,
+      "sha256": "a08b59caf98dcd3442e7ea4dbaeea1b401f9455c9c151fdb315f89bb51711579"
+    },
+    {
+      "source": "results/M20_V3/20261104_174721_functional_first/states.csv",
+      "copy": "hardware/20261104_174721_functional_first/states.csv",
+      "bytes": 61210,
+      "sha256": "33c9613a3fc6d1c07b06be6274a2e40bce0940b235c8619fd33cd823686c5552"
+    },
+    {
+      "source": "results/M20_V3/20261104_174721_functional_first/summary.json",
+      "copy": "hardware/20261104_174721_functional_first/summary.json",
+      "bytes": 1070,
+      "sha256": "0a14141bd3ecf11e156c828a476917cd7efffd4142ad9cbc2ddb314f759901e4"
+    },
+    {
+      "source": "results/M20_V3/20261104_180407_isa_diagnostic/pong_latest_ram.memh",
+      "copy": "hardware/20261104_180407_isa_diagnostic/pong_latest_ram.memh",
+      "bytes": 512,
+      "sha256": "fd2c305fafa9a24423d59779d46b5dc2a46b95da9654bbcaf8174170b28ae79a"
+    },
+    {
+      "source": "results/M20_V3/20261104_180407_isa_diagnostic/raw.jsonl",
+      "copy": "hardware/20261104_180407_isa_diagnostic/raw.jsonl",
+      "bytes": 38529,
+      "sha256": "1a561288598358a633818910838ac9384bad4dd7d77a543ee5c0cf09d554f366"
+    },
+    {
+      "source": "results/M20_V3/20261104_180407_isa_diagnostic/states.csv",
+      "copy": "hardware/20261104_180407_isa_diagnostic/states.csv",
+      "bytes": 5754,
+      "sha256": "0dcd2f43d66049d06090f5d8560c6ffbf7dfb4cf2a2d1587eff15c660f3b3154"
+    },
+    {
+      "source": "results/M20_V3/20261104_180407_isa_diagnostic/summary.json",
+      "copy": "hardware/20261104_180407_isa_diagnostic/summary.json",
+      "bytes": 1051,
+      "sha256": "61722598e6aac24d89950b14e2c61222fc6eb833a13bfd308ada02c0352383cb"
+    },
+    {
+      "source": "results/M20_V3/20261104_180622_trap_diagnostic/pong_latest_ram.memh",
+      "copy": "hardware/20261104_180622_trap_diagnostic/pong_latest_ram.memh",
+      "bytes": 512,
+      "sha256": "fd2c305fafa9a24423d59779d46b5dc2a46b95da9654bbcaf8174170b28ae79a"
+    },
+    {
+      "source": "results/M20_V3/20261104_180622_trap_diagnostic/raw.jsonl",
+      "copy": "hardware/20261104_180622_trap_diagnostic/raw.jsonl",
+      "bytes": 37876,
+      "sha256": "6648449c1b13d5db70e644b163c0ac8190eb1449f4e62ea4f3c70ec0fa14da7e"
+    },
+    {
+      "source": "results/M20_V3/20261104_180622_trap_diagnostic/states.csv",
+      "copy": "hardware/20261104_180622_trap_diagnostic/states.csv",
+      "bytes": 4468,
+      "sha256": "9bbb335eb05819888e839b24a50e91abeabce091112a5a21452705c0a31f748c"
+    },
+    {
+      "source": "results/M20_V3/20261104_180622_trap_diagnostic/summary.json",
+      "copy": "hardware/20261104_180622_trap_diagnostic/summary.json",
+      "bytes": 1030,
+      "sha256": "e8737292de1453b7253b379bcf02903ac51f3b7c90b757a41cb31378aa730c29"
+    },
+    {
+      "source": "results/M20_V3/20261104_181159_controls_and_snake/raw.jsonl",
+      "copy": "hardware/20261104_181159_controls_and_snake/raw.jsonl",
+      "bytes": 33958,
+      "sha256": "1c2a13860ce905e40c0d3a8aecf7a89835c2b498abb19772177653b7ff3e9e2f"
+    },
+    {
+      "source": "results/M20_V3/20261104_181159_controls_and_snake/verification.json",
+      "copy": "hardware/20261104_181159_controls_and_snake/verification.json",
+      "bytes": 3328,
+      "sha256": "b9d320b93df394b95d388bae7d9e04b80a037ddc7c5ce679f4eb0a864ff588d9"
+    },
+    {
+      "source": "results/M20_V3/20261104_191535_slow_game_pong_issue/pong_latest_ram.memh",
+      "copy": "hardware/20261104_191535_slow_game_pong_issue/pong_latest_ram.memh",
+      "bytes": 512,
+      "sha256": "345b956d24e6039218b34c9fc5db0d9f4b075245fd307345a951a5523d901deb"
+    },
+    {
+      "source": "results/M20_V3/20261104_191535_slow_game_pong_issue/raw.jsonl",
+      "copy": "hardware/20261104_191535_slow_game_pong_issue/raw.jsonl",
+      "bytes": 380701,
+      "sha256": "e43be6dbb8c7d49ee9ff171ec112bef4ebdec5fecc7e37ed29432d72903910f8"
+    },
+    {
+      "source": "results/M20_V3/20261104_191535_slow_game_pong_issue/snake_latest_ram.memh",
+      "copy": "hardware/20261104_191535_slow_game_pong_issue/snake_latest_ram.memh",
+      "bytes": 512,
+      "sha256": "2f5729e44eaf271af5cca4d53f9d14e3995dd0c760ca03732e3f39fe6d7edd32"
+    },
+    {
+      "source": "results/M20_V3/20261104_191535_slow_game_pong_issue/states.csv",
+      "copy": "hardware/20261104_191535_slow_game_pong_issue/states.csv",
+      "bytes": 58568,
+      "sha256": "bd409664934a002749520563a6bebe7f6e6b8e0c952c9ca29c7c730ad4de7923"
+    },
+    {
+      "source": "results/M20_V3/20261104_191535_slow_game_pong_issue/summary.json",
+      "copy": "hardware/20261104_191535_slow_game_pong_issue/summary.json",
+      "bytes": 1060,
+      "sha256": "9864c4e5ecf24eb06ccf572df1ec47d050f33d633cb9d0d9e69671cf81d0698a"
+    },
+    {
+      "source": "results/M20_V3/20261104_194621_buffered_keys/pong_latest_ram.memh",
+      "copy": "hardware/20261104_194621_buffered_keys/pong_latest_ram.memh",
+      "bytes": 512,
+      "sha256": "8248c0a6fcd32ebe824f4076590dddfbfe312124bda5fc46f523230b1d70d5f2"
+    },
+    {
+      "source": "results/M20_V3/20261104_194621_buffered_keys/raw.jsonl",
+      "copy": "hardware/20261104_194621_buffered_keys/raw.jsonl",
+      "bytes": 391149,
+      "sha256": "7238cf510f9e82412778b3ea54ca368eaff84061cc90b8ac6017605c3b2f937a"
+    },
+    {
+      "source": "results/M20_V3/20261104_194621_buffered_keys/snake_latest_ram.memh",
+      "copy": "hardware/20261104_194621_buffered_keys/snake_latest_ram.memh",
+      "bytes": 512,
+      "sha256": "1781553e6ca11219c29b7c93c67b427e9c44b3047825888ae39c6aa135dfb732"
+    },
+    {
+      "source": "results/M20_V3/20261104_194621_buffered_keys/states.csv",
+      "copy": "hardware/20261104_194621_buffered_keys/states.csv",
+      "bytes": 60633,
+      "sha256": "31ec2993090867777dbfd6a29e39152b011640fb03e9ee97ded629d0da28a3ca"
+    },
+    {
+      "source": "results/M20_V3/20261104_194621_buffered_keys/summary.json",
+      "copy": "hardware/20261104_194621_buffered_keys/summary.json",
+      "bytes": 1072,
+      "sha256": "99a05115f65fbfb24bffd95d8126a949d80cb56d7b304e3358465f069fcf3272"
+    },
+    {
+      "source": "results/M20_V3/20261104_201445_snake_shuffled/raw.jsonl",
+      "copy": "hardware/20261104_201445_snake_shuffled/raw.jsonl",
+      "bytes": 28734,
+      "sha256": "55cbab6e1f415e82e45e4b9a977b5faae16f4f9dc88f22b5aebee694d2457d45"
+    },
+    {
+      "source": "results/M20_V3/20261104_201445_snake_shuffled/verification.json",
+      "copy": "hardware/20261104_201445_snake_shuffled/verification.json",
+      "bytes": 3372,
+      "sha256": "18997672ce8a645ce44c435b9f6ef15cd6663615c7fbf11e23959511746126bd"
+    },
+    {
+      "source": "results/M20_V3/20261104_210020_swapped_keys_f05/pong_latest_ram.memh",
+      "copy": "hardware/20261104_210020_swapped_keys_f05/pong_latest_ram.memh",
+      "bytes": 512,
+      "sha256": "79590c9d80f12388839330a26b5c2cffb95ad69d20eee91be1d179434c58d22d"
+    },
+    {
+      "source": "results/M20_V3/20261104_210020_swapped_keys_f05/raw.jsonl",
+      "copy": "hardware/20261104_210020_swapped_keys_f05/raw.jsonl",
+      "bytes": 39182,
+      "sha256": "f7a472d18587f5bdab4948f2fe66a9209234ed71a1319de23dcb0b2b509b161a"
+    },
+    {
+      "source": "results/M20_V3/20261104_210020_swapped_keys_f05/states.csv",
+      "copy": "hardware/20261104_210020_swapped_keys_f05/states.csv",
+      "bytes": 6734,
+      "sha256": "70a1dc5684558e93f69c6ecdb9ae92665b76872cb2feba9f84ed6f1c81fc636a"
+    },
+    {
+      "source": "results/M20_V3/20261104_210020_swapped_keys_f05/summary.json",
+      "copy": "hardware/20261104_210020_swapped_keys_f05/summary.json",
+      "bytes": 1127,
+      "sha256": "b1f58274448a5bb9103d785db52c17a4661e8a04bd995e67093c721c8399c1c8"
+    },
+    {
+      "source": "results/M20_V3/20261104_212750_boot_entry_f06/pong_latest_ram.memh",
+      "copy": "hardware/20261104_212750_boot_entry_f06/pong_latest_ram.memh",
+      "bytes": 512,
+      "sha256": "14f9b438d1021e8d6624ec44d645a928be2010645067779699db366200ee296b"
+    },
+    {
+      "source": "results/M20_V3/20261104_212750_boot_entry_f06/raw.jsonl",
+      "copy": "hardware/20261104_212750_boot_entry_f06/raw.jsonl",
+      "bytes": 48977,
+      "sha256": "0b89238f60ea046d27febdc2baae0336523ec5c70f777a5b8f34b699a1801f63"
+    },
+    {
+      "source": "results/M20_V3/20261104_212750_boot_entry_f06/states.csv",
+      "copy": "hardware/20261104_212750_boot_entry_f06/states.csv",
+      "bytes": 7763,
+      "sha256": "42841bf79da4edbca9d6e0744c7e5e40f917966486a3c0bc273facc07dcf10e9"
+    },
+    {
+      "source": "results/M20_V3/20261104_212750_boot_entry_f06/summary.json",
+      "copy": "hardware/20261104_212750_boot_entry_f06/summary.json",
+      "bytes": 1121,
+      "sha256": "b6c1677775bfc2d4dc3d6ecb0291f35cc18a12347cc423518fd1e983867dada1"
+    },
+    {
+      "source": "results/M20_V3/20261104_boot_entry_diagnosis_r1/raw.jsonl",
+      "copy": "hardware/20261104_boot_entry_diagnosis_r1/raw.jsonl",
+      "bytes": 5226,
+      "sha256": "c64a460300650fa20c7689805e39b318573d7a654b5514bf0a5f393d43f9146e"
+    },
+    {
+      "source": "results/M20_V3/20261104_boot_entry_diagnosis_r1/states.csv",
+      "copy": "hardware/20261104_boot_entry_diagnosis_r1/states.csv",
+      "bytes": 1161,
+      "sha256": "43bb2ccd5195998a5f2d0b77dd017b3d7000492ce02d839a74e03da159faf759"
+    },
+    {
+      "source": "results/M20_V3/20261104_boot_entry_diagnosis_r1/summary.json",
+      "copy": "hardware/20261104_boot_entry_diagnosis_r1/summary.json",
+      "bytes": 1131,
+      "sha256": "3664bfb6f7ae0858cbf9fa928314444a7912d403118d0384a41ad1c82c78bfda"
+    }
+  ],
+  "count": 74,
+  "bytes": 2340847,
+  "limits": "Evidence archive, not a source snapshot or replacement for independent test execution. Manifest excludes itself."
+}

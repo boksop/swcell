@@ -1,33 +1,31 @@
 # SwCell 当前任务进度
 
-2026-11-04，Asia/Shanghai；main，HEAD保持48564b5，既有Tag保持。
+2026-11-04，Asia/Shanghai。main；起始HEAD70daf6f。当前主要任务 **SWCELL-GITHUB-PUBLISH-20261104：IN_PROGRESS**。
 
-## 当前任务
+## 目标与授权
 
-**SWCELL-LAYOUT-20261104：COMPLETED（多模块目录整理与验证）。** 原M11混合FPGA目录已拆为公共board、公共Tcl和模块独立project；M20_CPU仅预留PLANNED入口。本轮未自动stage/commit/tag/创建分支或操作硬件。
+保留全部本地历史/4个正式标签，将既有V3 FPGA功能原型和历史SwCell源码/小型证据定版，创建Private GitHub仓库swcell并正常推送main与正式Tag。用户本次已明确授权commit/tag/远程创建/push，取代此前任务的仅本地限制。不改RTL/ISA/游戏功能，不Public、不改历史、不force、不写Flash。
 
-[目录规范](docs/repository_layout.md)｜[验证总结](docs/repository_layout_validation.md)｜[详细任务](docs/tasks/repository-layout-20261104.md)｜[路径迁移表](docs/repository_migration_20261104.csv)。
+详情：[发布任务](docs/tasks/github-publish-20261104.md)。
 
-## 已完成、已验证
+## 已确认
 
-- [x] 27文件搬迁＋原根README的M11指南归档；fpga/boards与fpga/projects分层，公共与M11私有约束保持原13引脚，旧RTL逻辑不变。
-- [x] M11基础/高速、两种UART诊断独立project；M20/cpu_validation明确PLANNED/TODO；新增模块/板卡模板、只读catalog和检查工具。
-- [x] 当前构建/采集/仿真/文档路径更新；M11文档集中docs/m11，根README和docs/architecture服务整个SwCell。
-- [x] 156 Python、M11全XSIM（25高速含百万PRBS、控制/10频率grid、Phase2B三频率）、M20 B/C门禁通过。
-- [x] Vivado2026.1.1从/tmp实际创建基础工程；三套其余Tcl完成源加载并在综合前停止。未执行综合/实现/STA/bitstream/硬件。
-- [x] 175逻辑源字节、138历史摘要/数据及原Tag保持；旧192/513来源清单用显式迁移核验，不刷新旧SHA或跳过缺失。
+- 本地12提交、561跟踪文件；V2.3/V2.4已提交并有annotated Tag，原对象须保持。
+- V3/独立OLED诊断及文档仍未提交，无旧stage；不覆盖任何用户修改。初始status/index/diff已保存在build/github_publish_20261104。
+- 全历史首轮扫描PASS：786blob/266tree/12commit/4tag；无匹配凭据/历史缓存/超50MiB文件，最大2045358字节。仍需最终候选复扫/版权范围说明。
+- GitHub CLI v2.103.3已安装且官方包SHA验证；gh auth status未登录，已请用户运行浏览器登录。
+- V3实际为477组合MUX＋33原生FF FUNCTIONAL_STORAGE；实机Pong/Snake/输入/OLED已获用户确认。STRICT_MUX85 LUTLP-1无bit，实体157时序不纳入验收。当前F06 bit及证据不修改。
 
-## 证据与边界
+## 下一步
 
-当前机器摘要：`docs/repository_layout_resources/validation.json`。原始检查在 `build/repository_layout_20261104/`，新M11模拟在 `build/sim/m11/`，M20本轮门禁在 `build/m20_300/v24_ffcd/layout_migration_gate_20261104/`。旧build/results没有搬迁或覆盖。
+1. 读发布任务；补充小型原样实机/路由/失败证据和来源SHA清单，完善README/正式V3报告/许可边界。
+2. 最终全历史/候选审计后分单元暂存提交；干净隔离恢复验证Python/网表/XSIM/综合，创建明确边界的V3Tag。
+3. `/home/boksop/.local/bin/gh auth status`；用户认证完成后验证活动owner/swcell名称/无冲突origin，创建Private仓库与正常push。认证未完成时只停远程动作，继续本地工作。
+4. 验证远程main/正式标签SHA、独立检出、关键源码和README，写真实发布报告。不能在认证/推送未完成时编造URL或远程PASS。
 
-目录/仿真通过不等于板级实现或真实157时序通过；M20 V2.4条件数字验收和物理/FPGA实现/硬件OPEN保持。文档核对另发现7条M11早期raw链接原先就缺失，详见验证总结，未替换成其他轮数据。
+## 历史入口与限制
 
-## 下一次恢复入口
-
-1. 先读验证总结、迁移表和git diff，不重复搬迁。当前均留工作区未提交/未暂存，旧路径D与新目录??是迁移结果；所有原文件有映射或未改记录。
-2. 只读检查：`python3 tools/fpga/project_catalog.py list` / `check`；`python3 tools/fpga/check_layout.py`。Python完整套件用 `build/venvs/python312/bin/python -B tools/test/run_python_tests.py`。
-3. 下一个工程入口是 `fpga/projects/m20/cpu_validation/README.md`，当前只规划；等待用户新任务再实现板级顶层/存储/调试/约束，不直接用M11引脚或原CPU仿真报告当上板验收。
-4. 旧版本查原Tag，历史manifest/SHA保留字节；当前迁移由config/repository_migration_20261104.json记录。不得移动V23/V24标签、改ISA/网表或失败分类、重写raw、自动commit/硬件操作。
-
-历史：[V2.4本地定版](docs/tasks/m20-v24-release-20261104.md)、[C/D数字开发](docs/tasks/m20-v24-ffcd-20261104.md)。
+- [V3详细任务](docs/tasks/m20-v3-fpga-20261104.md)、[F06交互验收](docs/reports/m20_phaseV3-F06_20261104.md)、[外设诊断](docs/tasks/oled-keys-20261104.md)。
+- 旧M11有7个原始数据链接本机缺失，属既有问题，不伪造；现存原始build/results不删除、不移动。
+- clockInfo.txt/tight_setup_hold_pins.txt已确认Vivado辅助输出，新增ignore，不删除。大波形、bitstream、环境/凭据不发布。
+- 未来功能/PCB/CPU优化不在本任务范围。当前只完成版本管理与首次Private发布。

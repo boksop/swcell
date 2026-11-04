@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# xsim v2026.1.1 (64-bit)
+# SW Build 6605303 on Fri Sep 04 05:45:32 MDT 2026
+# IP Build 6603865 on Fri Sep 04 05:05:05 MDT 2026
+# SharedData Build 6605217 on Fri Sep 04 02:50:14 MDT 2026
+# Start of session at: Wed Nov  4 21:25:32 2026
+# Process ID         : 1561179
+# Current directory  : /home/boksop/swcell/build/sim/m20_v3/boot_entry_r2
+# Command line       : xsim -log simulation.log -mode tcl -source {xsim.dir/board/xsim_script.tcl}
+# Log file           : /home/boksop/swcell/build/sim/m20_v3/boot_entry_r2/simulation.log
+# Journal file       : /home/boksop/swcell/build/sim/m20_v3/boot_entry_r2/xsim.jou
+# Running On         : b760m
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.5 LTS
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12400
+# CPU Frequency      : 4000.000 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 66135 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 74725 MB
+# Available Virtual  : 65828 MB
+#-----------------------------------------------------------
+source xsim.dir/board/xsim_script.tcl
+# xsim {board} -testplusarg OUT=/home/boksop/swcell/build/sim/m20_v3/boot_entry_r2 -autoloadwcfg -tclbatch {/home/boksop/swcell/sim/oled_keys/run.tcl}
+Time resolution is 1 ps
+source /home/boksop/swcell/sim/oled_keys/run.tcl
+## run all
+M20_V3_BOARD_PASS pong_frames=2 snake_frames=1 boot_frames=1 uart_bytes=5877 key_mapping=6 boot_entry_key=5 game_select_key=5 pause_key=7 spi_hz=10000000
+$finish called at time : 59911530 ns : File "/home/boksop/swcell/sim/m20_v3/tb_m20_v3_board.sv" Line 117
+## quit
+INFO: xsimkernel Simulation Memory Usage: 307776 KB (Peak: 357112 KB), Simulation CPU Usage: 4130 ms
+INFO: [Common 17-206] Exiting xsim at Wed Nov  4 21:25:38 2026...

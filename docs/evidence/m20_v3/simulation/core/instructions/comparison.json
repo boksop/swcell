@@ -1,0 +1,502 @@
+{
+  "status": "PASS",
+  "isa_id": "M20-300-ISA-0.1",
+  "timing_profile": "M20-300-V1-TIMING-0.1",
+  "suite": "instructions",
+  "case_count": 49,
+  "events": 22223,
+  "cycles": 51193,
+  "cases": [
+    {
+      "name": "immediates_0",
+      "events": 3073,
+      "cycles": 6146,
+      "retired": 3073,
+      "ram_reads": 0,
+      "ram_writes": 0,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "immediates_1",
+      "events": 3073,
+      "cycles": 6146,
+      "retired": 3073,
+      "ram_reads": 0,
+      "ram_writes": 0,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "immediates_2",
+      "events": 3073,
+      "cycles": 6146,
+      "retired": 3073,
+      "ram_reads": 0,
+      "ram_writes": 0,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "immediates_3",
+      "events": 3073,
+      "cycles": 6146,
+      "retired": 3073,
+      "ram_reads": 0,
+      "ram_writes": 0,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "immediates_4",
+      "events": 2049,
+      "cycles": 4098,
+      "retired": 2049,
+      "ram_reads": 0,
+      "ram_writes": 0,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "ram_alu_0",
+      "events": 1083,
+      "cycles": 3246,
+      "retired": 1083,
+      "ram_reads": 162,
+      "ram_writes": 198,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "ram_alu_1",
+      "events": 1083,
+      "cycles": 3246,
+      "retired": 1083,
+      "ram_reads": 162,
+      "ram_writes": 198,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "all_ram_addresses",
+      "events": 2049,
+      "cycles": 7170,
+      "retired": 2049,
+      "ram_reads": 512,
+      "ram_writes": 512,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "io_ar_flags_0_0",
+      "events": 449,
+      "cycles": 898,
+      "retired": 449,
+      "ram_reads": 0,
+      "ram_writes": 0,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "io_ar_flags_0_1",
+      "events": 449,
+      "cycles": 898,
+      "retired": 449,
+      "ram_reads": 0,
+      "ram_writes": 0,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "io_ar_flags_1_0",
+      "events": 449,
+      "cycles": 898,
+      "retired": 449,
+      "ram_reads": 0,
+      "ram_writes": 0,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "io_ar_flags_1_1",
+      "events": 449,
+      "cycles": 898,
+      "retired": 449,
+      "ram_reads": 0,
+      "ram_writes": 0,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "pc_fff_wrap",
+      "events": 3,
+      "cycles": 9,
+      "retired": 3,
+      "ram_reads": 0,
+      "ram_writes": 1,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "branches_taken_and_not_taken",
+      "events": 17,
+      "cycles": 34,
+      "retired": 17,
+      "ram_reads": 0,
+      "ram_writes": 0,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "trap_0010",
+      "events": 1,
+      "cycles": 2,
+      "retired": 0,
+      "ram_reads": 0,
+      "ram_writes": 0,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "trap_0100",
+      "events": 1,
+      "cycles": 2,
+      "retired": 0,
+      "ram_reads": 0,
+      "ram_writes": 0,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "trap_10f0",
+      "events": 1,
+      "cycles": 2,
+      "retired": 0,
+      "ram_reads": 0,
+      "ram_writes": 0,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "trap_7300",
+      "events": 1,
+      "cycles": 2,
+      "retired": 0,
+      "ram_reads": 0,
+      "ram_writes": 0,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "trap_7001",
+      "events": 1,
+      "cycles": 2,
+      "retired": 0,
+      "ram_reads": 0,
+      "ram_writes": 0,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "trap_8a00",
+      "events": 1,
+      "cycles": 2,
+      "retired": 0,
+      "ram_reads": 0,
+      "ram_writes": 0,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "trap_9001",
+      "events": 1,
+      "cycles": 2,
+      "retired": 0,
+      "ram_reads": 0,
+      "ram_writes": 0,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "trap_9f00",
+      "events": 1,
+      "cycles": 2,
+      "retired": 0,
+      "ram_reads": 0,
+      "ram_writes": 0,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "trap_a010",
+      "events": 1,
+      "cycles": 2,
+      "retired": 0,
+      "ram_reads": 0,
+      "ram_writes": 0,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "trap_a201",
+      "events": 1,
+      "cycles": 2,
+      "retired": 0,
+      "ram_reads": 0,
+      "ram_writes": 0,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "trap_a700",
+      "events": 1,
+      "cycles": 2,
+      "retired": 0,
+      "ram_reads": 0,
+      "ram_writes": 0,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "trap_e001",
+      "events": 1,
+      "cycles": 2,
+      "retired": 0,
+      "ram_reads": 0,
+      "ram_writes": 0,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "trap_e300",
+      "events": 1,
+      "cycles": 2,
+      "retired": 0,
+      "ram_reads": 0,
+      "ram_writes": 0,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "trap_f001",
+      "events": 1,
+      "cycles": 2,
+      "retired": 0,
+      "ram_reads": 0,
+      "ram_writes": 0,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "trap_f200",
+      "events": 1,
+      "cycles": 2,
+      "retired": 0,
+      "ram_reads": 0,
+      "ram_writes": 0,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "trap_ffff",
+      "events": 1,
+      "cycles": 2,
+      "retired": 0,
+      "ram_reads": 0,
+      "ram_writes": 0,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "unloaded_is_physical_trap",
+      "events": 1,
+      "cycles": 2,
+      "retired": 0,
+      "ram_reads": 0,
+      "ram_writes": 0,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "random_program_00",
+      "events": 117,
+      "cycles": 333,
+      "retired": 117,
+      "ram_reads": 29,
+      "ram_writes": 4,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "random_program_01",
+      "events": 117,
+      "cycles": 330,
+      "retired": 117,
+      "ram_reads": 28,
+      "ram_writes": 4,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "random_program_02",
+      "events": 117,
+      "cycles": 330,
+      "retired": 117,
+      "ram_reads": 29,
+      "ram_writes": 3,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "random_program_03",
+      "events": 115,
+      "cycles": 311,
+      "retired": 115,
+      "ram_reads": 22,
+      "ram_writes": 5,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "random_program_04",
+      "events": 104,
+      "cycles": 307,
+      "retired": 104,
+      "ram_reads": 30,
+      "ram_writes": 3,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "random_program_05",
+      "events": 116,
+      "cycles": 325,
+      "retired": 116,
+      "ram_reads": 24,
+      "ram_writes": 7,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "random_program_06",
+      "events": 104,
+      "cycles": 289,
+      "retired": 104,
+      "ram_reads": 24,
+      "ram_writes": 3,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "random_program_07",
+      "events": 125,
+      "cycles": 352,
+      "retired": 125,
+      "ram_reads": 28,
+      "ram_writes": 6,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "random_program_08",
+      "events": 103,
+      "cycles": 284,
+      "retired": 103,
+      "ram_reads": 26,
+      "ram_writes": 0,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "random_program_09",
+      "events": 104,
+      "cycles": 310,
+      "retired": 104,
+      "ram_reads": 29,
+      "ram_writes": 5,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "random_program_10",
+      "events": 103,
+      "cycles": 281,
+      "retired": 103,
+      "ram_reads": 21,
+      "ram_writes": 4,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "random_program_11",
+      "events": 122,
+      "cycles": 331,
+      "retired": 122,
+      "ram_reads": 27,
+      "ram_writes": 2,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "random_program_12",
+      "events": 107,
+      "cycles": 277,
+      "retired": 107,
+      "ram_reads": 20,
+      "ram_writes": 1,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "random_program_13",
+      "events": 114,
+      "cycles": 315,
+      "retired": 114,
+      "ram_reads": 25,
+      "ram_writes": 4,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "random_program_14",
+      "events": 113,
+      "cycles": 343,
+      "retired": 113,
+      "ram_reads": 32,
+      "ram_writes": 7,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "random_program_15",
+      "events": 127,
+      "cycles": 374,
+      "retired": 127,
+      "ram_reads": 37,
+      "ram_writes": 3,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "delayed_async_bus",
+      "events": 13,
+      "cycles": 44,
+      "retired": 13,
+      "ram_reads": 4,
+      "ram_writes": 2,
+      "kind": "instruction",
+      "status": "PASS"
+    },
+    {
+      "name": "sync_ram_adapter",
+      "events": 13,
+      "cycles": 44,
+      "retired": 13,
+      "ram_reads": 4,
+      "ram_writes": 2,
+      "kind": "instruction",
+      "status": "PASS"
+    }
+  ],
+  "evidence": "Actual XSIM CSV and complete final RAM matched independent Python interpreter"
+}

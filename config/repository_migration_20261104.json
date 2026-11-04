@@ -13,7 +13,7 @@
     ".gitignore": {
       "before_sha256": "8306a4e01e6d4202d4799de6d459d587d59d1fa19800d540fd960af19530ee48",
       "current_files": {
-        ".gitignore": "13e3dd52794a7f3f491368eb6986189c6c44216ae012218da5f96507abd78cbb"
+        ".gitignore": "5b6ce929c29f84ee19d5057ab9b0116269598440345b684a7cd554f24ccc6cef"
       },
       "change_type": "PATH_OR_NAVIGATION_UPDATED"
     },
@@ -28,7 +28,7 @@
       "before_sha256": "05f9e18d63508d7a94caf0d9283b6cc85d75afd2473edd5e913ea6be31a7f139",
       "current_files": {
         "docs/m11/README.md": "c96d7a6c4da0b8d393258105b165414442dd40118d839c7f4657881916ec6585",
-        "README.md": "f9d22c32e13c3901c610cdba715c7ef2f0a6902a75ce82c784accc0bf9bf01eb"
+        "README.md": "0f14bf3feef9cfb9c64ff395ba8afd9e885a847e2d383f65415b82f570c8d95a"
       },
       "change_type": "SPLIT_OR_REPLACED_WITH_EXPLICIT_LINEAGE"
     },
@@ -71,7 +71,7 @@
     "docs/m20/README.md": {
       "before_sha256": "cb0d97458829f9f9f5b527154db84d7ca14ec88c8492af88d6d12c13730c1070",
       "current_files": {
-        "docs/m20/README.md": "110c73b40fed8020eb40d18654614f3ab45a406036d3c7d15eca200ec6ca1b95"
+        "docs/m20/README.md": "cd6275e597eddbbeac0c3071c5788b68058a9928fcf576771b41ad9cff2d0814"
       },
       "change_type": "PATH_OR_NAVIGATION_UPDATED"
     },
@@ -472,5 +472,95 @@
     "host/python/m20/",
     "software/m20_300/"
   ],
-  "git_operation_policy": "no stage/commit/tag/branch/remote in this task"
+  "git_operation_policy": "no stage/commit/tag/branch/remote in this task",
+  "post_migration_updates": [
+    {
+      "date": "2026-11-04",
+      "task": "SWCELL-OLED-KEYS-20261104",
+      "path": "README.md",
+      "previous_current_sha256": "f9d22c32e13c3901c610cdba715c7ef2f0a6902a75ce82c784accc0bf9bf01eb",
+      "current_sha256": "2a7fb437458d89c212735a9ac53d3b0760dc76ec12226421139a4f744b60fbd4",
+      "reason": "Add independent board diagnostic and user-confirmed basic-I/O report; historical source fingerprints and original snapshots remain unchanged"
+    },
+    {
+      "date": "2026-11-04",
+      "task": "M20-V3-FPGA-20261104",
+      "path": "README.md",
+      "previous_current_sha256": "2a7fb437458d89c212735a9ac53d3b0760dc76ec12226421139a4f744b60fbd4",
+      "current_sha256": "1cbbbe5701f15a0591f9b0847929c9704f9fb2015100635e176bbb67aee7a010",
+      "reason": "Current navigation gains implemented V3 FPGA prototype; original tag/blob and historical evidence remain unchanged"
+    },
+    {
+      "date": "2026-11-04",
+      "task": "M20-V3-FPGA-20261104",
+      "path": "docs/m20/README.md",
+      "previous_current_sha256": "110c73b40fed8020eb40d18654614f3ab45a406036d3c7d15eca200ec6ca1b95",
+      "current_sha256": "2a20407b6fc81750aebde7ca53b1a0440141884b98a5ca6be5b9dfa8e9620aad",
+      "reason": "Current navigation gains implemented V3 FPGA prototype; original tag/blob and historical evidence remain unchanged"
+    },
+    {
+      "date": "2026-11-04",
+      "task": "M20-V3-SNAKE-SHUFFLED-20261104",
+      "path": "README.md",
+      "previous_current_sha256": "1cbbbe5701f15a0591f9b0847929c9704f9fb2015100635e176bbb67aee7a010",
+      "current_sha256": "02f73d1027485cf6bd7d55dd3cd2c7a58da3fe517e2058f88be23217ad402bf5",
+      "reason": "Document current F04 input buffering and separately versioned shuffled-food software; frozen CPU/ISA/ROM and all historical evidence/tag objects unchanged"
+    },
+    {
+      "date": "2026-11-04",
+      "task": "M20-V3-SNAKE-SHUFFLED-20261104",
+      "path": "docs/m20/README.md",
+      "previous_current_sha256": "2a20407b6fc81750aebde7ca53b1a0440141884b98a5ca6be5b9dfa8e9620aad",
+      "current_sha256": "b98ebdf9dd0f044ab80160fc922c30c925c2d1d38bdb93089f4d9b1b57242770",
+      "reason": "Document current F04 input buffering and separately versioned shuffled-food software; frozen CPU/ISA/ROM and all historical evidence/tag objects unchanged"
+    },
+    {
+      "date": "2026-11-04",
+      "task": "M20-V3-F05-KEY-SWAP",
+      "path": "docs/m20/README.md",
+      "previous_current_sha256": "b98ebdf9dd0f044ab80160fc922c30c925c2d1d38bdb93089f4d9b1b57242770",
+      "current_sha256": "509d1b2a8438dad1d5d9fcd8da0d992c755e27988d3473b5da8564072253a786",
+      "reason": "Add F05 key mapping and verification entry; previous F04 evidence, frozen CPU/ISA/ROM and tags unchanged"
+    },
+    {
+      "date": "2026-11-04",
+      "task": "M20-V3-F06-BOOT-ENTRY",
+      "path": "docs/m20/README.md",
+      "previous_current_sha256": "509d1b2a8438dad1d5d9fcd8da0d992c755e27988d3473b5da8564072253a786",
+      "current_sha256": "20772da9b57b72a5a9ac16164af622e2887c1b770f5272cfbd30095d80ee64bf",
+      "reason": "Add user-requested KEY5 boot entry and independent F06 evidence; no frozen CPU/ISA/software/tag changes"
+    },
+    {
+      "date": "2026-11-04",
+      "task": "M20-V3-F06-USER-ACCEPTANCE",
+      "path": "README.md",
+      "previous_current_sha256": "02f73d1027485cf6bd7d55dd3cd2c7a58da3fe517e2058f88be23217ad402bf5",
+      "current_sha256": "c320b67ed9cbf2890ba4830a1b63c2fde4a63b3b3acd614d035a9b3b40f17e38",
+      "reason": "Add user-confirmed F06 UI stage report; no functional source, historical raw evidence or tag changes"
+    },
+    {
+      "date": "2026-11-04",
+      "task": "M20-V3-F06-USER-ACCEPTANCE",
+      "path": "docs/m20/README.md",
+      "previous_current_sha256": "20772da9b57b72a5a9ac16164af622e2887c1b770f5272cfbd30095d80ee64bf",
+      "current_sha256": "cd6275e597eddbbeac0c3071c5788b68058a9928fcf576771b41ad9cff2d0814",
+      "reason": "Add user-confirmed F06 UI stage report; no functional source, historical raw evidence or tag changes"
+    },
+    {
+      "date": "2026-11-04",
+      "task": "SWCELL-GITHUB-PUBLISH-20261104",
+      "path": ".gitignore",
+      "previous_current_sha256": "13e3dd52794a7f3f491368eb6986189c6c44216ae012218da5f96507abd78cbb",
+      "current_sha256": "5b6ce929c29f84ee19d5057ab9b0116269598440345b684a7cd554f24ccc6cef",
+      "reason": "Explicit user-authorized Private publication: source/evidence navigation and cache/credential ignore rules; original evidence and tag objects unchanged"
+    },
+    {
+      "date": "2026-11-04",
+      "task": "SWCELL-GITHUB-PUBLISH-20261104",
+      "path": "README.md",
+      "previous_current_sha256": "c320b67ed9cbf2890ba4830a1b63c2fde4a63b3b3acd614d035a9b3b40f17e38",
+      "current_sha256": "0f14bf3feef9cfb9c64ff395ba8afd9e885a847e2d383f65415b82f570c8d95a",
+      "reason": "Explicit user-authorized Private publication: source/evidence navigation and cache/credential ignore rules; original evidence and tag objects unchanged"
+    }
+  ]
 }

@@ -17,13 +17,14 @@ def module(name, path):
 
 
 class RepositoryLayoutTests(unittest.TestCase):
-    def test_catalog_has_independent_projects_and_planned_cpu(self):
+    def test_catalog_has_independent_projects_and_implemented_cpu(self):
         catalog = module('swc_catalog', 'tools/fpga/project_catalog.py')
         self.assertEqual(catalog.check(ROOT), [])
         projects = {p['id']: p for _, p in catalog.read_projects(ROOT)}
-        self.assertEqual(len(projects), 5)
-        self.assertEqual(projects['m20/cpu_validation']['status'], 'PLANNED')
-        self.assertIsNone(projects['m20/cpu_validation']['build_script'])
+        self.assertTrue({'m11/functional', 'm11/performance', 'diagnostics/uart_loopback', 'diagnostics/uart_pin_id', 'm20/cpu_validation'} <= set(projects))
+        self.assertEqual(projects['m20/cpu_validation']['status'], 'IMPLEMENTED')
+        self.assertEqual(projects['m20/cpu_validation']['build_script'], 'fpga/projects/m20/cpu_validation/scripts/build.tcl')
+        self.assertIn('rtl/modules/m20/v3/generated/*.sv', projects['m20/cpu_validation']['source_globs'])
         self.assertNotEqual(projects['m11/functional']['build_script'], projects['m11/performance']['build_script'])
 
     def test_split_constraints_preserve_all_original_pin_values(self):

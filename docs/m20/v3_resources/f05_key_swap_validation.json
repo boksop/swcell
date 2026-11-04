@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "changed_rtl": "top only: select_request,run_toggle,build ID",
+  "normalized_top_equals_previous": true,
+  "unchanged_other_build_inputs": 21,
+  "python_tests": 164,
+  "board_test": "swapped_keys_r1",
+  "uart_bytes": 3918,
+  "physical_key_confirmation": "NOT_VERIFIED",
+  "build": "build/fpga/m20/cpu_validation/snake_shuffled_keys_r1",
+  "telemetry": "results/M20_V3/20261104_210020_swapped_keys_f05"
+}

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "reference": "independent Python ISA Machine; original ROM; zero keys",
+  "games": {
+    "pong": {
+      "frames": 64,
+      "ram_cells_per_frame": 256,
+      "final_cpu_cycles": 13056,
+      "retired": 4248
+    },
+    "snake": {
+      "frames": 64,
+      "ram_cells_per_frame": 256,
+      "final_cpu_cycles": 18241,
+      "retired": 5753
+    }
+  }
+}

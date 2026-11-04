@@ -1,0 +1,34 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1.1 (lin64) Build 6605303 Fri Sep 04 05:45:32 MDT 2026
+| Date         : Wed Nov  4 21:25:58 2026
+| Host         : b760m running 64-bit Ubuntu 24.04.5 LTS
+| Command      : report_cdc -details -file /home/boksop/swcell/build/fpga/m20/cpu_validation/snake_shuffled_boot_r1/cdc.rpt
+| Design       : swcell_m20_v3_top
+| Device       : 7k325t-ffg900
+| Speed File   : -2  PRODUCTION 1.12 2017-02-17
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+CDC Report
+
+ID     Severity  Count  Description
+-----  --------  -----  ------------------------------------------
+CDC-3  Info          9  1-bit synchronized with ASYNC_REG property
+
+Source Clock: input port clock
+Destination Clock: sys_clk
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                 Depth  Exception   Source (From)  Destination (To)
+---  -----  --------  ------------------------------------------  -----  ----------  -------------  -----------------------------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  KEY0           filter/sync_inputs/pipe_reg[0][0]/D
+  2  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  KEY1           filter/sync_inputs/pipe_reg[0][1]/D
+  3  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  KEY2           filter/sync_inputs/pipe_reg[0][2]/D
+  4  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  KEY3           filter/sync_inputs/pipe_reg[0][3]/D
+  5  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  KEY5           filter/sync_inputs/pipe_reg[0][5]/D
+  6  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  KEY6           filter/sync_inputs/pipe_reg[0][6]/D
+  7  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  KEY7           filter/sync_inputs/pipe_reg[0][7]/D
+  8  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  RST_N          filter/sync_inputs/pipe_reg[0][8]/D
+  9  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  UART_RXD       rx_sync/pipe_reg[0][0]/D
+

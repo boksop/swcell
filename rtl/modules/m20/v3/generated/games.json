@@ -1,0 +1,14 @@
+{
+  "pong": {
+    "words": 168,
+    "tick": 19,
+    "tick_done": 141,
+    "original_sha256": "bc99bc01f95e2d1160328e4e0c5460134400c73612b888b56b30bf9121193b4d"
+  },
+  "snake": {
+    "words": 368,
+    "tick": 34,
+    "tick_done": 316,
+    "original_sha256": "2acc4c44fd561d805a3f9a1e260cb7a6521718c76868727ffce14644a6a96f96"
+  }
+}

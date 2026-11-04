@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "snapshot_comparisons": 58,
+  "last_tick": 1715,
+  "ram_cells_per_snapshot": 256,
+  "reference": "original Pong ROM executed by independent Python ISA Machine, keys held zero",
+  "physical_source": "/home/boksop/swcell/results/M20_V3/20261104_174721_functional_first/raw.jsonl",
+  "prefix_sha256": "e1611e13ac093f4d6fc0851656590fce64bcbf327aed5b528fb7177ff2addb83",
+  "limits": "finite read-only RAM snapshot comparison; not all-instruction hardware proof or visual confirmation"
+}

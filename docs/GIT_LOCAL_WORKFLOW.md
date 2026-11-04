@@ -1,5 +1,11 @@
 # SwCell 本地 Git 工作流
 
+## 当前授权补充：首次Private发布（2026-11-04）
+
+用户最新任务明确授权保留现有历史，完成V3本地commit/annotated Tag，并以GitHub CLI创建Private `swcell`及正常推送main/正式标签。下文“本轮仅本地、禁止remote”是此前整理阶段的历史范围，不阻止本次已授权发布；仍禁止Public、force、reset/rebase/amend或覆盖旧Tag。新任务及真实执行结果见[发布进度](tasks/github-publish-20261104.md)。未来发布仍须相应授权。
+
+新增原样精选证据可放docs/evidence/m20_v3并用manifest记录来源/大小/SHA；原始build/results不移动、不改写。Private不等于自动开源：当前未选择许可证；第三方工具/数据手册仅保留必要来源链接，不纳管Vivado安装、许可或凭据。使用tools/git/github_publish_audit.py在发布前扫描全部可达Git对象与当前候选，模式扫描不替代人工版权/保密审查。
+
 2026-11-03。用户本轮授权本地 commits 和 annotated tags；严格禁止添加remote、远程访问、push/pull/fetch、上传或同步。当前不是远程备份方案。
 
 ## 纳管边界

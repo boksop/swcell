@@ -1,6 +1,6 @@
 # SwCell目录规范与2026-11-04迁移
 
-本轮将原`fpga/xc7k325t`中的M11顶层/配置/脚本/诊断拆成公共板卡和独立工程，根README改为SwCell导航。没有实现M20板级功能，没有修改逻辑、引脚数值、ISA/网表或已有Tag，没有自动提交。
+本轮将原`fpga/xc7k325t`中的M11顶层/配置/脚本/诊断拆成公共板卡和独立工程，根README改为SwCell导航。目录迁移当时没有实现M20板级功能；该整理已提交70daf6f。后续OLED及M20 V3在独立工程内扩展，冻结ISA/网表/证据和原Tag保持不变。
 
 ## 1. 责任分层
 
@@ -31,11 +31,12 @@
 |m11/performance|IMPLEMENTED|fpga/projects/m11/performance/scripts/build_hs.tcl|
 |diagnostics/uart_loopback|IMPLEMENTED|fpga/projects/diagnostics/uart_loopback/scripts/build.tcl|
 |diagnostics/uart_pin_id|IMPLEMENTED|fpga/projects/diagnostics/uart_pin_id/scripts/build.tcl|
-|m20/cpu_validation|PLANNED|只含README/project.json和明确TODO；无构建/引脚/bitstream|
+|m20/cpu_validation|IMPLEMENTED（V3）|477-MUX＋33原生FF已上板；严格反馈模式DRC受阻；见专项报告|
+|diagnostics/oled_keys|IMPLEMENTED（新增独立外设诊断）|[OLED/9键/低有效8LED](../fpga/projects/diagnostics/oled_keys/README.md)，仿真/实现及硬件状态见专项记录|
 
 IMPLEMENTED表示原工程代码已存在；目录迁移的检查/回归结果另记录，不自动等价为当前Vivado综合/实现通过。双输出pin-ID仍要求V20断开USB-UART TX，不能当普通回环直接运行。
 
-公共XDC只定义D27/LED/UART及配置电压，M11的7条D/EN/CLK/Q/QM在m11/common/constraints。两者组合等价于旧引脚表，SYS时钟约束由各工程创建一次。对尚未提供的M20引脚不写约束。
+公共XDC只定义D27/LED/UART及配置电压，M11的7条D/EN/CLK/Q/QM在m11/common/constraints。两者组合等价于旧引脚表，SYS时钟约束由各工程创建一次。V3内部CPU原型复用已验证OLED/按键25引脚约束；尚未指定的外部实体M20接口不编造约束。
 
 ## 3. 文档和历史路径
 

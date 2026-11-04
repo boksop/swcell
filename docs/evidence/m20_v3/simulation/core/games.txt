@@ -1,0 +1,71 @@
+#-----------------------------------------------------------
+# xsim v2026.1.1 (64-bit)
+# SW Build 6605303 on Fri Sep 04 05:45:32 MDT 2026
+# IP Build 6603865 on Fri Sep 04 05:05:05 MDT 2026
+# SharedData Build 6605217 on Fri Sep 04 02:50:14 MDT 2026
+# Start of session at: Wed Nov  4 19:42:56 2026
+# Process ID         : 1263260
+# Current directory  : /home/boksop/swcell/build/sim/m20_v3/core_r2/xsim
+# Command line       : xsim -log games.log -mode tcl -source {xsim.dir/games/xsim_script.tcl}
+# Log file           : /home/boksop/swcell/build/sim/m20_v3/core_r2/xsim/games.log
+# Journal file       : /home/boksop/swcell/build/sim/m20_v3/core_r2/xsim/xsim.jou
+# Running On         : b760m
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.5 LTS
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12400
+# CPU Frequency      : 4000.000 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 66135 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 74725 MB
+# Available Virtual  : 60806 MB
+#-----------------------------------------------------------
+source xsim.dir/games/xsim_script.tcl
+# xsim {games} -testplusarg CASE_DIR=/home/boksop/swcell/build/sim/m20_v3/core_r2/games -autoloadwcfg -tclbatch {/home/boksop/swcell/sim/m20_v21/run_all.tcl}
+Time resolution is 1 ps
+source /home/boksop/swcell/sim/m20_v21/run_all.tcl
+## run all
+M20V21_CASE_PASS name=pong_boot events=19 cycles=83 writes=15 mode=0
+M20V21_CASE_PASS name=pong_normal events=65 cycles=202 writes=9 mode=0
+M20V21_CASE_PASS name=pong_upper_wall events=67 cycles=209 writes=11 mode=0
+M20V21_CASE_PASS name=pong_lower_wall events=67 cycles=209 writes=11 mode=0
+M20V21_CASE_PASS name=pong_left_paddle events=72 cycles=225 writes=10 mode=0
+M20V21_CASE_PASS name=pong_right_paddle events=72 cycles=225 writes=10 mode=0
+M20V21_CASE_PASS name=pong_wall_and_paddle events=74 cycles=232 writes=12 mode=0
+M20V21_CASE_PASS name=pong_right_score events=83 cycles=265 writes=15 mode=0
+M20V21_CASE_PASS name=pong_left_score events=82 cycles=263 writes=15 mode=0
+M20V21_CASE_PASS name=pong_left_score_carry events=82 cycles=263 writes=15 mode=0
+M20V21_CASE_PASS name=pong_right_score_wrap events=83 cycles=265 writes=15 mode=0
+M20V21_CASE_PASS name=pong_upper_paddle_clamp events=61 cycles=194 writes=9 mode=0
+M20V21_CASE_PASS name=pong_lower_paddle_clamp events=69 cycles=216 writes=9 mode=0
+M20V21_CASE_PASS name=pong_score_wall_two_paddles events=94 cycles=308 writes=19 mode=0
+M20V21_CASE_PASS name=pong_continuous_64 events=4252 cycles=13223 writes=649 mode=0
+M20V21_CASE_PASS name=pong_memory_mode_0 events=65 cycles=202 writes=9 mode=0
+M20V21_CASE_PASS name=pong_memory_mode_1 events=65 cycles=202 writes=9 mode=1
+M20V21_CASE_PASS name=snake_boot events=1862 cycles=4531 writes=269 mode=0
+M20V21_CASE_PASS name=snake_normal events=256 cycles=926 writes=56 mode=0
+M20V21_CASE_PASS name=snake_grow events=291 cycles=1050 writes=64 mode=0
+M20V21_CASE_PASS name=snake_score_wrap events=291 cycles=1050 writes=64 mode=0
+M20V21_CASE_PASS name=snake_ring_index_wrap events=256 cycles=926 writes=56 mode=0
+M20V21_CASE_PASS name=snake_right_wall events=74 cycles=280 writes=19 mode=0
+M20V21_CASE_PASS name=snake_left_wall events=77 cycles=286 writes=19 mode=0
+M20V21_CASE_PASS name=snake_upper_wall events=78 cycles=288 writes=19 mode=0
+M20V21_CASE_PASS name=snake_lower_wall events=76 cycles=284 writes=19 mode=0
+M20V21_CASE_PASS name=snake_legal_old_tail events=274 cycles=977 writes=57 mode=0
+M20V21_CASE_PASS name=snake_self_collision events=133 cycles=476 writes=30 mode=0
+M20V21_CASE_PASS name=snake_opposite_direction_ignored events=255 cycles=924 writes=56 mode=0
+M20V21_CASE_PASS name=snake_key_priority events=251 cycles=910 writes=57 mode=0
+M20V21_CASE_PASS name=snake_dead_no_start events=13 cycles=44 writes=5 mode=0
+M20V21_CASE_PASS name=snake_win_no_start events=13 cycles=44 writes=5 mode=0
+M20V21_CASE_PASS name=snake_restart events=1869 cycles=4551 writes=271 mode=0
+M20V21_CASE_PASS name=snake_grow_to_64 events=225 cycles=822 writes=51 mode=0
+M20V21_CASE_PASS name=snake_food_search_63 events=4152 cycles=13419 writes=684 mode=0
+M20V21_CASE_PASS name=snake_continuous_64 events=18778 cycles=65225 writes=3957 mode=0
+M20V21_CASE_PASS name=snake_memory_mode_0 events=256 cycles=926 writes=56 mode=0
+M20V21_CASE_PASS name=snake_memory_mode_1 events=256 cycles=926 writes=56 mode=1
+M20V21_CPU_PASS cases=38 lockstep_cycles=115651
+$finish called at time : 1157656 ns : File "/home/boksop/swcell/build/sim/m20_v3/core_r2/tb/tb_m20v21_cpu.sv" Line 188
+## quit
+INFO: xsimkernel Simulation Memory Usage: 307632 KB (Peak: 356968 KB), Simulation CPU Usage: 2020 ms
+INFO: [Common 17-206] Exiting xsim at Wed Nov  4 19:43:00 2026...

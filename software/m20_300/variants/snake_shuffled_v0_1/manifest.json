@@ -1,0 +1,17 @@
+{
+  "version": "SNAKE-SHUFFLED-0.1",
+  "original_source": "software/m20_300/snake.asm",
+  "original_source_sha256": "9d905bd0b8d567ae8d6f54250e220f85bdb72734324ba6025b3259e07b08dd13",
+  "words": 1295,
+  "rom_capacity_words": 4096,
+  "tick": 34,
+  "tick_done": 313,
+  "source": "snake_shuffled.asm",
+  "rom": "snake_shuffled.memh",
+  "table": "food_table.json",
+  "rom_sha256": "61edcb52673fd09abe265e43b27eeb073528665adfed5fcf534eaf267164738f",
+  "cpu_isa_unchanged": true,
+  "cpu_state_bits": 33,
+  "additional_software_ram_nibbles": 2,
+  "implementation": "CPU branches select ROM-encoded constants; original bitmap lookup skips occupied entries"
+}

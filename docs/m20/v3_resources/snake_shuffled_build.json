@@ -1,0 +1,13 @@
+{
+  "source_hashes": "PASS",
+  "source_files": 22,
+  "pins_checked": 25,
+  "slacks_ns": [
+    0.735,
+    0.06,
+    9.232
+  ],
+  "bit_sha256": "d58128b860ff512fd0bb36b6ae70afa35496844b098c39df6b27bf2e77eb3440",
+  "software_profile": "SNAKE-SHUFFLED-0.1",
+  "cpu": "477 combination MUX + 33 native FF"
+}
