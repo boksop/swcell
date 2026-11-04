@@ -11,9 +11,9 @@
 ## 已确认
 
 - 本地12提交、561跟踪文件；V2.3/V2.4已提交并有annotated Tag，原对象须保持。
-- V3/独立OLED诊断及文档仍未提交，无旧stage；不覆盖任何用户修改。初始status/index/diff已保存在build/github_publish_20261104。
+- V3/独立OLED诊断已分单元提交b4081d3/8fab9f6，无旧stage丢失；不覆盖任何用户修改。初始status/index/diff已保存在build/github_publish_20261104。
 - 全历史首轮扫描PASS：786blob/266tree/12commit/4tag；无匹配凭据/历史缓存/超50MiB文件，最大2045358字节。仍需最终候选复扫/版权范围说明。
-- GitHub CLI v2.103.3已安装且官方包SHA验证；gh auth status未登录，已请用户运行浏览器登录。
+- GitHub CLI v2.103.3已安装且官方包SHA验证；用户已完成浏览器登录，活动个人账号boksop、swcell查询404、origin为空。
 - V3实际为477组合MUX＋33原生FF FUNCTIONAL_STORAGE；实机Pong/Snake/输入/OLED已获用户确认。STRICT_MUX85 LUTLP-1无bit，实体157时序不纳入验收。当前F06 bit及证据不修改。
 
 ## 下一步
@@ -29,3 +29,5 @@
 - 旧M11有7个原始数据链接本机缺失，属既有问题，不伪造；现存原始build/results不删除、不移动。
 - clockInfo.txt/tight_setup_hold_pins.txt已确认Vivado辅助输出，新增ignore，不删除。大波形、bitstream、环境/凭据不发布。
 - 未来功能/PCB/CPU优化不在本任务范围。当前只完成版本管理与首次Private发布。
+
+最新检查点：隔离检出8fab9f6全部恢复检查PASS：Python168、核心87/57331、非法/算术/访存、板级SPI/键/UART、10生成文件字节、67源SHA/74证据SHA、477/33/543及20发生器、Vivado新综合。V3 annotated Tag已建立且目标8fab9f6，旧4Tag对象不变。准备创建Private远程并push，尚未执行远程发布。

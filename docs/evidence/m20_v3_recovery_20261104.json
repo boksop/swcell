@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "source_commit": "8fab9f6ad142e0b0fb3f8655411f5c538312f529",
+  "isolated_worktree": "/tmp/swcell-v3-clean-3dn2ya3t",
+  "python_tests": 168,
+  "core_scenarios": 87,
+  "core_events": 57331,
+  "illegal_terminal_and_recovery": 50521,
+  "math_vectors": 27840,
+  "memory_scenarios": 7,
+  "board_uart_bytes": 5877,
+  "board_frames": {
+    "pong": 2,
+    "snake": 1,
+    "boot": 1
+  },
+  "source_restoration": {
+    "status": "PASS",
+    "commit": "8fab9f6ad142e0b0fb3f8655411f5c538312f529",
+    "source_files": 67,
+    "regenerated_files": 10,
+    "combinational_mux": 477,
+    "cpu_state_bits": 33,
+    "physical_cpu_equivalent": 543,
+    "clock_audit": {
+      "status": "VERIFIED",
+      "verification": "static_structure_only_not_deadtime",
+      "physical_mux_count": 20,
+      "physical_delay_cells": 16,
+      "decoder_mux_count": 2,
+      "safe_hold_mux_count": 2,
+      "selected_tap": 8,
+      "effective_delay_cells": 8,
+      "unselected_tail_cells": 8,
+      "generator_state_bits": 0,
+      "feedback_cycles": 0,
+      "extra_tap_mux": 0,
+      "cpu_mux_count_separate": 543,
+      "total_excluding_buffers": 563,
+      "selected_tap_immediate_next_stage_inputs": 1,
+      "selected_tap_decoder_inputs": 2,
+      "selected_tap_total_direct_mux_input_loads": 3,
+      "load_note": "Only immediate next-stage I0 is directly parallel; all later cells are not lumped in parallel. Test-pad/wiring/probe loads remain unknown.",
+      "source_sha256": "36e79a49772f600841ce1d33471dba9f6847fcdfce4c639a45ef7f352c2dd559",
+      "primitive_sha256": "f89d2222f529e13f9188b6cf2f119eb60429d8e15ae7e3b03fdcae54cc2352d7"
+    },
+    "archived_evidence_files": 74,
+    "limits": "Source/evidence restoration; Python, XSIM, synthesis and hardware are separate checks"
+  },
+  "synthesis": "PASS FUNCTIONAL_STORAGE 477 muxes; no new implementation/bitstream/hardware run",
+  "python_environment": "new isolated Python3.12 venv, requirements lock installed; host ensurepip absent, created --without-pip and provisioned by existing pip --python",
+  "logs": {
+    "clean_python.txt": {
+      "path": "build/github_publish_20261104/clean_python.txt",
+      "sha256": "b3ba2ae07088694caf8b7f0247618c27eec7f8b3b5ff764b89804687f76995a5"
+    },
+    "clean_core_xsim.txt": {
+      "path": "build/github_publish_20261104/clean_core_xsim.txt",
+      "sha256": "c344bb5e9a26fb23b1e6947afc99c414a321e4fcde5f34d42279ff310dc5059b"
+    },
+    "clean_board_xsim.txt": {
+      "path": "build/github_publish_20261104/clean_board_xsim.txt",
+      "sha256": "486ae505c8ee9a52c092ff2d568a813e6e4442f6c63c50b19a473918f2d7e120"
+    },
+    "clean_synthesis.txt": {
+      "path": "build/github_publish_20261104/clean_synthesis.txt",
+      "sha256": "00a5751daa656046ed3cfbff29d4c75754cd150aa909dae5925b16918f5ac27b"
+    },
+    "clean_dependencies.txt": {
+      "path": "build/github_publish_20261104/clean_dependencies.txt",
+      "sha256": "4d3852cc6d4c543cb994691547c60c76c25045bccbf41791e2ba5d3b4b24afbe"
+    }
+  }
+}

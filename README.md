@@ -65,7 +65,7 @@ results/                 # 原始实测数据，Git忽略
 
 ## 常用命令
 
-所有命令从仓库根目录执行，工具路径按本机安装设置。
+所有命令从仓库根目录执行，工具路径按本机安装设置。Ubuntu精简安装若缺少ensurepip，需先安装系统python3.12-venv包；本轮隔离恢复使用`venv --without-pip`加已有pip的`--python`参数向全新环境安装同一依赖快照，没有复用旧build数据。
 
 ```bash
 # 新检出的Python环境；Vivado须由使用者单独安装并配置许可

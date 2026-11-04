@@ -28,7 +28,7 @@
       "before_sha256": "05f9e18d63508d7a94caf0d9283b6cc85d75afd2473edd5e913ea6be31a7f139",
       "current_files": {
         "docs/m11/README.md": "c96d7a6c4da0b8d393258105b165414442dd40118d839c7f4657881916ec6585",
-        "README.md": "0f14bf3feef9cfb9c64ff395ba8afd9e885a847e2d383f65415b82f570c8d95a"
+        "README.md": "6f7428b073eb8dd88019cbeb0b343eaa7dca28c8b354126fdf0140efc3a6e02a"
       },
       "change_type": "SPLIT_OR_REPLACED_WITH_EXPLICIT_LINEAGE"
     },
@@ -561,6 +561,14 @@
       "previous_current_sha256": "c320b67ed9cbf2890ba4830a1b63c2fde4a63b3b3acd614d035a9b3b40f17e38",
       "current_sha256": "0f14bf3feef9cfb9c64ff395ba8afd9e885a847e2d383f65415b82f570c8d95a",
       "reason": "Explicit user-authorized Private publication: source/evidence navigation and cache/credential ignore rules; original evidence and tag objects unchanged"
+    },
+    {
+      "date": "2026-11-04",
+      "task": "SWCELL-GITHUB-PUBLISH-20261104",
+      "path": "README.md",
+      "previous_current_sha256": "0f14bf3feef9cfb9c64ff395ba8afd9e885a847e2d383f65415b82f570c8d95a",
+      "current_sha256": "6f7428b073eb8dd88019cbeb0b343eaa7dca28c8b354126fdf0140efc3a6e02a",
+      "reason": "Document verified clean Python bootstrap and required Ubuntu venv dependency; no functional source change"
     }
   ]
 }

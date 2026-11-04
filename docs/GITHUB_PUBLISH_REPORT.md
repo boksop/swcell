@@ -1,6 +1,6 @@
 # SwCell 首次GitHub Private发布记录
 
-2026-11-04，Asia/Shanghai。**当前状态：本地准备中；GitHub认证尚未完成，未创建远程仓库、未push。** 本页后续只记录真实执行结果，不预填URL/SHA。
+2026-11-04，Asia/Shanghai。**当前状态：本地V3定版及干净恢复完成，已认证boksop；尚未创建远程仓库、未push。** 本页后续只记录真实执行结果，不预填URL/SHA。
 
 ## 初始核查
 
@@ -22,18 +22,26 @@ V3原样精选证据74份、2340847字节及来源SHA见[清单](evidence/m20_v3
 
 ## 工具与依赖
 
-GitHub CLI v2.103.3由[官方发行包](https://github.com/cli/cli/releases/tag/v2.103.3)安装，发行包SHA256与官方checksums一致，路径~/.local/bin/gh；当前未登录。用户使用浏览器gh auth login，不提供Token到聊天或代码。
+GitHub CLI v2.103.3由[官方发行包](https://github.com/cli/cli/releases/tag/v2.103.3)安装，发行包SHA256与官方checksums一致，路径~/.local/bin/gh；已认证活动个人账号boksop，repos/boksop/swcell查询404、origin为空。用户使用浏览器gh auth login，不提供Token到聊天或代码。
 
 Vivado/XSIM2026.1.1（V3）、历史M11的2022.1、厂商安装与许可需使用者提供；Python3.12及依赖快照在host/python。当前V3无外部XCI/未纳管IP/子模块/Git LFS依赖。大bit/原始完整波形只能按本机索引另行备份。
 
-## 尚待执行
+## 已完成本地定版与恢复
 
-1. 本地分单元提交及干净恢复：网表字节/477+33、Python、XSIM和综合。
-2. 创建明确FUNCTIONAL_STORAGE通过、STRICT_MUX未放行的V3 annotated Tag。
-3. gh认证后确认owner/名称/无冲突origin，创建Private仓库，正常push main/正式tags。
-4. 远程main/tag SHA、独立远程检出、README/关键文件/无缓存验证。
+- 外设诊断commit：b4081d31d79c1b477a44627ffd8be9cd50ec8d57，31文件。
+- V3 commit：8fab9f6ad142e0b0fb3f8655411f5c538312f529，180文件独立变更；既有历史不改。
+- V3 annotated Tag：m20-v3-fpga-hardware-verified，目标8fab9f6，Tag对象d47fe2b32114136ac7cc46ea3bbc1a6c13f4cd25。
+- [干净恢复记录](evidence/m20_v3_recovery_20261104.json)：67份源SHA、10份生成文件字节相同、477/33/543 CPU及20发生器审计、74份精选证据SHA；Python168项、核心87/57331、50521非法终态/恢复、27840算术、7访存、板级5877字节UART及SPI/键位通过；Vivado全新综合477MUX通过。
+- 隔离检出未复制原build/results。创建全新Python3.12无pip环境后，通过已有pip --python安装版本快照13依赖；系统缺ensurepip已在README注明，未修改系统Python。
+- 本轮没有新P&R/bit/JTAG或实物测试，实际硬件结论来自已存F06路由/下载/用户确认。
+- 现有V2.1/V2.2/V2.3/V2.4四Tag对象未变。完整历史及当前候选模式扫描PASS，未匹配凭据/超限文件；厂商版权抬头均位于项目运行报告，人工保留来源，不包含软件/IP全文。
+- 手写源/文档whitespace检查通过；原样报告空格及CSV的CRLF按证据字节保留，不为diff检查而归一化。
 
-远程URL、main SHA、V3 commit/tag、最终跟踪数/仓库大小及恢复日志待实际完成后补充。当前不能声称已能通过GitHub连接器在线读取；Private库还需相应连接器/账号权限，未在本任务中验证该授权。
+## 远程待办
+
+创建Private https://github.com/boksop/swcell，推送main及5个正式tags；再校验远程main/tag对象、README、全部文件哈希及独立浅克隆。未实际完成前不宣称远程PASS。
+
+在线审查入口已具备源码和复现结构；ChatGPT Work需安装有权限的源码插件，Codex Cloud需连接并选择仓库，账号必须有仓库访问权，见[OpenAI官方Code review](https://learn.chatgpt.com/docs/code-review?surface=app)及[Cloud environments](https://learn.chatgpt.com/docs/environments/cloud-environments)。本机gh登录不等于ChatGPT连接器已授权，本次不代替用户配置连接器。
 
 ## 已知边界
 
