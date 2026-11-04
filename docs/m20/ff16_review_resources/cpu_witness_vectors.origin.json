@@ -1,0 +1,10 @@
+{
+  "source_relative_path": "build/m20_300/v24_ff16/deep_review_r4/cpu_witness_vectors.json",
+  "source_sha256": "bc82f706e3140657cff41c80785b42bc34abb7f8129d1346778a0ae820314c74",
+  "kind": "byte-preserved original 79 isolated Boolean/trace witnesses; not regenerated history",
+  "vectors": 79,
+  "frozen_netlist_sha256": "7a9b0fd7eb6358b5a27d807eb2a44a00686ef461c50af8a5393010be01739427",
+  "original_cone_provenance": "cone_provenance.json",
+  "expected_replay": "cone_verification.json",
+  "physical_status": "NOT_VERIFIED"
+}

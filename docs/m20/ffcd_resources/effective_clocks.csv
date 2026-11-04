@@ -1,0 +1,17 @@
+profile,suite,d1_ns,d2_ns,rise_checks,fall_checks
+B_logic,instructions,22.000,22.000,51340,51340
+B_logic,games,22.000,22.000,115651,115651
+B_logic,pressure,22.000,22.000,45,45
+B_logic,smoke,22.000,22.000,30,30
+B_timed,instructions,22.000,22.000,51340,51340
+B_timed,games,22.000,22.000,115651,115651
+B_timed,pressure,22.000,22.000,45,45
+B_timed,smoke,22.000,22.000,30,30
+C_logic,instructions,22.000,22.000,51340,51340
+C_logic,games,22.000,22.000,115651,115651
+C_logic,pressure,22.000,22.000,45,45
+C_logic,smoke,22.000,22.000,30,30
+C_timed,instructions,22.000,22.000,51340,51340
+C_timed,games,22.000,22.000,115651,115651
+C_timed,pressure,22.000,22.000,45,45
+C_timed,smoke,22.000,22.000,30,30

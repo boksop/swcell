@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-04",
+  "status": "VERIFIED_EVIDENCE_AND_TOOL_CHECKS_NOT_PHYSICAL_SIGNOFF",
+  "old_staged_blob_entries_unchanged": 90,
+  "old_snapshot_file_hashes_unchanged": 31,
+  "v23_protected_files_matched": 206,
+  "v23_formal_report_matches_head": true,
+  "old_AB_preserved": true,
+  "new_raw_index_entries": 30,
+  "all_pair_directions": 104,
+  "pairs_each": 1089,
+  "total_pairs": 113256,
+  "new_source_hashes_matched": true,
+  "new_bundle_sha256": "df1c3d4fe827d76fb68dfb35a0cc7afa24b5fb2eaeb180e57400259a016ded9b",
+  "python": {
+    "tests": 146,
+    "result": "PASS",
+    "seconds": 12.571,
+    "log": "build/m20_300/v24_ff16/deep_review_r4.python.log",
+    "sha256": "c1fa9143479971efb1a91f76c5c2b3f8fa95c31385f7cc60327926392ebc5871"
+  },
+  "unit_test_source_sha256": "94f6a52d3bd93f3741e3a2289d5ebc14592eeb4beaac01914702339ca9a315ac",
+  "documents_links_json_svg": "PASS",
+  "full_CPU_regression": "NOT_RUN",
+  "physical": "NOT_VERIFIED",
+  "git_commit_tag_remote_operations": "NONE",
+  "remaining_gate": "RETAIN_20_DO_NOT_ADMIT_C_D_YET"
+}

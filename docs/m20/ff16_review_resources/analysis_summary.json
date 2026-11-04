@@ -1,0 +1,9 @@
+{
+  "status": "VERIFIED_ANALYSIS_EXECUTION_NOT_PHYSICAL_SIGNOFF",
+  "real_paths": 79,
+  "delay_points": 816,
+  "leaf_points": 784,
+  "project_gate": "NO_C_D_FULL_REGRESSION",
+  "buffer_sources_sha256": "3f606a73609ee98e07d50ac8ba54c5b42bd4262dd87ba92a76257e5819130448",
+  "script_sha256": "19fb39b778d23c834bb4d4585f3abeac768961aa529d58e8117ee0676d28b3e4"
+}

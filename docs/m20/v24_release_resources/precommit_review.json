@@ -1,0 +1,563 @@
+{
+  "status": "PASS_PRECOMMIT_SCOPE_REVIEW",
+  "history_commit": {
+    "commit": "86fdc9e036fb7beee16c896ee00e5502b5391708",
+    "files": 90,
+    "original_staged_blobs_preserved": true
+  },
+  "original_v23_tag_object": "eaa85bf5908549f6c0c2fcb9b43a0a912a04f48b",
+  "original_v23_tag_commit": "aecf570c2e33563179e95e1615fd005cc19817f5",
+  "original_staged_count": 90,
+  "original_staged_files": [
+    {
+      "path": "README.md",
+      "index_blob": "66f958c3517e154a3bcd30c8ba0e69994e790ed4",
+      "bytes": 13041,
+      "sha256": "afaf1540438dfac2f342e6eb53c4c1e49ee319e844cd46f46ca50630789f17f0"
+    },
+    {
+      "path": "TASK_PROGRESS.md",
+      "index_blob": "960621167c2099270fa1641553091a84ef117f44",
+      "bytes": 1867,
+      "sha256": "d1726c4766b72f5e5081ddcccb2640621a1fda55b3c2413916b60dfd0f2fbdf8"
+    },
+    {
+      "path": "docs/m20/M20_COMPACT_TWO_PHASE_PROPOSAL.md",
+      "index_blob": "ae160084aa7119a105d402475a89e844dcf3f23d",
+      "bytes": 8064,
+      "sha256": "84d99a9f07dd36815c99736d410421f1950ec83bafafa4c1867478260a06d05e"
+    },
+    {
+      "path": "docs/m20/M20_RELEASE_HISTORY.md",
+      "index_blob": "09ab45892fb0310047a1eaf636ff3a447761fc6b",
+      "bytes": 3324,
+      "sha256": "7de71aa5a6584fc5c5a52d1a5a5d13ab02d87c4aabec8d949169a68e9d26c5f8"
+    },
+    {
+      "path": "docs/m20/M20_V23_V24_PRE_IMPLEMENTATION_REVIEW_20261103.md",
+      "index_blob": "e669a9d764a71907e8a2081dbc8b9c64c7af591a",
+      "bytes": 8151,
+      "sha256": "fd1315c5224ec779eaafa16e548818e7a0b1d38e66586e8bbd9deeea057b8cf1"
+    },
+    {
+      "path": "docs/m20/M20_V24_ARCHITECTURE.md",
+      "index_blob": "59d103487a6844cf23b0a44e8baa4c46e32c2fc7",
+      "bytes": 5921,
+      "sha256": "a9779c0dbae64d4ca3fee6d2e917fb57a5d472cc90817290b6eebec98b901a2b"
+    },
+    {
+      "path": "docs/m20/M20_V24_DELAY_TAP_DESIGN.md",
+      "index_blob": "2c7bc6bfa155ef35764cddcc87c8aebe157ec702",
+      "bytes": 5638,
+      "sha256": "3131824c9cda93f017a74648db0c89396aa14d8374253406dcc8db07c01104c2"
+    },
+    {
+      "path": "docs/m20/M20_V24_DESIGN_REVIEW.md",
+      "index_blob": "82224b43cffd4012bae47a1dcfbeb6a963542c66",
+      "bytes": 8726,
+      "sha256": "f47bffbd9c94cabe5455277afa136c6170494acb359f1e2cb8eb084b218b8cbc"
+    },
+    {
+      "path": "docs/m20/M20_V24_FEEDFORWARD_ARCHITECTURE.md",
+      "index_blob": "916beac30765e7df1dfc106c69af2b03422a9376",
+      "bytes": 6063,
+      "sha256": "e998dd5cb78bd1cc675dfc931932f48fa42105ec62362575a78e086313da32da"
+    },
+    {
+      "path": "docs/m20/M20_V24_FPGA_MEMORY_TIMING.md",
+      "index_blob": "3102959ae09503e81ab2e39aa6bcebfec9266a9d",
+      "bytes": 6791,
+      "sha256": "371239474ab035882fd353d2630036b0ef002e94d88ed7daf391428777c1070b"
+    },
+    {
+      "path": "docs/m20/M20_V24_MUX_AUDIT.md",
+      "index_blob": "c043dbe9d06d0a0782c34d8615815af52da37f0f",
+      "bytes": 4261,
+      "sha256": "e1575e31272c2d019b34b5faec214fd7e188e3047377e2dcfd3eafe99ef956ca"
+    },
+    {
+      "path": "docs/m20/M20_V24_NONOVERLAP_VERIFICATION.md",
+      "index_blob": "b5f3427b254cbf984ed747e15f4a1a9ad3ce3db4",
+      "bytes": 8492,
+      "sha256": "b4492c9714ea7d170525ef03b8a239ab07f242b681f2b375ad31716dbdb8a549"
+    },
+    {
+      "path": "docs/m20/M20_V24_SAFE_HOLD_CONTROL.md",
+      "index_blob": "3fe38bae942d08c38f9552d7bc3b37120814f467",
+      "bytes": 7112,
+      "sha256": "2d171f5afb09bc126d505fff1cee85ce04f8b54ca27b999c381f2633b779cc9d"
+    },
+    {
+      "path": "docs/m20/M20_V24_TEST_REPORT.md",
+      "index_blob": "0b576a363687243c53614d3d2053b42bf4fc072d",
+      "bytes": 7789,
+      "sha256": "b788548a47c32dec2241f8ac44e329d28b4e5332666ed5fbd9ba18d59674cadf"
+    },
+    {
+      "path": "docs/m20/M20_V24_TIMING_MODEL.md",
+      "index_blob": "b189813d4f68b28645a92d8c6185e3e30e73de6f",
+      "bytes": 7548,
+      "sha256": "36ed521445a6ba36bbf4fb83e5a719df11c9016b0ae97253d212f1a682124156"
+    },
+    {
+      "path": "docs/m20/README.md",
+      "index_blob": "d5211e1373bc3cf982c815d877740c0096245cd7",
+      "bytes": 12391,
+      "sha256": "dc09352c472e5de41f0794d1cf6b271373000c7f024aa967accc5663637b673b"
+    },
+    {
+      "path": "docs/m20/compact_clock/connections_n8.csv",
+      "index_blob": "df75ed5ec23ae108d6c4d92f4973c3176a6b09d5",
+      "bytes": 613,
+      "sha256": "eac4bd75e2d48ac8166c8786e9e96baba98cfe5aa61e9f35982094f54b9c299e"
+    },
+    {
+      "path": "docs/m20/compact_clock/proposal.json",
+      "index_blob": "118f764f14981f120a13218488fbcc6d460573b3",
+      "bytes": 905,
+      "sha256": "5f8c42594b8a207b29670705dcfc84be11f22ff335c39d0166acf09f1908fcc0"
+    },
+    {
+      "path": "docs/m20/ff16_resources/additional_checks.json",
+      "index_blob": "3ec9c15e7fd6f679339d9366a8f2717d2f38a627",
+      "bytes": 31984,
+      "sha256": "faf4c6261548dbe81cfb0218a9990ac9502909a7eb62a30d80debc212c5ce456"
+    },
+    {
+      "path": "docs/m20/ff16_resources/cross_register_race.svg",
+      "index_blob": "394b690b5118eeb8c21d317212ba26668d58c1ca",
+      "bytes": 72348,
+      "sha256": "3c3fbb8660770b0b2f0f8e5562a2cf9bc0c0cc3998739604b12155208c1cde19"
+    },
+    {
+      "path": "docs/m20/ff16_resources/effective_margins.svg",
+      "index_blob": "7886ab7775e627613459cd7641d382d4a7378f54",
+      "bytes": 54531,
+      "sha256": "ccde0a5e083be8a101a86ce8c21af3318e8ebf198b176f622588f45e8d0ab0bd"
+    },
+    {
+      "path": "docs/m20/ff16_resources/evidence_sha256.csv",
+      "index_blob": "40db0b312c541546ed0d6cfd2279d19cc58724c1",
+      "bytes": 27130,
+      "sha256": "fe449761b452111b2e2a6c445141084585d940119274531a73aa5e081a617dc0"
+    },
+    {
+      "path": "docs/m20/ff16_resources/fall_penetration.svg",
+      "index_blob": "724c6385636dc96c8c7350f07d302abee97be147",
+      "bytes": 57483,
+      "sha256": "6665f8ac638831428f3aafedc15de630f772fedb07189eec3e309409b924cc2f"
+    },
+    {
+      "path": "docs/m20/ff16_resources/git_review.json",
+      "index_blob": "54aa2805b2f27fbecc6036a3ed85a7e348204179",
+      "bytes": 4680,
+      "sha256": "a6912fd0aa285f74b0533cc05848ea70a765a7a2569274deb6462628b2edb574"
+    },
+    {
+      "path": "docs/m20/ff16_resources/independent_cross_tap4.errors.csv",
+      "index_blob": "2afc475e91f342422d7c762195f5a5d5fb978b35",
+      "bytes": 230,
+      "sha256": "9e75f07074b55adf31792a5576df6e619ff793e37d4118448ce1ab7dce6066f5"
+    },
+    {
+      "path": "docs/m20/ff16_resources/independent_cross_tap4.trace.csv",
+      "index_blob": "aac437dcab4348d79ed2cf0ce4c4a4e68ba6179d",
+      "bytes": 60786,
+      "sha256": "afd35ac41ae4c119f6159bfe9d6f3cb30e0dd0abeb47603dba93bbcb0ec16bd3"
+    },
+    {
+      "path": "docs/m20/ff16_resources/input_sha256.json",
+      "index_blob": "6bff6a1425acc6122bfa761f4fb1d5733efc4b8d",
+      "bytes": 11301,
+      "sha256": "a42e5c547b20fc0aeb025ce272ac820889fb9f9614f790969d63d5ba7e4443d0"
+    },
+    {
+      "path": "docs/m20/ff16_resources/minimal_cross_register_counterexample.json",
+      "index_blob": "bfa2ef7e118e2676a99eca204880effc1c72b893",
+      "bytes": 3067,
+      "sha256": "bbe26c4dede16691c1b4601c51e2b802ac2c7f1c382676121e7aae1dde2659e8"
+    },
+    {
+      "path": "docs/m20/ff16_resources/mux_connections.csv",
+      "index_blob": "e7aa10e2f5bd623e0451dc5f8827ad20aea0a0e3",
+      "bytes": 1620,
+      "sha256": "78fffee3e35badb35b920e678a39129dc3aef41e485e241ba9623d2f4567421e"
+    },
+    {
+      "path": "docs/m20/ff16_resources/origin.json",
+      "index_blob": "5b81339ca1f5d01c11e565c867ea60f2bf7f8eca",
+      "bytes": 279,
+      "sha256": "27210e81e08f531c7ff1a43413ba8357ffc9088562c0e8fa133a37f4654d2c6f"
+    },
+    {
+      "path": "docs/m20/ff16_resources/parameter_envelope.json",
+      "index_blob": "5c8c3d1f903809a7d277f9538704c681ef067051",
+      "bytes": 2744,
+      "sha256": "28c73cff808119d5ffcef03b161e3351ddc92ac75acbb9b20243ca36206a0a6c"
+    },
+    {
+      "path": "docs/m20/ff16_resources/parameter_sources.json",
+      "index_blob": "503772349004efab3a772165f4af891c3529c741",
+      "bytes": 2491,
+      "sha256": "62b2582b0aa28099df7a4a36773c5fee88c56d6d25f6127756199228c46e2621"
+    },
+    {
+      "path": "docs/m20/ff16_resources/root_and_leaf_margins.csv",
+      "index_blob": "1cb7df019322bb768db9a09e8a7d8929f9f33a85",
+      "bytes": 5945,
+      "sha256": "3a9f08ea02f6cf6980b0e571bd79a5f86f79eb9ba1535e2de7d918beef9c7f26"
+    },
+    {
+      "path": "docs/m20/ff16_resources/signal_probes.csv",
+      "index_blob": "66eb2409a7bba68a33ef82ed3fce073eae7581aa",
+      "bytes": 1246,
+      "sha256": "64f1e72891950bc5a7bf0a62f2efc2fcc76ae04cd0f999d1dc39bf55316619fb"
+    },
+    {
+      "path": "docs/m20/ff16_resources/slave_late_tap4.trace.csv",
+      "index_blob": "ea02f8cd97e2efb8878af188f80ffd278c3ead58",
+      "bytes": 6072,
+      "sha256": "b733719d6a97b2b929ec443658ed763b23cfae4372334c6beb9043c20b1dad6a"
+    },
+    {
+      "path": "docs/m20/ff16_resources/small_verification.json",
+      "index_blob": "81882c8d8c60277e50ab5b21225c39b840a3d837",
+      "bytes": 30740,
+      "sha256": "e9a12918974062d4e970a5f6e8075879724a622f383d92978fb4a83d82097aab"
+    },
+    {
+      "path": "docs/m20/ff16_resources/source_sha256.json",
+      "index_blob": "91f4e94074753411f026f6476e2d9b3baa0e0eb1",
+      "bytes": 1061,
+      "sha256": "2c34db7c5328e907682a8989e27485f9782961be1914d27a6eb133cd4e64687c"
+    },
+    {
+      "path": "docs/m20/ff16_resources/structure_audit.json",
+      "index_blob": "92b52ab2418f6774cc0695336952f920179025d1",
+      "bytes": 4731,
+      "sha256": "d2b939802f679ea98e03403e66df63b73ec04463b2213f11a2daa6eeb1a59e9b"
+    },
+    {
+      "path": "docs/m20/ff16_resources/tap_assembly.csv",
+      "index_blob": "98605002c47035954acb626687560f8613420f51",
+      "bytes": 1013,
+      "sha256": "177a3d3bea352cda268348bed523aa716866a05f5103f3261fb698cbd30c392a"
+    },
+    {
+      "path": "docs/m20/ff16_resources/tap_loads.csv",
+      "index_blob": "9925ce4ca96af6e2dd990e9aa66210926ce53611",
+      "bytes": 4277,
+      "sha256": "13bbc4ffd8563fd149e25c6bb9e0796b59e5aaa55e692fd355c82dcc36a108a8"
+    },
+    {
+      "path": "docs/m20/ff16_resources/timing_results.csv",
+      "index_blob": "3044671e40bcc9c55ae281dd946062f998576fe1",
+      "bytes": 5055,
+      "sha256": "aa2c9861a80db3f85289a53aa9b045a8bcbd77da929ba49286014eb82fe15818"
+    },
+    {
+      "path": "docs/m20/ff16_resources/upload_bundle.json",
+      "index_blob": "ea82a46ba170ada226fc5479f62a1e3c86e4747a",
+      "bytes": 204,
+      "sha256": "114d78be6878d0137108c412c2ff28b56665dadfc54b0e96463f5cf2189366bb"
+    },
+    {
+      "path": "docs/m20/v24_resources/additional_checks.json",
+      "index_blob": "008cf9158b3bbad3baa02dc5c6e44444b7f9d8b4",
+      "bytes": 485,
+      "sha256": "11e6d133b37506adbaf3d1bb6d445b857ba666c1a14edea203d395f7a93e1d59"
+    },
+    {
+      "path": "docs/m20/v24_resources/common_reference_service.svg",
+      "index_blob": "b8bd7d61e2d18658b04048ffb7a9e739aca3a88f",
+      "bytes": 82637,
+      "sha256": "784d51b6eeeb8fd9d11763b82c27eeac58ab140962af922a753ecfe465526317"
+    },
+    {
+      "path": "docs/m20/v24_resources/evidence_sha256.csv",
+      "index_blob": "b0b2e74f5f36a08af23d932f7f70c276531a8cb4",
+      "bytes": 870845,
+      "sha256": "0a5aba6d7c61fea613de39aac191f90631b8aeb46a17b871105ae7e9dc8fc989"
+    },
+    {
+      "path": "docs/m20/v24_resources/mux_budget.csv",
+      "index_blob": "34396f2e78bd07cee3f99d5ed5a9017b4c6bac37",
+      "bytes": 260,
+      "sha256": "520d809b81be264a7747926536b54d57690f4159afd054c89a49b74059534628"
+    },
+    {
+      "path": "docs/m20/v24_resources/origin.json",
+      "index_blob": "f5e9d1c2180bec65423f9a2dad00cf01a5661a1c",
+      "bytes": 199,
+      "sha256": "f9a06686842fbdba8de0c2b4c59dee22fbf8d19a657402d01c0b991b5c6970b0"
+    },
+    {
+      "path": "docs/m20/v24_resources/regression_summary.csv",
+      "index_blob": "ec523dfda98f64485201ff01ae88909d5d1080d6",
+      "bytes": 611,
+      "sha256": "71d5eb4f0a4dfd2f8e19ce5ad8fdc5e0225021a98a0e1ef1580a24b1324ad601"
+    },
+    {
+      "path": "docs/m20/v24_resources/resource_audit.json",
+      "index_blob": "282a1666184126cdeadbbf9a57a2e7f1dd7fe7e0",
+      "bytes": 283,
+      "sha256": "e6c8693de9c47aee436ea6be978a7edbe4346d4884ac07530aa4be3ef27df4aa"
+    },
+    {
+      "path": "docs/m20/v24_resources/review_status.json",
+      "index_blob": "d58c9d0cafd89bd365822bc5f48b22e625b7f5c4",
+      "bytes": 435,
+      "sha256": "d8d6848eee9668d2663e2f5563455b6de96796818535e2d5c013b546bb31ae25"
+    },
+    {
+      "path": "docs/m20/v24_resources/source_sha256.json",
+      "index_blob": "1ef7911a937379978e50c93297ce274b85972d27",
+      "bytes": 9535,
+      "sha256": "ba570e668a697336ddaa70bf301cfec94239995caf7506cb5a75da7a926260cf"
+    },
+    {
+      "path": "docs/m20/v24_resources/timing_budget.json",
+      "index_blob": "9bfd251da02bd971f3dcd7d00196c595c7ecd0f7",
+      "bytes": 1048,
+      "sha256": "194e9b3495b15cd4f2b59090a1a76bc1105c8dae14530a16a5a2cb3448f3ed63"
+    },
+    {
+      "path": "docs/m20/v24_resources/timing_trace.csv",
+      "index_blob": "1be14bc8b28a9ba27f92290a784372cf432305c9",
+      "bytes": 6307,
+      "sha256": "dc816c4d17f653c758f41cc0637ff576b8b67a74953bcdf2f57d4258760d507a"
+    },
+    {
+      "path": "docs/m20/v24_resources/verification.json",
+      "index_blob": "6472dc2e03116cf050f45896d351b3b0a1e96251",
+      "bytes": 3034,
+      "sha256": "c45d371a9458cbecc246fa8a74750e018ab4a41bf0bed27524e92cedbe5b0b8b"
+    },
+    {
+      "path": "docs/tasks/m20-compact-clock-redesign-20261103.md",
+      "index_blob": "c5c4d7cc633a261ebe191357d9e3bc3a5e0d4237",
+      "bytes": 1784,
+      "sha256": "2bd16fd2a425d7e2abfea71bcebda044f9760141bafd304af624794b1c0e3d36"
+    },
+    {
+      "path": "docs/tasks/m20-v24-ff16-20261103.md",
+      "index_blob": "121702f249e305852a1b80ac25c745a0ac202ab3",
+      "bytes": 8602,
+      "sha256": "f34fddbb5574429168c74c843827978385e76dba5d11d99e6816e6d03a98a64d"
+    },
+    {
+      "path": "docs/tasks/m20-v24-implementation-20261103.md",
+      "index_blob": "196ce678f24b647214d0c323bfd0e328c227d9db",
+      "bytes": 4854,
+      "sha256": "a377dc33749ee48a99cd9a5ede41258a36d3b675a0554c774659c013f5475e4c"
+    },
+    {
+      "path": "docs/tasks/m20-v24-precheck-20261103.md",
+      "index_blob": "f9da388511ad2b80736b8f7cd425d292a8c38a07",
+      "bytes": 2883,
+      "sha256": "adea6b8dfa83a80ee4eba1d574c75ae6b089a9e96424228c8f6b48274d8d615b"
+    },
+    {
+      "path": "host/python/m20/ff16_structure.py",
+      "index_blob": "58ff566625e1defa5efb703fc8521b7e7a019825",
+      "bytes": 11537,
+      "sha256": "36d19f596d72ba3b977cbb48b01883d229d60560895e85defa92c7464ff542bd"
+    },
+    {
+      "path": "host/python/m20/ff16_timing.py",
+      "index_blob": "0c7ecb4b5af285d148d5dc03041ecd3f439563e0",
+      "bytes": 10784,
+      "sha256": "b1c79f4ff6bc6a172df3f72310bda6a1afe3a69406418edd3d5f9bf58393c79e"
+    },
+    {
+      "path": "host/python/m20/v24_audit.py",
+      "index_blob": "4f4cf9f75509c41eab5c7a689775c780a73ef222",
+      "bytes": 2304,
+      "sha256": "5a82c49e1bd18d17710c356e9a8952dfecd46452d3fd1bafb3d98f4fe514f019"
+    },
+    {
+      "path": "host/python/m20/v24_build.py",
+      "index_blob": "422255c6a2f01f19e101c0909e04a9fc287ed05d",
+      "bytes": 4316,
+      "sha256": "dafa8922955415d5c31ad2d1bccc3ca5724739a27e29b2208d462077f8735765"
+    },
+    {
+      "path": "host/python/m20/v24_model.py",
+      "index_blob": "554d19942345d549f7d0ab48bd78bfade63dad76",
+      "bytes": 1327,
+      "sha256": "58b0f860e5713df94a639ce2b9627cadf8c75b8fd651fac5da944f830eee8513"
+    },
+    {
+      "path": "host/python/m20/v24_verify.py",
+      "index_blob": "0afe0212931001d16272914ad9516e96b97eff92",
+      "bytes": 5290,
+      "sha256": "ab0bc5e12747a515e419d43f6834622534a07a7ad1458a9adec92e51e4764cf8"
+    },
+    {
+      "path": "host/python/tests/test_m20_ff16_structure.py",
+      "index_blob": "540937f994146550237c96ba5cbfbfa019ce8ad6",
+      "bytes": 3029,
+      "sha256": "7c4518b4d15dcce3b149918dfbe04ec67d904b89e750edd1c4dfa5182c6cfda6"
+    },
+    {
+      "path": "host/python/tests/test_m20_ff16_timing.py",
+      "index_blob": "27bb5e2ef6946a993bfb062079aa214c73f736bc",
+      "bytes": 1968,
+      "sha256": "2df6759e816a531026b78c11a31d943e2b6e631150060095d1ee001842d1b42e"
+    },
+    {
+      "path": "host/python/tests/test_m20_v24.py",
+      "index_blob": "c0e2861c43f130cb0d2048dcb747b86b8e903a47",
+      "bytes": 1765,
+      "sha256": "8f5b1ff87cef2b3b3d0c211ed925f03659977130c26b8135ff990f9ddec353e7"
+    },
+    {
+      "path": "rtl/m20/clock_proposals/swc157_phase_feedforward.sv",
+      "index_blob": "84ba2633c072ed00fc43e26ba5f81cc297e82684",
+      "bytes": 1277,
+      "sha256": "dd21dca10aafb45555c810fc95ae8b82be847658560223d2ea90f9f1d5ec855a"
+    },
+    {
+      "path": "rtl/m20/v24/generated/swc157_phasegen_v24.json",
+      "index_blob": "649d55ed85c1dc8c46c3269ecfeb9cc653ca82f0",
+      "bytes": 13671,
+      "sha256": "7d0d7d712b6fd5d884b59a11821bd2509300f82a24e66b9045453756aa3b1738"
+    },
+    {
+      "path": "rtl/m20/v24/generated/swc157_phasegen_v24.sv",
+      "index_blob": "95c1708576dd4c020eaab9e9b310a3b69b559b54",
+      "bytes": 15948,
+      "sha256": "29cc67b99a1e326414b1b10fabe283585819291fb5ab4119b5562b10be8fb0ef"
+    },
+    {
+      "path": "rtl/m20/v24/swc_v24_memory_service.sv",
+      "index_blob": "43543be4842844891bda874242d0520ec62afc84",
+      "bytes": 1823,
+      "sha256": "f18589c32bd0170e3ba33f61ef01cc9a3a798385d0a3b902a0a31000018b69db"
+    },
+    {
+      "path": "rtl/m20/v24_ff16/swc_ff16_mux157.sv",
+      "index_blob": "73238b1154d05ff988e2dfcb92183d2920ad250f",
+      "bytes": 227,
+      "sha256": "f89d2222f529e13f9188b6cf2f119eb60429d8e15ae7e3b03fdcae54cc2352d7"
+    },
+    {
+      "path": "rtl/m20/v24_ff16/swc_ff16_phasegen.sv",
+      "index_blob": "d10ea360e8dcbe5729d917da138dfd32b1ec76d2",
+      "bytes": 2593,
+      "sha256": "36e79a49772f600841ce1d33471dba9f6847fcdfce4c639a45ef7f352c2dd559"
+    },
+    {
+      "path": "sim/m20_ff16/run_timing.tcl",
+      "index_blob": "cbe81296e12a4810f46eeab12a716e3d861b1d5d",
+      "bytes": 225,
+      "sha256": "86238879927e4f2b08e74fc5855d91d958c6983846f5706d311f856e40d15bac"
+    },
+    {
+      "path": "sim/m20_ff16/swc_ff16_timing.sv",
+      "index_blob": "00ddc2aecd60d5158ff32bb79e0e8d91a63edf7f",
+      "bytes": 2472,
+      "sha256": "ec23a8b29f9641fcac35711da57786e8012b877843eab721ddb5eb8eabe5ae84"
+    },
+    {
+      "path": "sim/m20_ff16/tb_ff16.sv",
+      "index_blob": "19faff3682a98fb7f2b2b50494cc0ccce456b0bd",
+      "bytes": 10245,
+      "sha256": "b9ab3b63109eb83fcb37ead4cf3d808cf63a349d9e4b5004ba366645d499aa20"
+    },
+    {
+      "path": "sim/m20_ff16/tb_ff16_model.sv",
+      "index_blob": "3f021c2c3ee131f2f3f5435603617be47b0ac079",
+      "bytes": 1590,
+      "sha256": "37d97317a3668146d81514e9aca7721ba866fdb869c05c41161a940a18265d0d"
+    },
+    {
+      "path": "sim/m20_ff16_static/tb_ff16_structure.sv",
+      "index_blob": "189a45699b96914bb1d27e726c714997253950ed",
+      "bytes": 1686,
+      "sha256": "00963ddbe79502feda17a24ae9b924cd932568048f6d6df6f6baf39bae380b59"
+    },
+    {
+      "path": "sim/m20_v24/m20_v24_fpga_memory.sv",
+      "index_blob": "cd922a243d2b56985200f9d8d3c4b147d90ba104",
+      "bytes": 1185,
+      "sha256": "31e674a09e19bbb8b255a11484248cc1ef26e7994ded8b3e3a0c4bfcc230df4d"
+    },
+    {
+      "path": "sim/m20_v24/tb_m20v24_cpu.sv",
+      "index_blob": "671a26ff5d5e34f014a113fbdcfad68dc13013a8",
+      "bytes": 8397,
+      "sha256": "31990171823bb50d3baaa1fcf3fac598bf4d4277bb99bfde1be20d6cb32d0608"
+    },
+    {
+      "path": "sim/m20_v24/tb_m20v24_illegal.sv",
+      "index_blob": "b919c6c05a6bb771e3d24c2e9994c29718a83491",
+      "bytes": 2551,
+      "sha256": "88a51d58a78730be94d82085ad91280bc9813e2e489130dff0932e37fecd7857"
+    },
+    {
+      "path": "sim/m20_v24/tb_m20v24_memory.sv",
+      "index_blob": "8698293b1586af5a3650422b7738583bf0c3a90f",
+      "bytes": 3649,
+      "sha256": "894084997ac3bc569e4b4b2d60c0de3240065fe9572b0c74508a249a368070cc"
+    },
+    {
+      "path": "sim/m20_v24/tb_v24_generator.sv",
+      "index_blob": "aaaf13a94d5d762f204a836c05df705421aecd9b",
+      "bytes": 4047,
+      "sha256": "fdac58b6e11548065f0666137d4aed7647986614da4e1b9cb2f7f50c0bdd6c3a"
+    },
+    {
+      "path": "sim/m20_v24/v24_fixture.svh",
+      "index_blob": "d5e82d4620c8fa3941fec7458d23628af94c76dc",
+      "bytes": 30259,
+      "sha256": "df1b4c54a3e8394b37ad7d7edc084ed7e4594a386544b49a6d5d85449c4097c0"
+    },
+    {
+      "path": "sim/scripts/run_m20_ff16_small.sh",
+      "index_blob": "aed88394624f1e348e017b909ed13db78bb46be1",
+      "bytes": 2037,
+      "sha256": "03eafc3817a182a103f7ef1a4cf637fa29aefc1ea39b2b80baea46bdfae0188b"
+    },
+    {
+      "path": "sim/scripts/run_m20_v24.sh",
+      "index_blob": "58e1c830c6cdcef27b822294a3f79282ad8c5242",
+      "bytes": 2555,
+      "sha256": "4b39666c168a45cb409f68608eea0184c2daa6f91a7b9e0e565cb7d862741298"
+    },
+    {
+      "path": "sim/scripts/run_m20_v24_dev.sh",
+      "index_blob": "daf3636698b62d718c2fa1c678f9989826cf65b8",
+      "bytes": 1528,
+      "sha256": "f57c6b7d800cea767a06c8b4b5c6c17625c4fa33eabbeb773660c449c207f8a7"
+    },
+    {
+      "path": "sim/scripts/run_m20_v24_unit.sh",
+      "index_blob": "9300bec06c427b1e2b1061154590a73b1fa2bdb1",
+      "bytes": 1255,
+      "sha256": "7b9489fcb445597a5c8235e86f8d225b5a55abafac3ca97d96cfaeae84705cd7"
+    },
+    {
+      "path": "tools/m20/ff16_evidence.py",
+      "index_blob": "90a41fbcb5442a6a2022657e2ecd7200835274d3",
+      "bytes": 7867,
+      "sha256": "147a26f6c99b7d27ed55076d6d1f1c497f7131352c00cc2955e41941538a4bba"
+    },
+    {
+      "path": "tools/m20/v24_evidence.py",
+      "index_blob": "fb097e035c3799bbaae8bd850539d80e6621dfe5",
+      "bytes": 3121,
+      "sha256": "cfa2295078a6b0057978b818b52dc49c25165f0d196d09584ce89a76aa3aaaab"
+    }
+  ],
+  "technical_fingerprinted_files": 512,
+  "reviewed_tree_paths": 519,
+  "large_generated_cache_or_wave_newly_included": false,
+  "existing_small_v23_negative_vcd_preserved": true,
+  "raw_data_excluded_and_left_in_place": true,
+  "original_AB_and_full_system_records": "UNCHANGED",
+  "commit_tag_remotes": "LOCAL_ONLY_NO_REMOTES",
+  "new_replay_vectors_source": "byte copy, 79 vectors /157071 bytes; origin adjacent to source",
+  "new_replay_result": "632 /131 mismatches; exact expected per-path IDs match",
+  "python_precommit": "151 PASS /12.858s"
+}

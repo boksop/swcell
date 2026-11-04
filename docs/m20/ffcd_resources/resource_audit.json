@@ -1,0 +1,14 @@
+{
+  "status": "VERIFIED",
+  "comb_mux": 477,
+  "state_bits": 33,
+  "storage_mux": 66,
+  "cpu_total": 543,
+  "generator_mux": 20,
+  "total_excluding_buffers": 563,
+  "physical_timing": "NOT_VERIFIED",
+  "native_ff_in_cpu_latch_branch": 0,
+  "fpga_control_and_memories": "EXCLUDED_FROM_EXTERNAL_157_BUDGET",
+  "generated_sv_sha256": "c93664d07eae09e7d6bf35bad016e33f6ea4e149ebbb0eb5284901922569932e",
+  "method": "exact frozen combinational body, independent D/Q/QM aliases, exact storage-only branch, pair topology, fixed20 audit"
+}

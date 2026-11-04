@@ -1,0 +1,189 @@
+{
+  "status": "PASS",
+  "classification": "CONDITIONAL_DIGITAL_SYSTEM_VERIFIED_NOT_PHYSICAL_SIGNOFF",
+  "profiles": [
+    {
+      "profile": "A_logic",
+      "status": "PASS",
+      "suite": "instructions",
+      "cases": 49,
+      "events": 22223
+    },
+    {
+      "profile": "A_logic",
+      "status": "PASS",
+      "suite": "games",
+      "cases": 38,
+      "events": 35108
+    },
+    {
+      "profile": "A_logic",
+      "status": "PASS",
+      "suite": "pressure",
+      "cases": 5,
+      "events": 12
+    },
+    {
+      "profile": "A_logic",
+      "status": "PASS",
+      "suite": "smoke",
+      "cases": 2,
+      "events": 9
+    },
+    {
+      "profile": "A_timed",
+      "status": "PASS",
+      "suite": "instructions",
+      "cases": 49,
+      "events": 22223
+    },
+    {
+      "profile": "A_timed",
+      "status": "PASS",
+      "suite": "games",
+      "cases": 38,
+      "events": 35108
+    },
+    {
+      "profile": "A_timed",
+      "status": "PASS",
+      "suite": "pressure",
+      "cases": 5,
+      "events": 12
+    },
+    {
+      "profile": "A_timed",
+      "status": "PASS",
+      "suite": "smoke",
+      "cases": 2,
+      "events": 9
+    },
+    {
+      "profile": "B_logic",
+      "status": "PASS",
+      "suite": "instructions",
+      "cases": 49,
+      "events": 22223
+    },
+    {
+      "profile": "B_logic",
+      "status": "PASS",
+      "suite": "games",
+      "cases": 38,
+      "events": 35108
+    },
+    {
+      "profile": "B_logic",
+      "status": "PASS",
+      "suite": "pressure",
+      "cases": 5,
+      "events": 12
+    },
+    {
+      "profile": "B_logic",
+      "status": "PASS",
+      "suite": "smoke",
+      "cases": 2,
+      "events": 9
+    },
+    {
+      "profile": "B_timed",
+      "status": "PASS",
+      "suite": "instructions",
+      "cases": 49,
+      "events": 22223
+    },
+    {
+      "profile": "B_timed",
+      "status": "PASS",
+      "suite": "games",
+      "cases": 38,
+      "events": 35108
+    },
+    {
+      "profile": "B_timed",
+      "status": "PASS",
+      "suite": "pressure",
+      "cases": 5,
+      "events": 12
+    },
+    {
+      "profile": "B_timed",
+      "status": "PASS",
+      "suite": "smoke",
+      "cases": 2,
+      "events": 9
+    },
+    {
+      "profile": "C_logic",
+      "status": "PASS",
+      "suite": "instructions",
+      "cases": 49,
+      "events": 22223
+    },
+    {
+      "profile": "C_logic",
+      "status": "PASS",
+      "suite": "games",
+      "cases": 38,
+      "events": 35108
+    },
+    {
+      "profile": "C_logic",
+      "status": "PASS",
+      "suite": "pressure",
+      "cases": 5,
+      "events": 12
+    },
+    {
+      "profile": "C_logic",
+      "status": "PASS",
+      "suite": "smoke",
+      "cases": 2,
+      "events": 9
+    },
+    {
+      "profile": "C_timed",
+      "status": "PASS",
+      "suite": "instructions",
+      "cases": 49,
+      "events": 22223
+    },
+    {
+      "profile": "C_timed",
+      "status": "PASS",
+      "suite": "games",
+      "cases": 38,
+      "events": 35108
+    },
+    {
+      "profile": "C_timed",
+      "status": "PASS",
+      "suite": "pressure",
+      "cases": 5,
+      "events": 12
+    },
+    {
+      "profile": "C_timed",
+      "status": "PASS",
+      "suite": "smoke",
+      "cases": 2,
+      "events": 9
+    }
+  ],
+  "participants": [
+    "Python ISA",
+    "V1 behavior",
+    "V21 IDEAL_FF",
+    "frozen V23 ModeA",
+    "feedforward ModeB",
+    "feedforward ModeC"
+  ],
+  "cpu_comb": 477,
+  "cpu_storage": 66,
+  "generator": 20,
+  "total_excluding_buffers": 563,
+  "isa_timing": "M20-300-V1-TIMING-0.1",
+  "physical_minimum_delay": "OPEN_NOT_A_DIGITAL_REGRESSION_GATE",
+  "historical_negatives": "PRESERVED"
+}

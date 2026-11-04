@@ -1,0 +1,18 @@
+{
+  "status": "VERIFIED",
+  "cases": 56,
+  "counts": {
+    "CONDITIONAL": 32,
+    "FAILED": 24
+  },
+  "normal_conditional": {
+    "4": 3,
+    "8": 8,
+    "12": 10,
+    "16": 11
+  },
+  "sources": 10,
+  "inputs": 116,
+  "evidence_files": 272,
+  "summary_sha256": "e9a12918974062d4e970a5f6e8075879724a622f383d92978fb4a83d82097aab"
+}

@@ -1,0 +1,9 @@
+{
+  "run": "/home/boksop/swcell/build/m20_300/v24_ff16/deep_review_r4",
+  "indexed_files": 30,
+  "indexed_bytes": 12374519,
+  "cpu_full_regression": "NOT_RUN",
+  "gate": "RETAIN_20_DO_NOT_ADMIT_C_D_YET",
+  "physical_signoff": "NOT_VERIFIED",
+  "old_AB_evidence": "preserved under docs/m20/ff16_resources and small_r4"
+}

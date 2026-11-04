@@ -30,3 +30,18 @@ Tags均为本地annotated对象。`m20-v2.1-logic-verified`只表示数字功能
 - aecf570c2e33563179e95e1615fd005cc19817f5：原48文件/证据一致性通过后提交；annotated tag m20-v2.3-two-phase-sim-verified仅模式A数字仿真，非外部Johnson或实体时序。
 - 5e601a9：V2.3用户确认正式报告及3个入口文件，未混V24审查。
 - V2.4候选：116发生器MUX+543核心，当前参数A/B/C完整对照PASS；独立Master/Slave选择弧混合角未覆盖，按用户要求暂停，不创建验收tag，不作正式通过结论。见M20_V24_DESIGN_REVIEW.md。
+
+## 2026-11-04：V2.4前馈主线A/B，未定版
+
+用户确定固定16级/4静态抽头的20颗前馈方案为主线；17/116颗Johnson保留为历史。新[报告](M20_V24_TEST_REPORT.md)中结构及模型检错VERIFIED，56组为32 CONDITIONAL/24 FAILED；快速链最小延迟敏感性四tap均负裕量且有真实流水错误，门禁STOP_BEFORE_C_AND_D。实体抽头、完整服务/CPU联合与物理时序NOT_VERIFIED。没有新commit或验收tag，V2.3原tag和证据保持，不把旧候选的PASS借给本版本。
+
+## 2026-11-04：V2.4-C/D 数字系统交付，未定版
+
+用户明确授权数字功能与实体时序分别验收。新服务/控制实际对接单路 REF 和原 20 颗发生器，保持 543 CPU/ISA/ROM。六配置 A/B/C logic/timed 各 87 场景、57,331 事件与全部微状态通过；B/C 各 50,521 非法终态和恢复，151 Python 通过；TAP16 条件下叶端 D1/D2=22ns。原 56/632 负测重放保留失败；[完整报告](M20_V24_FULL_SYSTEM_VERIFICATION.md)。数字交付完成供审核，实体时序仍 OPEN。HEAD/tag/原索引保持，无新 commit、Tag 或远程操作；未进入 V3。
+
+## 2026-11-04：用户批准 V2.4 有条件数字验收与本地定版
+
+- 用户明确批准数字验收；模式A/B/C的logic/timed各87场景/57331事件通过，B/C各50521非法终态/恢复；543+20=563，实体时序/FPGA实现/硬件仍OPEN。
+- `86fdc9e036fb7beee16c896ee00e5502b5391708`：原90暂存blob逐字保留的历史快照（含116候选和前馈A/B），不伪造开发时间点，也不将该提交单独视为验收。
+- 完整当前源码、生成器、独立审计、79原向量重放、关键结果及正式报告按[定版报告](M20_V24_LOCAL_GIT_REPORT.md)纳管；最终目标以本地annotated tag `m20-v2.4-digital-verified`解析，避免自身SHA循环。
+- V23 tag不移动；原失败仍24问题配置/131局部错误，不重写；不进行远程Git或新硬件阶段。

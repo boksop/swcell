@@ -1,5 +1,7 @@
 # M20 V2.4：单周期参考下的FPGA存储服务时序
 
+> **C/D 已实现并验证，以下第 1～6 节保留 A/B 时的接口分析和停止决定作为历史。** 用户本次明确允许在指定数字包络完成联合仿真，不再要求数字仿真证明原厂未保证的 min。当前实绩见[完整系统报告](M20_V24_FULL_SYSTEM_VERIFICATION.md)，最终服务定义见[适配设计](M20_V24_MEMORY_ADAPTER_DESIGN.md)。原失败配置和实体风险保持。
+
 2026-11-04。本文件为接口适配设计要求，当前状态**NOT_VERIFIED**。small_r4的快速链敏感性四tap均失败，项目门槛为STOP_BEFORE_C_AND_D，因此未启动本层服务实现/最小CPU场景，也未进行新前馈CPU完整联合。
 
 ## 1. 不能直接继承Johnson服务事件
@@ -70,3 +72,11 @@ PCB/IO值未知时保留待标定项或明确设计上限假设，不能填0ns�
 SAFE_HOLD的小型手动park/resume只证明给定时序下的叶端保持；完整50MHz同步/CDC、单步、重复WE处理和RAM复位持久化仍为NOT_VERIFIED。已有V2.3模式A、旧116候选的服务/CPU结果保留历史，不列作本前馈版本的验收证据。
 
 下一步应先解决最小延迟条件、时序边界/修正方案并重新评审门槛；只有可用抽头和适用频率被明确批准，才进入本文件第5节的最小服务测试。原始证据与结论见[small_verification.json](ff16_resources/small_verification.json)及[M20_V24_TEST_REPORT.md](M20_V24_TEST_REPORT.md)。
+
+## 7. C/D 最终数字服务契约（取代“待实现”状态）
+
+FPGA 50MHz；实际 REF 两级同步后，低 age4 锁存 RAM 请求，低 age14 快照 PREVIEW；高 age0 持久写，高 age4 观察已由 Slave 更新的 CPU，高 age8 锁存 ROM 地址，高 age12 执行停车/释放。B 实际 RAM/预览偏移为下降后 160/360ns，写/观察/ROM 为上升后 80/160/240ns；C 对应 140～159/340～359ns 与 60～79/140～159/220～239ns。详见[实际事件 CSV](ffcd_resources/service_latency.csv)。
+
+ROM/RAM 为同步两服务周期返回，剩余时间保持。CPU 没有新增 IR、等待微状态或译码；普通/RAM 指令仍 2/5 微周期。PREVIEW 是验证快照，真实 CPU 提交完全由 20 颗的 H/S 控制。写在高窗持久化一次，RESET 前后语义和旧 V23 内部 commit_ce 分开说明，不悄悄复用旧物理提交点定义。
+
+六配置各 7 组内存/复位专项、全部 87 场景及跨模式完整 RAM 比较通过。逻辑读与重复 BRAM 采样必须区分：原 CE/OE 跨三状态，因此可多次采样同一逻辑请求；每次逻辑写只持久化一次。停钟与写边界控制另见[SAFE_HOLD](M20_V24_SAFE_HOLD_CONTROL.md)。当前数字接口可用；实际 IO/PCB/亚稳态与 STA 仍未验证。

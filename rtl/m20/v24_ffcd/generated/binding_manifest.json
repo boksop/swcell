@@ -1,0 +1,12 @@
+{
+  "cpu_comb_mux": 477,
+  "cpu_state_bits": 33,
+  "cpu_storage_mux": 66,
+  "cpu_total": 543,
+  "phasegen_fixed_mux": 20,
+  "total_excluding_buffers": 563,
+  "frozen_v21_sha256": "ffb7b75194c59acfdc467cb35212d249074993e8a676e8c49360d4d48dbdd040",
+  "frozen_v23_sha256": "07c663201817520cfd08781abcc7ec5f0c20bda84232eb22d93f5288d6f6a36d",
+  "generated_sha256": "c93664d07eae09e7d6bf35bad016e33f6ea4e149ebbb0eb5284901922569932e",
+  "audit": "Exact frozen V23 combinational-body byte comparison; 33 D/Q/QM bindings retain frozen mapping; only storage model parameters change"
+}

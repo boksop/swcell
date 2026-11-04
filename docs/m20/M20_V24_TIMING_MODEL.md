@@ -93,3 +93,11 @@ i、j均覆盖0…32，允许最坏Master和Slave在不同位、不同分支。�
 正常保持场景在park/resume期间继续检查全局me/se与Q保持。晚释放SAFE_HOLD每tap均缺失一个Master窗口且有数据错误；3ns高脉冲场景没有完整配对窗口，D1/D2在结果为null，而非0或“无重叠通过”。后者不能用来宣传输入窄脉冲被可靠滤除。
 
 三类注入/敏感性与11个normal_assumed场景均保留：32项CONDITIONAL、24项FAILED。TAP16在11个normal场景的最坏6ns超过assumed 4ns guard，但没有排除0.5ns快速链敏感性；因此物理为NOT_VERIFIED，项目门槛为STOP_BEFORE_C_AND_D。原始配置JSON、trace、错误CSV及[结果表](ff16_resources/timing_results.csv)共同支持结论，未启动CPU完整回归。
+
+## 8. B深化分析的附加边界
+
+新 `ff16_review.py` 对上述模型作独立完整脉冲解析，并直接复核实际trace的有效事件时间。新增分配字段分开记录芯片公共传播、输出分支、PCB和锁存开闭；原模型聚合Buffer参数不能据此被追认为已物理辨识。全局最坏取全部33×33组合，原测试位和CPU物理位置仍未建立映射。
+
+特别注意本模型的时序语义：已稳定DATA在有效SELECT开放时可立即被选到Q，因此设置的Slave DATA=0.1ns不是保证的CLK→Q最小值。新CPU路径分析将CQ_min取0，数据路径按冻结MUX的实际DATA/SELECT输入连接延迟；不能重复叠加一项并因此证明Hold安全。
+
+完整脉冲公式只在高/低窗口足够隔离且无SAFE_HOLD竞争时使用。频率扫描超出域明确标记FULL_PULSE_FORMULA_NOT_APPLICABLE；必要控制窗口计算不是新事件仿真。带延迟局部实验只活动源/目的存储单元、其余状态固定，不是完整CPU执行或任意多输入冒险验证。结果与进一步约束见[深化评审](M20_V24_ARCHITECTURE_REVIEW.md)。本轮未改动原模型SV。

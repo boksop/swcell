@@ -1,6 +1,19 @@
 # M20 — SwCell Game CPU
 
-## V2.4审核中：自主发生器与同源存储服务
+**2026-11-04：用户批准 V2.4 有条件数字验收。** [正式报告](../reports/m20_phaseV2.4_20261104.md)｜[本地定版及干净恢复](M20_V24_LOCAL_GIT_REPORT.md)｜[纳管文件清单](M20_V24_GIT_FILES.csv)。本地 annotated tag `m20-v2.4-digital-verified`；下列开发阶段“待审核”保留为历史，失败配置不改判，物理/实现/实物仍 OPEN。
+
+## 当前V2.4主线：16级四抽头前馈20颗发生器
+
+**最新 C/D：数字系统开发完成，待用户审核。** [完整联合验证报告](M20_V24_FULL_SYSTEM_VERIFICATION.md)：A/B/C logic/timed 各 87 场景、57,331 事件通过，B/C 各 50,521 非法终态/恢复，151 Python 通过；实际 TAP16 叶端 D1/D2=22/22ns（假设包络）。[实际波形](ffcd_resources/memory_service_timing_complete.svg)｜[存储服务](M20_V24_MEMORY_ADAPTER_DESIGN.md)｜[实体开放事项](M20_V24_PHYSICAL_TIMING_OPEN_ISSUES.md)。冻结 CPU/ISA/ROM 和 V23 不改，未 commit/Tag，未进入 V3。
+
+以下为 A/B 历史评审；其停止门槛已被用户明确的数字/实体分层验收授权替代，原负测失败仍保留。
+
+
+2026-11-04 B深化：[架构评审/十二项结论](M20_V24_ARCHITECTURE_REVIEW.md)、[参数灵敏度](M20_V24_TIMING_SENSITIVITY.md)、[时钟树与五种Buffer](M20_V24_CLOCK_TREE_BUDGET.md)、[79真实短路径](M20_V24_REAL_CPU_SHORT_PATH_ANALYSIS.md)。复核7ns为模型分配3ns＋有效边界4ns；新增632次局部实验、146项Python通过。存在条件工作区，建议保留20颗但暂不准入C/D，不作实体时序保证。
+
+2026-11-04：[A/B开发报告](M20_V24_TEST_REPORT.md)、[结构审计](M20_V24_MUX_AUDIT.md)、[时序反例](M20_V24_NONOVERLAP_VERIFICATION.md)。固定20颗结构及模型检错VERIFIED；56组为32 CONDITIONAL、24 FAILED。快速链敏感性下四抽头均有负D1/D2，按门禁停止在A/B，尚无实体推荐抽头，不启动存储/完整CPU联合，不创建验收tag。CPU543、ISA、ROM和V2.3基线保持。
+
+## 历史V2.4候选：116颗自主发生器与同源存储服务
 
 [设计审核稿](M20_V24_DESIGN_REVIEW.md)：116颗发生器候选+543核心，A/B/C预设参数完整对照PASS；独立混合选择弧覆盖缺口尚未解决，已按用户指令暂停，无验收tag。V23模式A定版及原PASS不受影响。
 

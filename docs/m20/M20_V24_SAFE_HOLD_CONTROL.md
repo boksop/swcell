@@ -1,5 +1,7 @@
 # M20 V2.4：SAFE_HOLD、复位、STOP与STEP契约
 
+> **最新：FPGA 完整控制器已实现，B/C 各 7 项控制专项通过。** 以下第 1～6 节保留 A/B 小型手动控制的历史限制和失败，后附当前 C/D 控制契约。不是将旧“晚释放”反例改判通过。
+
 2026-11-04。20颗时钟核无状态，只实现延迟译码及两路输出钳位。控制器属于FPGA；本轮已执行小型park/resume与晚释放反例，但尚未实现完整运行控制，执行情况以[M20_V24_TEST_REPORT.md](M20_V24_TEST_REPORT.md)为准，不将未运行的STOP/STEP称为通过。
 
 ## 1. 逻辑与硬件默认
@@ -78,3 +80,17 @@ CPU暂停后，WE或其他总线信号可能仍保持在当前微状态的电平
 晚释放反例(mode4)在下一C上升前仅1ns解除SAFE_HOLD，Master保持选择的释放路径为12ns；首个Master透明窗没有形成，随后Slave获取旧QM。四tap均记录missing_windows=1、data_errors=1。虽然其周期性D1/D2仍可为正，控制契约仍FAILED，说明仅检查周期边沿裕量不足以证明启动正确。
 
 实际结果见[56项CSV](ff16_resources/timing_results.csv)和small_r4各tap配置/trace/错误记录。所有assumed条件下的通过仍不替代实体默认电平、建立保持、探头负载和时钟分发测量。由于快速链敏感性四tap失败，当前停止在V2.4-B，不继续实现控制器和CPU联合回归。
+
+## 7. C/D 已执行的 FPGA 控制契约
+
+实现：`rtl/m20/v24_ffcd/swc_ffcd_run_control.sv`，IDLE/ARM/ACTIVE/CLOSING，FPGA 原生寄存器不计入外部 20-MUX。B/C 共用，不改前馈产生 H/S 的功能。
+
+- 参考持续运行。只在已同步高电平 age12 的稳定窗口释放/钳位；释放前延迟链已稳定，下一完整 Master 低窗口才启用事务，避免把旧 QM 重新传至 Q 当新微周期。
+- STOP 待本微周期观察、持久写及 ROM 返回后钳位，再等 4×20ns guard 确认 parked；正常停车后架构状态和 BRAM 输出保持。任意异步紧急 reset/时钟丢失不是正常 STOP。
+- STEP 为 `step_ready` 时的请求上升沿，一次 `step_ack` 对应一个完整微周期；忙时脉冲不排队，不承诺接受每个任意脉冲。STOP 优先，CPU_RESET 期间忽略 STEP；RUN 可执行真实复位相位。
+- RESET 有效下实际执行完整 M/S 初始化，不能以 SAFE_HOLD 或变量初始化替代；待写未持久化则取消，已持久化不回滚，RAM 不因 CPU 复位清除。
+- HALT/TRAP 后没有新的 CPU 退役或 RAM 事务，终态 STEP 不改状态；参考和 ROM 刷新并非自动停止，需要 STOP 才进入全服务保持。
+
+`full_r1/B_timed/xsim/control.log` 和 `C_timed/xsim/control.log` 各 7 项、26 个显式单步通过，覆盖空闲/活动中 STOP+STEP、连续 STEP、连续 ST/ST/LD、STEP→RUN、RUN→STOP/恢复、RESET 下 STEP、HALT/TRAP 后 STEP。各模式 7 组内存/复位测试和独立 6 项服务测试也通过。完整程序集保持原 2/5 profile。
+
+当前参考最短高/低各约 500ns、指定钳位/分配/有效边界内窗口成立。SAFE_HOLD 异步物理路径、实体默认电平、停振诊断及亚稳态仍另列 NOT_VERIFIED；不能把任意晚释放视为安全，也不能把本控制器称作 20 颗自主功能。详见[完整系统报告](M20_V24_FULL_SYSTEM_VERIFICATION.md)。

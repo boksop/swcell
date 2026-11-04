@@ -1,0 +1,21 @@
+{
+  "status": "VERIFIED_PLOT_OF_EXISTING_DIGITAL_OBSERVATIONS",
+  "source_records": 632,
+  "points": 8,
+  "unique_margin_configurations": 2,
+  "interpolation": false,
+  "new_simulation": false,
+  "physical_signoff": "NOT_VERIFIED",
+  "margin_qualification": "D1 and D2 covary; errors test rising-handoff paths only",
+  "inputs": {
+    "build/m20_300/v24_ff16/deep_review_r4/cone_results.csv": "ed08caa3f510b734118cc31819c871b44dc4917a14ced2ab16485b62829f5c29",
+    "docs/m20/ff16_review_resources/root_leaf_decomposition.csv": "356067cb7ae5539e4b39c245a45b475f4e263e323e1d24bc3cad1ebdc5588ac1",
+    "sim/m20_ff16_review/tb_ff16_cpu_cones.sv": "aea94ef09619c1776618f147c1284a9c5f4985bbefa2dac2fc23c6f49dc62b28"
+  },
+  "plot_script_sha256": "124bd5a610442265de6fa2bc6deb619ec2ef020dcee5b46251668c167cffcdc4",
+  "outputs": {
+    "margin_error_points.csv": "76cba8e23748ae6af60e817aaeb8f29ad8465835551366d8d539cc8952372363",
+    "margin_error_relation.png": "cc58a8b96bbacc7c559630eb552df672a050aaceb7a7eeed52380d90aed3ff47",
+    "margin_error_relation.svg": "373dc40134d21f217f192c705d5aa940e6affc0cffc94f27d8c84804de81e97a"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "netlist_sha256": "7a9b0fd7eb6358b5a27d807eb2a44a00686ef461c50af8a5393010be01739427",
+  "combination_mux": 477,
+  "state_scope": "two live double-MUX pairs, other31 bits fixed at historical witness; not a fullCPU regression",
+  "clock": "unchanged actual 20-cell timing model, TAP16",
+  "placement": "adversarial source leaf0, destination leaf32; illustrative, not PCB assignment",
+  "clock_to_q": "existing pin-model settled-data SELECT behavior; no extra guaranteed minimum assumed",
+  "generated_sv_sha256": "09bd3ec70ec8c63d49a219cbedda84ee305497a54d39dfadfa37f2c1d87c0009"
+}

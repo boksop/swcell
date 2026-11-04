@@ -1,0 +1,348 @@
+{
+  "scope": "current C/D delivery; earlier A/B source and raw data remain independent",
+  "date": "2026-11-04",
+  "head": "5e601a99019f09d2ca59360165106e089826415b",
+  "v23_tag": "aecf570c2e33563179e95e1615fd005cc19817f5",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 13487,
+      "sha256": "521965e256eab411318e14aa51fb8e2dbfdeb30d69db2efc51339071f0580652",
+      "role": "report_or_progress"
+    },
+    {
+      "path": "TASK_PROGRESS.md",
+      "bytes": 3358,
+      "sha256": "25c60ac898c5b8cbcdcd76f7d0b7777eda4973227d8e74b9e661e6ab7ccee2a8",
+      "role": "report_or_progress"
+    },
+    {
+      "path": "docs/m20/M20_RELEASE_HISTORY.md",
+      "bytes": 4462,
+      "sha256": "e92d682bb76d286043031bd20be51438c015acff61cc02b7cd9ed6a4f0e66eb5",
+      "role": "report_or_progress"
+    },
+    {
+      "path": "docs/m20/M20_V24_CLOCK_CDC_CONSTRAINTS.md",
+      "bytes": 3805,
+      "sha256": "640d12910aac2e56ee99bb1794d2f2abc4970437dc3c99ae623a97e001ce54c2",
+      "role": "report_or_progress"
+    },
+    {
+      "path": "docs/m20/M20_V24_FPGA_MEMORY_TIMING.md",
+      "bytes": 8478,
+      "sha256": "0b52b14249b177dda70601eb6f7bb3da67ef006880075f659606be5c7d442ac5",
+      "role": "report_or_progress"
+    },
+    {
+      "path": "docs/m20/M20_V24_FULL_SYSTEM_VERIFICATION.md",
+      "bytes": 17390,
+      "sha256": "a77dbba3c3e85041d9b385ee12932c8063ef3b2d1656a11c9594c33f41acba0b",
+      "role": "report_or_progress"
+    },
+    {
+      "path": "docs/m20/M20_V24_MEMORY_ADAPTER_DESIGN.md",
+      "bytes": 4544,
+      "sha256": "212ab0a393fcfb960aebde544632811d2649679779836b1e9dbf906b64e21d7b",
+      "role": "report_or_progress"
+    },
+    {
+      "path": "docs/m20/M20_V24_PHYSICAL_TIMING_OPEN_ISSUES.md",
+      "bytes": 2037,
+      "sha256": "69296421d5c3802c5103d049258f92c577ceac0c58716da3ccd5e8e725b0f4d2",
+      "role": "report_or_progress"
+    },
+    {
+      "path": "docs/m20/M20_V24_SAFE_HOLD_CONTROL.md",
+      "bytes": 9282,
+      "sha256": "2e1d293ea29641eab12b5652b19c5c508cca47ce154d30625300c2405bb4fa01",
+      "role": "report_or_progress"
+    },
+    {
+      "path": "docs/m20/M20_V24_TEST_REPORT.md",
+      "bytes": 10442,
+      "sha256": "23a479bce423db26e7d060873e604b801ee4549bab04cd9813924740d87ba36b",
+      "role": "report_or_progress"
+    },
+    {
+      "path": "docs/m20/README.md",
+      "bytes": 14011,
+      "sha256": "e2f07a1712f044736853ffe25d2c9150a774322f080a217b8bc2cb7cd73b2570",
+      "role": "report_or_progress"
+    },
+    {
+      "path": "docs/m20/ffcd_resources/bundle.json",
+      "bytes": 205,
+      "sha256": "7d66789e6d53199ac607ca25ffb1401a26fb5f67e8d599640a68379aafec0479",
+      "role": "manifest_evidence_or_plot"
+    },
+    {
+      "path": "docs/m20/ffcd_resources/effective_clocks.csv",
+      "bytes": 707,
+      "sha256": "d7e537fda3ce0e03b7397dbd01a61b463c3ba30e6ce50365069e8c260e4e8504",
+      "role": "manifest_evidence_or_plot"
+    },
+    {
+      "path": "docs/m20/ffcd_resources/evidence_sha256.csv",
+      "bytes": 946644,
+      "sha256": "94a0dca2d69f0045e465ae0b435c78ac75abacc03f61b57dcf8657ebe3b80b2e",
+      "role": "manifest_evidence_or_plot"
+    },
+    {
+      "path": "docs/m20/ffcd_resources/final_checks.json",
+      "bytes": 1294,
+      "sha256": "6c66fc6008cca62f8ed00992bfb5fa89b69565f75037b36c0fd8e3baead946f1",
+      "role": "manifest_evidence_or_plot"
+    },
+    {
+      "path": "docs/m20/ffcd_resources/input_sha256.json",
+      "bytes": 396975,
+      "sha256": "c0519c71c9d275c2b45721de5e68ffd2bfaa1802fac8301ea13644ace26af823",
+      "role": "manifest_evidence_or_plot"
+    },
+    {
+      "path": "docs/m20/ffcd_resources/memory_service_timing.svg",
+      "bytes": 75045,
+      "sha256": "5d1708edae6b94d41a048dd99ab373bd568368d0f48ed3bb7f9b16fc33d29d16",
+      "role": "manifest_evidence_or_plot"
+    },
+    {
+      "path": "docs/m20/ffcd_resources/memory_service_timing_complete.png",
+      "bytes": 78991,
+      "sha256": "f1d266b2f6f521e786a9962b449511c228098d6333bbfa46e627d3a73dfef5b8",
+      "role": "manifest_evidence_or_plot"
+    },
+    {
+      "path": "docs/m20/ffcd_resources/memory_service_timing_complete.svg",
+      "bytes": 75218,
+      "sha256": "a2418397170a6b40d23c048003b9f4decad9f51e80c6390e86facf876105d5cf",
+      "role": "manifest_evidence_or_plot"
+    },
+    {
+      "path": "docs/m20/ffcd_resources/memory_wave_excerpt.csv",
+      "bytes": 5103,
+      "sha256": "e82d343cae6e4a5a1c633603bd37f5e7e655a64fe0f115f959633d0fd6f3c91a",
+      "role": "manifest_evidence_or_plot"
+    },
+    {
+      "path": "docs/m20/ffcd_resources/microstate_comparison.csv",
+      "bytes": 3008,
+      "sha256": "a85a3df1aca3999ed16f992926aa022976d7e25bf37c7792247c93b8c6424733",
+      "role": "manifest_evidence_or_plot"
+    },
+    {
+      "path": "docs/m20/ffcd_resources/negative_replay.json",
+      "bytes": 742,
+      "sha256": "39700d222bd68c0b5649c58240a9348ec4c06f442e74c80c0a59fe1b6742a952",
+      "role": "manifest_evidence_or_plot"
+    },
+    {
+      "path": "docs/m20/ffcd_resources/origin.json",
+      "bytes": 258,
+      "sha256": "bbc8f519b9850330d9d168a013f496d49050d3c6000ceaf33cd3bb8b0552bc14",
+      "role": "manifest_evidence_or_plot"
+    },
+    {
+      "path": "docs/m20/ffcd_resources/plot_complete.json",
+      "bytes": 451,
+      "sha256": "aec766135e2dc1efd1a133aa9a3001cc2d8e4bd574738413884141e355ad3e74",
+      "role": "manifest_evidence_or_plot"
+    },
+    {
+      "path": "docs/m20/ffcd_resources/regression_summary.csv",
+      "bytes": 737,
+      "sha256": "796d4e929f07641a1175d5efaff633f8e3cd971559b99c76884c8ef049c8f850",
+      "role": "manifest_evidence_or_plot"
+    },
+    {
+      "path": "docs/m20/ffcd_resources/resource_audit.json",
+      "bytes": 532,
+      "sha256": "753d71e28475a0982d1967c087078b032417c65c93b6c3bbdbb1f9f2634b6659",
+      "role": "manifest_evidence_or_plot"
+    },
+    {
+      "path": "docs/m20/ffcd_resources/service_latency.csv",
+      "bytes": 902,
+      "sha256": "b1c5a7d5391e83921b0e56d37a57081464b83238b5b37fe762900d569d32700c",
+      "role": "manifest_evidence_or_plot"
+    },
+    {
+      "path": "docs/m20/ffcd_resources/source_sha256.json",
+      "bytes": 10676,
+      "sha256": "d19029ef8630fbe27f278f5f9614c1a942bdfbe4638e1af8552feb4fcd1751e3",
+      "role": "manifest_evidence_or_plot"
+    },
+    {
+      "path": "docs/m20/ffcd_resources/transactions.csv",
+      "bytes": 101474,
+      "sha256": "457c04f46857fc98e931b86958eb0f8817eeff20538913a10bf146902ddb5d69",
+      "role": "manifest_evidence_or_plot"
+    },
+    {
+      "path": "docs/m20/ffcd_resources/validation.json",
+      "bytes": 2872,
+      "sha256": "7d62ee888729e0baa07041f3dc550828454d910601de031f5e9259755b60a220",
+      "role": "manifest_evidence_or_plot"
+    },
+    {
+      "path": "docs/m20/ffcd_resources/verification.json",
+      "bytes": 3643,
+      "sha256": "23f947fdc2e1b89b9db1faa21f5a09790b2cfe11e1428643b6e8d0e50e7b06e6",
+      "role": "manifest_evidence_or_plot"
+    },
+    {
+      "path": "docs/tasks/m20-v24-ffcd-20261104.md",
+      "bytes": 6512,
+      "sha256": "bcc35ede579b543775b7be946bda634e1c3a1166a72d8505bf10d7466766cde3",
+      "role": "report_or_progress"
+    },
+    {
+      "path": "host/python/m20/ffcd_audit.py",
+      "bytes": 3155,
+      "sha256": "ffebd2c810606129580d1a9a0d566b549c5d462f2dd25529fc4314bc2c1b7310",
+      "role": "generator_auditor_or_entrypoint"
+    },
+    {
+      "path": "host/python/m20/ffcd_build.py",
+      "bytes": 7076,
+      "sha256": "c6b5fabb7c025474b78e181953432de2500364886760b0dfba841d8230c43f03",
+      "role": "generator_auditor_or_entrypoint"
+    },
+    {
+      "path": "host/python/m20/ffcd_verify.py",
+      "bytes": 5734,
+      "sha256": "7a5e607cf0d0f7238dda7fb104b0d74e9ba6bd7f952ee6492a3bdfde6dbd3713",
+      "role": "generator_auditor_or_entrypoint"
+    },
+    {
+      "path": "host/python/tests/test_m20_ffcd.py",
+      "bytes": 1727,
+      "sha256": "ce114e8939454c02245664ba517ae043fc44d6ffd3bcb07321fad83efaf8e79c",
+      "role": "generator_auditor_or_entrypoint"
+    },
+    {
+      "path": "rtl/m20/v24_ffcd/generated/binding_manifest.json",
+      "bytes": 575,
+      "sha256": "705b439edd3c89352acaee7679cbefedeb2af24c7a7bbfd2659498f703b817f8",
+      "role": "manifest_evidence_or_plot"
+    },
+    {
+      "path": "rtl/m20/v24_ffcd/generated/m20ffcd_cpu_core.sv",
+      "bytes": 127533,
+      "sha256": "c93664d07eae09e7d6bf35bad016e33f6ea4e149ebbb0eb5284901922569932e",
+      "role": "RTL_or_simulation_source"
+    },
+    {
+      "path": "rtl/m20/v24_ffcd/swc_ffcd_run_control.sv",
+      "bytes": 1996,
+      "sha256": "18851f25b50b8002911c861453b0a4933f7a1ad34f830a097fef15df331c7d4f",
+      "role": "RTL_or_simulation_source"
+    },
+    {
+      "path": "rtl/m20/v24_ffcd/swc_ffcd_service.sv",
+      "bytes": 1585,
+      "sha256": "37991c7eb840adb1c8711a716600c15d904010e01eff9cd7cf5a051128f4828d",
+      "role": "RTL_or_simulation_source"
+    },
+    {
+      "path": "sim/m20_ffcd/ffcd_monitors.svh",
+      "bytes": 2849,
+      "sha256": "b1a2e8e992a29b2701ad6abf8a4c56fa5fd5aa33bac0e5f3d43a7af03062cd11",
+      "role": "RTL_or_simulation_source"
+    },
+    {
+      "path": "sim/m20_ffcd/generated/ffcd_fixture.svh",
+      "bytes": 29561,
+      "sha256": "0973e3546f002c766b8078c5f3858c20f10debc678493daf276e1d3a26229abf",
+      "role": "RTL_or_simulation_source"
+    },
+    {
+      "path": "sim/m20_ffcd/generated/tb_m20ffcd_cpu.sv",
+      "bytes": 8915,
+      "sha256": "a0cee31ea5b726e49d7fb905fec68bb51b0baa5501d07fd693418392162c2169",
+      "role": "RTL_or_simulation_source"
+    },
+    {
+      "path": "sim/m20_ffcd/generated/tb_m20ffcd_illegal.sv",
+      "bytes": 2547,
+      "sha256": "b0108ffaf986536e19b00c95e49a9ded58806c91ce32639e4a77bc2f35a82574",
+      "role": "RTL_or_simulation_source"
+    },
+    {
+      "path": "sim/m20_ffcd/generated/tb_m20ffcd_memory.sv",
+      "bytes": 3651,
+      "sha256": "b9d493ba2aa4ccdd93ea7a5088a7108b57e293f5cbe3022dc73a5283e7fc3177",
+      "role": "RTL_or_simulation_source"
+    },
+    {
+      "path": "sim/m20_ffcd/generated/tb_m20ffcd_mode_a.sv",
+      "bytes": 8915,
+      "sha256": "8425a425642ea589777043d318c13dab89def4c8f0f14dac757a7cab113f7c10",
+      "role": "RTL_or_simulation_source"
+    },
+    {
+      "path": "sim/m20_ffcd/m20_ffcd_memory.sv",
+      "bytes": 1355,
+      "sha256": "c039d6933ec4e05c5538d725f09edc06345593ec422c24b115ed45f1af576599",
+      "role": "RTL_or_simulation_source"
+    },
+    {
+      "path": "sim/m20_ffcd/run_memory_wave.tcl",
+      "bytes": 505,
+      "sha256": "849190feed3e1de1dcab20d5fd0cb4fd672acce3ba233dda35315bca3de4800e",
+      "role": "generator_auditor_or_entrypoint"
+    },
+    {
+      "path": "sim/m20_ffcd/swc_ffcd_ms_bit.sv",
+      "bytes": 1007,
+      "sha256": "ad2df41ce156ea048ec1834bcd7d38776718356172f11d119ece1c07df86d86c",
+      "role": "RTL_or_simulation_source"
+    },
+    {
+      "path": "sim/m20_ffcd/tb_ffcd_bad_service.sv",
+      "bytes": 1179,
+      "sha256": "649ae633af61310942b2950a0f7b30153331348b91063a46d1e37a6515a3be04",
+      "role": "RTL_or_simulation_source"
+    },
+    {
+      "path": "sim/m20_ffcd/tb_ffcd_service_unit.sv",
+      "bytes": 3301,
+      "sha256": "2710a1b7664345c4674446be40e06c28b488dedb8e54cf5253c5bd28ebda7203",
+      "role": "RTL_or_simulation_source"
+    },
+    {
+      "path": "sim/m20_ffcd/tb_m20ffcd_control.sv",
+      "bytes": 3707,
+      "sha256": "853e719eb84b60b69ba2eb3f82cdda367960fc91080c7825fc9a047e2c9e86c9",
+      "role": "RTL_or_simulation_source"
+    },
+    {
+      "path": "sim/scripts/run_m20_ffcd.sh",
+      "bytes": 4960,
+      "sha256": "11c6e03b25cd7ac18585a922c70c39c8ee5ea5a4fa6637bea742668e10952040",
+      "role": "generator_auditor_or_entrypoint"
+    },
+    {
+      "path": "sim/scripts/run_m20_v24_system.sh",
+      "bytes": 1540,
+      "sha256": "e9db8a0d642d216e48466a682fcbf6aa0c80cf7a81f8b02dbe4487345323bc95",
+      "role": "generator_auditor_or_entrypoint"
+    },
+    {
+      "path": "tools/m20/ffcd_checkpoint.py",
+      "bytes": 1443,
+      "sha256": "a4129ac272a9b37bc5189c63cd94b3a8304fe47839cb25755fa37bb3809f4898",
+      "role": "generator_auditor_or_entrypoint"
+    },
+    {
+      "path": "tools/m20/ffcd_evidence.py",
+      "bytes": 10287,
+      "sha256": "0c058c4598759b6df769bf046c1d27e73db90eb0735c14160f27433c06ab663b",
+      "role": "generator_auditor_or_entrypoint"
+    }
+  ],
+  "self_sha256": "OMITTED_TO_AVOID_RECURSION",
+  "core_simulation_source_hashes": "source_sha256.json",
+  "raw_archive_index": "evidence_sha256.csv",
+  "no_stage_commit_tag_remote": true
+}

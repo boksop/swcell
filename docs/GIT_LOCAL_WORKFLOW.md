@@ -45,3 +45,10 @@ python3 -B tools/git/index_historical_evidence.py --output docs/evidence/NEW_DAT
 最终命令与提交/tag索引见[M20本地Git报告](m20/M20_LOCAL_GIT_REPORT.md)。本轮结束即停止，不进行PCB/逻辑优化或硬件测试。
 
 本轮完成：两个annotated tags及后续恢复记录已建立，最终实际状态见M20_LOCAL_GIT_REPORT.md。只读审计命令为`python3 -B tools/git/local_release_audit.py --output build/NEW_RELEASE_AUDIT`；报告目录需全新，旧索引/证据不覆盖。
+
+
+## V2.4 有条件数字版本（2026-11-04）
+
+用户本轮授权本地定版；原90份stage逐blob审查后独立保存为历史提交，完整前馈版本另提交。当前tag `m20-v2.4-digital-verified`只认可声明假设下的数字联合，物理/实现/硬件仍开放。纳管/排除及干净恢复见[M20 V2.4本地定版](m20/M20_V24_LOCAL_GIT_REPORT.md)。
+
+正式生成SV/JSON、原79短路径见证和小型CSV/JSON/图应跟随源码，避免复现入口暗依赖ignored build。大波形/缓存及原始tar留原位，由索引与独立备份管理；旧证据清单保留产生时的HEAD/源码SHA，不为匹配新commit回写。维护当前release指纹时不得把manifest自身SHA加入manifest，也不把Git提交视作测试证明。

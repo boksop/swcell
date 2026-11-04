@@ -1,0 +1,16 @@
+{
+  "detection": "VERIFIED",
+  "small_run": "/home/boksop/swcell/build/m20_300/v24_ff16/full_r1_ffcd_negative_small",
+  "small_result_sha256": "e9a12918974062d4e970a5f6e8075879724a622f383d92978fb4a83d82097aab",
+  "small_cases": 56,
+  "small_conditional": 32,
+  "small_FAILED_preserved": 24,
+  "cones_run": "/home/boksop/swcell/build/m20_300/v24_ff16/full_r1_ffcd_negative_cones",
+  "cones_result_sha256": "59cca4e37e542c39bcbcefc1cef48fc553e84157f63d52c855e1b7c3b3b83a5a",
+  "cones_cases": 632,
+  "cones_assumed_errors": 131,
+  "service_bad_ram": "V23_RAM_RESPONSE_SETUP",
+  "service_bad_rom": "V23_ROM_CHANGED_MASTER_OPEN",
+  "physical_status": "NOT_VERIFIED",
+  "note": "negative configurations remain FAILED; only detection is verified"
+}
