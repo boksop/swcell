@@ -1,0 +1,12 @@
+signal,role,fpga_relationship,default
+clk_ref,single selected root clock,FPGA source or observed external root; static0R source selection,defined clean clock
+safe_hold,active high safety clamp,FPGA control output,HIGH before FPGA configuration; hardware bias TBD
+tap4,delay-chain probe and optional selected link,optional observation only; loading must be counted,clock-derived
+tap8,delay-chain probe and optional selected link,optional observation only; loading must be counted,clock-derived
+tap12,delay-chain probe and optional selected link,optional observation only; loading must be counted,clock-derived
+tap16,delay-chain probe and optional selected link,optional observation only; loading must be counted,clock-derived
+delayed_ref,selected Cd,testpoint/observation as allocated; no invented pin,clock-derived
+h_raw,unclamped Master decode,testpoint/observation as allocated; no invented pin,clock-derived
+s_raw,unclamped Slave decode,testpoint/observation as allocated; no invented pin,clock-derived
+master_hold,Master buffer-root output,testpoint/observation as allocated; no invented pin,H=1/S=0 when safe_hold=1
+slave_open,Slave buffer-root output,testpoint/observation as allocated; no invented pin,H=1/S=0 when safe_hold=1

@@ -1,0 +1,8 @@
+module,mux,classification
+decode,22,explicit_comb_mux
+control,66,explicit_comb_mux
+Johnson 4-bit storage,8,4 x2
+RUN/STEP synchronizer storage,8,4 x2
+token/ack storage,4,2 x2
+active/step/fault storage,6,3 x2
+local interlock,2,explicit_feedback_comb_mux

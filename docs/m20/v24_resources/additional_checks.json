@@ -1,0 +1,12 @@
+{
+  "frozen_source_status": "UNCHANGED",
+  "protected_files": 117,
+  "accepted_v23_commit": "aecf570c2e33563179e95e1615fd005cc19817f5",
+  "formal_v23_report_commit": "5e601a99019f09d2ca59360165106e089826415b",
+  "python_tests": 127,
+  "python_status": "PASS",
+  "python_log": "build/m20_300/v24/python_all_r1.log",
+  "python_log_sha256": "77fe99b9813709627aeb4bae463d57f7634ebc7d0d753d580dfe0d40bfbd2cc4",
+  "raw_indexed_files": 7477,
+  "mixed_select_arcs": "NOT_RUN_PENDING_REVIEW"
+}

@@ -1,0 +1,13 @@
+instance,S,I0,I1,Y,role
+U_DELAY_1,0,CLK_REF,0,DELAY_1,noninverting_delay
+U_DELAY_2,0,DELAY_1,0,DELAY_2,noninverting_delay
+U_DELAY_3,0,DELAY_2,0,DELAY_3,noninverting_delay
+U_DELAY_4,0,DELAY_3,0,DELAY_4,noninverting_delay
+U_DELAY_5,0,DELAY_4,0,DELAY_5,noninverting_delay
+U_DELAY_6,0,DELAY_5,0,DELAY_6,noninverting_delay
+U_DELAY_7,0,DELAY_6,0,DELAY_7,noninverting_delay
+U_DELAY_8,0,DELAY_7,0,DELAY_8,noninverting_delay
+U_DECODE_H,CLK_REF,DELAY_8,1,H_RAW,C_OR_Cd
+U_DECODE_S,CLK_REF,0,DELAY_8,S_RAW,C_AND_Cd
+U_HOLD_H,SAFE_HOLD,H_RAW,1,MASTER_HOLD,safe_hold
+U_HOLD_S,SAFE_HOLD,S_RAW,0,SLAVE_OPEN,safe_hold

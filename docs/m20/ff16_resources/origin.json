@@ -1,0 +1,8 @@
+{
+  "run": "/home/boksop/swcell/build/m20_300/v24_ff16/small_r4",
+  "indexed_files": 272,
+  "indexed_bytes": 5258980,
+  "summary_sha256": "e9a12918974062d4e970a5f6e8075879724a622f383d92978fb4a83d82097aab",
+  "project_gate": "STOP_BEFORE_C_AND_D",
+  "cpu_regression": "NOT_RUN"
+}

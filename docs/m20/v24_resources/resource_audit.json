@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "comb_mux": 88,
+  "local_interlock_mux": 2,
+  "storage_bits": 13,
+  "storage_mux": 26,
+  "total_mux": 116,
+  "cpu_mux_separate": 543,
+  "system_mux_without_buffers": 659,
+  "source_sha256": "29cc67b99a1e326414b1b10fabe283585819291fb5ab4119b5562b10be8fb0ef"
+}

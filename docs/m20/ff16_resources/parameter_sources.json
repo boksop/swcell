@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-04",
+  "device": "NC7SZ157P6X",
+  "supply_v": 3.3,
+  "datasheet": {
+    "url": "https://www.onsemi.com/download/data-sheet/pdf/nc7sz157-d.pdf",
+    "revision": "Rev.7",
+    "condition": "AC table 3.3V +/-0.3V; CL=50pF, RL=500ohm; only the stated test conditions",
+    "data_typ_ns": 3.2,
+    "data_full_temperature_max_ns": 5.0,
+    "select_typ_ns": 3.2,
+    "select_full_temperature_max_ns": 5.2,
+    "guaranteed_minimum_data_ns": null,
+    "guaranteed_minimum_select_ns": null,
+    "maximum_input_transition_ns_per_v": 10,
+    "classification": "datasheet_not_a_calibrated_board_or_feedback_latch_model"
+  },
+  "runtime_parameters": {
+    "all_20_cells_dr_df_sr_sf": "assumed; some upper choices numerically follow datasheet points, not board guarantees",
+    "all_33_leaves_buffer_rise_fall_and_branch_skew": "assumed; no specific buffer part characterized",
+    "all_33_leaves_master_slave_effective_open_close": "assumed; independent effective transparency boundaries",
+    "all_33_leaves_master_slave_data_rise_fall": "assumed; independent per-device pin-delay values",
+    "short_combination_path_ns": {"value": 0.1, "classification": "assumed_stress_not_measured_CPU_path"},
+    "fast_chain_stage_ns": {"value": 0.5, "classification": "assumed_unqualified_minimum_sensitivity_not_excluded_by_current_evidence"},
+    "guard_ns": {"value": 4.0, "classification": "assumed_test_threshold_not_datasheet_setup_hold"},
+    "minimum_master_window_ns": {"value": 100.0, "classification": "small_test_requirement_not_CPU_critical_path_budget"},
+    "extra_load_pf_and_ns_per_pf": "assumed_sensitivity_not_extracted_or_calibrated",
+    "reference_pulse_width_and_deterministic_jitter": "simulation_stimulus_not_instrument_measurement"
+  },
+  "physical_measurements": {
+    "pcb_delay": null,
+    "clock_leaf_skew": null,
+    "minimum_chain_rise_fall": null,
+    "feedback_latch_transparency_and_setup_hold": null,
+    "temperature": null,
+    "status": "NOT_VERIFIED"
+  },
+  "model_semantics": "per-input inertial DATA and SELECT delay; each chip's two DATA pins have separate events but share its dr/df values; effective latch SELECT boundaries are independent",
+  "not_modeled": ["analog voltage/slew", "metastability", "PVT distributions or correlation", "all multi-glitch transient margin extrema"],
+  "safe_hold_controller": "NOT_VERIFIED; only manual stretched-reference park/resume and late-release counterexample executed",
+  "cpu_memory_integration": "NOT_RUN"
+}

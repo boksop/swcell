@@ -1,0 +1,57 @@
+{
+  "classification": "CONDITIONAL_ILLUSTRATIVE_SUFFICIENT_BOUNDS_NOT_MEASUREMENTS_OR_DATASHEET_GUARANTEES",
+  "purpose": "Quantify what new lower/upper bounds are needed before approving a tap; does not approve any existing tap",
+  "assumptions": [
+    "full stable reference pulses; no SAFE_HOLD competition or multi-glitch input",
+    "raw C and chain originate at the same reference node; additional independent routing must be budgeted separately",
+    "both directions have independently established chain_min and per-leaf effective boundary bounds",
+    "all values below are assumed, including effective latch opening/closing",
+    "maximum DATA/SELECT values merely use numbers from specified datasheet test conditions; not certified board-load bounds",
+    "CPU setup/hold, data path timing, transparency window and FPGA service deadlines remain separate requirements"
+  ],
+  "formula": "D1,D2 >= chain_min + decode_data_min + hold_data_min + buffer_min + effective_open_min - (decode_select_max + hold_data_max + buffer_max + effective_close_max)",
+  "guard_ns": 4.0,
+  "examples": [
+    {
+      "name": "assumed_buffer_1_to_4_ns",
+      "decode_data_min_ns": 0.5,
+      "hold_data_min_ns": 0.5,
+      "buffer_min_ns": 1.0,
+      "effective_open_min_ns": 1.0,
+      "decode_select_max_ns": 5.2,
+      "hold_data_max_ns": 5.0,
+      "buffer_max_ns": 4.0,
+      "effective_close_max_ns": 5.0,
+      "latest_close_bound_ns": 19.2,
+      "earliest_open_bound_ns": "chain_min + 3.0",
+      "margin_bound_ns": "chain_min - 16.2",
+      "chain_min_required_each_direction_ns": 20.2,
+      "tap16_average_required_stage_min_ns": 1.2625
+    },
+    {
+      "name": "assumed_buffer_0_to_12_ns",
+      "decode_data_min_ns": 0.5,
+      "hold_data_min_ns": 0.5,
+      "buffer_min_ns": 0.0,
+      "effective_open_min_ns": 1.0,
+      "decode_select_max_ns": 5.2,
+      "hold_data_max_ns": 5.0,
+      "buffer_max_ns": 12.0,
+      "effective_close_max_ns": 5.0,
+      "latest_close_bound_ns": 27.2,
+      "earliest_open_bound_ns": "chain_min + 2.0",
+      "margin_bound_ns": "chain_min - 25.2",
+      "chain_min_required_each_direction_ns": 29.2,
+      "tap16_average_required_stage_min_ns": 1.825
+    }
+  ],
+  "current_fast_tap16_measured_model_margin_ns": -2.0,
+  "margin_improvement_to_assumed_guard_ns": 6.0,
+  "possible_review_actions": [
+    "establish independent minimum chain rise/fall bounds and bounded leaf closing/opening spread",
+    "review a within-20-cell connection or distribution change against preserved counterexamples before implementing it",
+    "do not use reduced clock frequency alone to claim a negative same-edge margin has been repaired"
+  ],
+  "recommended_physical_tap": null,
+  "project_gate": "STOP_BEFORE_C_AND_D"
+}

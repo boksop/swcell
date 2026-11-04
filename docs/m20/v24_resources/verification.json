@@ -1,0 +1,149 @@
+{
+  "status": "PASS",
+  "classification": "DIGITAL_BOUNDED_DELAY_COSIM_NOT_PHYSICAL_SIGNOFF",
+  "frozen_v23_commit": "aecf570c2e33563179e95e1615fd005cc19817f5",
+  "profiles": [
+    {
+      "profile": "A_zero",
+      "status": "PASS",
+      "suite": "instructions",
+      "cases": 49,
+      "events": 22223
+    },
+    {
+      "profile": "A_zero",
+      "status": "PASS",
+      "suite": "games",
+      "cases": 38,
+      "events": 35108
+    },
+    {
+      "profile": "A_zero",
+      "status": "PASS",
+      "suite": "pressure",
+      "cases": 5,
+      "events": 12
+    },
+    {
+      "profile": "B_zero",
+      "status": "PASS",
+      "suite": "instructions",
+      "cases": 49,
+      "events": 22223
+    },
+    {
+      "profile": "B_zero",
+      "status": "PASS",
+      "suite": "games",
+      "cases": 38,
+      "events": 35108
+    },
+    {
+      "profile": "B_zero",
+      "status": "PASS",
+      "suite": "pressure",
+      "cases": 5,
+      "events": 12
+    },
+    {
+      "profile": "C_zero",
+      "status": "PASS",
+      "suite": "instructions",
+      "cases": 49,
+      "events": 22223
+    },
+    {
+      "profile": "C_zero",
+      "status": "PASS",
+      "suite": "games",
+      "cases": 38,
+      "events": 35108
+    },
+    {
+      "profile": "C_zero",
+      "status": "PASS",
+      "suite": "pressure",
+      "cases": 5,
+      "events": 12
+    },
+    {
+      "profile": "A_timed",
+      "status": "PASS",
+      "suite": "instructions",
+      "cases": 49,
+      "events": 22223
+    },
+    {
+      "profile": "A_timed",
+      "status": "PASS",
+      "suite": "games",
+      "cases": 38,
+      "events": 35108
+    },
+    {
+      "profile": "A_timed",
+      "status": "PASS",
+      "suite": "pressure",
+      "cases": 5,
+      "events": 12
+    },
+    {
+      "profile": "B_timed",
+      "status": "PASS",
+      "suite": "instructions",
+      "cases": 49,
+      "events": 22223
+    },
+    {
+      "profile": "B_timed",
+      "status": "PASS",
+      "suite": "games",
+      "cases": 38,
+      "events": 35108
+    },
+    {
+      "profile": "B_timed",
+      "status": "PASS",
+      "suite": "pressure",
+      "cases": 5,
+      "events": 12
+    },
+    {
+      "profile": "C_timed",
+      "status": "PASS",
+      "suite": "instructions",
+      "cases": 49,
+      "events": 22223
+    },
+    {
+      "profile": "C_timed",
+      "status": "PASS",
+      "suite": "games",
+      "cases": 38,
+      "events": 35108
+    },
+    {
+      "profile": "C_timed",
+      "status": "PASS",
+      "suite": "pressure",
+      "cases": 5,
+      "events": 12
+    },
+    {
+      "profile": "B_slow",
+      "status": "PASS",
+      "suite": "pressure",
+      "cases": 5,
+      "events": 12
+    }
+  ],
+  "illegal_terminals": 50521,
+  "illegal_reset_recoveries": 50521,
+  "memory_cases_per_full_profile": 7,
+  "unit_delay_profiles": 3,
+  "local_skew_negative": "DETECTED",
+  "generator_mux": 116,
+  "cpu_mux": 543,
+  "system_mux_excluding_buffers": 659,
+  "interface": "Common selected CLK_REF, opposite-edge FPGA phase feedback/BRAM service; D1 write event"
+}

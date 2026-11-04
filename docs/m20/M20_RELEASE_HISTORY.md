@@ -24,3 +24,9 @@ Tags均为本地annotated对象。`m20-v2.1-logic-verified`只表示数字功能
 关键源码和ROM清单见[M20_SOURCE_MANIFEST.md](M20_SOURCE_MANIFEST.md)；原始仪器/历史build证据另有[独立索引](../evidence/historical_20261103.csv)，保留原位，不借Git提交记录冒充测试证据。
 
 最终验证记录提交保存两轮干净恢复结果，主分支HEAD可在物理tag之后；没有移动tag，核心/物理封存文件不变。所有具体SHA和测试口径见M20_LOCAL_GIT_REPORT.md，最后记录提交自身SHA由Git解析，避免自引用。
+
+## 2026-11-03：V2.3模式A本地定版 / V2.4候选审核
+
+- aecf570c2e33563179e95e1615fd005cc19817f5：原48文件/证据一致性通过后提交；annotated tag m20-v2.3-two-phase-sim-verified仅模式A数字仿真，非外部Johnson或实体时序。
+- 5e601a9：V2.3用户确认正式报告及3个入口文件，未混V24审查。
+- V2.4候选：116发生器MUX+543核心，当前参数A/B/C完整对照PASS；独立Master/Slave选择弧混合角未覆盖，按用户要求暂停，不创建验收tag，不作正式通过结论。见M20_V24_DESIGN_REVIEW.md。

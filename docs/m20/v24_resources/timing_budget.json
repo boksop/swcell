@@ -1,0 +1,36 @@
+{
+  "classification": "DESIGN_TARGETS_NOT_MEASUREMENTS",
+  "reference_period_ns": 1000,
+  "duty_min": 0.45,
+  "phase_capture": {
+    "generator_settle_target_ns": 100,
+    "pcb_return_target_ns": 20,
+    "fpga_input_setup_guard_target_ns": 20,
+    "available_min_ns": 450,
+    "target_slack_ns": 310
+  },
+  "ram": {
+    "bram_service_edges": 2,
+    "earliest_return_relative_m_ns": 2500,
+    "master_close_relative_ns": 3000,
+    "fpga_io_target_ns": 10,
+    "pcb_target_ns": 10,
+    "cpu_comb_target_ns": 200,
+    "setup_guard_target_ns": 20,
+    "target_slack_ns": 260
+  },
+  "rom": {
+    "return_relative_ns": 6500,
+    "next_master_relative_ns": 8000,
+    "fpga_io_target_ns": 10,
+    "pcb_target_ns": 10,
+    "setup_guard_target_ns": 20,
+    "target_slack_ns": 1460
+  },
+  "local_interlock": {
+    "physical_minimum_data_delay_ns": null,
+    "physical_latch_select_mismatch_ns": null,
+    "physical_timing_status": "UNRESOLVED",
+    "current_digital_model_limit": "Master/Slave share select parameter; independent mixed corners NOT_RUN"
+  }
+}
