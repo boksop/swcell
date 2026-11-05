@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "date": "2026-11-05",
+  "repository": "https://github.com/boksop/swcell",
+  "visibility": "PUBLIC",
+  "release_url": "https://github.com/boksop/swcell/releases/tag/m20-v3.1-autonomous-fpga-verified",
+  "published_at": "2026-11-05T05:10:59Z",
+  "source_commit": "d0df9f97893019687bb2d8c81473a13ac6a074fb",
+  "tag": "m20-v3.1-autonomous-fpga-verified",
+  "tag_object": "42c2b7f3539551d238512309ea4db3b200fcf71c",
+  "tag_target": "d0df9f97893019687bb2d8c81473a13ac6a074fb",
+  "source_tracked_files": 910,
+  "old_tag_objects_preserved": {
+    "refs/tags/m20-v2.1-logic-verified": "77a9d89a677a0a261d611e50404512686fee9c3d",
+    "refs/tags/m20-v2.2-physical-analysis": "dfb25f144f1efbbc1fa2df177f9f3fef59113c2b",
+    "refs/tags/m20-v2.3-two-phase-sim-verified": "eaa85bf5908549f6c0c2fcb9b43a0a912a04f48b",
+    "refs/tags/m20-v2.4-digital-verified": "b4e6faf6abe5d270b55fc79fbc65f779ed909b93",
+    "refs/tags/m20-v3-fpga-hardware-verified": "d47fe2b32114136ac7cc46ea3bbc1a6c13f4cd25"
+  },
+  "assets": [
+    {
+      "name": "m20-v3.1-release-manifest.json",
+      "bytes": 5186
+    },
+    {
+      "name": "m20-v3.1-verification-evidence.tar.gz",
+      "bytes": 2307369
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 329
+    },
+    {
+      "name": "swcell_m20_v3_1_fw0_2_xc7k325tffg900-2_FUNCTIONAL_STORAGE.bit",
+      "bytes": 1312962
+    }
+  ],
+  "remote_source_and_download_checks": "PASS",
+  "checkpoint": "Verified source/tag publication before metadata-only follow-up commit; latest main SHA is resolved from Git or final receipt, not self-embedded.",
+  "history_rewritten": false,
+  "new_hardware_run": false
+}

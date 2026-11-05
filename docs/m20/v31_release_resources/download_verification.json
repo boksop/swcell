@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "source_commit": "d0df9f97893019687bb2d8c81473a13ac6a074fb",
+  "tag": "m20-v3.1-autonomous-fpga-verified",
+  "tag_object": "42c2b7f3539551d238512309ea4db3b200fcf71c",
+  "release_url": "https://github.com/boksop/swcell/releases/tag/m20-v3.1-autonomous-fpga-verified",
+  "published_at": "2026-11-05T05:10:59Z",
+  "downloaded_assets": [
+    {
+      "name": "swcell_m20_v3_1_fw0_2_xc7k325tffg900-2_FUNCTIONAL_STORAGE.bit",
+      "bytes": 1312962,
+      "sha256": "181fb8844407a69f405594440245dc5ed1e50a24e81e103d194aa531835cfd0f"
+    },
+    {
+      "name": "m20-v3.1-verification-evidence.tar.gz",
+      "bytes": 2307369,
+      "sha256": "56536794ab33b48ec17cf6f564a9bef94e031cb4a0b95a9f91a41ef770058adc"
+    },
+    {
+      "name": "m20-v3.1-release-manifest.json",
+      "bytes": 5186,
+      "sha256": "0cc8f7a2a8429698e37837d576bde074b7ee96d73c90253f58faf56d4f07db50"
+    }
+  ],
+  "checksum_file_sha256": "c59950af387065cb13720aa0c083819bca7a76d823b71ead09a44aeb554a692d",
+  "archive_files_readback": 73,
+  "source_manifest_and_rom_match_remote_clone": true,
+  "hardware_bit_sha256": "181fb8844407a69f405594440245dc5ed1e50a24e81e103d194aa531835cfd0f",
+  "old_tags_preserved": "verify final remote refs separately"
+}

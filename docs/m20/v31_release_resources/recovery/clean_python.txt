@@ -1,0 +1,77 @@
+PYTHON_GUARD_FIXTURES created_empty=2 historical_data_copied=0
+.......................PHASE_RESULT 25000000Hz Qphase=4 QMphase=4 PASS Q=0/4096 QM=0/4096
+..........................................................................................................................FF16_STRUCTURE_VERIFIED physical20 effective4/8/12/16 state0 feedback0
+FF16_SMALL_PREPARED taps=4 cases_per_tap=14
+FFCD_BINDING_VERIFIED cpu477+66 phasegen20 frozen_logic_unchanged=1
+FFCD_BINDING_VERIFIED cpu477+66 phasegen20 frozen_logic_unchanged=1
+FFCD_BINDING_VERIFIED cpu477+66 phasegen20 frozen_logic_unchanged=1
+FFCD_BINDING_VERIFIED cpu477+66 phasegen20 frozen_logic_unchanged=1
+FFCD_BINDING_VERIFIED cpu477+66 phasegen20 frozen_logic_unchanged=1
+FFCD_BINDING_VERIFIED cpu477+66 phasegen20 frozen_logic_unchanged=1
+M20V21_GENERATED mux=477 state=33 total=543
+M20V21_GENERATED mux=477 state=33 total=543
+M20V21_GENERATED mux=477 state=33 total=543
+M20V21_GENERATED mux=477 state=33 total=543
+M20V21_GENERATED mux=477 state=33 total=543
+M20V21_GENERATED mux=477 state=33 total=543
+M20V21_GENERATED mux=477 state=33 total=543
+M20V21_GENERATED mux=477 state=33 total=543
+M20V21_GENERATED mux=477 state=33 total=543
+M20V21_GENERATED mux=477 state=33 total=543
+M20V23_GENERATED binding_only=1 comb=477 state=33 storage_mux=66
+M20V23_GENERATED binding_only=1 comb=477 state=33 storage_mux=66
+M20V23_GENERATED binding_only=1 comb=477 state=33 storage_mux=66
+M20V23_GENERATED binding_only=1 comb=477 state=33 storage_mux=66
+M20V23_GENERATED binding_only=1 comb=477 state=33 storage_mux=66
+M20V23_GENERATED binding_only=1 comb=477 state=33 storage_mux=66
+M20V23_GENERATED binding_only=1 comb=477 state=33 storage_mux=66
+M20V23_GENERATED binding_only=1 comb=477 state=33 storage_mux=66
+M20V23_GENERATED binding_only=1 comb=477 state=33 storage_mux=66
+M20V23_GENERATED binding_only=1 comb=477 state=33 storage_mux=66
+M20V23_GENERATED binding_only=1 comb=477 state=33 storage_mux=66
+V24_GENERATED 116
+V24_GENERATED 116
+V24_GENERATED 116
+V24_GENERATED 116
+V24_GENERATED 116
+GATE CLOSED 75000000 12 5 No 1e8: alignment or 1e6 failed/unavailable
+GATE CLOSED 75000000 12 5 No 1e8: alignment or 1e6 failed/unavailable
+..OUTPUT /tmp/tmp7lcbfb5b/run
+........OUTPUT /tmp/tmp4ugs73s0
+.................BUILD f25000000_q4_m12_n1000000_p5_s0_aaaaaaaaaaaa
+BUILD f25000000_q4_m12_n1000000_p5_s0_aaaaaaaaaaaa
+.BUILD f25000000_q4_m12_n1000000_p5_s0_aaaaaaaaaaaa
+BUILD f25000000_q4_m12_n1000000_p5_s0_aaaaaaaaaaaa
+.BUILD f25000000_q4_m12_n1000000_p5_s0_aaaaaaaaaaaa
+.OUTPUT /tmp/tmpypt3mzg2/run
+SKIP 25000000 0 0 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+SKIP 25000000 1 1 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+SKIP 25000000 2 2 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+SKIP 25000000 3 3 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+SKIP 25000000 4 4 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+SKIP 25000000 5 5 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+SKIP 25000000 6 6 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+SKIP 25000000 7 7 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+SKIP 25000000 8 8 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+SKIP 25000000 9 9 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+SKIP 25000000 10 10 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+SKIP 25000000 11 11 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+SKIP 25000000 12 12 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+SKIP 25000000 13 13 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+SKIP 25000000 14 14 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+SKIP 25000000 15 15 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+UNSUPPORTED 25000000
+.OUTPUT /tmp/tmp6c8pvkus/run
+SKIP 25000000 4 12 {'status': 'BUILD_ERROR', 'reason': 'UNIT_TEST_BUILD_ERROR'}
+.OUTPUT /tmp/tmphvd7kpss/run
+NO_VALID_CAPTURE_WINDOW 25000000
+.OUTPUT /tmp/tmp5c2vxq4v/run
+.OUTPUT /tmp/tmpo6cfddpj/run
+POINT ERROR UNIT_TEST_UART_TIMEOUT
+.OUTPUT /tmp/tmp9uxts2w1/run
+SKIP 25000000 4 12 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+.
+----------------------------------------------------------------------
+Ran 181 tests in 25.007s
+
+OK

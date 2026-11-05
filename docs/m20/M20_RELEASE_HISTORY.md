@@ -58,3 +58,5 @@ V3 commit/annotated Tag及干净恢复结果以[发布记录](../GITHUB_PUBLISH_
 ## V3.1自主软件系统（2026-11-05用户确认并授权定版）
 
 固件0.2统一4052字ROM，由CPU处理六键消抖/菜单/两游戏/绘图/软件SPI，平台只含存储、调度、GPIO及调试。Pong A重开缓存失效及加号问题已修复并经用户确认；旧失败反例/初始源快照保留，不将0.1视为最终修复版。正式标签拟为m20-v3.1-autonomous-fpga-verified，仅FUNCTIONAL_STORAGE，数字＋FPGA功能确认，不含STRICT_MUX/实体157/两相硬件/长期时序。实际commit/tag/远程归档以[M20_V31_LOCAL_GIT_REPORT.md](M20_V31_LOCAL_GIT_REPORT.md)补充的核实结果为准。
+
+V3.1实际定版：源码commit d0df9f97893019687bb2d8c81473a13ac6a074fb，annotated对象42c2b7f3539551d238512309ea4db3b200fcf71c指向该提交；Tag m20-v3.1-autonomous-fpga-verified已与main正常推送。Release四附件独立下载及内层73文件SHA通过；后续main只补恢复/发布记录，不移动正式Tag。见M20_V31_LOCAL_GIT_REPORT.md的最终记录。

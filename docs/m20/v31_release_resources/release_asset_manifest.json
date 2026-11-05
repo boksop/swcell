@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-05",
+  "repository": "https://github.com/boksop/swcell",
+  "tag": "m20-v3.1-autonomous-fpga-verified",
+  "tag_object": "42c2b7f3539551d238512309ea4db3b200fcf71c",
+  "source_commit": "d0df9f97893019687bb2d8c81473a13ac6a074fb",
+  "mode": "FUNCTIONAL_STORAGE",
+  "firmware": "M20-V31-0.2",
+  "part": "xc7k325tffg900-2",
+  "source_manifest": {
+    "path": "docs/m20/v31_release_resources/source_manifest.json",
+    "sha256": "124fd978563b2cc61d8fd637fac052712cb7332410c9d41ab046d0d8d72b04be",
+    "source_files": 82,
+    "actual_build_inputs": 16
+  },
+  "artifact_binding": {
+    "part": "xc7k325tffg900-2",
+    "system_clock_hz": 50000000,
+    "cpu_micro_hz": 1000000,
+    "rom_words": 4052,
+    "rom_sha256": "ae5be5055052c8ea9c8a5e4d00de5dcaf2dfe531e84a57fb9dec0b4feef71619",
+    "bitstream_sha256": "181fb8844407a69f405594440245dc5ed1e50a24e81e103d194aa531835cfd0f",
+    "build_tcl": "fpga/projects/m20/autonomous/scripts/build.tcl",
+    "build_tcl_sha256": "3b64603693297c27ee6d654c165c1ce1df9f6aa11f1f43b52ff93db3f93dc39b"
+  },
+  "assets": {
+    "bitstream": {
+      "name": "swcell_m20_v3_1_fw0_2_xc7k325tffg900-2_FUNCTIONAL_STORAGE.bit",
+      "source": "build/fpga/m20/autonomous/restart_plus_r2/swcell_m20_v31_top.bit",
+      "sha256": "181fb8844407a69f405594440245dc5ed1e50a24e81e103d194aa531835cfd0f",
+      "bytes": 1312962
+    },
+    "evidence_archive": {
+      "name": "m20-v3.1-verification-evidence.tar.gz",
+      "sha256": "56536794ab33b48ec17cf6f564a9bef94e031cb4a0b95a9f91a41ef770058adc",
+      "bytes": 2307369
+    }
+  },
+  "clean_recovery": {
+    "status": "PASS",
+    "date": "2026-11-05",
+    "tested_commit": "d0df9f97893019687bb2d8c81473a13ac6a074fb",
+    "method": "fresh detached worktree, no historical build/results copied; installed dependencies/toolchain external",
+    "source_audit": {
+      "status": "PASS",
+      "commit": "d0df9f97893019687bb2d8c81473a13ac6a074fb",
+      "source_files": 82,
+      "build_sources": 16,
+      "regenerated_files": 3,
+      "rom_words": 4052,
+      "free_rom_words": 44,
+      "combination_mux": 477,
+      "cpu_native_ff": 33,
+      "physical_cpu_equivalent": 543,
+      "archived_evidence_files": 65,
+      "release_assets": "NOT_REQUESTED",
+      "git_status": [],
+      "scope": "Sources, deterministic firmware, independent CPU audit, archived historical evidence and manual acceptance; not a new hardware or XSIM test"
+    },
+    "python_tests": 181,
+    "unit_tests": [
+      "GPIO",
+      "synchronous memory",
+      "debug control"
+    ],
+    "joint": {
+      "retired": 2589535,
+      "spi_bytes": 9566,
+      "ram_writes": 373773,
+      "final_ram_nibbles": 256,
+      "status": "PASS"
+    },
+    "synthesis": "PASS 477 explicit MUX",
+    "place_route": "NOT_RERUN; original tested bit and routed reports SHA-verified",
+    "hardware": "NOT_RERUN; existing independent user confirmation retained",
+    "worktree_clean": true,
+    "files": [
+      {
+        "original": "build/v31_release_20261105/clean_source_audit.json",
+        "copy": "docs/m20/v31_release_resources/recovery/clean_source_audit.json",
+        "bytes": 522,
+        "sha256": "849b89404c6d241ff14afa5699e493be5ff0c40494173d0565268df7a85a7669"
+      },
+      {
+        "original": "build/v31_release_20261105/clean_python.txt",
+        "copy": "docs/m20/v31_release_resources/recovery/clean_python.txt",
+        "bytes": 4150,
+        "sha256": "655230425f1fb30aea791d86dbe2e94015059cae881d0795060c2dd1c6b71ceb"
+      },
+      {
+        "original": "build/v31_release_20261105/clean_units.txt",
+        "copy": "docs/m20/v31_release_resources/recovery/clean_units.txt",
+        "bytes": 203,
+        "sha256": "e1c2a537bbb600dd9e53fd81125456c296b4c923561f94726ba23dd89be155eb"
+      },
+      {
+        "original": "build/v31_release_20261105/clean_synthesis.txt",
+        "copy": "docs/m20/v31_release_resources/recovery/clean_synthesis.txt",
+        "bytes": 70629,
+        "sha256": "121c788b305e755d915b7a580f747a8c4c0ea75820ef3eff5037d60b5b9147b5"
+      },
+      {
+        "original": "build/v31_release_20261105/clean_joint.txt",
+        "copy": "docs/m20/v31_release_resources/recovery/clean_joint.txt",
+        "bytes": 1197,
+        "sha256": "aaef39ba9d2a451c2de09a62cf03c4fdb5f7f7320d0e8cb37799ebec22f01cbe"
+      },
+      {
+        "original": "/tmp/swcell-v31-restore-alaFmk/build/sim/m20_v31/release_joint/xsim/simulation.log",
+        "copy": "docs/m20/v31_release_resources/recovery/joint_simulation.txt",
+        "bytes": 3258,
+        "sha256": "159aed8f76280150b0a08a71c9fb895a63dec25735dfcba8e4f971a2b310e1d3"
+      }
+    ]
+  },
+  "hardware_confirmation": {
+    "path": "docs/m20/v31_resources/user_acceptance_restart_plus_20261105.json",
+    "sha256": "adfa4713b7e014620ff620524b18cc226ee1bff5874673e5f09f0099163500df",
+    "not_reexecuted_during_publication": true
+  },
+  "scope": "User-confirmed autonomous FPGA functional system, 477 combinational MUX +33 native FF; not STRICT_MUX/physical157 timing, ILA, Flash or lifetime signoff.",
+  "self_hash_policy": "This manifest excludes its own SHA; SHA256SUMS.txt hashes this manifest and the two payload assets, not itself."
+}

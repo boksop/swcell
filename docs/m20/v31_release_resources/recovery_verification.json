@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "date": "2026-11-05",
+  "tested_commit": "d0df9f97893019687bb2d8c81473a13ac6a074fb",
+  "method": "fresh detached worktree, no historical build/results copied; installed dependencies/toolchain external",
+  "source_audit": {
+    "status": "PASS",
+    "commit": "d0df9f97893019687bb2d8c81473a13ac6a074fb",
+    "source_files": 82,
+    "build_sources": 16,
+    "regenerated_files": 3,
+    "rom_words": 4052,
+    "free_rom_words": 44,
+    "combination_mux": 477,
+    "cpu_native_ff": 33,
+    "physical_cpu_equivalent": 543,
+    "archived_evidence_files": 65,
+    "release_assets": "NOT_REQUESTED",
+    "git_status": [],
+    "scope": "Sources, deterministic firmware, independent CPU audit, archived historical evidence and manual acceptance; not a new hardware or XSIM test"
+  },
+  "python_tests": 181,
+  "unit_tests": [
+    "GPIO",
+    "synchronous memory",
+    "debug control"
+  ],
+  "joint": {
+    "retired": 2589535,
+    "spi_bytes": 9566,
+    "ram_writes": 373773,
+    "final_ram_nibbles": 256,
+    "status": "PASS"
+  },
+  "synthesis": "PASS 477 explicit MUX",
+  "place_route": "NOT_RERUN; original tested bit and routed reports SHA-verified",
+  "hardware": "NOT_RERUN; existing independent user confirmation retained",
+  "worktree_clean": true,
+  "files": [
+    {
+      "original": "build/v31_release_20261105/clean_source_audit.json",
+      "copy": "docs/m20/v31_release_resources/recovery/clean_source_audit.json",
+      "bytes": 522,
+      "sha256": "849b89404c6d241ff14afa5699e493be5ff0c40494173d0565268df7a85a7669"
+    },
+    {
+      "original": "build/v31_release_20261105/clean_python.txt",
+      "copy": "docs/m20/v31_release_resources/recovery/clean_python.txt",
+      "bytes": 4150,
+      "sha256": "655230425f1fb30aea791d86dbe2e94015059cae881d0795060c2dd1c6b71ceb"
+    },
+    {
+      "original": "build/v31_release_20261105/clean_units.txt",
+      "copy": "docs/m20/v31_release_resources/recovery/clean_units.txt",
+      "bytes": 203,
+      "sha256": "e1c2a537bbb600dd9e53fd81125456c296b4c923561f94726ba23dd89be155eb"
+    },
+    {
+      "original": "build/v31_release_20261105/clean_synthesis.txt",
+      "copy": "docs/m20/v31_release_resources/recovery/clean_synthesis.txt",
+      "bytes": 70629,
+      "sha256": "121c788b305e755d915b7a580f747a8c4c0ea75820ef3eff5037d60b5b9147b5"
+    },
+    {
+      "original": "build/v31_release_20261105/clean_joint.txt",
+      "copy": "docs/m20/v31_release_resources/recovery/clean_joint.txt",
+      "bytes": 1197,
+      "sha256": "aaef39ba9d2a451c2de09a62cf03c4fdb5f7f7320d0e8cb37799ebec22f01cbe"
+    },
+    {
+      "original": "/tmp/swcell-v31-restore-alaFmk/build/sim/m20_v31/release_joint/xsim/simulation.log",
+      "copy": "docs/m20/v31_release_resources/recovery/joint_simulation.txt",
+      "bytes": 3258,
+      "sha256": "159aed8f76280150b0a08a71c9fb895a63dec25735dfcba8e4f971a2b310e1d3"
+    }
+  ]
+}

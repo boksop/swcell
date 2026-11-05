@@ -1,0 +1,59 @@
+#-----------------------------------------------------------
+# xsim v2026.1.1 (64-bit)
+# SW Build 6605303 on Fri Sep 04 05:45:32 MDT 2026
+# IP Build 6603865 on Fri Sep 04 05:05:05 MDT 2026
+# SharedData Build 6605217 on Fri Sep 04 02:50:14 MDT 2026
+# Start of session at: Thu Nov  5 13:04:09 2026
+# Process ID         : 443297
+# Current directory  : /tmp/swcell-v31-restore-alaFmk/build/sim/m20_v31/release_joint/xsim
+# Command line       : xsim -log simulation.log -mode tcl -source {xsim.dir/joint/xsim_script.tcl}
+# Log file           : /tmp/swcell-v31-restore-alaFmk/build/sim/m20_v31/release_joint/xsim/simulation.log
+# Journal file       : /tmp/swcell-v31-restore-alaFmk/build/sim/m20_v31/release_joint/xsim/xsim.jou
+# Running On         : b760m
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.5 LTS
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12400
+# CPU Frequency      : 4000.000 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 66135 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 74725 MB
+# Available Virtual  : 67077 MB
+#-----------------------------------------------------------
+source xsim.dir/joint/xsim_script.tcl
+# xsim {joint} -testplusarg OUT=/tmp/swcell-v31-restore-alaFmk/build/sim/m20_v31/release_joint -autoloadwcfg -tclbatch {/tmp/swcell-v31-restore-alaFmk/sim/oled_keys/run.tcl}
+Time resolution is 1 ps
+source /tmp/swcell-v31-restore-alaFmk/sim/oled_keys/run.tcl
+## run all
+V31_PROGRESS checked=     100000 bytes=        444
+V31_PROGRESS checked=     200000 bytes=        894
+V31_PROGRESS checked=     300000 bytes=       1345
+V31_PROGRESS checked=     400000 bytes=       1795
+V31_PROGRESS checked=     500000 bytes=       2225
+V31_PROGRESS checked=     600000 bytes=       2512
+V31_PROGRESS checked=     700000 bytes=       2962
+V31_PROGRESS checked=     800000 bytes=       3410
+V31_PROGRESS checked=     900000 bytes=       3548
+V31_PROGRESS checked=    1000000 bytes=       3687
+V31_PROGRESS checked=    1100000 bytes=       4092
+V31_PROGRESS checked=    1200000 bytes=       4542
+V31_PROGRESS checked=    1300000 bytes=       4944
+V31_PROGRESS checked=    1400000 bytes=       5394
+V31_PROGRESS checked=    1500000 bytes=       5845
+V31_PROGRESS checked=    1600000 bytes=       6272
+V31_PROGRESS checked=    1700000 bytes=       6723
+V31_PROGRESS checked=    1800000 bytes=       7158
+V31_PROGRESS checked=    1900000 bytes=       7531
+V31_PROGRESS checked=    2000000 bytes=       7981
+V31_PROGRESS checked=    2100000 bytes=       8283
+V31_PROGRESS checked=    2200000 bytes=       8349
+V31_PROGRESS checked=    2300000 bytes=       8382
+V31_PROGRESS checked=    2400000 bytes=       8708
+V31_PROGRESS checked=    2500000 bytes=       9158
+M20_V31_JOINT_PASS checked=    2589535 bytes=       9566 writes=     373773
+$finish called at time : 7974178220 ns : File "/tmp/swcell-v31-restore-alaFmk/sim/m20_v31/tb_m20_v31_joint.sv" Line 68
+run: Time (s): cpu = 00:00:00.04 ; elapsed = 00:04:51 . Memory (MB): peak = 1449.992 ; gain = 0.000 ; free physical = 51110 ; free virtual = 65359
+## quit
+INFO: xsimkernel Simulation Memory Usage: 220272 KB (Peak: 285808 KB), Simulation CPU Usage: 292090 ms
+INFO: [Common 17-206] Exiting xsim at Thu Nov  5 13:09:03 2026...

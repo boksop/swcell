@@ -1,0 +1,3 @@
+M20_V31_GPIO_PASS six_single_cycle_pulses=6 gpo_patterns=16
+M20_V31_MEMORY_PASS sampled_address read_hold write_once cancel no_hardware_clear
+M20_V31_CONTROL_PASS stop_pending_write step halt trap reset

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "commit": "d0df9f97893019687bb2d8c81473a13ac6a074fb",
+  "source_files": 82,
+  "build_sources": 16,
+  "regenerated_files": 3,
+  "rom_words": 4052,
+  "free_rom_words": 44,
+  "combination_mux": 477,
+  "cpu_native_ff": 33,
+  "physical_cpu_equivalent": 543,
+  "archived_evidence_files": 65,
+  "release_assets": "PASS",
+  "git_status": [],
+  "scope": "Sources, deterministic firmware, independent CPU audit, archived historical evidence and manual acceptance; not a new hardware or XSIM test"
+}

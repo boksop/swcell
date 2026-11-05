@@ -27,7 +27,7 @@ V3正式整体结论见[阶段报告](docs/reports/m20_phaseV3_20261104.md)，�
 
 独立工程[m20/autonomous](fpga/projects/m20/autonomous/README.md)将软件菜单、六键消抖、Pong/Snake、局部绘图和SSD1306 SPI全部交给冻结4-bit CPU；FPGA只提供单域CPU调度、ROM/RAM、2FF、上电复位及调试。统一ROM4052/4096字，剩44字；CPU仍477组合MUX＋33原生FF。新软件、FPGA工程和证据不覆盖V3 F06。
 
-[架构及接口](docs/m20/M20_V31_ARCHITECTURE.md)｜[软件SPI](docs/m20/M20_V31_SOFTWARE_SPI.md)｜[性能](docs/m20/M20_V31_SOFTWARE_PERFORMANCE.md)｜[当前测试/硬件状态](docs/m20/M20_V31_TEST_REPORT.md)。2026-11-05用户确认基本功能和修正版球拍/加号均正常；[正式阶段报告](docs/reports/m20_phaseV3.1_20261105.md)。本阶段仍限FUNCTIONAL_STORAGE；用户现已授权本地定版与Release，执行结果见[Git定版与归档](docs/m20/M20_V31_LOCAL_GIT_REPORT.md)。
+[架构及接口](docs/m20/M20_V31_ARCHITECTURE.md)｜[软件SPI](docs/m20/M20_V31_SOFTWARE_SPI.md)｜[性能](docs/m20/M20_V31_SOFTWARE_PERFORMANCE.md)｜[当前测试/硬件状态](docs/m20/M20_V31_TEST_REPORT.md)。2026-11-05用户确认基本功能和修正版球拍/加号均正常；[正式阶段报告](docs/reports/m20_phaseV3.1_20261105.md)。本阶段仍限FUNCTIONAL_STORAGE；源码标签[m20-v3.1-autonomous-fpga-verified](https://github.com/boksop/swcell/tree/m20-v3.1-autonomous-fpga-verified)已发布，[Release下载bit与完整证据](https://github.com/boksop/swcell/releases/tag/m20-v3.1-autonomous-fpga-verified)。版本SHA、恢复验证及归档见[Git定版报告](docs/m20/M20_V31_LOCAL_GIT_REPORT.md)。
 
 ## 从这里开始
 

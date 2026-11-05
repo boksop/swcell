@@ -1,8 +1,12 @@
 # SwCell 当前任务进度
 
-## 活动任务 M20-V31-RELEASE-20261105
+## 最新任务 M20-V31-RELEASE-20261105
 
-**IN_PROGRESS**，main基线4a7d1fd。用户明确授权本地Git定版、annotated Tag m20-v3.1-autonomous-fpga-verified、远程同步及将最终bit存GitHub Release。读取[发布检查点](docs/tasks/m20-v31-release-20261105.md)。先源/ROM/证据SHA核对及候选扫描，再提交、干净恢复验证、Tag/正常push/Release资产下载校验。保留旧Tag/失败证据，docs.zip留本机；不改RTL/ISA/ROM功能，不操作硬件/Flash，不force/rewrite。
+**COMPLETED，2026-11-05。** 用户授权本地定版及远程/Release归档已落实。源码提交`d0df9f97893019687bb2d8c81473a13ac6a074fb`；annotated tag `m20-v3.1-autonomous-fpga-verified`（对象42c2b7f…）目标为该提交，已正常推送。Public [Release](https://github.com/boksop/swcell/releases/tag/m20-v3.1-autonomous-fpga-verified)四附件已发布并独立下载校验。
+
+干净源码恢复181 Python、2589535指令/9566SPI联合、GPIO/BRAM/调试单元、新工程综合PASS；82来源/16实际bit输入、3固件再生成、65份Git精选证据及Release内73文件/约50.6MB原始证据SHA通过。最终用户验收bit SHA181fb884…、ROM ae5be505…，CPU477/33/543不变；未重跑硬件、未改ISA/旧模块/旧Tag，未上传缓存或凭据。docs.zip由用户自行删除，从未入库。
+
+[定版报告](docs/m20/M20_V31_LOCAL_GIT_REPORT.md)、[发布检查点](docs/tasks/m20-v31-release-20261105.md)。main会包含最后的恢复/下载元数据补充提交，Tag保持源码冻结点；实际最终main SHA在Git及build/v31_release_20261105/final_receipt.json核实，不自引用。若会话中断于元数据commit/push，先检查status和远程main，仅完成该记录同步，不重复Tag/Release创建。不自动开始下一阶段。
 
 ## 当前任务 M20-V31-AUTONOMOUS-20261105
 
@@ -12,7 +16,7 @@
 
 当前已加载build/fpga/m20/autonomous/restart_plus_r2/swcell_m20_v31_top.bit（SHA181fb884…）；45条新UART错误0，人工确认独立JSON在docs/m20/v31_resources。原r5重开/图案失败及首次修复测试失败原位保留，初始证据v31_initial_r5_resources，不改历史数据为PASS。
 
-**恢复入口：**没有未完成实现/测试；下一项工作由用户决定。原始数据results/M20_V31需独立备份；ILA/STRICT_MUX/实体157/Flash/长期可靠性不在本次验收内。main仍4a7d1fd，V3.1尚未commit/Tag/push；不自动发布、不重复下载，不将用户docs.zip纳管。当前无后台采集依赖。
+**恢复入口：**没有未完成实现/测试；下一项工作由用户决定。原始数据results/M20_V31需独立备份；ILA/STRICT_MUX/实体157/Flash/长期可靠性不在本次验收内。功能验收完成时尚未定版，现已由上述独立发布任务建立commit/Tag/Release；不重复发布或下载，原用户docs.zip后已自行删除。当前无后台采集依赖。
 
 ## 最新仓库设置（2026-11-05）
 
