@@ -2,7 +2,7 @@
 
 SwCell 覆盖 M0～M20 等模块的逻辑设计、仿真和实体测试。仓库按“可复用逻辑 / 模块验证 / 公共板卡”分层；FPGA 芯片型号不再作为所有测试工程的混合目录。
 
-仓库：[boksop/swcell](https://github.com/boksop/swcell)（Private）；V3硬件功能代码标签：[m20-v3-fpga-hardware-verified](https://github.com/boksop/swcell/tree/m20-v3-fpga-hardware-verified)。main含后续已授权origin的工具兼容修正；历史标签不移动。
+仓库：[boksop/swcell](https://github.com/boksop/swcell)（Public，2026-11-05用户明确授权）；V3硬件功能代码标签：[m20-v3-fpga-hardware-verified](https://github.com/boksop/swcell/tree/m20-v3-fpga-hardware-verified)。main含后续已授权origin的工具兼容修正；历史标签不移动。
 
 当前板卡为用户确认的 **XC7K325T-2FFG900C，50MHz，3.3V 单端 IO**；具体 PCB 修订未记录。M11 已有上板验证工程，M20 已完成 CPU 数字联合验收，V3功能存储FPGA原型已上板，严格反馈存储未放行。
 
@@ -22,6 +22,12 @@ SwCell 覆盖 M0～M20 等模块的逻辑设计、仿真和实体测试。仓库
 真实157预算为 **477组合＋33位×2存储＝543**，加20颗发生器共563，不含Buffer。FPGA LUT位置数不能当作157数量。V3没有把前馈延迟链放入FPGA时钟路径，以50MHz单域CE调度完成原型；原生FF不能冒充真实双MUX DFF时序验证。
 
 V3正式整体结论见[阶段报告](docs/reports/m20_phaseV3_20261104.md)，最终F06为Pong10/Snake5 tick/s、SPI10MHz：KEY5/A在BOOT页启动、游戏中切换，KEY7暂停/继续、KEY6/B重启，四方向为KEY2/0/3/1。OLED为CPU RAM的只读呈现，FPGA不替CPU计算游戏规则。精选[原样证据及SHA](docs/evidence/m20_v3/README.md)随源码保存，大波形/bit/DCP不纳入Git。
+
+## V3.1 CPU自主软件系统（功能验收通过）
+
+独立工程[m20/autonomous](fpga/projects/m20/autonomous/README.md)将软件菜单、六键消抖、Pong/Snake、局部绘图和SSD1306 SPI全部交给冻结4-bit CPU；FPGA只提供单域CPU调度、ROM/RAM、2FF、上电复位及调试。统一ROM4052/4096字，剩44字；CPU仍477组合MUX＋33原生FF。新软件、FPGA工程和证据不覆盖V3 F06。
+
+[架构及接口](docs/m20/M20_V31_ARCHITECTURE.md)｜[软件SPI](docs/m20/M20_V31_SOFTWARE_SPI.md)｜[性能](docs/m20/M20_V31_SOFTWARE_PERFORMANCE.md)｜[当前测试/硬件状态](docs/m20/M20_V31_TEST_REPORT.md)。2026-11-05用户确认基本功能和修正版球拍/加号均正常；[正式阶段报告](docs/reports/m20_phaseV3.1_20261105.md)。本阶段仍限FUNCTIONAL_STORAGE；用户现已授权本地定版与Release，执行结果见[Git定版与归档](docs/m20/M20_V31_LOCAL_GIT_REPORT.md)。
 
 ## 从这里开始
 
@@ -49,7 +55,8 @@ fpga/
     m11/functional/       # M11低速基础功能工程
     m11/performance/      # M11高速/多镜像扫描工程
     m11/common/           # M11独有的子卡引脚约束
-    m20/cpu_validation/   # M20结构级CPU FPGA原型、只读游戏显示
+    m20/cpu_validation/   # V3冻结原型、只读游戏显示
+    m20/autonomous/       # V3.1 CPU软件菜单、按键、绘图和SPI
     diagnostics/          # UART回环、双引脚识别等独立诊断
     _template/            # 后续模块工程的接入模板
 rtl/                      # 公共与模块逻辑，不混入板级引脚
@@ -112,7 +119,7 @@ M20 正式标签 `m20-v2.4-digital-verified` 仅表示声明时序假设下数�
 
 全部现存正式源码、生成器/SV/连接JSON、ISA/游戏ROM、TB/Tcl/XDC、物理参数/资源清单和小型验证证据纳管；build、虚拟环境、Vivado数据库、大型波形、bitstream、旧ZIP、个人配置和凭据默认忽略。原始数据不因忽略而删除，备份与来源SHA见[工作流](docs/GIT_LOCAL_WORKFLOW.md)及[历史证据索引](docs/evidence/historical_20261103.csv)。
 
-本项目尚未选择开源许可证，本次仅授权Private发布，不自动增加LICENSE。第三方工具、器件数据手册/完整IP不打包；已生成报告中的厂商抬头保留，原资料来源链接在相应技术文档。当前仓库无Git LFS/子模块依赖；实际PCB原理图/布局在本树未找到，资源预算及接口契约见docs/m20，未来应按目录规范接入真实文件。
+本项目尚未选择开源许可证；首次发布为Private，2026-11-05经用户明确授权转Public，未自动增加LICENSE。第三方工具、器件数据手册/完整IP不打包；已生成报告中的厂商抬头保留，原资料来源链接在相应技术文档。当前仓库无Git LFS/子模块依赖；实际PCB原理图/布局在本树未找到，资源预算及接口契约见docs/m20，未来应按目录规范接入真实文件。
 
 实体157全芯片时序、时钟Buffer/PCB、电压温度与长期可靠性、Flash固化仍开放；OLED反显白底闪烁按用户要求延期。7个旧M11原始数据链接在当前磁盘缺失，报告入口保留，不伪造恢复。
 

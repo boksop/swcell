@@ -1,0 +1,5 @@
+port,leaf_driver,reference
+OLED_CS_N,service/cpu/g_ff.gpo_reg_reg[3]/Q,FDRE
+OLED_DC,service/cpu/g_ff.gpo_reg_reg[2]/Q,FDRE
+OLED_SCK,service/cpu/g_ff.gpo_reg_reg[1]/Q,FDRE
+OLED_MOSI,service/cpu/g_ff.gpo_reg_reg[0]/Q,FDRE

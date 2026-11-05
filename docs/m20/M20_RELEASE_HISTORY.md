@@ -54,3 +54,7 @@ Tags均为本地annotated对象。`m20-v2.1-logic-verified`只表示数字功能
 用户在首次Private GitHub发布任务明确确认XC7K325T上两游戏、按键/OLED已通过；[正式V3报告](../reports/m20_phaseV3_20261104.md)与74份原样精选证据纳管。当前F06使用FUNCTIONAL_STORAGE：477逻辑组合MUX＋33原生FF，CPU预算仍543。STRICT_MUX实际P&R有85项LUTLP-1/WNS−22.002ns，无bit/无硬件放行，实体157时序开放。原603、缺陷545、V2.1修复543及V2.3/V2.4原Tag全部保留。
 
 V3 commit/annotated Tag及干净恢复结果以[发布记录](../GITHUB_PUBLISH_REPORT.md)实际输出为准；不倒填历史，不将FPGA原生FF验证冒充双MUX DFF签核。
+
+## V3.1自主软件系统（2026-11-05用户确认并授权定版）
+
+固件0.2统一4052字ROM，由CPU处理六键消抖/菜单/两游戏/绘图/软件SPI，平台只含存储、调度、GPIO及调试。Pong A重开缓存失效及加号问题已修复并经用户确认；旧失败反例/初始源快照保留，不将0.1视为最终修复版。正式标签拟为m20-v3.1-autonomous-fpga-verified，仅FUNCTIONAL_STORAGE，数字＋FPGA功能确认，不含STRICT_MUX/实体157/两相硬件/长期时序。实际commit/tag/远程归档以[M20_V31_LOCAL_GIT_REPORT.md](M20_V31_LOCAL_GIT_REPORT.md)补充的核实结果为准。

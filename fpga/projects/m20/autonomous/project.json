@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "m20/autonomous",
+  "status": "IMPLEMENTED",
+  "description": "V3.1：连续CPU、统一ROM、CPU软件菜单/六键/SSD1306 SPI；实机状态见专项报告",
+  "board_profile": "fpga/boards/swcell_k325t/board.tcl",
+  "build_script": "fpga/projects/m20/autonomous/scripts/build.tcl",
+  "readme": "fpga/projects/m20/autonomous/README.md",
+  "constraints": [
+    "fpga/projects/diagnostics/oled_keys/constraints/io.xdc"
+  ],
+  "source_globs": [
+    "rtl/modules/m20/v31/*.sv",
+    "rtl/modules/m20/v3/generated/m20v3_cpu_core.sv",
+    "rtl/modules/m20/v3/swc_v3_mux157.sv",
+    "fpga/projects/m20/autonomous/rtl/*.sv"
+  ],
+  "references": [
+    "software/m20_300/v31/m20_v31.memh",
+    "software/m20_300/v31/manifest.json",
+    "docs/m20/M20_V31_ARCHITECTURE.md"
+  ]
+}

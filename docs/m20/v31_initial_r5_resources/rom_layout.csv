@@ -1,0 +1,13 @@
+section,start,end_exclusive,words
+boot,0,302,302
+menu_enter,302,1453,1151
+spi,1453,1845,392
+address,1845,1896,51
+cell,1896,1947,51
+paddle,1947,1974,27
+clear_screen,1974,2027,53
+poll_wait,2027,2071,44
+hex_digit,2071,2493,422
+poll_keys,2493,2557,64
+P_boot,2557,2724,167
+S_boot,2724,4023,1299

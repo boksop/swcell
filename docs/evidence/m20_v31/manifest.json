@@ -1,0 +1,402 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-05",
+  "firmware": "M20-V31-0.2",
+  "mode": "FUNCTIONAL_STORAGE",
+  "tag": "m20-v3.1-autonomous-fpga-verified",
+  "count": 65,
+  "bytes": 1122412,
+  "files": [
+    {
+      "source": "build/fpga/m20/autonomous/restart_plus_r2/timing.rpt",
+      "copy": "fpga/timing.rpt",
+      "bytes": 23051,
+      "sha256": "29938a1a635625e69edaea71fecf553a760d7a13dcca6f7b9c52c5b8c8494e27"
+    },
+    {
+      "source": "build/fpga/m20/autonomous/restart_plus_r2/utilization.rpt",
+      "copy": "fpga/utilization.rpt",
+      "bytes": 2665,
+      "sha256": "cd913e3b18cbf05d09d6281b15b2fb1b05543617a7298c3633acc02ca2e23a8c"
+    },
+    {
+      "source": "build/fpga/m20/autonomous/restart_plus_r2/synth_utilization.rpt",
+      "copy": "fpga/synth_utilization.rpt",
+      "bytes": 2557,
+      "sha256": "a0987534ec70f290d8152f6dad0da5239ad96684e21fb0b00fdeedb65bea833e"
+    },
+    {
+      "source": "build/fpga/m20/autonomous/restart_plus_r2/synth_timing.rpt",
+      "copy": "fpga/synth_timing.rpt",
+      "bytes": 23509,
+      "sha256": "4ce682b4d900b9011350fa6c61f9c5f54af2a55169abf500ada808e095fd5bc2"
+    },
+    {
+      "source": "build/fpga/m20/autonomous/restart_plus_r2/drc.rpt",
+      "copy": "fpga/drc.rpt",
+      "bytes": 1362,
+      "sha256": "b8652f011ed6440295e304d06fd28b061df5a33084f1d53296e2c4c56f428a00"
+    },
+    {
+      "source": "build/fpga/m20/autonomous/restart_plus_r2/cdc.rpt",
+      "copy": "fpga/cdc.rpt",
+      "bytes": 2563,
+      "sha256": "6c4ebb553b64eb65a90fd8e25c7c4097e78e709c8a2a87294eee54949c72cbe9"
+    },
+    {
+      "source": "build/fpga/m20/autonomous/restart_plus_r2/check_timing.rpt",
+      "copy": "fpga/check_timing.rpt",
+      "bytes": 3226,
+      "sha256": "6dade61a0faabcc38c315e2351430117fce81c2b0c53c2fedc581db6911ae954"
+    },
+    {
+      "source": "build/fpga/m20/autonomous/restart_plus_r2/ram.rpt",
+      "copy": "fpga/ram.rpt",
+      "bytes": 10038,
+      "sha256": "5a9dc96956a9cdc966104eb51b6cd9a3e5eb363428912e5af0d95337281873e5"
+    },
+    {
+      "source": "build/fpga/m20/autonomous/restart_plus_r2/io.rpt",
+      "copy": "fpga/io.rpt",
+      "bytes": 279892,
+      "sha256": "a5e92a2b68ebd45c0ad0454e9b59a990c267e0403f1e6a9ec5d359d6629cbe5d"
+    },
+    {
+      "source": "build/fpga/m20/autonomous/restart_plus_r2/source_sha256.txt",
+      "copy": "fpga/source_sha256.txt",
+      "bytes": 1663,
+      "sha256": "d48c5db0d0e355749c0a8d79f697a4e92b2c3d535efe656b08ddb497b1c4c473"
+    },
+    {
+      "source": "build/fpga/m20/autonomous/restart_plus_r2/software_profile.txt",
+      "copy": "fpga/software_profile.txt",
+      "bytes": 63,
+      "sha256": "0f60d9b2155640d2af66aaee5ee76fcf41d98329a6ca24f32e0b1fe75eb148e1"
+    },
+    {
+      "source": "build/fpga/m20/autonomous/restart_plus_r2/cpu_mux_cells.txt",
+      "copy": "fpga/cpu_mux_cells.txt",
+      "bytes": 17462,
+      "sha256": "462f5054ae77edbae37c8708da91c07cacafb5b39f1a53e83a5e09b3a0ae6ca5"
+    },
+    {
+      "source": "build/fpga/m20/autonomous/restart_plus_r2/route_audit/counts.json",
+      "copy": "fpga/route_audit/counts.json",
+      "bytes": 121,
+      "sha256": "caaa663e3c3ae59db956df2071906b99d8aec05f127b5ce232ce38df06b84351"
+    },
+    {
+      "source": "build/fpga/m20/autonomous/restart_plus_r2/route_audit/mux_mapping.csv",
+      "copy": "fpga/route_audit/mux_mapping.csv",
+      "bytes": 78338,
+      "sha256": "3b7064ab246da1f9f1689a0b4d03b2580c18014556026c5b16a34d206968043c"
+    },
+    {
+      "source": "build/fpga/m20/autonomous/restart_plus_r2/route_audit/oled_drivers.csv",
+      "copy": "fpga/route_audit/oled_drivers.csv",
+      "bytes": 220,
+      "sha256": "57040b8551efd5c97846d65604f2b4664b610c4f022a3ff82a3520416ae06aa4"
+    },
+    {
+      "source": "build/fpga/m20/autonomous/restart_plus_r2/route_audit/clocks.rpt",
+      "copy": "fpga/route_audit/clocks.rpt",
+      "bytes": 13666,
+      "sha256": "8ad5beb7013e5d500e5f76e018464d01befec80273f966cc678f620292d6ea34"
+    },
+    {
+      "source": "build/sim/m20_v31/restart_plus_joint_r2/xsim/compile.log",
+      "copy": "simulation/joint/xsim/compile.txt",
+      "bytes": 3618,
+      "sha256": "31118a720895352fbb15ee6bb82ecffda1cb24dc779838a6d49f41dff53dbee2"
+    },
+    {
+      "source": "build/sim/m20_v31/restart_plus_joint_r2/xsim/elaborate.log",
+      "copy": "simulation/joint/xsim/elaborate.txt",
+      "bytes": 2394,
+      "sha256": "694992880790ca738c2e209e5ddb1d7289c3835f7537f3744d70caae57dd4f7c"
+    },
+    {
+      "source": "build/sim/m20_v31/restart_plus_joint_r2/xsim/simulation.log",
+      "copy": "simulation/joint/xsim/simulation.txt",
+      "bytes": 3213,
+      "sha256": "74f08a397f7cc536a53964ea79fb9ecca12b68a3e6f2cfe14f091f2f402bc273"
+    },
+    {
+      "source": "build/sim/m20_v31/restart_plus_joint_r2/verification.json",
+      "copy": "simulation/joint/verification.json",
+      "bytes": 885,
+      "sha256": "6901a442c28c080c27e94fd43ff14456d23833d839e4059138392bdd1dd5f7cc"
+    },
+    {
+      "source": "build/sim/m20_v31/restart_plus_joint_r2/final_ram.memh",
+      "copy": "simulation/joint/final_ram.memh",
+      "bytes": 512,
+      "sha256": "3f5635cdd4971f98e0c26e9c57aa7fcd39df9952131532f9e5098715e469deaf"
+    },
+    {
+      "source": "build/sim/m20_v31/restart_plus_joint_r2/spi_bytes.csv",
+      "copy": "simulation/joint/spi_bytes.csv",
+      "bytes": 171928,
+      "sha256": "5dcc8217031b7b65ee0e84c75b2e74f0ae819d9857aa6e332fd2f63eecf6039e"
+    },
+    {
+      "source": "build/sim/m20_v31/restart_plus_joint_r2/drawing_cycles.csv",
+      "copy": "simulation/joint/drawing_cycles.csv",
+      "bytes": 307,
+      "sha256": "e6575c35a466fad04621012e832334bc01057768d5ebe5af5ed59e5c7e0af540"
+    },
+    {
+      "source": "build/sim/m20_v31/restart_plus_joint_r2/gddram_screens.json",
+      "copy": "simulation/joint/gddram_screens.json",
+      "bytes": 9484,
+      "sha256": "1a881c4620e08bf96ae858f3f347c633bd59316dd9571759b9b71bbeae3c3047"
+    },
+    {
+      "source": "build/sim/m20_v31/restart_plus_joint_r2/parsed_uart/summary.json",
+      "copy": "simulation/joint/parsed_uart/summary.json",
+      "bytes": 76,
+      "sha256": "6207841ef345791c2bad63072861e9b27a913df23ea3e3d480b997035e6bf9c2"
+    },
+    {
+      "source": "build/sim/m20_v31/units_r4/compile.log",
+      "copy": "simulation/units/compile.txt",
+      "bytes": 1441,
+      "sha256": "97bba4265114a1c2a75ce0d8c6303673adc29032c3987a17e45067a3bf960e39"
+    },
+    {
+      "source": "build/sim/m20_v31/units_r4/gpio.log",
+      "copy": "simulation/units/gpio.txt",
+      "bytes": 1619,
+      "sha256": "2d41188ce49bc169a2b993695a9d65ea8cc32f2cb3fa525748c410e7d3e89bc1"
+    },
+    {
+      "source": "build/sim/m20_v31/units_r4/memory.log",
+      "copy": "simulation/units/memory.txt",
+      "bytes": 1651,
+      "sha256": "0755c8fe03ea0a1843887f6e6573a1ccff17ab229d59efe2a0fd3d1cfb3643f1"
+    },
+    {
+      "source": "build/sim/m20_v31/units_r4/control.log",
+      "copy": "simulation/units/control.txt",
+      "bytes": 1637,
+      "sha256": "673da736b1254e60140f0cb954eb1682667260eed4ebe848cd48bc86e097e5de"
+    },
+    {
+      "source": "build/sim/m20_v31/units_r4/probe.memh",
+      "copy": "simulation/units/probe.memh",
+      "bytes": 15,
+      "sha256": "9a15739aa8441bfbac0f1ac6f726bd537f9e4b7ab12e848706cb272aa88a4da8"
+    },
+    {
+      "source": "build/sim/m20_v31/v3_core_baseline_r1/xsim/isa.log",
+      "copy": "simulation/core/isa.txt",
+      "bytes": 1668,
+      "sha256": "b1576b521840ddcd013bf20a5a1891e5f6652767257ec0c32801901d78a6a2c7"
+    },
+    {
+      "source": "build/sim/m20_v31/v3_core_baseline_r1/xsim/illegal.log",
+      "copy": "simulation/core/illegal.txt",
+      "bytes": 1734,
+      "sha256": "b113b5239a00ce4d4e07e6a2ed92fac0e423fc643e3601162f3d209593584a2f"
+    },
+    {
+      "source": "build/sim/m20_v31/v3_core_baseline_r1/xsim/datapath.log",
+      "copy": "simulation/core/datapath.txt",
+      "bytes": 1717,
+      "sha256": "0c836d1ca7eb1939f7c2a705477f8f91b315320035c1e7b848db96dd423e2f8e"
+    },
+    {
+      "source": "build/sim/m20_v31/v3_core_baseline_r1/xsim/memory.log",
+      "copy": "simulation/core/memory.txt",
+      "bytes": 1785,
+      "sha256": "8b6dcc618c8e6699c8c33ac94e5309a3ad8726b4dfb5107c7ff46608e06b68f2"
+    },
+    {
+      "source": "build/sim/m20_v31/v3_core_baseline_r1/xsim/instructions.log",
+      "copy": "simulation/core/instructions.txt",
+      "bytes": 5423,
+      "sha256": "a576dea9126a689a6d5aae4ea71536338f89777760e36774d8b83de589b995ac"
+    },
+    {
+      "source": "build/sim/m20_v31/v3_core_baseline_r1/xsim/games.log",
+      "copy": "simulation/core/games.txt",
+      "bytes": 4796,
+      "sha256": "215c5ba06fe114db065f438d656933cc205016bb528e5dd2cbda698ae0bb3cb3"
+    },
+    {
+      "source": "build/sim/m20_v31/v3_core_baseline_r1/instructions/comparison.json",
+      "copy": "simulation/core/instructions/comparison.json",
+      "bytes": 10307,
+      "sha256": "ae8249c3245f517a3ef8d27d7b1849bb6765dfa38fbda5ac75b0ecff731b815c"
+    },
+    {
+      "source": "build/sim/m20_v31/v3_core_baseline_r1/instructions/three_way_comparison.json",
+      "copy": "simulation/core/instructions/three_way_comparison.json",
+      "bytes": 154,
+      "sha256": "1cd3bb0f6ca149e28a039d335629a6975bfd00182071c9a1fe45724469e8bed3"
+    },
+    {
+      "source": "build/sim/m20_v31/v3_core_baseline_r1/games/comparison.json",
+      "copy": "simulation/core/games/comparison.json",
+      "bytes": 8282,
+      "sha256": "63d0004c43e231edde1825c7d59e7527f5fef998c93a7a340adbb9bad0b05522"
+    },
+    {
+      "source": "build/sim/m20_v31/v3_core_baseline_r1/games/three_way_comparison.json",
+      "copy": "simulation/core/games/three_way_comparison.json",
+      "bytes": 154,
+      "sha256": "d7bf887b1c29cfaefa5a79c4ada6d39ca475cf4a10767fc48a4054c6a7c37170"
+    },
+    {
+      "source": "build/m20_v31/restart_plus_python_r2.txt",
+      "copy": "final/restart_plus_python_r2.txt",
+      "bytes": 4150,
+      "sha256": "068e97927c4341eb00ae64f1edcfe6ea9e61c1c2c8aab7e9c77eddff10c92b3c"
+    },
+    {
+      "source": "build/m20_v31/restart_plus_relocation.json",
+      "copy": "final/restart_plus_relocation.json",
+      "bytes": 171,
+      "sha256": "6d860adaedfc6ecfcbab9464165b52319af1cb8700f984eebb35fe571437b8d4"
+    },
+    {
+      "source": "build/m20_v31/restart_plus_program_r2.txt",
+      "copy": "final/restart_plus_program_r2.txt",
+      "bytes": 2604,
+      "sha256": "c4ce60e7830019696502d5840241b20d99dc94cd623cd139c936ccd48f1759ef"
+    },
+    {
+      "source": "build/m20_v31/restart_plus_build_r2.txt",
+      "copy": "final/restart_plus_build_r2.txt",
+      "bytes": 107151,
+      "sha256": "5186439fed912b01f1cef4b8ff478898c943b848340123a06aef4ddc58dc5ba2"
+    },
+    {
+      "source": "build/m20_v31/restart_plus_route_audit_r2.txt",
+      "copy": "final/restart_plus_route_audit_r2.txt",
+      "bytes": 6018,
+      "sha256": "1321efa0c8c25b81f34d0c1a0391362c8442f4e5d22eb0aa22994ac3b49fbbd1"
+    },
+    {
+      "source": "build/m20_v31/restart_plus_capture_r2.txt",
+      "copy": "final/restart_plus_capture_r2.txt",
+      "bytes": 1651,
+      "sha256": "4da61f3fa12d22cd174bda8b78c41168e28638ec89fb252d38e99e58f41c39aa"
+    },
+    {
+      "source": "build/m20_v31/pong_restart_before_fix.txt",
+      "copy": "negative/pong_restart_before_fix.txt",
+      "bytes": 519,
+      "sha256": "e0ebcfe6dca1fcdb2c764096fbe74fc5786f37ec322ef57ff44e34f048d84179"
+    },
+    {
+      "source": "build/m20_v31/plus_first_encoding.json",
+      "copy": "negative/plus_first_encoding.json",
+      "bytes": 290,
+      "sha256": "0252e272eac0aca6e0fc95997188931fe8487747ebd9d91bfa43c1b46f244446"
+    },
+    {
+      "source": "build/m20_v31/restart_plus_python_r1.txt",
+      "copy": "negative/restart_plus_python_r1.txt",
+      "bytes": 5652,
+      "sha256": "f7895010b9c1b565b117a304b7425caa242bac1e71892340a171c76452555fc8"
+    },
+    {
+      "source": "build/m20_v31/restart_plus_joint_r1.txt",
+      "copy": "negative/restart_plus_joint_r1.txt",
+      "bytes": 600,
+      "sha256": "88a15f91dcbd060b2e7c63ca852d0878fd1b71afada6c2dc4cf184851f4670bf"
+    },
+    {
+      "source": "build/m20_v31/restart_plus_build_r1.txt",
+      "copy": "negative/restart_plus_build_r1.txt",
+      "bytes": 105442,
+      "sha256": "7462008eae1e031d4bbec79b2b7dc2154cb3218de7a6578c5af19d614690c15d"
+    },
+    {
+      "source": "results/M20_V31/20261105_first_download_r1/raw.jsonl",
+      "copy": "hardware/20261105_first_download_r1/raw.jsonl",
+      "bytes": 42048,
+      "sha256": "58f47b224bdd253af6b0f3dde8c18e77f33a7b7ce48b41aeccee92f81fb8216b"
+    },
+    {
+      "source": "results/M20_V31/20261105_first_download_r1/states.csv",
+      "copy": "hardware/20261105_first_download_r1/states.csv",
+      "bytes": 17341,
+      "sha256": "9e759e157d06c2b1019829af4dfb5b571feb456397f98102c0ca9db593c5cc45"
+    },
+    {
+      "source": "results/M20_V31/20261105_first_download_r1/summary.json",
+      "copy": "hardware/20261105_first_download_r1/summary.json",
+      "bytes": 75,
+      "sha256": "abbfa3f6f9252b9dd6dc743a444740d14258e659b4a16c5b66ffc7a336964e47"
+    },
+    {
+      "source": "results/M20_V31/20261105_debug_controls_r1/raw.jsonl",
+      "copy": "hardware/20261105_debug_controls_r1/raw.jsonl",
+      "bytes": 1829,
+      "sha256": "f9d0c5814550565075ad89ea2b88ad9d5e96fb2947469c2b3f40dafe808a5f08"
+    },
+    {
+      "source": "results/M20_V31/20261105_debug_controls_r1/verification.json",
+      "copy": "hardware/20261105_debug_controls_r1/verification.json",
+      "bytes": 3056,
+      "sha256": "b93115b358ec1a543fac7e564055be578afe0cd64151bd64a3481918bfdb0586"
+    },
+    {
+      "source": "results/M20_V31/20261105_restart_plus_r2/raw.jsonl",
+      "copy": "hardware/20261105_restart_plus_r2/raw.jsonl",
+      "bytes": 11926,
+      "sha256": "031f17fb6676515a21744ba1c151570adf97a71c1dd2310d5b5abcfb15e99834"
+    },
+    {
+      "source": "results/M20_V31/20261105_restart_plus_r2/states.csv",
+      "copy": "hardware/20261105_restart_plus_r2/states.csv",
+      "bytes": 5547,
+      "sha256": "326f028946ab8ea98b48172661dec553d04753cc346e579b799aff8cbf48d36f"
+    },
+    {
+      "source": "results/M20_V31/20261105_restart_plus_r2/summary.json",
+      "copy": "hardware/20261105_restart_plus_r2/summary.json",
+      "bytes": 74,
+      "sha256": "bc0627240fcaa14f5e3f09ea6738e4dee0732a59a068a22c14266100eb587e52"
+    },
+    {
+      "source": "build/m20_v31/pre_fix_20261105/host/python/tests/test_m20_v31.py",
+      "copy": "initial_r5_source/host/python/tests/test_m20_v31.py.txt",
+      "bytes": 5515,
+      "sha256": "39dff2d6c2851264f2dbc492d32f7b2c0ecbc541f5f7d70db946b4d8853be830"
+    },
+    {
+      "source": "build/m20_v31/pre_fix_20261105/software/m20_300/v31/m20_v31.asm",
+      "copy": "initial_r5_source/software/m20_300/v31/m20_v31.asm",
+      "bytes": 45072,
+      "sha256": "327772aef3e33707a63817964809c068629a1a453333b77df98eb4c8e8831ac2"
+    },
+    {
+      "source": "build/m20_v31/pre_fix_20261105/software/m20_300/v31/m20_v31.memh",
+      "copy": "initial_r5_source/software/m20_300/v31/m20_v31.memh",
+      "bytes": 20115,
+      "sha256": "117fae4d8eed34a0c7af4d37d3ce335300190eb802e47deb3b01158dd170deb3"
+    },
+    {
+      "source": "build/m20_v31/pre_fix_20261105/software/m20_300/v31/manifest.json",
+      "copy": "initial_r5_source/software/m20_300/v31/manifest.json",
+      "bytes": 15628,
+      "sha256": "5c9e41d6dec3d0086994a91208c21b125865d39538429cba423d4235eece2769"
+    },
+    {
+      "source": "build/m20_v31/pre_fix_20261105/tools/m20/v31/build_firmware.py",
+      "copy": "initial_r5_source/tools/m20/v31/build_firmware.py.txt",
+      "bytes": 15668,
+      "sha256": "b0babacb54bd4fb3a8bdbbdd3bd41889e81f8caf74f0b37bbf4891efc3e6c154"
+    },
+    {
+      "source": "build/m20_v31/pre_fix_20261105/tools/m20/v31/verify_firmware.py",
+      "copy": "initial_r5_source/tools/m20/v31/verify_firmware.py.txt",
+      "bytes": 9074,
+      "sha256": "b399ccecca83c6af10929f8996ebb61a1f4b5b3ed0885c98be05624cdce967c4"
+    }
+  ],
+  "policy": "Exact contents, .log copies explicitly renamed .txt; old failures remain failures. No cache/bit/waves in Git. Manifest excludes itself."
+}

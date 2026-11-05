@@ -59,3 +59,6 @@ fpga/xc7k325t/constraints/board.local.xdc
 *.pfx
 id_rsa
 id_ed25519
+
+# User-retained root documentation backup; preserve locally, exclude from releases.
+/docs.zip

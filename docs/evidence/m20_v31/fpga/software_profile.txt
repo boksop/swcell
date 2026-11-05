@@ -1,0 +1,1 @@
+ROM_FILE=/home/boksop/swcell/software/m20_300/v31/m20_v31.memh

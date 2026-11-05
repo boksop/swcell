@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-05",
+  "timezone": "Asia/Shanghai",
+  "status": "USER_CONFIRMED_PASS",
+  "stage": "M20 V3.1 autonomous CPU software system",
+  "mode": "FUNCTIONAL_STORAGE",
+  "build": "M20V31A01",
+  "bitstream": "build/fpga/m20/autonomous/implementation_r5/swcell_m20_v31_top.bit",
+  "bitstream_sha256": "e18edb3c560c5b4ce27bdf0da4fe043f27a4a29652ff852d5af46df099292f8c",
+  "evidence_source": "User replies to the two hardware acceptance questions in this conversation",
+  "responses": [
+    {
+      "question": "V3.1 已通过 JTAG 下载，UART 显示 CPU 连续运行、错误计数为0。OLED 是否显示 M20、PONG、SNAKE 菜单？请试上下选择、KEY5(A)进入两款游戏；游戏中 A 重开、KEY6(B)返回菜单。实际显示及按键是否正常？",
+      "answer": "菜单和两款游戏均正常"
+    },
+    {
+      "question": "请再检查：上＋下同时长按约3秒能否返回菜单；KEY7暂停/继续、RST_N复位后重新进入菜单是否正常？",
+      "answer": "都正常"
+    }
+  ],
+  "scope": "User-observed menu, Pong/Snake display and controls, software return, debug pause and system reset. Counts and durations of manual actions were not recorded.",
+  "excluded": [
+    "STRICT_MUX hardware validation",
+    "physical NC7SZ157 timing signoff",
+    "instrument-measured SPI frequency or frame rate",
+    "ILA capture",
+    "Flash programming",
+    "long-term reliability"
+  ],
+  "raw_uart_unchanged": true,
+  "rtl_and_firmware_unchanged": true,
+  "new_commit_or_tag_created": false
+}

@@ -1,0 +1,38 @@
+Vivado Simulator v2026.1.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /home/boksop/AMDDesignTools/2026.1.1/Vivado/bin/unwrapped/lnx64.o/xelab tb_m20_v31_joint -s joint --timescale 1ns/1ps --generic_top ROM_FILE=/home/boksop/swcell/build/sim/m20_v31/restart_plus_joint_r2/firmware/m20_v31.memh 
+Multi-threading is on. Using 10 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3645] port 'halted' remains unconnected for this instance [/home/boksop/swcell/sim/m20_v31/tb_m20_v31_joint.sv:22]
+WARNING: [VRFC 10-3645] port 'debug_legal' remains unconnected for this instance [/home/boksop/swcell/rtl/modules/m20/v31/swc_m20_v31_service.sv:33]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package work.m20_pkg
+Compiling module work.swc_power_on_reset(HOLD_CYCLES=5...
+Compiling module work.swc_input_sync(WIDTH=6)
+Compiling module work.swc_m20_v31_gpio
+Compiling module work.swc_input_sync
+Compiling module work.swc_debounce(WIDTH=1,STABLE_CYCL...
+Compiling module work.swc_uart_rx_default
+Compiling module work.swc_m20_v31_memory(ROM_FILE="/ho...
+Compiling module work.swc_v3_mux157
+Compiling module work.m20v3_cpu_core_default
+Compiling module work.swc_m20_v31_service(ROM_FILE="/h...
+Compiling module work.swc_uart_tx(CLK_HZ=50000000)
+Compiling module work.swc_uart_hex_json(HEX_DIGITS=92,...
+Compiling module work.swcell_m20_v31_top(ROM_FILE="/ho...
+Compiling module work.ssd1306_cpu_model
+Compiling module work.m20_decoder
+Compiling module work.m20_control
+Compiling module work.m20_pc
+Compiling module work.m20_ar
+Compiling module work.m20_alu
+Compiling module work.m20_cpu_core
+Compiling module work.tb_m20_v31_joint(ROM_FILE="/home...
+Built simulation snapshot joint

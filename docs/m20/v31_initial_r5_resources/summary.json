@@ -1,0 +1,29 @@
+{
+  "status": "DIGITAL_PASS_HARDWARE_PENDING",
+  "firmware_words": 4023,
+  "free_words": 73,
+  "isa_unchanged": true,
+  "mode": "FUNCTIONAL_STORAGE",
+  "cpu": {
+    "mux_lut3": 477,
+    "cpu_native_ff": 33,
+    "global_clock_buffers": 1,
+    "oled_cpu_gpo_direct_drivers": 4,
+    "mode": "FUNCTIONAL_STORAGE"
+  },
+  "sta": {
+    "wns_ns": 1.972,
+    "tns_ns": 0.0,
+    "whs_ns": 0.092,
+    "ths_ns": 0.0,
+    "wpws_ns": 9.6
+  },
+  "source_sha256": "327772aef3e33707a63817964809c068629a1a453333b77df98eb4c8e8831ac2",
+  "rom_sha256": "117fae4d8eed34a0c7af4d37d3ce335300190eb802e47deb3b01158dd170deb3",
+  "bitstream_sha256": "e18edb3c560c5b4ce27bdf0da4fe043f27a4a29652ff852d5af46df099292f8c",
+  "inputs": {
+    "software": "build/m20_v31/software_final",
+    "implementation": "build/fpga/m20/autonomous/implementation_r5"
+  },
+  "measurement_scope": "software instruction simulation and FPGA route STA; not physical157 or OLED hardware acceptance"
+}

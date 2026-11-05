@@ -1,5 +1,23 @@
 # SwCell 当前任务进度
 
+## 活动任务 M20-V31-RELEASE-20261105
+
+**IN_PROGRESS**，main基线4a7d1fd。用户明确授权本地Git定版、annotated Tag m20-v3.1-autonomous-fpga-verified、远程同步及将最终bit存GitHub Release。读取[发布检查点](docs/tasks/m20-v31-release-20261105.md)。先源/ROM/证据SHA核对及候选扫描，再提交、干净恢复验证、Tag/正常push/Release资产下载校验。保留旧Tag/失败证据，docs.zip留本机；不改RTL/ISA/ROM功能，不操作硬件/Flash，不force/rewrite。
+
+## 当前任务 M20-V31-AUTONOMOUS-20261105
+
+**COMPLETED，2026-11-05，Asia/Shanghai。** 用户确认基本菜单/两游戏/长按/暂停/复位，并在修复后确认重复A重开球拍正常、Pong球与Snake食物均为加号。[正式报告](docs/reports/m20_phaseV3.1_20261105.md)、[完整检查点](docs/tasks/m20-v31-autonomous-20261105.md)。
+
+最终固件M20-V31-0.2：4052/4096字ROM剩44，CPU自主输入/菜单/游戏/绘图/软件SPI；平台RTL/477网表/ISA/原V3不改。181 Python、2589535指令联合/V1/Python、9566SPI字节/全RAM通过；布局布线WNS1.972/WHS0.092ns，477MUX/33FF/4OLED直驱。原CPU87/57331及非法/数学/访存回归保留。
+
+当前已加载build/fpga/m20/autonomous/restart_plus_r2/swcell_m20_v31_top.bit（SHA181fb884…）；45条新UART错误0，人工确认独立JSON在docs/m20/v31_resources。原r5重开/图案失败及首次修复测试失败原位保留，初始证据v31_initial_r5_resources，不改历史数据为PASS。
+
+**恢复入口：**没有未完成实现/测试；下一项工作由用户决定。原始数据results/M20_V31需独立备份；ILA/STRICT_MUX/实体157/Flash/长期可靠性不在本次验收内。main仍4a7d1fd，V3.1尚未commit/Tag/push；不自动发布、不重复下载，不将用户docs.zip纳管。当前无后台采集依赖。
+
+## 最新仓库设置（2026-11-05）
+
+**SWCELL-GITHUB-PUBLIC-20261105：COMPLETED。** 用户明确要求将boksop/swcell改为Public，已通过GitHub CLI完成，并用无认证GitHub API确认可公开读取。仓库https://github.com/boksop/swcell；main仍4a7d1fd9377a3ed1f80a7dc010e3467811089de0，无代码/历史或Tag变更。本次仅改仓库设置并本地更新本进度，不执行新的commit/push；下方Private记录为2026-11-04首次发布的历史状态。新记录/home/boksop/swcell_github_visibility_20261105.json。未添加或选择开源许可证。
+
 2026-11-04，Asia/Shanghai。main；当前任务 **SWCELL-GITHUB-PUBLISH-20261104：COMPLETED**。
 
 ## 已完成

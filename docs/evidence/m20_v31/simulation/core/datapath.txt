@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# xsim v2026.1.1 (64-bit)
+# SW Build 6605303 on Fri Sep 04 05:45:32 MDT 2026
+# IP Build 6603865 on Fri Sep 04 05:05:05 MDT 2026
+# SharedData Build 6605217 on Fri Sep 04 02:50:14 MDT 2026
+# Start of session at: Thu Nov  5 11:51:17 2026
+# Process ID         : 194862
+# Current directory  : /home/boksop/swcell/build/sim/m20_v31/v3_core_baseline_r1/xsim
+# Command line       : xsim -log datapath.log -mode tcl -source {xsim.dir/datapath/xsim_script.tcl}
+# Log file           : /home/boksop/swcell/build/sim/m20_v31/v3_core_baseline_r1/xsim/datapath.log
+# Journal file       : /home/boksop/swcell/build/sim/m20_v31/v3_core_baseline_r1/xsim/xsim.jou
+# Running On         : b760m
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.5 LTS
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12400
+# CPU Frequency      : 4000.759 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 66135 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 74725 MB
+# Available Virtual  : 68573 MB
+#-----------------------------------------------------------
+source xsim.dir/datapath/xsim_script.tcl
+# xsim {datapath} -autoloadwcfg -tclbatch {/home/boksop/swcell/sim/m20_v21/run_all.tcl}
+Time resolution is 1 ps
+source /home/boksop/swcell/sim/m20_v21/run_all.tcl
+## run all
+M20V21_DATAPATH_PASS math_vectors=27840 xz_probes=3
+$finish called at time : 55686 ns : File "/home/boksop/swcell/build/sim/m20_v31/v3_core_baseline_r1/tb/tb_m20v21_datapath.sv" Line 65
+## quit
+INFO: xsimkernel Simulation Memory Usage: 303508 KB (Peak: 356940 KB), Simulation CPU Usage: 2110 ms
+INFO: [Common 17-206] Exiting xsim at Thu Nov  5 11:51:20 2026...

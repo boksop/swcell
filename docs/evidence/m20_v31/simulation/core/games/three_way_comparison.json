@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "case_count": 38,
+  "events": 35108,
+  "evidence": "Independent V1/V2 XSIM CSVs and final RAM agree; V2 also matches V0 Python"
+}

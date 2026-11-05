@@ -1,0 +1,21 @@
+{
+  "status": "PREPARED_NOT_PUBLISHED",
+  "tag": "m20-v3.1-autonomous-fpga-verified",
+  "mode": "FUNCTIONAL_STORAGE",
+  "firmware": "M20-V31-0.2",
+  "small_count": 65,
+  "small_bytes": 1122412,
+  "release_evidence_count": 73,
+  "release_evidence_uncompressed_bytes": 50566239,
+  "bitstream": {
+    "name": "swcell_m20_v3_1_fw0_2_xc7k325tffg900-2_FUNCTIONAL_STORAGE.bit",
+    "source": "build/fpga/m20/autonomous/restart_plus_r2/swcell_m20_v31_top.bit",
+    "sha256": "181fb8844407a69f405594440245dc5ed1e50a24e81e103d194aa531835cfd0f",
+    "bytes": 1312962
+  },
+  "evidence_archive": {
+    "name": "m20-v3.1-verification-evidence.tar.gz",
+    "sha256": "56536794ab33b48ec17cf6f564a9bef94e031cb4a0b95a9f91a41ef770058adc",
+    "bytes": 2307369
+  }
+}

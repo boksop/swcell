@@ -1,0 +1,47 @@
+{
+  "python": {
+    "status": "PASS",
+    "tests": 179,
+    "evidence": "build/m20_v31/python_final.txt"
+  },
+  "joint": {
+    "status": "PASS",
+    "instructions": 2051485,
+    "spi_bytes": 7250,
+    "ram_writes": 301736,
+    "log": "build/sim/m20_v31/joint_r5/xsim/simulation.log"
+  },
+  "baseline": {
+    "status": "PASS",
+    "scenarios": 87,
+    "events": 57331,
+    "illegal": 50521,
+    "math": 27840,
+    "memory": 7
+  },
+  "units": {
+    "status": "PASS",
+    "markers": [
+      "M20_V31_GPIO_PASS six_single_cycle_pulses=6 gpo_patterns=16",
+      "M20_V31_MEMORY_PASS sampled_address read_hold write_once cancel no_hardware_clear",
+      "M20_V31_CONTROL_PASS stop_pending_write step halt trap reset"
+    ]
+  },
+  "uart_simulation": {
+    "records": 279,
+    "invalid_lines": 1,
+    "hardware_observation": false
+  },
+  "hardware": {
+    "jtag": "PASS",
+    "records": 143,
+    "errors": 0,
+    "unrelated_prefix_lines": 8,
+    "human_ui": "USER_CONFIRMED_PASS",
+    "raw": "results/M20_V31/20261105_first_download_r1/raw.jsonl",
+    "debug_controls": "PASS",
+    "debug_evidence": "results/M20_V31/20261105_debug_controls_r1/verification.json",
+    "human_ui_evidence": "docs/m20/v31_resources/user_acceptance_20261105.json"
+  },
+  "original_v3_bit_sha256": "972d8ebc5378c244ce5f530be9c8f0b0c9b04853c6c56576c82f96e995d79c49"
+}

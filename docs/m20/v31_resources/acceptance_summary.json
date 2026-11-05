@@ -1,0 +1,14 @@
+{
+  "status": "COMPLETED",
+  "date": "2026-11-05",
+  "mode": "FUNCTIONAL_STORAGE",
+  "firmware": "M20-V31-0.2",
+  "formal_report": "docs/reports/m20_phaseV3.1_20261105.md",
+  "human_confirmation": "docs/m20/v31_resources/user_acceptance_restart_plus_20261105.json",
+  "initial_generated_summary": "summary.json",
+  "raw_records": 45,
+  "cpu_errors": 0,
+  "remaining_rom_words": 44,
+  "git_commit": null,
+  "tag": null
+}

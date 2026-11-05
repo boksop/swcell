@@ -1,0 +1,99 @@
+PYTHON_GUARD_FIXTURES created_empty=0 historical_data_copied=0
+.......................PHASE_RESULT 25000000Hz Qphase=4 QMphase=4 PASS Q=0/4096 QM=0/4096
+..................................................................................................................F.F.....FF16_STRUCTURE_VERIFIED physical20 effective4/8/12/16 state0 feedback0
+FF16_SMALL_PREPARED taps=4 cases_per_tap=14
+FFCD_BINDING_VERIFIED cpu477+66 phasegen20 frozen_logic_unchanged=1
+FFCD_BINDING_VERIFIED cpu477+66 phasegen20 frozen_logic_unchanged=1
+FFCD_BINDING_VERIFIED cpu477+66 phasegen20 frozen_logic_unchanged=1
+FFCD_BINDING_VERIFIED cpu477+66 phasegen20 frozen_logic_unchanged=1
+FFCD_BINDING_VERIFIED cpu477+66 phasegen20 frozen_logic_unchanged=1
+FFCD_BINDING_VERIFIED cpu477+66 phasegen20 frozen_logic_unchanged=1
+M20V21_GENERATED mux=477 state=33 total=543
+M20V21_GENERATED mux=477 state=33 total=543
+M20V21_GENERATED mux=477 state=33 total=543
+M20V21_GENERATED mux=477 state=33 total=543
+M20V21_GENERATED mux=477 state=33 total=543
+M20V21_GENERATED mux=477 state=33 total=543
+M20V21_GENERATED mux=477 state=33 total=543
+M20V21_GENERATED mux=477 state=33 total=543
+M20V21_GENERATED mux=477 state=33 total=543
+M20V21_GENERATED mux=477 state=33 total=543
+M20V23_GENERATED binding_only=1 comb=477 state=33 storage_mux=66
+M20V23_GENERATED binding_only=1 comb=477 state=33 storage_mux=66
+M20V23_GENERATED binding_only=1 comb=477 state=33 storage_mux=66
+M20V23_GENERATED binding_only=1 comb=477 state=33 storage_mux=66
+M20V23_GENERATED binding_only=1 comb=477 state=33 storage_mux=66
+M20V23_GENERATED binding_only=1 comb=477 state=33 storage_mux=66
+M20V23_GENERATED binding_only=1 comb=477 state=33 storage_mux=66
+M20V23_GENERATED binding_only=1 comb=477 state=33 storage_mux=66
+M20V23_GENERATED binding_only=1 comb=477 state=33 storage_mux=66
+M20V23_GENERATED binding_only=1 comb=477 state=33 storage_mux=66
+M20V23_GENERATED binding_only=1 comb=477 state=33 storage_mux=66
+V24_GENERATED 116
+V24_GENERATED 116
+V24_GENERATED 116
+V24_GENERATED 116
+V24_GENERATED 116
+GATE CLOSED 75000000 12 5 No 1e8: alignment or 1e6 failed/unavailable
+GATE CLOSED 75000000 12 5 No 1e8: alignment or 1e6 failed/unavailable
+..OUTPUT /tmp/tmpm3hsguej/run
+........OUTPUT /tmp/tmp1bl4w951
+.................BUILD f25000000_q4_m12_n1000000_p5_s0_aaaaaaaaaaaa
+BUILD f25000000_q4_m12_n1000000_p5_s0_aaaaaaaaaaaa
+.BUILD f25000000_q4_m12_n1000000_p5_s0_aaaaaaaaaaaa
+BUILD f25000000_q4_m12_n1000000_p5_s0_aaaaaaaaaaaa
+.BUILD f25000000_q4_m12_n1000000_p5_s0_aaaaaaaaaaaa
+.OUTPUT /tmp/tmpis2lnc_c/run
+SKIP 25000000 0 0 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+SKIP 25000000 1 1 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+SKIP 25000000 2 2 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+SKIP 25000000 3 3 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+SKIP 25000000 4 4 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+SKIP 25000000 5 5 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+SKIP 25000000 6 6 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+SKIP 25000000 7 7 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+SKIP 25000000 8 8 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+SKIP 25000000 9 9 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+SKIP 25000000 10 10 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+SKIP 25000000 11 11 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+SKIP 25000000 12 12 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+SKIP 25000000 13 13 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+SKIP 25000000 14 14 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+SKIP 25000000 15 15 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+UNSUPPORTED 25000000
+.OUTPUT /tmp/tmpdvk4vp9g/run
+SKIP 25000000 4 12 {'status': 'BUILD_ERROR', 'reason': 'UNIT_TEST_BUILD_ERROR'}
+.OUTPUT /tmp/tmp10yxx8sk/run
+NO_VALID_CAPTURE_WINDOW 25000000
+.OUTPUT /tmp/tmp0iii8upu/run
+.OUTPUT /tmp/tmps5vmns1j/run
+POINT ERROR UNIT_TEST_UART_TIMEOUT
+.OUTPUT /tmp/tmpjeobpyzv/run
+SKIP 25000000 4 12 {'status': 'UNSUPPORTED', 'reason': 'FPGA_TIMING'}
+.
+======================================================================
+FAIL: test_pong_restart_redraws_stationary_paddles_and_plus_ball (test_m20_v31.M20V31Tests.test_pong_restart_redraws_stationary_paddles_and_plus_ball)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/boksop/swcell/host/python/tests/test_m20_v31.py", line 116, in test_pong_restart_redraws_stationary_paddles_and_plus_ball
+    r.check_pixels('pong')
+  File "/home/boksop/swcell/tools/m20/v31/verify_firmware.py", line 136, in check_pixels
+    assert self.oled.ram[y*128+x*8:y*128+x*8+8]==[0,0,24,126,126,24,0,0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+======================================================================
+FAIL: test_snake_food_is_plus_in_decoded_software_spi (test_m20_v31.M20V31Tests.test_snake_food_is_plus_in_decoded_software_spi)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/boksop/swcell/host/python/tests/test_m20_v31.py", line 125, in test_snake_food_is_plus_in_decoded_software_spi
+    r.check_pixels('snake')
+  File "/home/boksop/swcell/tools/m20/v31/verify_firmware.py", line 128, in check_pixels
+    assert actual==expected,('snake pixel',x,y,actual,expected)
+           ^^^^^^^^^^^^^^^^
+AssertionError: ('snake pixel', 10, 3, [126, 126, 24, 0, 0, 0, 0, 0], [0, 0, 24, 126, 126, 24, 0, 0])
+
+----------------------------------------------------------------------
+Ran 181 tests in 23.756s
+
+FAILED (failures=2)

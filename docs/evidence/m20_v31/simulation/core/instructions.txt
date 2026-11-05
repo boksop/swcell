@@ -1,0 +1,82 @@
+#-----------------------------------------------------------
+# xsim v2026.1.1 (64-bit)
+# SW Build 6605303 on Fri Sep 04 05:45:32 MDT 2026
+# IP Build 6603865 on Fri Sep 04 05:05:05 MDT 2026
+# SharedData Build 6605217 on Fri Sep 04 02:50:14 MDT 2026
+# Start of session at: Thu Nov  5 11:51:39 2026
+# Process ID         : 195921
+# Current directory  : /home/boksop/swcell/build/sim/m20_v31/v3_core_baseline_r1/xsim
+# Command line       : xsim -log instructions.log -mode tcl -source {xsim.dir/instructions/xsim_script.tcl}
+# Log file           : /home/boksop/swcell/build/sim/m20_v31/v3_core_baseline_r1/xsim/instructions.log
+# Journal file       : /home/boksop/swcell/build/sim/m20_v31/v3_core_baseline_r1/xsim/xsim.jou
+# Running On         : b760m
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.5 LTS
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12400
+# CPU Frequency      : 2884.594 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 66135 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 74725 MB
+# Available Virtual  : 68635 MB
+#-----------------------------------------------------------
+source xsim.dir/instructions/xsim_script.tcl
+# xsim {instructions} -testplusarg CASE_DIR=/home/boksop/swcell/build/sim/m20_v31/v3_core_baseline_r1/instructions -autoloadwcfg -tclbatch {/home/boksop/swcell/sim/m20_v21/run_all.tcl}
+Time resolution is 1 ps
+source /home/boksop/swcell/sim/m20_v21/run_all.tcl
+## run all
+M20V21_CASE_PASS name=immediates_0 events=3073 cycles=6146 writes=0 mode=0
+M20V21_CASE_PASS name=immediates_1 events=3073 cycles=6146 writes=0 mode=0
+M20V21_CASE_PASS name=immediates_2 events=3073 cycles=6146 writes=0 mode=0
+M20V21_CASE_PASS name=immediates_3 events=3073 cycles=6146 writes=0 mode=0
+M20V21_CASE_PASS name=immediates_4 events=2049 cycles=4098 writes=0 mode=0
+M20V21_CASE_PASS name=ram_alu_0 events=1083 cycles=3246 writes=198 mode=0
+M20V21_CASE_PASS name=ram_alu_1 events=1083 cycles=3246 writes=198 mode=0
+M20V21_CASE_PASS name=all_ram_addresses events=2049 cycles=7170 writes=512 mode=0
+M20V21_CASE_PASS name=io_ar_flags_0_0 events=449 cycles=898 writes=0 mode=0
+M20V21_CASE_PASS name=io_ar_flags_0_1 events=449 cycles=898 writes=0 mode=0
+M20V21_CASE_PASS name=io_ar_flags_1_0 events=449 cycles=898 writes=0 mode=0
+M20V21_CASE_PASS name=io_ar_flags_1_1 events=449 cycles=898 writes=0 mode=0
+M20V21_CASE_PASS name=pc_fff_wrap events=3 cycles=9 writes=1 mode=0
+M20V21_CASE_PASS name=branches_taken_and_not_taken events=17 cycles=34 writes=0 mode=0
+M20V21_CASE_PASS name=trap_0010 events=1 cycles=2 writes=0 mode=0
+M20V21_CASE_PASS name=trap_0100 events=1 cycles=2 writes=0 mode=0
+M20V21_CASE_PASS name=trap_10f0 events=1 cycles=2 writes=0 mode=0
+M20V21_CASE_PASS name=trap_7300 events=1 cycles=2 writes=0 mode=0
+M20V21_CASE_PASS name=trap_7001 events=1 cycles=2 writes=0 mode=0
+M20V21_CASE_PASS name=trap_8a00 events=1 cycles=2 writes=0 mode=0
+M20V21_CASE_PASS name=trap_9001 events=1 cycles=2 writes=0 mode=0
+M20V21_CASE_PASS name=trap_9f00 events=1 cycles=2 writes=0 mode=0
+M20V21_CASE_PASS name=trap_a010 events=1 cycles=2 writes=0 mode=0
+M20V21_CASE_PASS name=trap_a201 events=1 cycles=2 writes=0 mode=0
+M20V21_CASE_PASS name=trap_a700 events=1 cycles=2 writes=0 mode=0
+M20V21_CASE_PASS name=trap_e001 events=1 cycles=2 writes=0 mode=0
+M20V21_CASE_PASS name=trap_e300 events=1 cycles=2 writes=0 mode=0
+M20V21_CASE_PASS name=trap_f001 events=1 cycles=2 writes=0 mode=0
+M20V21_CASE_PASS name=trap_f200 events=1 cycles=2 writes=0 mode=0
+M20V21_CASE_PASS name=trap_ffff events=1 cycles=2 writes=0 mode=0
+M20V21_CASE_PASS name=unloaded_is_physical_trap events=1 cycles=2 writes=0 mode=0
+M20V21_CASE_PASS name=random_program_00 events=117 cycles=333 writes=4 mode=0
+M20V21_CASE_PASS name=random_program_01 events=117 cycles=330 writes=4 mode=0
+M20V21_CASE_PASS name=random_program_02 events=117 cycles=330 writes=3 mode=0
+M20V21_CASE_PASS name=random_program_03 events=115 cycles=311 writes=5 mode=0
+M20V21_CASE_PASS name=random_program_04 events=104 cycles=307 writes=3 mode=0
+M20V21_CASE_PASS name=random_program_05 events=116 cycles=325 writes=7 mode=0
+M20V21_CASE_PASS name=random_program_06 events=104 cycles=289 writes=3 mode=0
+M20V21_CASE_PASS name=random_program_07 events=125 cycles=352 writes=6 mode=0
+M20V21_CASE_PASS name=random_program_08 events=103 cycles=284 writes=0 mode=0
+M20V21_CASE_PASS name=random_program_09 events=104 cycles=310 writes=5 mode=0
+M20V21_CASE_PASS name=random_program_10 events=103 cycles=281 writes=4 mode=0
+M20V21_CASE_PASS name=random_program_11 events=122 cycles=331 writes=2 mode=0
+M20V21_CASE_PASS name=random_program_12 events=107 cycles=277 writes=1 mode=0
+M20V21_CASE_PASS name=random_program_13 events=114 cycles=315 writes=4 mode=0
+M20V21_CASE_PASS name=random_program_14 events=113 cycles=343 writes=7 mode=0
+M20V21_CASE_PASS name=random_program_15 events=127 cycles=374 writes=3 mode=0
+M20V21_CASE_PASS name=delayed_async_bus events=13 cycles=44 writes=2 mode=0
+M20V21_CASE_PASS name=sync_ram_adapter events=13 cycles=44 writes=2 mode=1
+M20V21_CPU_PASS cases=49 lockstep_cycles=51340
+$finish called at time : 514876 ns : File "/home/boksop/swcell/build/sim/m20_v31/v3_core_baseline_r1/tb/tb_m20v21_cpu.sv" Line 188
+## quit
+INFO: xsimkernel Simulation Memory Usage: 307632 KB (Peak: 356968 KB), Simulation CPU Usage: 1450 ms
+INFO: [Common 17-206] Exiting xsim at Thu Nov  5 11:51:42 2026...

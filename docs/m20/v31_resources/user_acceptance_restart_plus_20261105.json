@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-05",
+  "timezone": "Asia/Shanghai",
+  "status": "USER_CONFIRMED_PASS",
+  "stage": "M20 V3.1 autonomous CPU software system",
+  "mode": "FUNCTIONAL_STORAGE",
+  "firmware": "M20-V31-0.2",
+  "platform_build": "M20V31A01",
+  "bitstream": "build/fpga/m20/autonomous/restart_plus_r2/swcell_m20_v31_top.bit",
+  "bitstream_sha256": "181fb8844407a69f405594440245dc5ed1e50a24e81e103d194aa531835cfd0f",
+  "rom_sha256": "ae5be5055052c8ea9c8a5e4d00de5dcaf2dfe531e84a57fb9dec0b4feef71619",
+  "responses": [
+    {
+      "question": "修正版已下载。请进入 Pong，连续按几次 KEY5(A)重开，并试移动左右球拍；两边球拍是否都会正常显示？",
+      "answer": "重开后两边球拍均正常"
+    },
+    {
+      "question": "Pong 的球和 Snake 的食物现在是否都显示为加号？",
+      "answer": "两处均已显示为加号"
+    }
+  ],
+  "initial_ui_confirmation": "docs/m20/v31_initial_r5_resources/user_acceptance_20261105.json",
+  "previous_issue": "docs/m20/v31_resources/bug_report_20261105.json",
+  "scope": "Targeted confirmation of fixed restart and plus glyphs, combined with prior menu, games, long-press, debug pause and system-reset confirmation. Manual action counts and durations were not recorded.",
+  "excluded": [
+    "STRICT_MUX hardware",
+    "physical NC7SZ157 timing signoff",
+    "instrument-measured SPI frequency and frame rate",
+    "ILA",
+    "Flash",
+    "long-term reliability"
+  ],
+  "raw_uart_unchanged": true,
+  "platform_rtl_and_cpu_isa_unchanged": true,
+  "new_commit_or_tag_created": false
+}

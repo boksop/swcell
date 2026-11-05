@@ -1,0 +1,35 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1.1 (lin64) Build 6605303 Fri Sep 04 05:45:32 MDT 2026
+| Date         : Thu Nov  5 12:25:51 2026
+| Host         : b760m running 64-bit Ubuntu 24.04.5 LTS
+| Command      : report_utilization -hierarchical -file /home/boksop/swcell/build/fpga/m20/autonomous/restart_plus_r2/synth_utilization.rpt
+| Design       : swcell_m20_v31_top
+| Device       : xc7k325tffg900-2
+| Speed File   : -2
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++------------------------+---------------------+------------+------------+---------+------+-----+--------+--------+------------+
+|        Instance        |        Module       | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++------------------------+---------------------+------------+------------+---------+------+-----+--------+--------+------------+
+| swcell_m20_v31_top     |               (top) |        975 |        975 |       0 |    0 | 982 |      2 |      1 |          0 |
+|   (swcell_m20_v31_top) |               (top) |        112 |        112 |       0 |    0 |  65 |      0 |      0 |          0 |
+|   receiver             |         swc_uart_rx |         53 |         53 |       0 |    0 |  37 |      0 |      0 |          0 |
+|   reporter             |   swc_uart_hex_json |        240 |        240 |       0 |    0 | 410 |      0 |      0 |          0 |
+|     (reporter)         |   swc_uart_hex_json |        220 |        220 |       0 |    0 | 388 |      0 |      0 |          0 |
+|   service              | swc_m20_v31_service |        545 |        545 |       0 |    0 | 404 |      2 |      1 |          0 |
+|     (service)          | swc_m20_v31_service |         61 |         61 |       0 |    0 | 356 |      0 |      0 |          0 |
+|     cpu                |      m20v3_cpu_core |        477 |        477 |       0 |    0 |  33 |      0 |      0 |          0 |
++------------------------+---------------------+------------+------------+---------+------+-----+--------+--------+------------+
+
+

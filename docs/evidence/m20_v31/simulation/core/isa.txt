@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# xsim v2026.1.1 (64-bit)
+# SW Build 6605303 on Fri Sep 04 05:45:32 MDT 2026
+# IP Build 6603865 on Fri Sep 04 05:05:05 MDT 2026
+# SharedData Build 6605217 on Fri Sep 04 02:50:14 MDT 2026
+# Start of session at: Thu Nov  5 11:51:11 2026
+# Process ID         : 194537
+# Current directory  : /home/boksop/swcell/build/sim/m20_v31/v3_core_baseline_r1/xsim
+# Command line       : xsim -log isa.log -mode tcl -source {xsim.dir/isa/xsim_script.tcl}
+# Log file           : /home/boksop/swcell/build/sim/m20_v31/v3_core_baseline_r1/xsim/isa.log
+# Journal file       : /home/boksop/swcell/build/sim/m20_v31/v3_core_baseline_r1/xsim/xsim.jou
+# Running On         : b760m
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.5 LTS
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12400
+# CPU Frequency      : 3858.074 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 66135 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 74725 MB
+# Available Virtual  : 68644 MB
+#-----------------------------------------------------------
+source xsim.dir/isa/xsim_script.tcl
+# xsim {isa} -autoloadwcfg -tclbatch {/home/boksop/swcell/sim/m20_v21/run_all.tcl}
+Time resolution is 1 ps
+source /home/boksop/swcell/sim/m20_v21/run_all.tcl
+## run all
+M20_ISA_PASS words=65536 legal=15015 illegal=50521 alu_vectors=32768
+$finish called at time : 98304 ps : File "/home/boksop/swcell/sim/m20/tb_m20_isa.sv" Line 119
+## quit
+INFO: xsimkernel Simulation Memory Usage: 302752 KB (Peak: 356184 KB), Simulation CPU Usage: 950 ms
+INFO: [Common 17-206] Exiting xsim at Thu Nov  5 11:51:13 2026...

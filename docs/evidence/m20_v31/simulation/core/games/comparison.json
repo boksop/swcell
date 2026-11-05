@@ -1,0 +1,392 @@
+{
+  "status": "PASS",
+  "isa_id": "M20-300-ISA-0.1",
+  "timing_profile": "M20-300-V1-TIMING-0.1",
+  "suite": "games",
+  "case_count": 38,
+  "events": 35108,
+  "cycles": 115651,
+  "cases": [
+    {
+      "name": "pong_boot",
+      "events": 19,
+      "cycles": 83,
+      "retired": 19,
+      "ram_reads": 0,
+      "ram_writes": 15,
+      "kind": "game_boot",
+      "status": "PASS"
+    },
+    {
+      "name": "pong_normal",
+      "events": 65,
+      "cycles": 202,
+      "retired": 65,
+      "ram_reads": 15,
+      "ram_writes": 9,
+      "kind": "game_tick",
+      "status": "PASS"
+    },
+    {
+      "name": "pong_upper_wall",
+      "events": 67,
+      "cycles": 209,
+      "retired": 67,
+      "ram_reads": 14,
+      "ram_writes": 11,
+      "kind": "game_tick",
+      "status": "PASS"
+    },
+    {
+      "name": "pong_lower_wall",
+      "events": 67,
+      "cycles": 209,
+      "retired": 67,
+      "ram_reads": 14,
+      "ram_writes": 11,
+      "kind": "game_tick",
+      "status": "PASS"
+    },
+    {
+      "name": "pong_left_paddle",
+      "events": 72,
+      "cycles": 225,
+      "retired": 72,
+      "ram_reads": 17,
+      "ram_writes": 10,
+      "kind": "game_tick",
+      "status": "PASS"
+    },
+    {
+      "name": "pong_right_paddle",
+      "events": 72,
+      "cycles": 225,
+      "retired": 72,
+      "ram_reads": 17,
+      "ram_writes": 10,
+      "kind": "game_tick",
+      "status": "PASS"
+    },
+    {
+      "name": "pong_wall_and_paddle",
+      "events": 74,
+      "cycles": 232,
+      "retired": 74,
+      "ram_reads": 16,
+      "ram_writes": 12,
+      "kind": "game_tick",
+      "status": "PASS"
+    },
+    {
+      "name": "pong_right_score",
+      "events": 83,
+      "cycles": 265,
+      "retired": 83,
+      "ram_reads": 18,
+      "ram_writes": 15,
+      "kind": "game_tick",
+      "status": "PASS"
+    },
+    {
+      "name": "pong_left_score",
+      "events": 82,
+      "cycles": 263,
+      "retired": 82,
+      "ram_reads": 18,
+      "ram_writes": 15,
+      "kind": "game_tick",
+      "status": "PASS"
+    },
+    {
+      "name": "pong_left_score_carry",
+      "events": 82,
+      "cycles": 263,
+      "retired": 82,
+      "ram_reads": 18,
+      "ram_writes": 15,
+      "kind": "game_tick",
+      "status": "PASS"
+    },
+    {
+      "name": "pong_right_score_wrap",
+      "events": 83,
+      "cycles": 265,
+      "retired": 83,
+      "ram_reads": 18,
+      "ram_writes": 15,
+      "kind": "game_tick",
+      "status": "PASS"
+    },
+    {
+      "name": "pong_upper_paddle_clamp",
+      "events": 61,
+      "cycles": 194,
+      "retired": 61,
+      "ram_reads": 15,
+      "ram_writes": 9,
+      "kind": "game_tick",
+      "status": "PASS"
+    },
+    {
+      "name": "pong_lower_paddle_clamp",
+      "events": 69,
+      "cycles": 216,
+      "retired": 69,
+      "ram_reads": 17,
+      "ram_writes": 9,
+      "kind": "game_tick",
+      "status": "PASS"
+    },
+    {
+      "name": "pong_score_wall_two_paddles",
+      "events": 94,
+      "cycles": 308,
+      "retired": 94,
+      "ram_reads": 21,
+      "ram_writes": 19,
+      "kind": "game_tick",
+      "status": "PASS"
+    },
+    {
+      "name": "pong_continuous_64",
+      "events": 4252,
+      "cycles": 13223,
+      "retired": 4252,
+      "ram_reads": 924,
+      "ram_writes": 649,
+      "kind": "game_continuous_64",
+      "status": "PASS"
+    },
+    {
+      "name": "pong_memory_mode_0",
+      "events": 65,
+      "cycles": 202,
+      "retired": 65,
+      "ram_reads": 15,
+      "ram_writes": 9,
+      "kind": "game_memory_stress",
+      "status": "PASS"
+    },
+    {
+      "name": "pong_memory_mode_1",
+      "events": 65,
+      "cycles": 202,
+      "retired": 65,
+      "ram_reads": 15,
+      "ram_writes": 9,
+      "kind": "game_memory_stress",
+      "status": "PASS"
+    },
+    {
+      "name": "snake_boot",
+      "events": 1862,
+      "cycles": 4531,
+      "retired": 1862,
+      "ram_reads": 0,
+      "ram_writes": 269,
+      "kind": "game_boot",
+      "status": "PASS"
+    },
+    {
+      "name": "snake_normal",
+      "events": 256,
+      "cycles": 926,
+      "retired": 256,
+      "ram_reads": 82,
+      "ram_writes": 56,
+      "kind": "game_tick",
+      "status": "PASS"
+    },
+    {
+      "name": "snake_grow",
+      "events": 291,
+      "cycles": 1050,
+      "retired": 291,
+      "ram_reads": 92,
+      "ram_writes": 64,
+      "kind": "game_tick",
+      "status": "PASS"
+    },
+    {
+      "name": "snake_score_wrap",
+      "events": 291,
+      "cycles": 1050,
+      "retired": 291,
+      "ram_reads": 92,
+      "ram_writes": 64,
+      "kind": "game_tick",
+      "status": "PASS"
+    },
+    {
+      "name": "snake_ring_index_wrap",
+      "events": 256,
+      "cycles": 926,
+      "retired": 256,
+      "ram_reads": 82,
+      "ram_writes": 56,
+      "kind": "game_tick",
+      "status": "PASS"
+    },
+    {
+      "name": "snake_right_wall",
+      "events": 74,
+      "cycles": 280,
+      "retired": 74,
+      "ram_reads": 25,
+      "ram_writes": 19,
+      "kind": "game_tick",
+      "status": "PASS"
+    },
+    {
+      "name": "snake_left_wall",
+      "events": 77,
+      "cycles": 286,
+      "retired": 77,
+      "ram_reads": 25,
+      "ram_writes": 19,
+      "kind": "game_tick",
+      "status": "PASS"
+    },
+    {
+      "name": "snake_upper_wall",
+      "events": 78,
+      "cycles": 288,
+      "retired": 78,
+      "ram_reads": 25,
+      "ram_writes": 19,
+      "kind": "game_tick",
+      "status": "PASS"
+    },
+    {
+      "name": "snake_lower_wall",
+      "events": 76,
+      "cycles": 284,
+      "retired": 76,
+      "ram_reads": 25,
+      "ram_writes": 19,
+      "kind": "game_tick",
+      "status": "PASS"
+    },
+    {
+      "name": "snake_legal_old_tail",
+      "events": 274,
+      "cycles": 977,
+      "retired": 274,
+      "ram_reads": 86,
+      "ram_writes": 57,
+      "kind": "game_tick",
+      "status": "PASS"
+    },
+    {
+      "name": "snake_self_collision",
+      "events": 133,
+      "cycles": 476,
+      "retired": 133,
+      "ram_reads": 40,
+      "ram_writes": 30,
+      "kind": "game_tick",
+      "status": "PASS"
+    },
+    {
+      "name": "snake_opposite_direction_ignored",
+      "events": 255,
+      "cycles": 924,
+      "retired": 255,
+      "ram_reads": 82,
+      "ram_writes": 56,
+      "kind": "game_tick",
+      "status": "PASS"
+    },
+    {
+      "name": "snake_key_priority",
+      "events": 251,
+      "cycles": 910,
+      "retired": 251,
+      "ram_reads": 79,
+      "ram_writes": 57,
+      "kind": "game_tick",
+      "status": "PASS"
+    },
+    {
+      "name": "snake_dead_no_start",
+      "events": 13,
+      "cycles": 44,
+      "retired": 13,
+      "ram_reads": 1,
+      "ram_writes": 5,
+      "kind": "game_tick",
+      "status": "PASS"
+    },
+    {
+      "name": "snake_win_no_start",
+      "events": 13,
+      "cycles": 44,
+      "retired": 13,
+      "ram_reads": 1,
+      "ram_writes": 5,
+      "kind": "game_tick",
+      "status": "PASS"
+    },
+    {
+      "name": "snake_restart",
+      "events": 1869,
+      "cycles": 4551,
+      "retired": 1869,
+      "ram_reads": 0,
+      "ram_writes": 271,
+      "kind": "game_tick",
+      "status": "PASS"
+    },
+    {
+      "name": "snake_grow_to_64",
+      "events": 225,
+      "cycles": 822,
+      "retired": 225,
+      "ram_reads": 73,
+      "ram_writes": 51,
+      "kind": "game_tick",
+      "status": "PASS"
+    },
+    {
+      "name": "snake_food_search_63",
+      "events": 4152,
+      "cycles": 13419,
+      "retired": 4152,
+      "ram_reads": 1021,
+      "ram_writes": 684,
+      "kind": "game_tick",
+      "status": "PASS"
+    },
+    {
+      "name": "snake_continuous_64",
+      "events": 18778,
+      "cycles": 65225,
+      "retired": 18778,
+      "ram_reads": 5266,
+      "ram_writes": 3957,
+      "kind": "game_continuous_64",
+      "status": "PASS"
+    },
+    {
+      "name": "snake_memory_mode_0",
+      "events": 256,
+      "cycles": 926,
+      "retired": 256,
+      "ram_reads": 82,
+      "ram_writes": 56,
+      "kind": "game_memory_stress",
+      "status": "PASS"
+    },
+    {
+      "name": "snake_memory_mode_1",
+      "events": 256,
+      "cycles": 926,
+      "retired": 256,
+      "ram_reads": 82,
+      "ram_writes": 56,
+      "kind": "game_memory_stress",
+      "status": "PASS"
+    }
+  ],
+  "evidence": "Actual XSIM CSV and complete final RAM matched independent Python interpreter"
+}

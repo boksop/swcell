@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# xsim v2026.1.1 (64-bit)
+# SW Build 6605303 on Fri Sep 04 05:45:32 MDT 2026
+# IP Build 6603865 on Fri Sep 04 05:05:05 MDT 2026
+# SharedData Build 6605217 on Fri Sep 04 02:50:14 MDT 2026
+# Start of session at: Thu Nov  5 12:09:37 2026
+# Process ID         : 321714
+# Current directory  : /home/boksop/swcell/build/sim/m20_v31/units_r4
+# Command line       : xsim -log gpio.log -mode tcl -source {xsim.dir/gpio/xsim_script.tcl}
+# Log file           : /home/boksop/swcell/build/sim/m20_v31/units_r4/gpio.log
+# Journal file       : /home/boksop/swcell/build/sim/m20_v31/units_r4/xsim.jou
+# Running On         : b760m
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.5 LTS
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12400
+# CPU Frequency      : 3885.820 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 66135 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 74725 MB
+# Available Virtual  : 68045 MB
+#-----------------------------------------------------------
+source xsim.dir/gpio/xsim_script.tcl
+# xsim {gpio} -autoloadwcfg -tclbatch {/home/boksop/swcell/sim/oled_keys/run.tcl}
+Time resolution is 1 ps
+source /home/boksop/swcell/sim/oled_keys/run.tcl
+## run all
+M20_V31_GPIO_PASS six_single_cycle_pulses=6 gpo_patterns=16
+$finish called at time : 447 ns : File "/home/boksop/swcell/sim/m20_v31/tb_m20_v31_units.sv" Line 19
+## quit
+INFO: xsimkernel Simulation Memory Usage: 145696 KB (Peak: 211232 KB), Simulation CPU Usage: 890 ms
+INFO: [Common 17-206] Exiting xsim at Thu Nov  5 12:09:39 2026...

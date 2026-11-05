@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "pong": 177,
+  "snake": 315,
+  "scope": "Python original/relocated instructions and independent game oracle; not RTL execution of every fixture"
+}

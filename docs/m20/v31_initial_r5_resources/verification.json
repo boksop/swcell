@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "words": 4023,
+  "free_words": 73,
+  "cpu_micro_hz": 1000000,
+  "boot_cycles": 1505631,
+  "boot_seconds": 1.505631,
+  "pong_frame_cycles": [
+    104000,
+    103920,
+    103927,
+    103911,
+    103911,
+    103934
+  ],
+  "snake_frame_cycles": [
+    209574,
+    209498,
+    209494,
+    209480
+  ],
+  "maximum_input_gap_cycles": 58435,
+  "pong_input_gap_cycles": 18935,
+  "snake_input_gap_cycles": 8487,
+  "minimum_spi_setup_cycles": 4,
+  "spi_bytes": 7250,
+  "intra_byte_spi_period_cycles": [
+    54,
+    89
+  ],
+  "spi_high_cycles": [
+    4,
+    4
+  ],
+  "executed_instructions": 2051485,
+  "scenario": "boot allF RAM, glitch/held/release/menu, both games, B return",
+  "physical_hardware": "NOT_RUN"
+}

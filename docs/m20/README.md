@@ -1,5 +1,9 @@
 # M20 — SwCell Game CPU
 
+## 最新通过：V3.1 自主软件系统
+
+[架构](M20_V31_ARCHITECTURE.md)、[软件SPI](M20_V31_SOFTWARE_SPI.md)、[性能](M20_V31_SOFTWARE_PERFORMANCE.md)、[测试状态](M20_V31_TEST_REPORT.md)。独立工程m20/autonomous；用户确认基本功能及修正版重开/加号正常，[正式报告](../reports/m20_phaseV3.1_20261105.md)。不改冻结ISA/477节点/V3 F06，FUNCTIONAL_STORAGE通过不代表实体双MUX DFF时序通过。下方V1～V3保留历史验收边界。
+
 **2026-11-04：用户批准 V2.4 有条件数字验收。** [正式报告](../reports/m20_phaseV2.4_20261104.md)｜[本地定版及干净恢复](M20_V24_LOCAL_GIT_REPORT.md)｜[纳管文件清单](M20_V24_GIT_FILES.csv)。本地 annotated tag `m20-v2.4-digital-verified`；下列开发阶段“待审核”保留为历史，失败配置不改判，物理/实现/实物仍 OPEN。
 
 ## 当前V2.4主线：16级四抽头前馈20颗发生器

@@ -1,0 +1,17 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/boksop/swcell/rtl/common/swc_input_sync.sv" into library work
+INFO: [VRFC 10-311] analyzing module swc_input_sync
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/boksop/swcell/rtl/modules/m20/v3/swc_v3_mux157.sv" into library work
+INFO: [VRFC 10-311] analyzing module swc_v3_mux157
+INFO: [VRFC 10-311] analyzing module swc_v3_mux_storage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/boksop/swcell/rtl/modules/m20/v3/generated/m20v3_cpu_core.sv" into library work
+INFO: [VRFC 10-311] analyzing module m20v3_cpu_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/boksop/swcell/rtl/modules/m20/v31/swc_m20_v31_gpio.sv" into library work
+INFO: [VRFC 10-311] analyzing module swc_m20_v31_gpio
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/boksop/swcell/rtl/modules/m20/v31/swc_m20_v31_memory.sv" into library work
+INFO: [VRFC 10-311] analyzing module swc_m20_v31_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/boksop/swcell/rtl/modules/m20/v31/swc_m20_v31_service.sv" into library work
+INFO: [VRFC 10-311] analyzing module swc_m20_v31_service
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/boksop/swcell/sim/m20_v31/tb_m20_v31_units.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_m20_v31_gpio
+INFO: [VRFC 10-311] analyzing module tb_m20_v31_memory
+INFO: [VRFC 10-311] analyzing module tb_m20_v31_control

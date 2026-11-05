@@ -1,0 +1,24 @@
+{
+  "status": "FAIL_DETECTED_BEFORE_HARDWARE",
+  "actual": [
+    126,
+    126,
+    24,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "expected": [
+    0,
+    0,
+    24,
+    126,
+    126,
+    24,
+    0,
+    0
+  ],
+  "reason": "REP decrements from8; after SUBI6 comparisons need ADDI1 for5/4/3"
+}

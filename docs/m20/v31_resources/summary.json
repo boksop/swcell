@@ -1,0 +1,29 @@
+{
+  "status": "DIGITAL_PASS_HARDWARE_PENDING",
+  "firmware_words": 4052,
+  "free_words": 44,
+  "isa_unchanged": true,
+  "mode": "FUNCTIONAL_STORAGE",
+  "cpu": {
+    "mux_lut3": 477,
+    "cpu_native_ff": 33,
+    "global_clock_buffers": 1,
+    "oled_cpu_gpo_direct_drivers": 4,
+    "mode": "FUNCTIONAL_STORAGE"
+  },
+  "sta": {
+    "wns_ns": 1.972,
+    "tns_ns": 0.0,
+    "whs_ns": 0.092,
+    "ths_ns": 0.0,
+    "wpws_ns": 9.6
+  },
+  "source_sha256": "667de56f04d463d7fca8c355547aa101d5f4c76fdfeb0d39c4c9018dc490afa9",
+  "rom_sha256": "ae5be5055052c8ea9c8a5e4d00de5dcaf2dfe531e84a57fb9dec0b4feef71619",
+  "bitstream_sha256": "181fb8844407a69f405594440245dc5ed1e50a24e81e103d194aa531835cfd0f",
+  "inputs": {
+    "software": "build/m20_v31/restart_plus_software_r2",
+    "implementation": "build/fpga/m20/autonomous/restart_plus_r2"
+  },
+  "measurement_scope": "software instruction simulation and FPGA route STA; not physical157 or OLED hardware acceptance"
+}

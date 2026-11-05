@@ -1,0 +1,56 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite GOLD license has been detected. Your current license is active and will expire on Permanent.
+
+****** Vivado v2026.1.1 (64-bit)
+  **** SW Build 6605303 on Fri Sep 04 05:45:32 MDT 2026
+  **** IP Build 6603865 on Fri Sep 04 05:05:05 MDT 2026
+  **** SharedData Build 6605217 on Fri Sep 04 02:50:14 MDT 2026
+  **** Start of session at: Thu Nov  5 12:31:07 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source fpga/common/tcl/program.tcl
+# proc swc_program {} {
+#     global argv
+#     if {[llength $argv]!=2} {error "Usage: program.tcl BITFILE EXACT_DEVICE_NAME (from Hardware Manager)"}
+#     lassign $argv bitfile device_name
+#     if {![file isfile $bitfile]} {error "Missing bitstream: $bitfile"}
+#     open_hw_manager
+#     connect_hw_server
+#     open_hw_target
+#     set selected {}
+#     foreach d [get_hw_devices] {if {[get_property NAME $d] eq $device_name} {lappend selected $d}}
+#     if {[llength $selected]!=1} {error "Expected one exact device '$device_name'; available: [get_hw_devices]"}
+#     set d [lindex $selected 0]
+#     if {![string match xc7k325t* [get_property PART $d]]} {error "Selected hardware is not XC7K325T"}
+#     current_hw_device $d
+#     refresh_hw_device $d
+#     set_property PROGRAM.FILE [file normalize $bitfile] $d
+#     program_hw_devices $d
+#     close_hw_manager
+# }
+# if {[catch {swc_program} message]} {puts stderr "SWCELL_PROGRAM_ERROR: $message";exit 1}
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2026.1.1
+  **** Build date : Aug 18 2026 at 16:16:07
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx cs_server v2026.1.1
+  **** Build Info : #10 | 2026-09-03 17:05 UTC | 6a0939a
+    ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210017563713A
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported soft debug core(s) in it.
+INFO: [Labtools 27-3164] End of startup status: HIGH
+# exit 0
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  5 12:31:13 2026...

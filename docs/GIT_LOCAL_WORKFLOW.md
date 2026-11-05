@@ -1,5 +1,11 @@
 # SwCell 本地 Git 工作流
 
+## 当前授权：V3.1定版与Release（2026-11-05）
+
+用户已先明确转Public，现进一步授权V3.1本地提交、annotated tag `m20-v3.1-autonomous-fpga-verified`、正常远程同步，以及通过GitHub Release归档最终bit。历史Private/仅本地条款是当时任务边界，不撤销本次授权。来源为本会话明确指令，[本轮检查点](tasks/m20-v31-release-20261105.md)。仍不改旧Tag/历史、不force、不上传凭据/缓存；未选择许可证。
+
+正式固件0.2源/ROM/Tcl/关键证据纳入Git；bit和完整文本/CSV仿真证据作为Release资产，并由资产manifest及SHA256SUMS关联精确source commit、annotated tag对象、ROM和bit。原始build/results不移动，较大可再生vectors及波形仅按清单归档或索引，不无差别提交普通Git。
+
 ## 当前授权补充：首次Private发布（2026-11-04）
 
 用户最新任务明确授权保留现有历史，完成V3本地commit/annotated Tag，并以GitHub CLI创建Private `swcell`及正常推送main/正式标签。下文“本轮仅本地、禁止remote”是此前整理阶段的历史范围，不阻止本次已授权发布；仍禁止Public、force、reset/rebase/amend或覆盖旧Tag。新任务及真实执行结果见[发布进度](tasks/github-publish-20261104.md)。未来发布仍须相应授权。

@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-05",
+  "status": "REPRODUCED_FIX_UNDER_TEST",
+  "user_report": "不过有一个bug，进入pong之后按A键重新开始游戏，两边的滑块就会消失。而且现在贪食蛇的食物，还有pong的球都不是加号了，变成白方块中间一条黑线",
+  "initial_acceptance": "user_acceptance_20261105.json",
+  "initial_revision": "implementation_r5 / firmware0.1",
+  "fix_revision": "restart_plus_r2 / firmware0.2",
+  "root_causes": [
+    "software clear did not invalidate OLDL/OLDR drawing cache on restart",
+    "PIX6 produced eight copies of0x66 instead of per-column plus glyph"
+  ],
+  "cpu_isa_or_rtl_changed": false
+}

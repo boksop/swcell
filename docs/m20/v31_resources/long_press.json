@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "cpu_micro_hz": 1000000,
+  "cycles": 3357952,
+  "seconds": 3.357952,
+  "cpu_reset_used": false
+}

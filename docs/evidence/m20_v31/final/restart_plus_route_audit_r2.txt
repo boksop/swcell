@@ -1,0 +1,87 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite GOLD license has been detected. Your current license is active and will expire on Permanent.
+
+****** Vivado v2026.1.1 (64-bit)
+  **** SW Build 6605303 on Fri Sep 04 05:45:32 MDT 2026
+  **** IP Build 6603865 on Fri Sep 04 05:05:05 MDT 2026
+  **** SharedData Build 6605217 on Fri Sep 04 02:50:14 MDT 2026
+  **** Start of session at: Thu Nov  5 12:28:00 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source tools/m20/v31/route_audit.tcl
+# if {[llength $argv]!=2} {error "ROUTED_DCP FRESH_OUTPUT required"}
+# lassign $argv dcp output
+# if {[file exists $output]} {error "Use fresh audit output"}
+# file mkdir $output
+# open_checkpoint $dcp
+Command: open_checkpoint /home/boksop/swcell/build/fpga/m20/autonomous/restart_plus_r2/routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1480.039 ; gain = 8.906 ; free physical = 51107 ; free virtual = 65181
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1952.160 ; gain = 0.000 ; free physical = 50660 ; free virtual = 64736
+INFO: [Netlist 29-17] Analyzing 192 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2030.941 ; gain = 1.000 ; free physical = 50556 ; free virtual = 64631
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2660.785 ; gain = 0.000 ; free physical = 50043 ; free virtual = 64107
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2660.785 ; gain = 0.000 ; free physical = 50043 ; free virtual = 64107
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2660.785 ; gain = 0.000 ; free physical = 50043 ; free virtual = 64107
+Read placeStorage: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2679.863 ; gain = 19.078 ; free physical = 50043 ; free virtual = 64107
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2679.863 ; gain = 0.000 ; free physical = 50043 ; free virtual = 64107
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2679.863 ; gain = 0.000 ; free physical = 50043 ; free virtual = 64107
+Read Physdb Files: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2679.863 ; gain = 19.078 ; free physical = 50043 ; free virtual = 64107
+Restored from archive | CPU: 0.110000 secs | Memory: 2.931969 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2679.863 ; gain = 25.016 ; free physical = 50043 ; free virtual = 64107
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2679.863 ; gain = 0.000 ; free physical = 50042 ; free virtual = 64107
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2026.1.1 (64-bit) build 6605303
+open_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 2679.898 ; gain = 1213.734 ; free physical = 50042 ; free virtual = 64107
+# set muxes [get_cells -hier -filter {REF_NAME == LUT3 && NAME =~ *cpu*cell_mux}]
+# set ff [get_cells -hier -filter {NAME =~ *service/cpu/* && REF_NAME =~ FD*}]
+# set bufg [get_cells -hier -filter {REF_NAME =~ BUFG*}]
+# if {[llength $muxes]!=477||[llength $ff]!=33||[llength $bufg]!=1} {error "V31 CPU mapping changed"}
+# set f [open [file join $output mux_mapping.csv] w]
+# puts $f "instance,reference,init,site,bel,input_i0,input_i1,select"
+# foreach cell $muxes {
+#  set values [list $cell [get_property REF_NAME $cell] [get_property INIT $cell] [get_property LOC $cell] [get_property BEL $cell]]
+#  foreach pin {I0 I1 I2} {lappend values [get_nets -of_objects [get_pins $cell/$pin]]}
+#  puts $f [join $values ,]
+# }
+# close $f
+# set f [open [file join $output oled_drivers.csv] w]
+# puts $f "port,leaf_driver,reference"
+# foreach port {OLED_CS_N OLED_DC OLED_SCK OLED_MOSI} {
+#  set obuf [get_cells -of_objects [get_nets -of_objects [get_ports $port]] -filter {REF_NAME == OBUF}]
+#  if {[llength $obuf]!=1} {error "No unique output buffer $port"}
+#  set nets [get_nets -segments -of_objects [get_pins $obuf/I]]
+#  set drivers [get_pins -leaf -of_objects $nets -filter {DIRECTION == OUT}]
+#  if {[llength $drivers]!=1} {error "Non-unique CPU GPIO driver $port: $drivers"}
+#  set driver [lindex $drivers 0];set cell [get_cells -of_objects $driver]
+#  if {![string match "*service/cpu/*gpo*" $cell]||![string match FD* [get_property REF_NAME $cell]]} {
+#   error "OLED bypass detected $port driven by $driver"
+#  }
+#  puts $f "$port,$driver,[get_property REF_NAME $cell]"
+# }
+# close $f
+# set f [open [file join $output counts.json] w]
+# puts $f "{\"mux_lut3\":477,\"cpu_native_ff\":33,\"global_clock_buffers\":1,\"oled_cpu_gpo_direct_drivers\":4,\"mode\":\"FUNCTIONAL_STORAGE\"}"
+# close $f
+# report_clock_utilization -file [file join $output clocks.rpt]
+# puts "M20_V31_ROUTE_AUDIT_PASS muxes=477 ff=33 oled_direct=4"
+M20_V31_ROUTE_AUDIT_PASS muxes=477 ff=33 oled_direct=4
+# close_design
+# exit 0
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  5 12:28:12 2026...
